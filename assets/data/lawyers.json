@@ -1,0 +1,1097 @@
+[
+  {
+    "id": "lawyer_001",
+    "firmId": "firm_001",
+    "name": "Ahmad Khalid",
+    "type": [
+      "Employment",
+      "General and Civil Litigation"
+    ],
+    "specialties": [
+      "Employment"
+    ],
+    "experience_years": 12,
+    "languages": [
+      "English",
+      "Malay"
+    ],
+    "contact": {
+      "phone": "+60 12-300 0001",
+      "email": "ahmad.khalid@firm001.com"
+    }
+  },
+  {
+    "id": "lawyer_002",
+    "firmId": "firm_001",
+    "name": "Nur Aisyah",
+    "type": [
+      "Employment",
+      "General and Civil Litigation"
+    ],
+    "specialties": [
+      "Civil Litigation"
+    ],
+    "experience_years": 8,
+    "languages": [
+      "Malay",
+      "English"
+    ],
+    "contact": {
+      "phone": "+60 12-300 0002",
+      "email": "aisyah@firm001.com"
+    }
+  },
+  {
+    "id": "lawyer_003",
+    "firmId": "firm_002",
+    "name": "Tan Wei Jian",
+    "type": [
+      "Conveyancing and Property",
+      "Wills, Probate and Estate Administration"
+    ],
+    "specialties": [
+      "Conveyancing and Property"
+    ],
+    "experience_years": 11,
+    "languages": [
+      "English",
+      "Chinese"
+    ],
+    "contact": {
+      "phone": "+60 12-300 0003",
+      "email": "weijian@firm002.com"
+    }
+  },
+  {
+    "id": "lawyer_004",
+    "firmId": "firm_003",
+    "name": "Siti Farhana",
+    "type": [
+      "Aviation",
+      "Mergers and Acquisitions"
+    ],
+    "specialties": [
+      "Aviation"
+    ],
+    "experience_years": 9,
+    "languages": [
+      "Malay",
+      "English"
+    ],
+    "contact": {
+      "phone": "+60 12-300 0004",
+      "email": "farhana@firm003.com"
+    }
+  },
+  {
+    "id": "lawyer_005",
+    "firmId": "firm_004",
+    "name": "Halim Yusuf",
+    "type": [
+      "General and Civil Litigation"
+    ],
+    "specialties": [
+      "General and Civil Litigation"
+    ],
+    "experience_years": 13,
+    "languages": [
+      "Malay",
+      "English"
+    ],
+    "contact": {
+      "phone": "+60 12-300 0005",
+      "email": "halim@firm004.com"
+    }
+  },
+  {
+    "id": "lawyer_006",
+    "firmId": "firm_005",
+    "name": "Akmal Saufi",
+    "type": [
+      "Conveyancing and Property",
+      "Debt Recovery"
+    ],
+    "specialties": [
+      "Debt Recovery"
+    ],
+    "experience_years": 14,
+    "languages": [
+      "Malay",
+      "English"
+    ],
+    "contact": {
+      "phone": "+60 12-300 0006",
+      "email": "akmal@firm005.com"
+    }
+  },
+  {
+    "id": "lawyer_007",
+    "firmId": "firm_005",
+    "name": "Sharon Lim",
+    "type": [
+      "Conveyancing and Property",
+      "Debt Recovery"
+    ],
+    "specialties": [
+      "Conveyancing and Property"
+    ],
+    "experience_years": 7,
+    "languages": [
+      "English",
+      "Chinese"
+    ],
+    "contact": {
+      "phone": "+60 12-300 0007",
+      "email": "sharon@firm005.com"
+    }
+  },
+  {
+    "id": "lawyer_008",
+    "firmId": "firm_006",
+    "name": "Alan Lim",
+    "type": [
+      "Conveyancing and Property",
+      "General and Civil Litigation"
+    ],
+    "specialties": [
+      "General and Civil Litigation"
+    ],
+    "experience_years": 10,
+    "languages": [
+      "English",
+      "Chinese"
+    ],
+    "contact": {
+      "phone": "+60 12-300 0008",
+      "email": "alan@firm006.com"
+    }
+  },
+  {
+    "id": "lawyer_009",
+    "firmId": "firm_007",
+    "name": "Alda Khairi",
+    "type": [
+      "Conveyancing and Property"
+    ],
+    "specialties": [
+      "Conveyancing and Property"
+    ],
+    "experience_years": 6,
+    "languages": [
+      "Malay",
+      "English"
+    ],
+    "contact": {
+      "phone": "+60 12-300 0009",
+      "email": "alda@firm007.com"
+    }
+  },
+  {
+    "id": "lawyer_010",
+    "firmId": "firm_008",
+    "name": "Shukri Ahmad",
+    "type": [
+      "Conveyancing and Property",
+      "General and Civil Litigation"
+    ],
+    "specialties": [
+      "General and Civil Litigation"
+    ],
+    "experience_years": 12,
+    "languages": [
+      "Malay",
+      "English"
+    ],
+    "contact": {
+      "phone": "+60 12-300 0010",
+      "email": "shukri@firm008.com"
+    }
+  },
+  {
+    "id": "lawyer_011",
+    "firmId": "firm_009",
+    "name": "Alex Chang",
+    "type": [
+      "Corporate Disputes",
+      "Debt Recovery"
+    ],
+    "specialties": [
+      "Corporate Disputes"
+    ],
+    "experience_years": 11,
+    "languages": [
+      "English",
+      "Chinese"
+    ],
+    "contact": {
+      "phone": "+60 12-300 0011",
+      "email": "alex@firm009.com"
+    }
+  },
+  {
+    "id": "lawyer_012",
+    "firmId": "firm_010",
+    "name": "Alice Kang",
+    "type": [
+      "General and Civil Litigation",
+      "Trademark"
+    ],
+    "specialties": [
+      "Trademark"
+    ],
+    "experience_years": 9,
+    "languages": [
+      "English",
+      "Chinese"
+    ],
+    "contact": {
+      "phone": "+60 12-300 0012",
+      "email": "alice@firm010.com"
+    }
+  },
+  {
+    "id": "lawyer_013",
+    "firmId": "firm_011",
+    "name": "Alicia Nicholson",
+    "type": [
+      "Family",
+      "General and Civil Litigation"
+    ],
+    "specialties": [
+      "Family"
+    ],
+    "experience_years": 15,
+    "languages": [
+      "English"
+    ],
+    "contact": {
+      "phone": "+60 12-300 0013",
+      "email": "alicia@firm011.com"
+    }
+  },
+  {
+    "id": "lawyer_014",
+    "firmId": "firm_012",
+    "name": "Amalia Rose",
+    "type": [
+      "General and Civil Litigation"
+    ],
+    "specialties": [
+      "General and Civil Litigation"
+    ],
+    "experience_years": 10,
+    "languages": [
+      "Malay",
+      "English"
+    ],
+    "contact": {
+      "phone": "+60 12-300 0014",
+      "email": "amalia@firm012.com"
+    }
+  },
+  {
+    "id": "lawyer_015",
+    "firmId": "firm_013",
+    "name": "Amalin Aziz",
+    "type": [
+      "Accidents and Personal Injury Claims",
+      "General and Civil Litigation"
+    ],
+    "specialties": [
+      "Accidents and Personal Injury Claims"
+    ],
+    "experience_years": 8,
+    "languages": [
+      "Malay",
+      "English"
+    ],
+    "contact": {
+      "phone": "+60 12-300 0015",
+      "email": "amalin@firm013.com"
+    }
+  },
+  {
+    "id": "lawyer_016",
+    "firmId": "firm_014",
+    "name": "Amanda Pang",
+    "type": [
+      "Conveyancing and Property",
+      "Intellectual Property"
+    ],
+    "specialties": [
+      "Intellectual Property"
+    ],
+    "experience_years": 12,
+    "languages": [
+      "English",
+      "Chinese"
+    ],
+    "contact": {
+      "phone": "+60 12-300 0016",
+      "email": "amanda@firm014.com"
+    }
+  },
+  {
+    "id": "lawyer_017",
+    "firmId": "firm_015",
+    "name": "Amir Khusyairi",
+    "type": [
+      "Criminal",
+      "Wills, Probate and Estate Administration"
+    ],
+    "specialties": [
+      "Criminal"
+    ],
+    "experience_years": 14,
+    "languages": [
+      "Malay",
+      "English"
+    ],
+    "contact": {
+      "phone": "+60 12-300 0017",
+      "email": "amir@firm015.com"
+    }
+  },
+  {
+    "id": "lawyer_018",
+    "firmId": "firm_016",
+    "name": "Lim Malik",
+    "type": [
+      "Conveyancing and Property",
+      "General and Civil Litigation"
+    ],
+    "specialties": [
+      "Conveyancing and Property"
+    ],
+    "experience_years": 9,
+    "languages": [
+      "English",
+      "Malay"
+    ],
+    "contact": {
+      "phone": "+60 12-300 0018",
+      "email": "malik@firm016.com"
+    }
+  },
+  {
+    "id": "lawyer_019",
+    "firmId": "firm_017",
+    "name": "Joshua Tan",
+    "type": [
+      "Family",
+      "Wills, Probate and Estate Administration"
+    ],
+    "specialties": [
+      "Family"
+    ],
+    "experience_years": 10,
+    "languages": [
+      "English",
+      "Malay"
+    ],
+    "contact": {
+      "phone": "+60 12-300 0019",
+      "email": "joshua@firm017.com"
+    }
+  },
+  {
+    "id": "lawyer_020",
+    "firmId": "firm_018",
+    "name": "Syariful Ahmad",
+    "type": [
+      "Accidents and Personal Injury Claims",
+      "Land Disputes"
+    ],
+    "specialties": [
+      "Land Disputes"
+    ],
+    "experience_years": 7,
+    "languages": [
+      "Malay",
+      "English"
+    ],
+    "contact": {
+      "phone": "+60 12-300 0020",
+      "email": "syariful@firm018.com"
+    }
+  },
+  {
+    "id": "lawyer_021",
+    "firmId": "firm_019",
+    "name": "Aizat Dzar",
+    "type": [
+      "Banking, Finance and Securities",
+      "Conveyancing and Property"
+    ],
+    "specialties": [
+      "Banking, Finance and Securities"
+    ],
+    "experience_years": 13,
+    "languages": [
+      "English",
+      "Malay"
+    ],
+    "contact": {
+      "phone": "+60 12-300 0021",
+      "email": "aizat@firm019.com"
+    }
+  },
+  {
+    "id": "lawyer_022",
+    "firmId": "firm_020",
+    "name": "Syazana Nasir",
+    "type": [
+      "General and Civil Litigation",
+      "Syariah"
+    ],
+    "specialties": [
+      "Syariah"
+    ],
+    "experience_years": 9,
+    "languages": [
+      "Malay",
+      "English"
+    ],
+    "contact": {
+      "phone": "+60 12-300 0022",
+      "email": "syazana@firm020.com"
+    }
+  },
+  {
+    "id": "lawyer_023",
+    "firmId": "firm_021",
+    "name": "Krishna Dallumah",
+    "type": [
+      "Corporate and General",
+      "General and Civil Litigation"
+    ],
+    "specialties": [
+      "Corporate and General"
+    ],
+    "experience_years": 16,
+    "languages": [
+      "English",
+      "Tamil",
+      "Malay"
+    ],
+    "contact": {
+      "phone": "+60 12-300 0023",
+      "email": "krishna@firm021.com"
+    }
+  },
+  {
+    "id": "lawyer_024",
+    "firmId": "firm_022",
+    "name": "Nor Adibah",
+    "type": [
+      "Conveyancing and Property",
+      "Wealth Management, Inheritance and Succession Planning"
+    ],
+    "specialties": [
+      "Wealth Management, Inheritance and Succession Planning"
+    ],
+    "experience_years": 11,
+    "languages": [
+      "Malay",
+      "English"
+    ],
+    "contact": {
+      "phone": "+60 12-300 0024",
+      "email": "nor@firm022.com"
+    }
+  },
+  {
+    "id": "lawyer_025",
+    "firmId": "firm_023",
+    "name": "C.L. Lee",
+    "type": [
+      "Commisioner for Oaths",
+      "Conveyancing and Property"
+    ],
+    "specialties": [
+      "Commisioner for Oaths"
+    ],
+    "experience_years": 12,
+    "languages": [
+      "English",
+      "Chinese"
+    ],
+    "contact": {
+      "phone": "+60 12-300 0025",
+      "email": "clee@firm023.com"
+    }
+  },
+  {
+    "id": "lawyer_026",
+    "firmId": "firm_024",
+    "name": "Choy Mei Ling",
+    "type": [
+      "Contentious Probate Proceeding",
+      "General and Civil Litigation"
+    ],
+    "specialties": [
+      "Contentious Probate Proceeding"
+    ],
+    "experience_years": 10,
+    "languages": [
+      "English",
+      "Chinese"
+    ],
+    "contact": {
+      "phone": "+60 12-300 0026",
+      "email": "meiling@firm024.com"
+    }
+  },
+  {
+    "id": "lawyer_027",
+    "firmId": "firm_025",
+    "name": "Ezri Ahmad",
+    "type": [
+      "Notary Public",
+      "General and Civil Litigation"
+    ],
+    "specialties": [
+      "Notary Public"
+    ],
+    "experience_years": 8,
+    "languages": [
+      "Malay",
+      "English"
+    ],
+    "contact": {
+      "phone": "+60 12-300 0027",
+      "email": "ezri@firm025.com"
+    }
+  },
+  {
+    "id": "lawyer_028",
+    "firmId": "firm_026",
+    "name": "Ezri Wan",
+    "type": [
+      "Employment",
+      "Arbitration and Alternate Dispute Resolution"
+    ],
+    "specialties": [
+      "Employment"
+    ],
+    "experience_years": 7,
+    "languages": [
+      "Malay",
+      "English"
+    ],
+    "contact": {
+      "phone": "+60 12-300 0028",
+      "email": "ezri.wan@firm026.com"
+    }
+  },
+  {
+    "id": "lawyer_029",
+    "firmId": "firm_027",
+    "name": "Marcus Hoo",
+    "type": [
+      "General and Civil Litigation",
+      "Syariah"
+    ],
+    "specialties": [
+      "Syariah"
+    ],
+    "experience_years": 13,
+    "languages": [
+      "English",
+      "Chinese"
+    ],
+    "contact": {
+      "phone": "+60 12-300 0029",
+      "email": "marcus@firm027.com"
+    }
+  },
+  {
+    "id": "lawyer_030",
+    "firmId": "firm_028",
+    "name": "Mohtar Man",
+    "type": [
+      "Employment",
+      "Arbitration and Alternate Dispute Resolution"
+    ],
+    "specialties": [
+      "Arbitration and Alternate Dispute Resolution"
+    ],
+    "experience_years": 9,
+    "languages": [
+      "Malay",
+      "English"
+    ],
+    "contact": {
+      "phone": "+60 12-300 0030",
+      "email": "mohtar@firm028.com"
+    }
+  },
+  {
+    "id": "lawyer_031",
+    "firmId": "firm_029",
+    "name": "Ezri Noor",
+    "type": [
+      "Conveyancing and Property",
+      "Hibah and Wasiat"
+    ],
+    "specialties": [
+      "Hibah and Wasiat"
+    ],
+    "experience_years": 10,
+    "languages": [
+      "Malay",
+      "English"
+    ],
+    "contact": {
+      "phone": "+60 12-300 0031",
+      "email": "ezri.noor@firm029.com"
+    }
+  },
+  {
+    "id": "lawyer_032",
+    "firmId": "firm_030",
+    "name": "Sudesh Narinder",
+    "type": [
+      "Accidents and Personal Injury Claims",
+      "Criminal"
+    ],
+    "specialties": [
+      "Criminal"
+    ],
+    "experience_years": 14,
+    "languages": [
+      "English",
+      "Malay"
+    ],
+    "contact": {
+      "phone": "+60 12-300 0032",
+      "email": "sudesh@firm030.com"
+    }
+  },
+  {
+    "id": "lawyer_033",
+    "firmId": "firm_031",
+    "name": "Syahirah Azman",
+    "type": [
+      "Accidents and Personal Injury Claims",
+      "Syariah"
+    ],
+    "specialties": [
+      "Accidents and Personal Injury Claims"
+    ],
+    "experience_years": 8,
+    "languages": [
+      "Malay",
+      "English"
+    ],
+    "contact": {
+      "phone": "+60 12-300 0033",
+      "email": "syahirah@firm031.com"
+    }
+  },
+  {
+    "id": "lawyer_034",
+    "firmId": "firm_032",
+    "name": "Y.N. Teoh",
+    "type": [
+      "Conveyancing and Property",
+      "Family"
+    ],
+    "specialties": [
+      "Family"
+    ],
+    "experience_years": 12,
+    "languages": [
+      "English",
+      "Chinese"
+    ],
+    "contact": {
+      "phone": "+60 12-300 0034",
+      "email": "ynteoh@firm032.com"
+    }
+  },
+  {
+    "id": "lawyer_035",
+    "firmId": "firm_033",
+    "name": "WJ Ng",
+    "type": [
+      "Debt Recovery",
+      "General and Civil Litigation"
+    ],
+    "specialties": [
+      "Debt Recovery"
+    ],
+    "experience_years": 11,
+    "languages": [
+      "English",
+      "Chinese"
+    ],
+    "contact": {
+      "phone": "+60 12-300 0035",
+      "email": "wjng@firm033.com"
+    }
+  },
+  {
+    "id": "lawyer_036",
+    "firmId": "firm_034",
+    "name": "Yasmeen Hajar",
+    "type": [
+      "General and Civil Litigation",
+      "Conveyancing and Property",
+      "Corporate and General",
+      "Criminal",
+      "Syariah"
+    ],
+    "specialties": [
+      "Corporate and General"
+    ],
+    "experience_years": 10,
+    "languages": [
+      "Malay",
+      "English"
+    ],
+    "contact": {
+      "phone": "+60 12-300 0036",
+      "email": "yasmeen@firm034.com"
+    }
+  },
+  {
+    "id": "lawyer_037",
+    "firmId": "firm_035",
+    "name": "Chia Hui Ming",
+    "type": [
+      "Construction Adjudication",
+      "Employment"
+    ],
+    "specialties": [
+      "Construction Adjudication"
+    ],
+    "experience_years": 9,
+    "languages": [
+      "English",
+      "Chinese"
+    ],
+    "contact": {
+      "phone": "+60 12-300 0037",
+      "email": "chia@firm035.com"
+    }
+  },
+  {
+    "id": "lawyer_038",
+    "firmId": "firm_036",
+    "name": "Dennis Lim",
+    "type": [
+      "Corporate and Commercial",
+      "General and Civil Litigation"
+    ],
+    "specialties": [
+      "Corporate and Commercial"
+    ],
+    "experience_years": 13,
+    "languages": [
+      "English",
+      "Chinese"
+    ],
+    "contact": {
+      "phone": "+60 12-300 0038",
+      "email": "dennis@firm036.com"
+    }
+  },
+  {
+    "id": "lawyer_039",
+    "firmId": "firm_037",
+    "name": "Haizan Choo",
+    "type": [
+      "Contratual Disputes",
+      "Land Disputes"
+    ],
+    "specialties": [
+      "Land Disputes"
+    ],
+    "experience_years": 12,
+    "languages": [
+      "English",
+      "Chinese"
+    ],
+    "contact": {
+      "phone": "+60 12-300 0039",
+      "email": "haizan@firm037.com"
+    }
+  },
+  {
+    "id": "lawyer_040",
+    "firmId": "firm_038",
+    "name": "Ho-Yong Tan",
+    "type": [
+      "Corporate and Commercial",
+      "Incorporation of Companies"
+    ],
+    "specialties": [
+      "Incorporation of Companies"
+    ],
+    "experience_years": 11,
+    "languages": [
+      "English",
+      "Chinese"
+    ],
+    "contact": {
+      "phone": "+60 12-300 0040",
+      "email": "hoyong@firm038.com"
+    }
+  },
+  {
+    "id": "lawyer_041",
+    "firmId": "firm_039",
+    "name": "Kennie Ang",
+    "type": [
+      "Corporate and Commercial",
+      "Insolvency and Winding Up"
+    ],
+    "specialties": [
+      "Insolvency and Winding Up"
+    ],
+    "experience_years": 15,
+    "languages": [
+      "English",
+      "Chinese"
+    ],
+    "contact": {
+      "phone": "+60 12-300 0041",
+      "email": "kennie@firm039.com"
+    }
+  },
+  {
+    "id": "lawyer_042",
+    "firmId": "firm_040",
+    "name": "Mah Weng Kwai",
+    "type": [
+      "Construction Adjudication",
+      "Employment",
+      "Administrative and Constitutional Law",
+      "Arbitration and Alternate Dispute Resolution",
+      "Aviation",
+      "Banking, Finance and Securities",
+      "Commercial Arbitration",
+      "Commercial Crime",
+      "Competition Law and Antitrust",
+      "Consumer Protection",
+      "Contractual Disputes",
+      "Conveyancing and Property",
+      "Copyright",
+      "Corporate and Commercial",
+      "Corporate Compliance and Regulatory Issues",
+      "Corporate Disputes",
+      "Criminal",
+      "Customs and Immigration",
+      "Cybercrime",
+      "Debt Recovery",
+      "Disciplinary Proceedings",
+      "Family",
+      "General and Civil Litigation",
+      "Hibah and Wasiat",
+      "Human Rights",
+      "Infrastructure and Projects",
+      "Insolvency and Winding Up",
+      "Insurance",
+      "Intellectual Property",
+      "International",
+      "Land Disputes",
+      "Media and Entertainment",
+      "Medical Negligence",
+      "Mergers and Acquisitions",
+      "Patent",
+      "Personal Data Protection and Privacy",
+      "Professional Conduct and Discipline",
+      "Professional Negligence",
+      "Shipping and Admiralty",
+      "Sports Arbitration",
+      "Syariah",
+      "Tax",
+      "Technology and Communications",
+      "Trademark",
+      "Trusts and Other Legal Arrangements",
+      "Wills, Probate and Estate Administration"
+    ],
+    "specialties": [
+      "Corporate Disputes"
+    ],
+    "experience_years": 18,
+    "languages": [
+      "English",
+      "Malay",
+      "Chinese"
+    ],
+    "contact": {
+      "phone": "+60 12-300 0042",
+      "email": "mah@firm040.com"
+    }
+  },
+  {
+    "id": "lawyer_043",
+    "firmId": "firm_020",
+    "name": "Haziq Amir",
+    "type": [
+      "General and Civil Litigation",
+      "Syariah"
+    ],
+    "specialties": [
+      "General and Civil Litigation"
+    ],
+    "experience_years": 7,
+    "languages": [
+      "Malay",
+      "English"
+    ],
+    "contact": {
+      "phone": "+60 12-300 0043",
+      "email": "haziq@firm020.com"
+    }
+  },
+  {
+    "id": "lawyer_044",
+    "firmId": "firm_015",
+    "name": "Nadia Karim",
+    "type": [
+      "Criminal",
+      "Wills, Probate and Estate Administration"
+    ],
+    "specialties": [
+      "Wills, Probate and Estate Administration"
+    ],
+    "experience_years": 6,
+    "languages": [
+      "English",
+      "Malay"
+    ],
+    "contact": {
+      "phone": "+60 12-300 0044",
+      "email": "nadia@firm015.com"
+    }
+  },
+  {
+    "id": "lawyer_045",
+    "firmId": "firm_010",
+    "name": "Lim Yu Xin",
+    "type": [
+      "General and Civil Litigation",
+      "Trademark"
+    ],
+    "specialties": [
+      "General and Civil Litigation"
+    ],
+    "experience_years": 8,
+    "languages": [
+      "English",
+      "Chinese"
+    ],
+    "contact": {
+      "phone": "+60 12-300 0045",
+      "email": "yuxin@firm010.com"
+    }
+  },
+  {
+    "id": "lawyer_046",
+    "firmId": "firm_012",
+    "name": "Farah Nadirah",
+    "type": [
+      "General and Civil Litigation"
+    ],
+    "specialties": [
+      "General and Civil Litigation"
+    ],
+    "experience_years": 9,
+    "languages": [
+      "Malay",
+      "English"
+    ],
+    "contact": {
+      "phone": "+60 12-300 0046",
+      "email": "farah@firm012.com"
+    }
+  },
+  {
+    "id": "lawyer_047",
+    "firmId": "firm_014",
+    "name": "Lee Mei Ling",
+    "type": [
+      "Conveyancing and Property",
+      "Intellectual Property"
+    ],
+    "specialties": [
+      "Conveyancing and Property"
+    ],
+    "experience_years": 7,
+    "languages": [
+      "English",
+      "Chinese"
+    ],
+    "contact": {
+      "phone": "+60 12-300 0047",
+      "email": "meiling@firm014.com"
+    }
+  },
+  {
+    "id": "lawyer_048",
+    "firmId": "firm_005",
+    "name": "Jason Wong",
+    "type": [
+      "Conveyancing and Property",
+      "Debt Recovery"
+    ],
+    "specialties": [
+      "Debt Recovery"
+    ],
+    "experience_years": 5,
+    "languages": [
+      "English",
+      "Chinese"
+    ],
+    "contact": {
+      "phone": "+60 12-300 0048",
+      "email": "jason@firm005.com"
+    }
+  },
+  {
+    "id": "lawyer_049",
+    "firmId": "firm_008",
+    "name": "Nur Izzah",
+    "type": [
+      "Conveyancing and Property",
+      "General and Civil Litigation"
+    ],
+    "specialties": [
+      "General and Civil Litigation"
+    ],
+    "experience_years": 6,
+    "languages": [
+      "Malay",
+      "English"
+    ],
+    "contact": {
+      "phone": "+60 12-300 0049",
+      "email": "izzah@firm008.com"
+    }
+  },
+  {
+    "id": "lawyer_050",
+    "firmId": "firm_021",
+    "name": "Indran Kumar",
+    "type": [
+      "Corporate and General",
+      "General and Civil Litigation"
+    ],
+    "specialties": [
+      "General and Civil Litigation"
+    ],
+    "experience_years": 14,
+    "languages": [
+      "English",
+      "Tamil",
+      "Malay"
+    ],
+    "contact": {
+      "phone": "+60 12-300 0050",
+      "email": "indran@firm021.com"
+    }
+  }
+]

@@ -1,0 +1,767 @@
+[
+    {
+        "firmId": "firm_001",
+        "placeId": "ChIJxTknW7pLzDER-0VOyh9KOc4",
+        "name": "A.RAJADURAI P.KUPPUSAMY & CO.",
+        "city": "Petaling Jaya",
+        "lat": 3.100257112109015,
+        "lng": 101.6406194799901,
+        "custom": {
+            "budget": "High",
+            "available": true,
+            "phone": "03-1111 0001",
+            "address": "B-2-19, 2nd Floor, 8 Avenue, Jalan Sungai Jernih, Pjs 8, 46050 Petaling Jaya, Selangor",
+            "type": [
+                "Employment",
+                "General and Civil Litigation"
+            ]
+        }
+    },
+    {
+        "firmId": "firm_002",
+        "placeId": "ChIJJUQTVD1KzDER-LBA5JbSC-k",
+        "name": "Tan, Tan & Associates (KL Branch)",
+        "city": "Kuala Lumpur",
+        "lat": 3.0844545760693567,
+        "lng": 101.69199948184094,
+        "custom": {
+            "budget": "Medium",
+            "available": true,
+            "phone": "03-1111 0002",
+            "address": "N-1-12, Kuchai Business Park, off, Jalan Kuchai Lama, Kuchai Lama, 58200 Kuala Lumpur, Wilayah Persekutuan Kuala Lumpur",
+            "type": [
+                "Conveyancing and Property",
+                "Wills, Probate and Estate Administration"
+            ]
+        }
+    },
+    {
+        "firmId": "firm_003",
+        "placeId": "ChIJFzF9ftU3zDER4gsn2LNy4iU",
+        "name": "Abdullah Chan",
+        "city": "Kuala Lumpur",
+        "lat": 3.153931274425921,
+        "lng": 101.70687389533366,
+        "custom": {
+            "budget": "Low",
+            "available": false,
+            "phone": "03-1111 0003",
+            "address": "31st Floor, Ubn Tower, 10, Jalan P. Ramlee, Kuala Lumpur, 50250 Kuala Lumpur, Federal Territory of Kuala Lumpur",
+            "type": [
+                "Aviation",
+                "Mergers and Acquisitions"
+            ]
+        }
+    },
+    {
+        "firmId": "firm_004",
+        "placeId": "ChIJ78yGvF_nzTERocBGxpCyOjE",
+        "name": "AINA HALIM & CO.",
+        "city": "Seremban",
+        "lat": 2.7081054175106853,
+        "lng": 101.91734052231679,
+        "custom": {
+            "budget": "Medium",
+            "available": true,
+            "phone": "03-1111 0004",
+            "address": "No. 509, Tingkat, 1, Jalan Haruan 4/5, Oakland Commercial Centre, 70300 Seremban, Negeri Sembilan, Malaysia",
+            "type": [
+                "General and Civil Litigation"
+            ]
+        }
+    },
+    {
+        "firmId": "firm_005",
+        "placeId": "ChIJ72vC-r5y2jERq1bBL3xhxzE",
+        "name": "ASCO LAW - Akmal Saufi & Co.",
+        "city": "Johor Bahru",
+        "lat": 1.5007289022391666,
+        "lng": 103.77442139347735,
+        "custom": {
+            "budget": "High",
+            "available": true,
+            "phone": "03-1111 0005",
+            "address": "F-04-08, Komersial Southkey Mozek, Persiaran Southkey 1, Southkey, 81100 Johor Bahru, Johor Darul Ta'zim",
+            "type": [
+                "Conveyancing and Property",
+                "Debt Recovery"
+            ]
+        }
+    },
+    {
+        "firmId": "firm_006",
+        "placeId": "ChIJX9kp605t2jERNbdwS5npeb0",
+        "name": "ALAN LIM, POH & OH",
+        "city": "Johor Bahru",
+        "lat": 1.482028002461483,
+        "lng": 103.77298082601503,
+        "custom": {
+            "budget": "Low",
+            "available": true,
+            "phone": "03-1111 0006",
+            "address": "7B, Jalan Perang, Taman Pelangi, 80400 Johor Bahru, Johor Darul Ta'zim",
+            "type": [
+                "Conveyancing and Property",
+                "General and Civil Litigation"
+            ]
+        }
+    },
+    {
+        "firmId": "firm_007",
+        "placeId": "ChIJW29m2Sm7yDERAkO2DJzPlyA",
+        "name": "Alda Shukri Khairi & Associates (Kuantan Branch)",
+        "city": "Kuantan",
+        "lat": 3.8209486358548883,
+        "lng": 103.33012881068034,
+        "custom": {
+            "budget": "Medium",
+            "available": false,
+            "phone": "03-1111 0007",
+            "address": "b28, tingkat, 2, Lorong Haji Ahmad 4, Taman Galing, 25300 Kuantan, Pahang",
+            "type": [
+                "Conveyancing and Property"
+            ]
+        }
+    },
+    {
+        "firmId": "firm_008",
+        "placeId": "ChIJQZkjuxO_tzERwH5Z-d_BkMY",
+        "name": "Alda, Shukri, Khairi & Associates (Kuala Terengganu Branch)",
+        "city": "Kuala Terengganu",
+        "lat": 5.283662126153423,
+        "lng": 103.16496551703469,
+        "custom": {
+            "budget": "High",
+            "available": true,
+            "phone": "03-1111 0008",
+            "address": "PT 1558, Taman Landmark Ibai, Jln Tok Adis, Kampung Tok Adis, 20400 Kuala Terengganu, Terengganu",
+            "type": [
+                "Conveyancing and Property",
+                "General and Civil Litigation"
+            ]
+        }
+    },
+    {
+        "firmId": "firm_009",
+        "placeId": "ChIJQUWrpdo3zDERmAftbQU0f94",
+        "name": "ALEX CHANG & CO.",
+        "city": "Kuala Lumpur",
+        "lat": 3.161624946951854,
+        "lng": 101.71737139533377,
+        "custom": {
+            "budget": "Medium",
+            "available": true,
+            "phone": "03-1111 0009",
+            "address": "Hampshire Park, 50450 Kuala Lumpur, Federal Territory of Kuala Lumpur",
+            "type": [
+                "Corporate Disputes",
+                "Debt Recovery"
+            ]
+        }
+    },
+    {
+        "firmId": "firm_010",
+        "placeId": "ChIJQ4y88taTAgoR7qJR2J0a7vQ",
+        "name": "ALICE KANG & CO.",
+        "city": "Kuala Lumpur",
+        "lat": 3.0899669086990817,
+        "lng": 101.67369241067686,
+        "custom": {
+            "budget": "Low",
+            "available": true,
+            "phone": "03-1111 0010",
+            "address": "D-18-12, Millerz Square, Megan Legasi, 357, Old Klang Rd, 58000 Kuala Lumpur, Selangor, Malaysia",
+            "type": [
+                "General and Civil Litigation",
+                "Trademark"
+            ]
+        }
+    },
+    {
+        "firmId": "firm_011",
+        "placeId": "ChIJR7to_LY3zDERWK2GRVfD76w",
+        "name": "Messrs Alicia Nicholson",
+        "city": "Kuala Lumpur",
+        "lat": 3.1595488970372188,
+        "lng": 101.74662090882613,
+        "custom": {
+            "budget": "Medium",
+            "available": true,
+            "phone": "06-1111 0011",
+            "address": "1-20, 02, Jln Ampang, M-City, 50450 Kuala Lumpur, Wilayah Persekutuan Kuala Lumpur, Malaysia",
+            "type": [
+                "Family",
+                "General and Civil Litigation"
+            ]
+        }
+    },
+    {
+        "firmId": "firm_012",
+        "placeId": "ChIJX-6utFlz2jEROJ5KtpsSaZQ",
+        "name": "AMALIA ROSE MASURI THE LAW OFFICE",
+        "city": "Johor Bahru",
+        "lat": 1.4897667035356421,
+        "lng": 103.71257427019432,
+        "custom": {
+            "budget": "High",
+            "available": false,
+            "phone": "06-1111 0012",
+            "address": "No 36A, Tingkat, 1, Jalan Padi 1, Bandar Baru Uda, 81200 Johor Bahru, Johor Darul Ta'zim, Malaysia",
+            "type": [
+                "General and Civil Litigation"
+            ]
+        }
+    },
+    {
+        "firmId": "firm_013",
+        "placeId": "ChIJ_ZhphRTpzTERsOPvQfnz1b8",
+        "name": "AMALIN AZIZ & PARTNERS",
+        "city": "Seremban",
+        "lat": 2.6687692349070713,
+        "lng": 101.87517630882417,
+        "custom": {
+            "budget": "Low",
+            "available": true,
+            "phone": "07-1111 0013",
+            "address": "1780-1G, JALAN NUSARI BIZ 7/1, Bandar Sri Sendayan, 71950 Seremban, Negeri Sembilan, Malaysia",
+            "type": [
+                "Accidents and Personal Injury Claims",
+                "General and Civil Litigation"
+            ]
+        }
+    },
+    {
+        "firmId": "firm_014",
+        "placeId": "ChIJCYq8cPg3zDER_5SWeDa-4-w",
+        "name": "AMANDA PANG & YEE",
+        "city": "Kuala Lumpur",
+        "lat": 3.1622445343216983,
+        "lng": 101.69694844930358,
+        "custom": {
+            "budget": "Medium",
+            "available": true,
+            "phone": "05-1111 0014",
+            "address": "Unit 12-01, Level 12, Menara Centara, 360, Jalan Tuanku Abdul Rahman, City Centre, 50350 Kuala Lumpur, Wilayah Persekutuan Kuala Lumpur, Malaysia",
+            "type": [
+                "Conveyancing and Property",
+                "Intellectual Property"
+            ]
+        }
+    },
+    {
+        "firmId": "firm_015",
+        "placeId": "ChIJJbhSE8wVyzERolmA6TEu9eo",
+        "name": "AMIR KHUSYAIRI & ASSOCIATES",
+        "city": "Teluk Intan",
+        "lat": 3.0721320847517397,
+        "lng": 101.5225759241692,
+        "custom": {
+            "budget": "High",
+            "available": true,
+            "phone": "04-1111 0015",
+            "address": "Tingkat 1, 10-1, Jalan Intan 4, Bandar Baru Teluk Intan, 36000 Teluk Intan, Perak, Malaysia",
+            "type": [
+                "Criminal",
+                "Wills, Probate and Estate Administration"
+            ]
+        }
+    },
+    {
+        "firmId": "firm_016",
+        "placeId": "ChIJ7Sl988avtjERs_3DTjFMIzQ",
+        "name": "H S LIM & MALIK",
+        "city": "Kota Bharu",
+        "lat": 6.125333175224067,
+        "lng": 102.23605649350216,
+        "custom": {
+            "budget": "Low",
+            "available": false,
+            "phone": "09-1111 0016",
+            "address": "3377b, Jalan Gajah Mati, Bandar Kota Bharu, 15000 Kota Bharu, Kelantan, Malaysia",
+            "type": [
+                "Conveyancing and Property",
+                "General and Civil Litigation"
+            ]
+        }
+    },
+    {
+        "firmId": "firm_017",
+        "placeId": "ChIJew_XyiqvtjERiev9DgmAg4Y",
+        "name": "Joshua & Associates (Kelantan Branch)",
+        "city": "Kota Bharu",
+        "lat": 6.128536144289871,
+        "lng": 102.24735742418896,
+        "custom": {
+            "budget": "Medium",
+            "available": true,
+            "phone": "09-1111 0017",
+            "address": "Lot 7001-B, Jalan Dusun Raja, Bandar Kota Bharu, 15300 Kota Bharu, Kelantan, Malaysia",
+            "type": [
+                "Family",
+                "Wills, Probate and Estate Administration"
+            ]
+        }
+    },
+    {
+        "firmId": "firm_018",
+        "placeId": "ChIJWfMlEcmvtjERnE6fCqhMZdU",
+        "name": "Syariful & Wan Zul",
+        "city": "Kota Bharu",
+        "lat": 6.1175448744938254,
+        "lng": 102.23545463953229,
+        "custom": {
+            "budget": "Low",
+            "available": true,
+            "phone": "04-1111 0018",
+            "address": "3455-G, Tingkat 1, Wisma Hajjah Habsah, Jalan Sultanah Zainab,, Bandar Kota Bharu, 15050 Kota Bharu, Kelantan, Malaysia",
+            "type": [
+                "Accidents and Personal Injury Claims",
+                "Land Disputes"
+            ]
+        }
+    },
+    {
+        "firmId": "firm_019",
+        "placeId": "ChIJS3J4WZfl0TER7tsrrkMfViY",
+        "name": "AIZAT, DZAR & ASSOCIATES",
+        "city": "Ayer Keroh",
+        "lat": 2.2751655830085755,
+        "lng": 102.2885947511511,
+        "custom": {
+            "budget": "High",
+            "available": true,
+            "phone": "08-1111 0019",
+            "address": "16 1, Jalan TU 2, 75450 Ayer Keroh, Melaka, Malaysia",
+            "type": [
+                "Banking, Finance and Securities",
+                "Conveyancing and Property"
+            ]
+        }
+    },
+    {
+        "firmId": "firm_020",
+        "placeId": "ChIJmcmfkkjPzTERow4Yv8LEAJs",
+        "name": "Syazana Nasir & Partners | Advocates & Solicitors",
+        "city": "Alor Gajah",
+        "lat": 2.4639555001926823,
+        "lng": 102.23580940882344,
+        "custom": {
+            "budget": "Medium",
+            "available": true,
+            "phone": "08-1111 0020",
+            "address": "PS 27-2, Jalan Bandar Satelit Sebang 2, Seksyen 1, Jalan Pulau Sebang / Tampin, Bandar Satelit Sebang, 78000 Alor Gajah, Melaka, Malaysia",
+            "type": [
+                "General and Civil Litigation",
+                "Syariah"
+            ]
+        }
+    },
+    {
+        "firmId": "firm_021",
+        "placeId": "ChIJ4_SGObbnzTERLWOK4aYKkAs",
+        "name": "Krishna Dallumah & Indran Law Firm",
+        "city": "Seremban",
+        "lat": 2.686054404174437,
+        "lng": 101.9130291241676,
+        "custom": {
+            "budget": "Medium",
+            "available": true,
+            "phone": "08-1111 0020",
+            "address": "S2, City Center, 62, Jalan S2 D36, Seremban 2, 70300 Seremban, Negeri Sembilan, Malaysia",
+            "type": [
+                "Corporate and General",
+                "General and Civil Litigation"
+            ]
+        }
+    },
+    {
+        "firmId": "firm_022",
+        "placeId": "ChIJb1CwZ_3XyzERHzgDqmWxB5s",
+        "name": "NOR & ASSOCIATES (Advocates & Solicitors)",
+        "city": "Kuala Lipis",
+        "lat": 4.178067693739137,
+        "lng": 102.05137029938369,
+        "custom": {
+            "budget": "Medium",
+            "available": true,
+            "phone": "08-1111 0020",
+            "address": "No. 5, Tingkat Satu, Pusat Perniagaan Makmur, 27200 Kuala Lipis, Pahang, Malaysia",
+            "type": [
+                "Conveyancing and Property",
+                "Wealth Management, Inheritance and Succession Planning"
+            ]
+        }
+    },
+    {
+        "firmId": "firm_023",
+        "placeId": "ChIJF1Cpjp6xSjARyh-pAvw-KCI",
+        "name": "C.L. LEE & CO",
+        "city": "Sungai Jawi",
+        "lat": 5.200390588285913,
+        "lng": 100.49509956465887,
+        "custom": {
+            "budget": "Medium",
+            "available": true,
+            "phone": "08-1111 0020",
+            "address": "No. 60, 1st Floor, Jalan Jawi Jaya 1, Taman Jawi Jaya, 14200 Sungai Jawi, Pulau Pinang, Malaysia",
+            "type": [
+                "Commisioner for Oaths",
+                "Conveyancing and Property"
+            ]
+        }
+    },
+    {
+        "firmId": "firm_024",
+        "placeId": "ChIJVVWVlJjDSjARFaSzkg_aIG4",
+        "name": "CHOY & ASSOCIATES",
+        "city": "George Town",
+        "lat": 5.424208844884521,
+        "lng": 100.32849145301905,
+        "custom": {
+            "budget": "Medium",
+            "available": true,
+            "phone": "08-1111 0020",
+            "address": "Tingkat 3, Wisma Penang Garden No. 42, Jalan Sultan Ahmad Shah, 10050, Penang, 10450 George Town, Penang, Malaysia",
+            "type": [
+                "Contentious Probate Proceeding",
+                "General and Civil Litigation"
+            ]
+        }
+    },
+    {
+        "firmId": "firm_025",
+        "placeId": "ChIJsSAxz7zDSjAR4iq2Q6IlLG8",
+        "name": "EZRILAW FIRM",
+        "city": "George Town",
+        "lat": 5.422523657679532,
+        "lng": 100.3396474241832,
+        "custom": {
+            "budget": "Medium",
+            "available": true,
+            "phone": "08-1111 0020",
+            "address": "33, Greenhall Chambers, 10200, George Town, Pulau Pinang, Georgetown, 10200 George Town, Penang, Malaysia",
+            "type": [
+                "Notary Public",
+                "General and Civil Litigation"
+            ]
+        }
+    },
+    {
+        "firmId": "firm_026",
+        "placeId": "ChIJhyUHRhPHSjARgOArXAcN3Mk",
+        "name": "EZRILAW FIRM",
+        "city": "Bukit Mertajam",
+        "lat": 5.372154101996269,
+        "lng": 100.41224902603375,
+        "custom": {
+            "budget": "Medium",
+            "available": true,
+            "phone": "08-1111 0020",
+            "address": "2-19 Tingkat 2 Medan Perniagaan Pauh Jaya, Jalan Baru Perai, Taman Pauh Jaya, 13700 Bukit Mertajam, Pulau Pinang, Malaysia",
+            "type": [
+                "Employment",
+                "Arbitration and Alternate Dispute Resolution"
+            ]
+        }
+    },
+    {
+        "firmId": "firm_027",
+        "placeId": "ChIJcwz-CzrFSjAR1kFQiAhgFr8",
+        "name": "MARCUS HOO CHAMBERS",
+        "city": "Butterworth",
+        "lat": 5.444010603417311,
+        "lng": 100.42667748740787,
+        "custom": {
+            "budget": "Medium",
+            "available": true,
+            "phone": "08-1111 0020",
+            "address": "No. 33, 1st Floor, Jalan Sungai Dua Utama 1, Taman Sungai Dua Utama, 13800 Butterworth, Pulau Pinang, Malaysia",
+            "type": [
+                "General and Civil Litigation",
+                "Syariah"
+            ]
+        }
+    },
+    {
+        "firmId": "firm_028",
+        "placeId": "ChIJlwTRI2zASjAR3FZZ5yIk0e4",
+        "name": "MOHTAR MAN & CO",
+        "city": "Bandar Bayan Lepas",
+        "lat": 5.323027928617667,
+        "lng": 100.28690796465982,
+        "custom": {
+            "budget": "Medium",
+            "available": true,
+            "phone": "08-1111 0020",
+            "address": "72, Jalan Mayang Pasir, Taman Sri Tunas, Bayan Baru, 11950, Penang, Bandar Bayan Lepas, 11900 Bayan Lepas, Penang, Malaysia",
+            "type": [
+                "Employment",
+                "Arbitration and Alternate Dispute Resolution"
+            ]
+        }
+    },
+    {
+        "firmId": "firm_029",
+        "placeId": "ChIJhyUHRhPHSjARgOArXAcN3Mk",
+        "name": "EZRILAW FIRM",
+        "city": "Bukit Mertajam",
+        "lat": 5.372154101996269,
+        "lng": 100.41224902603375,
+        "custom": {
+            "budget": "Medium",
+            "available": true,
+            "phone": "08-1111 0020",
+            "address": "2-19 Tingkat 2 Medan Perniagaan Pauh Jaya, Jalan Baru Perai, Taman Pauh Jaya, 13700 Bukit Mertajam, Pulau Pinang, Malaysia",
+            "type": [
+                "Conveyancing and Property",
+                "Hibah and Wasiat"
+            ]
+        }
+    },
+    {
+        "firmId": "firm_030",
+        "placeId": "ChIJoWb9oDWuSjARDyyTiVnVbm8",
+        "name": "SUDESH NARINDER and PARTNERS",
+        "city": "Parit Buntar",
+        "lat": 5.120964899033353,
+        "lng": 100.48764808000183,
+        "custom": {
+            "budget": "Medium",
+            "available": true,
+            "phone": "08-1111 0020",
+            "address": "Tingkat 1, 73 A, Jalan Maharaja, Pusat Bandar Parit Buntar, 34200 Parit Buntar, Perak, Malaysia",
+            "type": [
+                "Accidents and Personal Injury Claims",
+                "Criminal"
+            ]
+        }
+    },
+    {
+        "firmId": "firm_031",
+        "placeId": "ChIJ31GGdmvtyjER_yceytxOqeI",
+        "name": "SYAHIRAH AZMAN & CO.",
+        "city": "Ipoh",
+        "lat": 4.6304077099817595,
+        "lng": 101.08405673396818,
+        "custom": {
+            "budget": "Medium",
+            "available": true,
+            "phone": "08-1111 0020",
+            "address": "No. 159, Ipoh Grove, Jln. Kuala Kangsar, Taman Groove, 30010 Ipoh, Perak, Malaysia",
+            "type": [
+                "Accidents and Personal Injury Claims",
+                "Syariah"
+            ]
+        }
+    },
+    {
+        "firmId": "firm_032",
+        "placeId": "ChIJ2zBbaVcsyzERadUZNEgCOLA",
+        "name": "Y N TEOH & CO.",
+        "city": "Seri Manjung",
+        "lat": 4.211416891824957,
+        "lng": 100.66926541253345,
+        "custom": {
+            "budget": "Medium",
+            "available": true,
+            "phone": "08-1111 0020",
+            "address": "Pusat perniagaan, 68, Jalan PPMP 7, Manjung Point Seksyen 1, 32040 Seri Manjung, Perak, Malaysia",
+            "type": [
+                "Conveyancing and Property",
+                "Family"
+            ]
+        }
+    },
+    {
+        "firmId": "firm_033",
+        "placeId": "ChIJ6VuSdJavyjEREk2c-y_n0rw",
+        "name": "WJ NG & ASSOCIATES",
+        "city": "Parit Buntar",
+        "lat": 4.862423077811943,
+        "lng": 100.73727666835838,
+        "custom": {
+            "budget": "Medium",
+            "available": true,
+            "phone": "08-1111 0020",
+            "address": "19, Susur ILBP 4, Jalan Istana Larut, Business Park, 34000 Taiping, Perak, Malaysia",
+            "type": [
+                "Debt Recovery",
+                "General and Civil Litigation"
+            ]
+        }
+    },
+    {
+        "firmId": "firm_034",
+        "placeId": "ChIJbRT4FAmZTDAR84OkJxUxG7c",
+        "name": "Yasmeen Hajar & Hairudin (KANGAR)s",
+        "city": "Parit Buntar",
+        "lat": 6.417840611328325,
+        "lng": 100.18542105986612,
+        "custom": {
+            "budget": "Medium",
+            "available": true,
+            "phone": "08-1111 0020",
+            "address": "No. 15, Jalan Satu, Medan Batu Hampar, 01000 Kangar, Perlis, Malaysia",
+            "type": [
+                "General and Civil Litigation",
+                "Conveyancing and Property",
+                "Corporate and General",
+                "Criminal",
+                "Syariah"
+            ]
+        }
+    },
+    {
+        "firmId": "firm_035",
+        "placeId": "ChIJC1DpRV9JzDERF8dlLdOKkC8",
+        "name": "Chia Hui Ming & Co.",
+        "city": "Petaling Jaya",
+        "lat": 3.1327617959946825,
+        "lng": 101.61242448770592,
+        "custom": {
+            "budget": "Medium",
+            "available": true,
+            "phone": "08-1111 0020",
+            "address": "A-3A-12, Block Allamanda, 10 Boulevard, SPRINT, PJU 6A, 47400 Petaling Jaya, Selangor, Malaysia",
+            "type": [
+                "Construction Adjudication",
+                "Employment"
+            ]
+        }
+    },
+    {
+        "firmId": "firm_036",
+        "placeId": "ChIJbfbcaFtLzDERIhxIzYqhjpU",
+        "name": "DENNIS LIM & PARTNERS",
+        "city": "Petaling Jaya",
+        "lat": 3.103371572035565,
+        "lng": 101.63906312602023,
+        "custom": {
+            "budget": "Medium",
+            "available": true,
+            "phone": "08-1111 0020",
+            "address": "Level 3, Menara Axis, 2, Jalan 51a/223, Seksyen 51a, 46100 Petaling Jaya, Selangor, Malaysia",
+            "type": [
+                "Corporate and Commercial",
+                "General and Civil Litigation"
+            ]
+        }
+    },
+    {
+        "firmId": "firm_037",
+        "placeId": "ChIJVS4HjjNPzDER9tqttueJcrM",
+        "name": "HAIZAN CHOO & CO.",
+        "city": "Petaling Jaya",
+        "lat": 3.1670093960248185,
+        "lng": 101.6122884106771,
+        "custom": {
+            "budget": "Medium",
+            "available": true,
+            "phone": "08-1111 0020",
+            "address": "Jalan PJU 8/8A, Damansara Perdana, 47820 Petaling Jaya, Selangor, Malaysia",
+            "type": [
+                "Contratual Disputes",
+                "Land Disputes"
+            ]
+        }
+    },
+    {
+        "firmId": "firm_038",
+        "placeId": "ChIJ9SnmZdxGaUkRUPH6njs4SM0",
+        "name": "HO-YONG PARTNERSHIP",
+        "city": "Petaling Jaya",
+        "lat": 3.1273590973398058,
+        "lng": 101.64554222633217,
+        "custom": {
+            "budget": "Medium",
+            "available": true,
+            "phone": "08-1111 0020",
+            "address": "202, Block B, Phileo Damansara 2 No. 15, Jalan 16/11, Off, Jalan Damansara, Pusat Perdagangan Phileo Damansara, 46350 Petaling Jaya, Selangor, Malaysia",
+            "type": [
+                "Corporate and Commercial",
+                "Incorporation of Companies"
+            ]
+        }
+    },
+    {
+        "firmId": "firm_039",
+        "placeId": "ChIJbYFk3_JNzDERZ7wFVAyMiL8",
+        "name": "KENNIE ANG & CO",
+        "city": "Petaling Jaya",
+        "lat": 3.0205398059230504,
+        "lng": 101.62294902601987,
+        "custom": {
+            "budget": "Medium",
+            "available": true,
+            "phone": "08-1111 0020",
+            "address": "9-15, 2, Rio Tower, Persiaran Rio, Bandar Puteri, 47100 Puchong, Selangor, Malaysia",
+            "type": [
+                "Corporate and Commercial",
+                "Insolvency and Winding Up"
+            ]
+        }
+    },
+    {
+        "firmId": "firm_040",
+        "placeId": "ChIJc1NoO6JOzDERn6dLAWSdPng",
+        "name": "MahWengKwai & Associates",
+        "city": "Petaling Jaya",
+        "lat": 3.117366978304373,
+        "lng": 101.59492522602032,
+        "custom": {
+            "budget": "Medium",
+            "available": true,
+            "phone": "08-1111 0020",
+            "address": "Level 10-1, Tower B, Menara Prima, Jalan PJU 1/39, Dataran Prima, 47301 Petaling Jaya, Selangor, Malaysia",
+            "type": [
+                "Construction Adjudication",
+                "Employment",
+                "Administrative and Constitutional Law",
+                "Arbitration and Alternate Dispute Resolution",
+                "Aviation",
+                "Banking, Finance and Securities",
+                "Commercial Arbitration",
+                "Commercial Crime",
+                "Competition Law and Antitrust",
+                "Consumer Protection",
+                "Contractual Disputes",
+                "Conveyancing and Property",
+                "Copyright",
+                "Corporate and Commercial",
+                "Corporate Compliance and Regulatory Issues",
+                "Corporate Disputes",
+                "Criminal",
+                "Customs and Immigration",
+                "Cybercrime",
+                "Debt Recovery",
+                "Disciplinary Proceedings",
+                "Employment",
+                "Family",
+                "General and Civil Litigation",
+                "Hibah and Wasiat",
+                "Human Rights",
+                "Infrastructure and Projects",
+                "Insolvency and Winding Up",
+                "Insurance",
+                "Intellectual Property",
+                "International",
+                "Land Disputes",
+                "Media and Entertainment",
+                "Medical Negligence",
+                "Mergers and Acquisitions",
+                "Patent",
+                "Personal Data Protection and Privacy",
+                "Professional Conduct and Discipline",
+                "Professional Negligence",
+                "Shipping and Admiralty",
+                "Sports Arbitration",
+                "Syariah",
+                "Tax",
+                "Technology and Communications",
+                "Trademark",
+                "Trusts and Other Legal Arrangements",
+                "Wills, Probate and Estate Administration"
+            ]
+        }
+    }
+]

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>CariLawyer | Home</title>
+  <link rel="stylesheet" href="assets/css/style.css"/>
+</head>
+<body>
+  <header class="navbar">
+    <h1>CariLawyer</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="pages/find.html">Find Lawyer</a>
+      <a href="pages/map.html">Map</a>
+      <a href="pages/about.html">About</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <h2>Find the right lawyer fast.</h2>
+      <p>Search by case type, budget, and availability.</p>
+
+      <div class="search-bar">
+        <input type="text" id="searchInput" placeholder="Search by city or firm name...">
+        <button onclick="location.href='pages/find.html'">Find Lawyer</button>
+      </div>
+
+      <button class="alert-btn" onclick="alert('If this is an emergency, contact a lawyer immediately.')">
+        Emergency Help
+      </button>
+    </section>
+  </main>
+</body>
+</html>

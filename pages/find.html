@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CariLawyer | Find</title>
+  <link rel="stylesheet" href="../assets/css/style.css" />
+  <script src="https://cdn.jsdelivr.net/npm/fuse.js@7.3.0"></script>
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=search" />
+</head>
+
+<body>
+  <header class="navbar">
+    <h1>CariLawyer</h1>
+    <nav>
+      <a href="../index.html">Home</a>
+      <a href="find.html">Find Lawyer</a>
+      <a href="map.html">Map</a>
+      <a href="about.html">About</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <h2>Find a Lawyer</h2>
+
+    <div class="filters">
+      <div class="flex-search">
+        <form id="typeSearchForm" class="search-form" role="search">
+          <div class="search-bar">
+            <input class="search-input" id="typeSearch" type="text" placeholder="Search legal category..."
+              autocomplete="off" aria-label="Search legal category" aria-controls="typeSuggestions"
+              aria-expanded="false" />
+            <button class="search-btn" type="submit" aria-label="Search">
+              <span class="search-icon material-symbols-outlined" aria-hidden="true">search</span>
+            </button>
+          </div>
+        </form>
+
+        <ul id="typeSuggestions" class="suggestions" role="listbox"></ul>
+      </div>
+
+      <select id="budgetFilter">
+        <option value="">All Budgets</option>
+        <option value="Low">Low</option>
+        <option value="Medium">Medium</option>
+        <option value="High">High</option>
+      </select>
+
+      <select id="sortFilter">
+        <option value="rating">Sort by Rating</option>
+        <option value="name">Sort by Name</option>
+      </select>
+    </div>
+
+    <div id="lawyerList" class="card-grid"></div>
+  </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.6.2"></script>
+  <script src="../assets/js/fuse-search.js"></script>
+  <script src="../assets/js/find.js"></script>
+</body>
+
+</html>
+
+<!--
+Can use this tutorial for styling the search bar with autocomplete:
+https://www.youtube.com/watch?v=pdyFf1ugVfk
+
+
+-->

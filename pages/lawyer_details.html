@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lawyer Details</title>
+    <link rel="stylesheet" href="../assets/css/style.css" />
+
+    <script src="../assets/js/map.js"></script>
+    <script src="config.js"></script>
+    <script async defer>
+        const script = document.createElement("script");
+        script.src = `https://maps.googleapis.com/maps/api/js?key=${GOOGLE_API_KEY}&callback=initLawyerMap&loading=async`;
+        document.head.appendChild(script);
+    </script>
+</head>
+
+<body>
+    <header class="navbar">
+        <h1>CariLawyer</h1>
+        <nav>
+            <a href="../index.html">Home</a>
+            <a href="find.html">Find Lawyer</a>
+            <a href="map.html">Map</a>
+            <a href="about.html">About</a>
+        </nav>
+    </header>
+
+    <main class="container">
+        <!-- Profile Header -->
+        <section class="lawyer-hero">
+            <div class="lawyer-avatar">
+                <img src="../assets/images/lawyer.jpg" alt="Lawyer Photo" />
+            </div>
+            <div class="lawyer-info">
+                <h2></h2>
+                <p class="lawyer-specialty"></p>
+                <p class="lawyer-location"></p>
+                <div class="lawyer-meta"></div>
+                <div class="lawyer-actions">
+                    <button class="btn-primary">Book Consultation</button>
+                    <button class="btn-secondary">Message</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- About -->
+        <section class="lawyer-section about">
+            <h3>About</h3>
+            <p></p>
+        </section>
+
+        <!-- Services -->
+        <section class="lawyer-section">
+            <h3>Services</h3>
+            <ul class="service-list"></ul>
+        </section>
+
+        <!-- Fees -->
+        <section class="lawyer-section">
+            <h3>Fees</h3>
+            <div class="fee-grid">
+                <div class="fee-card">
+                    <span class="fee-label">Consultation</span>
+                    <span class="fee-value">RM 150 / hour</span>
+                </div>
+                <div class="fee-card">
+                    <span class="fee-label">Drafting</span>
+                    <span class="fee-value">RM 300+</span>
+                </div>
+                <div class="fee-card">
+                    <span class="fee-label">Court Appearance</span>
+                    <span class="fee-value">RM 800+</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Availability -->
+        <section class="lawyer-section availability"></section>
+
+        <!-- Contact -->
+        <section class="lawyer-section contact"></section>
+
+        <!-- Map -->
+        <section class="lawyer-section">
+            <h3>Office Location</h3>
+            <div id="map" class="map-box"></div>
+        </section>
+    </main>
+
+    <script src="../assets/js/lawyer-details.js"></script>
+</body>
+
+</html>

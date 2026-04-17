@@ -155,7 +155,7 @@ function renderList() {
     const image = l.profile_image || "lawyer.jpg";
 
     return `
-      <a class="card" href="lawyer_details.html?id=${l.id}">
+      <a class="card" href="lawyer-details.html?id=${l.id}">
         <img src="../assets/images/${image}" alt="${l.name}">
         <h3>${l.name}</h3>
         <p>${firmName}</p>

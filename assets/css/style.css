@@ -74,8 +74,19 @@ body {
 .card-grid {
   display: grid;
   grid-template-columns:
-    repeat(auto-fit, minmax(240px, 1fr));
+    repeat(auto-fit, minmax(400px, 1fr));
   gap: 1rem;
+}
+
+.lawyer-card {
+  text-decoration: none;
+  color: black;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.lawyer-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
 }
 
 .card {
@@ -292,4 +303,11 @@ body {
 
 .suggestion-item:hover {
   background: #f5f5f5;
+}
+
+/* Marquee Effect using CSS */
+.type-line {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }

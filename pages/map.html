@@ -46,7 +46,49 @@
         <ul id="typeSuggestions" class="suggestions" role="listbox"></ul>
     </div>
 
-    <main class="container">
+    <div class="map-filters" aria-label="Map filters">
+        <div class="filters-left">
+            <label class="filter-field">
+                <span>Show</span>
+                <select id="scopeFilter">
+                    <option value="nearest">Nearest</option>
+                    <option value="all">All firms</option>
+                </select>
+            </label>
+
+            <label class="filter-field">
+                <span>City</span>
+                <select id="cityFilter">
+                    <option value="">All cities</option>
+                </select>
+            </label>
+
+            <label class="filter-field">
+                <span>Budget</span>
+                <select id="budgetFilter">
+                    <option value="">All budgets</option>
+                </select>
+            </label>
+
+            <label class="filter-field">
+                <span>Availability</span>
+                <select id="availabilityFilter">
+                    <option value="">All</option>
+                    <option value="true">Available now</option>
+                    <option value="false">Not available</option>
+                </select>
+            </label>
+
+        </div>
+
+        <div class="filters-right">
+            <button id="clearFilters" type="button" class="clear-filter-btn">Clear</button>
+        </div>
+    </div>
+
+    <div id="mapNotice" class="map-notice" role="status" aria-live="polite"></div>
+
+    <main class="container map-container">
         <h2>Map View</h2>
         <div id="map" class="map-box"></div>
     </main>

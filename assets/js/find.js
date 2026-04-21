@@ -155,11 +155,14 @@ function renderList() {
     const image = l.profile_image || "lawyer.jpg";
 
     return `
-      <a class="card" href="lawyer_details.html?id=${l.id}">
+      <a class="card lawyer-card" href="lawyer-details.html?id=${l.id}">
         <img src="../assets/images/${image}" alt="${l.name}">
         <h3>${l.name}</h3>
         <p>${firmName}</p>
-        <p>${(l.type || []).join(", ")} • ${city}</p>
+        <p>${city}</p>
+        <p class="type-line">
+          <span class="type-text">${(l.type || []).join(", ")}</span>
+        </p>
         <p>Rating: ${rating}</p>
         <p>Budget: ${budget}</p>
         <span class="btn-link">View Details</span>

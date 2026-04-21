@@ -6,8 +6,10 @@ let routePolylines = [];
 let allFirms = [];
 const placeDetailsCache = new Map();
 const routeInfoCache = new Map();
+let resizeListenerBound = false;
+let resizeTimer = null;
 
-const MAX_NEAREST = 100;
+const MAX_NEAREST = 5;
 
 let AdvancedMarkerElement;
 let PinElement;
@@ -54,6 +56,15 @@ async function initMap() {
         content: userPin
       });
 
+      if (!resizeListenerBound) {
+        window.addEventListener("resize", scheduleMapResize);
+        window.addEventListener("orientationchange", scheduleMapResize);
+        document.addEventListener("visibilitychange", () => {
+          if (!document.hidden) scheduleMapResize();
+        });
+        resizeListenerBound = true;
+      }
+
       loadNearestList();
     });
   }
@@ -94,9 +105,54 @@ function loadNearestList() {
   fetch("../assets/data/firms.json")
     .then(res => res.json())
     .then(firms => {
-      allFirms = firms;              // ✅ store all firms
-      updateMarkersByType([]);       // ✅ initial render
+      allFirms = firms;
+      updateMarkersByType({});
     });
+}
+
+function updateMarkersByType(filters) {
+  if (!allFirms.length || !userLoc) return 0;
+
+  const active = filters || {};
+  const selectedTypes = Array.isArray(active.types) ? active.types : [];
+  const scope = active.scope === "all" ? "all" : "nearest";
+  const selectedCity = (active.city || "").toLowerCase();
+  const selectedBudget = (active.budget || "").toLowerCase();
+  const selectedAvailability = active.available;
+
+  let list = allFirms.filter(f => {
+    const types = Array.isArray(f.custom?.type) ? f.custom.type : [];
+    const city = (f.city || "").toLowerCase();
+    const budget = (f.custom?.budget || "").toLowerCase();
+    const available = !!f.custom?.available;
+
+    const typeOk =
+      !selectedTypes.length ||
+      types.some(t => selectedTypes.includes(t));
+
+    const cityOk = !selectedCity || city === selectedCity;
+    const budgetOk = !selectedBudget || budget === selectedBudget;
+
+    let availabilityOk = true;
+    if (selectedAvailability === "true") availabilityOk = available === true;
+    if (selectedAvailability === "false") availabilityOk = available === false;
+
+    return typeOk && cityOk && budgetOk && availabilityOk;
+  });
+
+  const withDistance = list.map(f => ({
+    ...f,
+    distance: haversine(userLoc, { lat: f.lat, lng: f.lng })
+  }));
+
+  withDistance.sort((a, b) => a.distance - b.distance);
+
+  const resultLimit = scope === "all"
+    ? withDistance.length
+    : (selectedTypes.length ? 1 : MAX_NEAREST);
+  const visibleList = withDistance.slice(0, resultLimit);
+  renderNearestMarkers(visibleList);
+  return visibleList.length;
 }
 
 function renderNearestMarkers(list) {
@@ -117,6 +173,8 @@ function renderNearestMarkers(list) {
 
     firmMarkers.push(marker);
   });
+
+  fitMapToVisibleMarkers();
 }
 
 async function showPlaceCard(firm, marker) {
@@ -160,6 +218,12 @@ function buildCardHtml(firm, place) {
     place?.displayName?.text ||
     place?.displayName ||
     firm.name;
+  const escapeHtml = value => String(value || "")
+    .replace(/&/g, "&amp;")
+    .replace(/</g, "&lt;")
+    .replace(/>/g, "&gt;")
+    .replace(/\"/g, "&quot;")
+    .replace(/'/g, "&#39;");
 
   const rating = place?.rating ? `${place.rating} ★` : "N/A";
   const reviews = place?.userRatingCount ? `(${place.userRatingCount})` : "";
@@ -169,11 +233,18 @@ function buildCardHtml(firm, place) {
     place?.internationalPhoneNumber ||
     custom.phone ||
     "";
+  const typeText = Array.isArray(custom.type) ? custom.type.join(", ") : (custom.type || "");
+  const typeDisplay = typeText || "Not specified";
+  const safeTypeTitle = escapeHtml(typeDisplay);
+  const isAvailable = custom.available !== false;
+  const availabilityText = isAvailable ? "Available" : "Unavailable";
+  const availabilityClass = isAvailable ? "" : " offline";
 
   const key = firm.placeId || `${firm.lat},${firm.lng}`;
   const routeInfo = routeInfoCache.get(key);
   const etaText = routeInfo?.duration || "";
   const distanceText = routeInfo?.distance || "";
+  const routeSummary = [etaText, distanceText].filter(Boolean).join(" • ") || "Tap marker to preview route";
 
   const origin = userLoc ? `${userLoc.lat},${userLoc.lng}` : "";
   const destination = `${firm.lat},${firm.lng}`;
@@ -183,15 +254,27 @@ function buildCardHtml(firm, place) {
 
   return `
     <div class="basic-card">
-      <div class="basic-title">${name}</div>
-      <div class="basic-sub">${rating} ${reviews} • ${custom.type || ""}</div>
-      <div class="basic-sub">${etaText} ${distanceText ? `• ${distanceText}` : ""}</div>
-      <div class="basic-sub">${address}</div>
-      <div class="basic-sub">${phone}</div>
+      <div class="basic-card-header">
+        <div class="basic-title" title="${escapeHtml(name)}">${escapeHtml(name)}</div>
+        <div class="basic-pill${availabilityClass}">${availabilityText}</div>
+      </div>
+
+      <div class="basic-meta-row">
+        <span>${escapeHtml(rating)} ${escapeHtml(reviews)}</span>
+        <span class="basic-dot">•</span>
+        <span>${escapeHtml(routeSummary)}</span>
+      </div>
+
+      <div class="basic-service-row">
+        <span class="basic-label">Services</span>
+        <span class="type-line" title="${safeTypeTitle}">${escapeHtml(typeDisplay)}</span>
+      </div>
+
+      <div class="basic-sub">${escapeHtml(address || "Address not available")}</div>
+      <div class="basic-sub">${escapeHtml(phone || "Phone not available")}</div>
 
       <div class="basic-actions">
-        <a class="nav-btn" href="${googleMapsUrl}" target="_blank" rel="noopener">Google Maps</a>
-        |
+        <a class="nav-btn nav-btn-primary" href="${googleMapsUrl}" target="_blank" rel="noopener">Google Maps</a>
         <a class="nav-btn" href="${wazeUrl}" target="_blank" rel="noopener">Waze</a>
       </div>
     </div>
@@ -247,6 +330,47 @@ function clearRoute() {
   routePolylines = [];
 }
 
+function fitMapToVisibleMarkers() {
+  if (!map || !google?.maps?.LatLngBounds) return;
+
+  const bounds = new google.maps.LatLngBounds();
+  let points = 0;
+
+  if (userLoc) {
+    bounds.extend(userLoc);
+    points += 1;
+  }
+
+  firmMarkers.forEach(marker => {
+    if (!marker?.position) return;
+    bounds.extend(marker.position);
+    points += 1;
+  });
+
+  if (!points) return;
+
+  if (points === 1 && userLoc) {
+    map.setCenter(userLoc);
+    map.setZoom(13);
+    return;
+  }
+
+  map.fitBounds(bounds, 80);
+  if (map.getZoom() > 14) {
+    map.setZoom(14);
+  }
+}
+
+function scheduleMapResize() {
+  if (!map) return;
+  if (resizeTimer) window.clearTimeout(resizeTimer);
+
+  resizeTimer = window.setTimeout(() => {
+    google.maps.event.trigger(map, "resize");
+    fitMapToVisibleMarkers();
+  }, 120);
+}
+
 function haversine(a, b) {
   const R = 6371;
   const dLat = toRad(b.lat - a.lat);
@@ -266,27 +390,7 @@ function toRad(value) {
   return (value * Math.PI) / 180;
 }
 
-function updateMarkersByType(selectedTypes) {
-  if (!allFirms.length) return;
-
-  let list = allFirms;
-
-  if (selectedTypes && selectedTypes.length) {
-    list = allFirms.filter(f =>
-      Array.isArray(f.custom?.type) &&
-      f.custom.type.some(t => selectedTypes.includes(t))
-    );
-  }
-
-  const withDistance = list.map(f => ({
-    ...f,
-    distance: haversine(userLoc, { lat: f.lat, lng: f.lng })
-  }));
-
-  withDistance.sort((a, b) => a.distance - b.distance);
-  renderNearestMarkers(withDistance.slice(0, MAX_NEAREST));
-}
-
 window.initMap = initMap;
 window.initLawyerMap = initLawyerMap;
 window.updateMarkersByType = updateMarkersByType;
+window.requestMapResize = scheduleMapResize;

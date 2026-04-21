@@ -6,6 +6,8 @@ let routePolylines = [];
 let allFirms = [];
 const placeDetailsCache = new Map();
 const routeInfoCache = new Map();
+let resizeListenerBound = false;
+let resizeTimer = null;
 
 const MAX_NEAREST = 5;
 
@@ -53,6 +55,15 @@ async function initMap() {
         title: "You are here",
         content: userPin
       });
+
+      if (!resizeListenerBound) {
+        window.addEventListener("resize", scheduleMapResize);
+        window.addEventListener("orientationchange", scheduleMapResize);
+        document.addEventListener("visibilitychange", () => {
+          if (!document.hidden) scheduleMapResize();
+        });
+        resizeListenerBound = true;
+      }
 
       loadNearestList();
     });
@@ -162,6 +173,8 @@ function renderNearestMarkers(list) {
 
     firmMarkers.push(marker);
   });
+
+  fitMapToVisibleMarkers();
 }
 
 async function showPlaceCard(firm, marker) {
@@ -317,6 +330,47 @@ function clearRoute() {
   routePolylines = [];
 }
 
+function fitMapToVisibleMarkers() {
+  if (!map || !google?.maps?.LatLngBounds) return;
+
+  const bounds = new google.maps.LatLngBounds();
+  let points = 0;
+
+  if (userLoc) {
+    bounds.extend(userLoc);
+    points += 1;
+  }
+
+  firmMarkers.forEach(marker => {
+    if (!marker?.position) return;
+    bounds.extend(marker.position);
+    points += 1;
+  });
+
+  if (!points) return;
+
+  if (points === 1 && userLoc) {
+    map.setCenter(userLoc);
+    map.setZoom(13);
+    return;
+  }
+
+  map.fitBounds(bounds, 80);
+  if (map.getZoom() > 14) {
+    map.setZoom(14);
+  }
+}
+
+function scheduleMapResize() {
+  if (!map) return;
+  if (resizeTimer) window.clearTimeout(resizeTimer);
+
+  resizeTimer = window.setTimeout(() => {
+    google.maps.event.trigger(map, "resize");
+    fitMapToVisibleMarkers();
+  }, 120);
+}
+
 function haversine(a, b) {
   const R = 6371;
   const dLat = toRad(b.lat - a.lat);
@@ -339,3 +393,4 @@ function toRad(value) {
 window.initMap = initMap;
 window.initLawyerMap = initLawyerMap;
 window.updateMarkersByType = updateMarkersByType;
+window.requestMapResize = scheduleMapResize;

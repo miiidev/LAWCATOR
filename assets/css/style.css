@@ -240,9 +240,10 @@ body {
 .search-bar {
   display: flex;
   align-items: center;
+  position: relative;
   gap: 8px;
   background: #fff;
-  border: 1px solid #ddd;
+  border: 2px solid #cfd5dd;
   border-radius: 999px;
   padding: 8px 12px;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.06);
@@ -251,7 +252,7 @@ body {
 
 .search-bar:hover,
 .search-bar:focus-within {
-  border-color: #1a1a1a;
+  border-color: #334155;
   box-shadow: 0 10px 22px rgba(0, 0, 0, 0.16);
 }
 
@@ -267,6 +268,59 @@ body {
   font-size: 14px;
   background: transparent;
   padding-left: 10px;
+  position: relative;
+  z-index: 1;
+}
+
+.search-placeholder-anim {
+  position: absolute;
+  left: 22px;
+  right: 56px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 14px;
+  color: #6b7280;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  pointer-events: none;
+  z-index: 2;
+}
+
+.search-form.has-value .search-placeholder-anim {
+  opacity: 0;
+}
+
+.search-placeholder-anim.swipe-out {
+  animation: placeholder-swipe-out 180ms ease forwards;
+}
+
+.search-placeholder-anim.swipe-in {
+  animation: placeholder-swipe-in 220ms ease forwards;
+}
+
+@keyframes placeholder-swipe-out {
+  from {
+    transform: translateY(-50%);
+    opacity: 1;
+  }
+
+  to {
+    transform: translateY(calc(-50% - 14px));
+    opacity: 0;
+  }
+}
+
+@keyframes placeholder-swipe-in {
+  from {
+    transform: translateY(calc(-50% + 14px));
+    opacity: 0;
+  }
+
+  to {
+    transform: translateY(-50%);
+    opacity: 1;
+  }
 }
 
 .search-btn {
@@ -295,15 +349,15 @@ body {
   position: absolute;
   top: calc(100% + 6px);
   left: 15%;
-  z-index: 10;
+  z-index: 30;
   list-style: none;
   margin: 6px 0 0;
-  padding: 6px 0;
+  padding: 4px;
   background: #fff;
-  border: 1px solid #ddd;
-  border-radius: 12px;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
-  max-height: 220px;
+  border: 2px solid #cbd5e1;
+  border-radius: 10px;
+  box-shadow: 0 10px 24px rgba(15, 23, 42, 0.12);
+  max-height: 240px;
   overflow-y: auto;
   width: 70%;
 }
@@ -313,13 +367,85 @@ body {
 }
 
 .suggestion-item {
-  padding: 8px 12px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 9px 12px;
+  border: 2px solid transparent;
+  border-radius: 8px;
   cursor: pointer;
-  font-size: 14px;
+  font-size: 13px;
+  color: #1f2937;
+  transition: background-color 0.2s ease, border-color 0.2s ease;
 }
 
-.suggestion-item:hover {
-  background: #f5f5f5;
+.suggestion-item::before {
+  content: "";
+  width: 3px;
+  height: 62%;
+  border-radius: 999px;
+  background: transparent;
+  position: absolute;
+  left: 2px;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: background-color 0.2s ease;
+}
+
+.suggestion-item:hover,
+.suggestion-item.active {
+  background: #f8fafc;
+  border-color: #94a3b8;
+}
+
+.suggestion-item:hover::before,
+.suggestion-item.active::before {
+  background: #2563eb;
+}
+
+.suggestion-main {
+  font-size: 14px;
+  font-weight: 500;
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.suggestion-main mark {
+  background: #dbeafe;
+  color: #1e3a8a;
+  border-radius: 3px;
+  padding: 0 2px;
+}
+
+.suggestion-hint {
+  flex-shrink: 0;
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #64748b;
+  background: #f1f5f9;
+  border: 1px solid #e2e8f0;
+  border-radius: 999px;
+  padding: 4px 7px;
+}
+
+.suggestions::-webkit-scrollbar {
+  width: 10px;
+}
+
+.suggestions::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.suggestions::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 999px;
+  border: 3px solid #ffffff;
 }
 
 /* Marquee Effect using CSS */
@@ -493,7 +619,7 @@ body {
 
 .filter-field select {
   height: 38px;
-  border: 1px solid #d6d6d6;
+  border: 2px solid #cfd5dd;
   border-radius: 10px;
   padding: 0 10px;
   background: #fff;
@@ -505,14 +631,14 @@ body {
 
 .filter-field select:hover,
 .filter-field select:focus {
-  border-color: #1a1a1a;
+  border-color: #334155;
   box-shadow: 0 10px 22px rgba(0, 0, 0, 0.16);
 }
 
 .clear-filter-btn {
   height: 38px;
   width: 70px;
-  border: none;
+  border: 2px solid #111111;
   border-radius: 30px;
   background: #111111;
   color: #fff;
@@ -537,7 +663,7 @@ body {
 
 .sort-filter-btn {
   height: 38px;
-  border: 1px solid #c8c8c8;
+  border: 2px solid #c0cad6;
   border-radius: 10px;
   background: #f0f0f0;
   color: #1a1a1a;
@@ -547,6 +673,7 @@ body {
 }
 
 .sort-filter-btn:hover {
+  border-color: #94a3b8;
   background: #e5e5e5;
 }
 

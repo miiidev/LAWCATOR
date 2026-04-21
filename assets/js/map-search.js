@@ -3,6 +3,8 @@ const typeSuggestions = document.getElementById("typeSuggestions");
 const typeSearchForm = document.getElementById("typeSearchForm");
 const mapNotice = document.getElementById("mapNotice");
 const searchBar = typeSearch ? typeSearch.closest(".search-bar") : null;
+const mobileFilterToggle = document.getElementById("mobileFilterToggle");
+const mapFiltersPanel = document.getElementById("mapFiltersPanel");
 
 const scopeFilter = document.getElementById("scopeFilter");
 const cityFilter = document.getElementById("cityFilter");
@@ -241,6 +243,44 @@ function setMapNotice(message) {
     mapNotice.textContent = message || "";
 }
 
+function setMobileToggleLabel(isOpen) {
+    if (!mobileFilterToggle) return;
+
+    const label = isOpen ? "Hide Filters" : "Filters";
+    mobileFilterToggle.innerHTML =
+        '<span class="material-symbols-outlined" aria-hidden="true">filter_alt</span>' +
+        '<span>' + label + '</span>';
+}
+
+function setFiltersPanelOpen(isOpen) {
+    if (!mapFiltersPanel || !mobileFilterToggle) return;
+
+    mapFiltersPanel.classList.toggle("is-open", isOpen);
+    mobileFilterToggle.setAttribute("aria-expanded", isOpen ? "true" : "false");
+    setMobileToggleLabel(isOpen);
+
+    if (typeof window.requestMapResize === "function") {
+        window.requestMapResize();
+    }
+}
+
+function syncFiltersPanelForViewport() {
+    if (!mapFiltersPanel || !mobileFilterToggle) return;
+
+    const mobileView = window.matchMedia("(max-width: 820px)").matches;
+
+    if (!mobileView) {
+        mapFiltersPanel.classList.remove("is-open");
+        mobileFilterToggle.setAttribute("aria-expanded", "false");
+        setMobileToggleLabel(false);
+        return;
+    }
+
+    const open = mapFiltersPanel.classList.contains("is-open");
+    mobileFilterToggle.setAttribute("aria-expanded", open ? "true" : "false");
+    setMobileToggleLabel(open);
+}
+
 function applyAllFilters(typeMatchesOverride) {
     const q = typeSearch.value.trim();
     const typeMatches = Array.isArray(typeMatchesOverride)
@@ -271,6 +311,10 @@ function applyAllFilters(typeMatchesOverride) {
     }
 
     setMapNotice("");
+
+    if (typeof window.requestMapResize === "function") {
+        window.requestMapResize();
+    }
 }
 
 typeSearch.addEventListener("input", () => {
@@ -368,6 +412,16 @@ document.addEventListener("click", e => {
     el.addEventListener("change", applyAllFilters);
 });
 
+if (mobileFilterToggle && mapFiltersPanel) {
+    mobileFilterToggle.addEventListener("click", () => {
+        const isOpen = mapFiltersPanel.classList.contains("is-open");
+        setFiltersPanelOpen(!isOpen);
+    });
+
+    window.addEventListener("resize", syncFiltersPanelForViewport);
+    syncFiltersPanelForViewport();
+}
+
 if (clearFiltersBtn) {
     clearFiltersBtn.addEventListener("click", () => {
         typeSearch.value = "";
@@ -378,6 +432,10 @@ if (clearFiltersBtn) {
         if (availabilityFilter) availabilityFilter.value = "";
         closeSuggestions();
         applyAllFilters();
+
+        if (window.matchMedia("(max-width: 820px)").matches) {
+            setFiltersPanelOpen(false);
+        }
     });
 }
 

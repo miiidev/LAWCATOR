@@ -2,12 +2,26 @@ const typeSearch = document.getElementById("typeSearch");
 const typeSuggestions = document.getElementById("typeSuggestions");
 const typeSearchForm = document.getElementById("typeSearchForm");
 const mapNotice = document.getElementById("mapNotice");
+const searchBar = typeSearch ? typeSearch.closest(".search-bar") : null;
 
 const scopeFilter = document.getElementById("scopeFilter");
 const cityFilter = document.getElementById("cityFilter");
 const budgetFilter = document.getElementById("budgetFilter");
 const availabilityFilter = document.getElementById("availabilityFilter");
 const clearFiltersBtn = document.getElementById("clearFilters");
+
+const PLACEHOLDER_MESSAGES = [
+    "Search legal category...",
+    "Try: Family Law",
+    "Try: Property Disputes",
+    "Try: Corporate Advisory",
+    "Try: Criminal Defense"
+];
+const PLACEHOLDER_INTERVAL_MS = 3200;
+
+let placeholderEl = null;
+let placeholderIndex = 0;
+let placeholderTimer = null;
 
 const state = {
     categories: [],
@@ -23,8 +37,91 @@ function normalize(text) {
         .trim();
 }
 
+function escapeHtml(text) {
+    return String(text || "")
+        .replace(/&/g, "&amp;")
+        .replace(/</g, "&lt;")
+        .replace(/>/g, "&gt;")
+        .replace(/\"/g, "&quot;")
+        .replace(/'/g, "&#39;");
+}
+
+function highlightLabel(label, query) {
+    const safeLabel = escapeHtml(label);
+    const q = String(query || "").trim();
+    if (!q) return safeLabel;
+
+    const idx = label.toLowerCase().indexOf(q.toLowerCase());
+    if (idx < 0) return safeLabel;
+
+    const before = escapeHtml(label.slice(0, idx));
+    const match = escapeHtml(label.slice(idx, idx + q.length));
+    const after = escapeHtml(label.slice(idx + q.length));
+    return before + "<mark>" + match + "</mark>" + after;
+}
+
 function uniqSorted(arr) {
     return Array.from(new Set(arr)).sort((a, b) => a.localeCompare(b));
+}
+
+function ensureAnimatedPlaceholder() {
+    if (!searchBar || placeholderEl) return;
+
+    placeholderEl = document.createElement("span");
+    placeholderEl.className = "search-placeholder-anim";
+    placeholderEl.setAttribute("aria-hidden", "true");
+    placeholderEl.textContent = PLACEHOLDER_MESSAGES[0];
+    searchBar.appendChild(placeholderEl);
+}
+
+function syncPlaceholderVisibility() {
+    if (!typeSearchForm || !placeholderEl) return;
+    typeSearchForm.classList.toggle("has-value", typeSearch.value.trim().length > 0);
+}
+
+function animatePlaceholderTo(nextText) {
+    if (!placeholderEl) return;
+
+    placeholderEl.classList.remove("swipe-in");
+    placeholderEl.classList.add("swipe-out");
+
+    const handleOut = event => {
+        if (event.animationName !== "placeholder-swipe-out") return;
+        placeholderEl.removeEventListener("animationend", handleOut);
+
+        placeholderEl.textContent = nextText;
+        placeholderEl.classList.remove("swipe-out");
+        placeholderEl.classList.add("swipe-in");
+
+        const handleIn = inEvent => {
+            if (inEvent.animationName !== "placeholder-swipe-in") return;
+            placeholderEl.removeEventListener("animationend", handleIn);
+            placeholderEl.classList.remove("swipe-in");
+        };
+
+        placeholderEl.addEventListener("animationend", handleIn);
+    };
+
+    placeholderEl.addEventListener("animationend", handleOut);
+}
+
+function startPlaceholderShuffle() {
+    ensureAnimatedPlaceholder();
+    if (!placeholderEl) return;
+
+    // Keep native placeholder as empty so custom animated text does not overlap.
+    typeSearch.setAttribute("placeholder", "");
+    syncPlaceholderVisibility();
+
+    if (placeholderTimer) {
+        window.clearInterval(placeholderTimer);
+    }
+
+    placeholderTimer = window.setInterval(() => {
+        if (typeSearch.value.trim()) return;
+        placeholderIndex = (placeholderIndex + 1) % PLACEHOLDER_MESSAGES.length;
+        animatePlaceholderTo(PLACEHOLDER_MESSAGES[placeholderIndex]);
+    }, PLACEHOLDER_INTERVAL_MS);
 }
 
 async function loadCategoriesFromFirms() {
@@ -75,6 +172,7 @@ function closeSuggestions() {
     typeSuggestions.innerHTML = "";
     state.activeIndex = -1;
     typeSearch.setAttribute("aria-expanded", "false");
+    typeSearch.removeAttribute("aria-activedescendant");
 }
 
 function renderSuggestions(items) {
@@ -85,8 +183,9 @@ function renderSuggestions(items) {
 
     typeSuggestions.innerHTML = items
         .map((item, idx) => (
-            '<li class="suggestion-item" role="option" data-index="' + idx + '" data-value="' + item.replace(/"/g, "&quot;") + '">' +
-            item +
+            '<li class="suggestion-item" id="type-suggestion-' + idx + '" role="option" aria-selected="false" data-index="' + idx + '" data-value="' + escapeHtml(item) + '">' +
+            '<span class="suggestion-main">' + highlightLabel(item, typeSearch.value) + "</span>" +
+            '<span class="suggestion-hint">Category</span>' +
             "</li>"
         ))
         .join("");
@@ -175,6 +274,7 @@ function applyAllFilters(typeMatchesOverride) {
 }
 
 typeSearch.addEventListener("input", () => {
+    syncPlaceholderVisibility();
     applySearch(typeSearch.value);
 });
 
@@ -193,6 +293,7 @@ typeSearch.addEventListener("keydown", e => {
             e.preventDefault();
             const value = items[state.activeIndex].getAttribute("data-value");
             typeSearch.value = value;
+            syncPlaceholderVisibility();
             closeSuggestions();
             applyAllFilters([value]);
         }
@@ -203,8 +304,31 @@ typeSearch.addEventListener("keydown", e => {
     }
 
     items.forEach((el, idx) => {
-        el.classList.toggle("active", idx === state.activeIndex);
+        const isActive = idx === state.activeIndex;
+        el.classList.toggle("active", isActive);
+        el.setAttribute("aria-selected", isActive ? "true" : "false");
+        if (isActive) {
+            typeSearch.setAttribute("aria-activedescendant", el.id);
+            el.scrollIntoView({ block: "nearest" });
+        }
     });
+});
+
+typeSuggestions.addEventListener("mousemove", e => {
+    const item = e.target.closest(".suggestion-item");
+    if (!item) return;
+
+    const items = Array.from(typeSuggestions.querySelectorAll(".suggestion-item"));
+    const idx = Number(item.getAttribute("data-index"));
+    if (!Number.isFinite(idx)) return;
+
+    state.activeIndex = idx;
+    items.forEach((el, currentIdx) => {
+        const isActive = currentIdx === idx;
+        el.classList.toggle("active", isActive);
+        el.setAttribute("aria-selected", isActive ? "true" : "false");
+    });
+    typeSearch.setAttribute("aria-activedescendant", item.id);
 });
 
 typeSuggestions.addEventListener("click", e => {
@@ -213,6 +337,7 @@ typeSuggestions.addEventListener("click", e => {
 
     const value = item.getAttribute("data-value") || "";
     typeSearch.value = value;
+    syncPlaceholderVisibility();
     closeSuggestions();
     applyAllFilters([value]);
 });
@@ -246,6 +371,7 @@ document.addEventListener("click", e => {
 if (clearFiltersBtn) {
     clearFiltersBtn.addEventListener("click", () => {
         typeSearch.value = "";
+        syncPlaceholderVisibility();
         if (scopeFilter) scopeFilter.value = "nearest";
         if (cityFilter) cityFilter.value = "";
         if (budgetFilter) budgetFilter.value = "";
@@ -254,4 +380,6 @@ if (clearFiltersBtn) {
         applyAllFilters();
     });
 }
+
+startPlaceholderShuffle();
 loadCategoriesFromFirms();

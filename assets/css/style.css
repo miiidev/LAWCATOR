@@ -8,6 +8,9 @@ body {
     sans-serif;
   margin: 0;
   background: #f4f4f4;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
 .navbar {
@@ -110,6 +113,33 @@ body {
 
 .container {
   padding: 2rem;
+}
+
+.site-footer {
+  margin-top: auto;
+  border-top: 1px solid #2a2a2a;
+  background: #111111;
+  color: #f5f5f5;
+}
+
+.site-footer__inner {
+  width: min(1200px, calc(100% - 32px));
+  margin: 0 auto;
+  padding: 16px 0 20px;
+}
+
+.site-footer__meta {
+  margin: 0;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.01em;
+}
+
+.site-footer__disclaimer {
+  margin: 6px 0 0;
+  font-size: 12px;
+  line-height: 1.55;
+  color: #d4d4d4;
 }
 
 .card-grid {
@@ -1324,6 +1354,10 @@ body {
 }
 
 @media (max-width: 620px) {
+  .site-footer__inner {
+    width: calc(100% - 20px);
+  }
+
   .filters-left {
     width: 100%;
   }

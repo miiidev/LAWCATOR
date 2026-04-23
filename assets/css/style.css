@@ -19,11 +19,52 @@ body {
   position: sticky;
   top: 0;
   justify-content: space-between;
-  z-index: 20;
+  z-index: 40;
 }
 
 .navbar-logo {
   width: 100px;
+}
+
+.navbar-toggle {
+  display: none;
+  width: 42px;
+  height: 42px;
+  border: 1px solid rgba(255, 255, 255, 0.45);
+  border-radius: 10px;
+  background: transparent;
+  cursor: pointer;
+  padding: 0;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.navbar-toggle span {
+  display: block;
+  width: 19px;
+  height: 2px;
+  border-radius: 999px;
+  background: #ffffff;
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.navbar-toggle:focus-visible {
+  outline: 3px solid #ffffff;
+  outline-offset: 2px;
+}
+
+.navbar.is-mobile-open .navbar-toggle span:nth-child(1) {
+  transform: translateY(6px) rotate(45deg);
+}
+
+.navbar.is-mobile-open .navbar-toggle span:nth-child(2) {
+  opacity: 0;
+}
+
+.navbar.is-mobile-open .navbar-toggle span:nth-child(3) {
+  transform: translateY(-6px) rotate(-45deg);
 }
 
 .navbar nav a {
@@ -1191,6 +1232,64 @@ body {
 }
 
 @media (max-width: 820px) {
+  .navbar {
+    padding: 0.85rem 1rem;
+  }
+
+  .navbar-toggle {
+    display: inline-flex;
+  }
+
+  .navbar nav {
+    position: absolute;
+    top: calc(100% + 6px);
+    left: 1rem;
+    right: 1rem;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+    pointer-events: none;
+    transform: translateY(-8px);
+    border-radius: 12px;
+    border: 1px solid #2a2a2a;
+    background: #101010;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.28);
+    transition: max-height 0.28s ease, opacity 0.2s ease, transform 0.28s ease;
+  }
+
+  .navbar.is-mobile-open nav,
+  .navbar nav.is-open {
+    max-height: 320px;
+    opacity: 1;
+    pointer-events: auto;
+    transform: translateY(0);
+    padding: 8px;
+  }
+
+  .navbar nav a {
+    margin-left: 0;
+    padding: 10px 12px;
+    border-radius: 8px;
+  }
+
+  .navbar nav a:hover {
+    transform: none;
+    background: #191919;
+  }
+
+  .navbar nav a.active {
+    background: #1f1f1f;
+  }
+
+  .navbar nav a::after {
+    bottom: 4px;
+  }
+
   .map-page .mobile-filter-toggle {
     display: inline-flex;
     align-items: center;

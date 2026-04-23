@@ -21,7 +21,12 @@
 <body class="map-page">
     <header class="navbar">
         <img class="navbar-logo" src="../assets/images/lawcator-logo-white.png" alt="">
-        <nav>
+        <button class="navbar-toggle" type="button" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="primary-navigation">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <nav id="primary-navigation">
             <a href="index.html">Home</a>
             <a href="find.html">Find Lawyer</a>
             <a class="active" href="map.html">Map</a>
@@ -105,6 +110,7 @@
         <div id="map" class="map-box"></div>
     </main>
 
+    <script src="../assets/js/navbar-toggle.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.6.2"></script>
     <script src="../assets/js/map-search.js"></script>
 </body>

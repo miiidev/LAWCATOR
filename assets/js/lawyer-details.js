@@ -5,9 +5,23 @@ let selectedFirm = null;
 let mapReady = false;
 let lawyerMap = null;
 let lawyerMarker = null;
+let lawyerUserMarker = null;
+let lawyerInfoWindow = null;
+let lawyerRouteSummary = null;
+let lawyerUserLoc = null;
+let lawyerUserLocRequest = null;
+let lawyerRoutePolylines = [];
+let lawyerRouteRequestId = 0;
 let activeModal = null;
 let lastModalTrigger = null;
 let toastTimerId = null;
+
+let LawyerAdvancedMarkerElement;
+let LawyerPinElement;
+let LawyerPlace;
+let LawyerRoute;
+
+const lawyerPlaceDetailsCache = new Map();
 
 const accordionItems = Array.from(document.querySelectorAll("[data-accordion-item]"));
 const modalElements = Array.from(document.querySelectorAll(".lawyer-modal[data-modal-id]"));
@@ -423,7 +437,9 @@ async function renderMap() {
     if (!selectedFirm || !isGoogleMapsReady()) return;
 
     await google.maps.importLibrary("maps");
-    const { AdvancedMarkerElement } = await google.maps.importLibrary("marker");
+    ({ AdvancedMarkerElement: LawyerAdvancedMarkerElement, PinElement: LawyerPinElement } = await google.maps.importLibrary("marker"));
+    ({ Place: LawyerPlace } = await google.maps.importLibrary("places"));
+    ({ Route: LawyerRoute } = await google.maps.importLibrary("routes"));
 
     const position = { lat: selectedFirm.lat, lng: selectedFirm.lng };
 
@@ -436,6 +452,12 @@ async function renderMap() {
             mapTypeControl: false,
             streetViewControl: false
         });
+
+        lawyerInfoWindow = new google.maps.InfoWindow();
+        lawyerInfoWindow.addListener("closeclick", () => {
+            invalidateLawyerRoute();
+            fitLawyerMapBounds();
+        });
     } else {
         lawyerMap.setCenter(position);
     }
@@ -444,13 +466,279 @@ async function renderMap() {
         lawyerMarker.map = null;
     }
 
-    lawyerMarker = new AdvancedMarkerElement({
+    lawyerMarker = new LawyerAdvancedMarkerElement({
         map: lawyerMap,
         position,
         title: selectedFirm.name
     });
 
+    lawyerMarker.addListener("gmp-click", () => {
+        updateLawyerRouteAndCard();
+    });
+
+    lawyerUserLoc = await ensureLawyerUserLocation();
+
+    if (lawyerUserLoc) {
+        placeLawyerUserMarker();
+    }
+
+    await updateLawyerRouteAndCard();
     refreshAccordionHeights();
+}
+
+function placeLawyerUserMarker() {
+    if (!lawyerUserLoc || !lawyerMap || !LawyerAdvancedMarkerElement) return;
+
+    const userPin = LawyerPinElement
+        ? new LawyerPinElement({
+            background: "#1e88e5",
+            borderColor: "#1e88e5",
+            glyphColor: "#fff"
+        })
+        : null;
+
+    if (!lawyerUserMarker) {
+        lawyerUserMarker = new LawyerAdvancedMarkerElement({
+            map: lawyerMap,
+            position: lawyerUserLoc,
+            title: "You are here",
+            ...(userPin ? { content: userPin } : {})
+        });
+        return;
+    }
+
+    lawyerUserMarker.position = lawyerUserLoc;
+    lawyerUserMarker.map = lawyerMap;
+    if (userPin) {
+        lawyerUserMarker.content = userPin;
+    }
+}
+
+async function ensureLawyerUserLocation() {
+    if (lawyerUserLoc) return lawyerUserLoc;
+    if (lawyerUserLocRequest) return lawyerUserLocRequest;
+
+    if (!navigator.geolocation) return null;
+
+    lawyerUserLocRequest = new Promise((resolve) => {
+        navigator.geolocation.getCurrentPosition(
+            (position) => {
+                lawyerUserLoc = {
+                    lat: position.coords.latitude,
+                    lng: position.coords.longitude
+                };
+                lawyerUserLocRequest = null;
+                resolve(lawyerUserLoc);
+            },
+            () => {
+                lawyerUserLocRequest = null;
+                resolve(null);
+            },
+            {
+                enableHighAccuracy: true,
+                timeout: 15000,
+                maximumAge: 30000
+            }
+        );
+    });
+
+    return lawyerUserLocRequest;
+}
+
+function clearLawyerRoute() {
+    lawyerRoutePolylines.forEach((polyline) => polyline.setMap(null));
+    lawyerRoutePolylines = [];
+}
+
+function invalidateLawyerRoute() {
+    lawyerRouteRequestId += 1;
+    clearLawyerRoute();
+    lawyerRouteSummary = null;
+}
+
+function fitLawyerMapBounds() {
+    if (!lawyerMap || !selectedFirm || !google?.maps?.LatLngBounds) return;
+
+    const destination = { lat: selectedFirm.lat, lng: selectedFirm.lng };
+
+    if (!lawyerUserLoc) {
+        lawyerMap.setCenter(destination);
+        lawyerMap.setZoom(15);
+        return;
+    }
+
+    const bounds = new google.maps.LatLngBounds();
+    bounds.extend(lawyerUserLoc);
+    bounds.extend(destination);
+    lawyerMap.fitBounds(bounds, 80);
+
+    if (lawyerMap.getZoom() > 14) {
+        lawyerMap.setZoom(14);
+    }
+}
+
+async function fetchPlaceDetails(firm) {
+    const placeId = firm?.placeId;
+    if (!placeId || !LawyerPlace) return null;
+
+    let place = lawyerPlaceDetailsCache.get(placeId);
+    if (place) return place;
+
+    try {
+        place = new LawyerPlace({ id: placeId });
+        await place.fetchFields({
+            fields: [
+                "displayName",
+                "formattedAddress",
+                "rating",
+                "userRatingCount",
+                "nationalPhoneNumber",
+                "internationalPhoneNumber"
+            ]
+        });
+        lawyerPlaceDetailsCache.set(placeId, place);
+        return place;
+    } catch (err) {
+        console.warn("Unable to fetch place details:", placeId, err);
+        return null;
+    }
+}
+
+async function drawLawyerRoute(origin, destination, requestId) {
+    clearLawyerRoute();
+    lawyerRouteSummary = null;
+
+    if (!LawyerRoute) return;
+
+    try {
+        const { routes } = await LawyerRoute.computeRoutes({
+            origin,
+            destination,
+            travelMode: "DRIVING",
+            fields: ["path", "localizedValues", "distanceMeters", "durationMillis"]
+        });
+
+        if (!routes || !routes.length) {
+            fitLawyerMapBounds();
+            return;
+        }
+
+        if (requestId !== lawyerRouteRequestId) {
+            return;
+        }
+
+        const route = routes[0];
+        const localized = route.localizedValues;
+        const durationText = localized?.duration?.text || localized?.duration || "";
+        const distanceText = localized?.distance?.text || localized?.distance || "";
+        const fallbackDistance =
+            !distanceText && route.distanceMeters
+                ? `${(route.distanceMeters / 1000).toFixed(1)} km`
+                : "";
+
+        lawyerRouteSummary = {
+            duration: durationText,
+            distance: distanceText || fallbackDistance
+        };
+
+        lawyerRoutePolylines = route.createPolylines();
+        lawyerRoutePolylines.forEach((polyline) => {
+            polyline.setOptions({
+                strokeColor: "#1E88E5",
+                strokeOpacity: 0.9,
+                strokeWeight: 5
+            });
+            polyline.setMap(lawyerMap);
+        });
+
+        fitLawyerMapBounds();
+    } catch (err) {
+        console.error("Route.computeRoutes failed on lawyer-details:", err);
+        fitLawyerMapBounds();
+    }
+}
+
+function buildLawyerCardHtml(firm, place) {
+    const custom = firm.custom || {};
+    const name = place?.displayName?.text || place?.displayName || firm.name;
+    const escapeHtml = (value) => String(value || "")
+        .replace(/&/g, "&amp;")
+        .replace(/</g, "&lt;")
+        .replace(/>/g, "&gt;")
+        .replace(/\"/g, "&quot;")
+        .replace(/'/g, "&#39;");
+
+    const rating = place?.rating ? `${place.rating} ★` : "N/A";
+    const reviews = place?.userRatingCount ? `(${place.userRatingCount})` : "";
+    const address = place?.formattedAddress || custom.address || "";
+    const phone = place?.nationalPhoneNumber || place?.internationalPhoneNumber || custom.phone || "";
+    const typeText = Array.isArray(custom.type) ? custom.type.join(", ") : (custom.type || "");
+    const typeDisplay = typeText || "Not specified";
+    const safeTypeTitle = escapeHtml(typeDisplay);
+    const isAvailable = custom.available !== false;
+    const availabilityText = isAvailable ? "Available" : "Unavailable";
+    const availabilityClass = isAvailable ? "" : " offline";
+    const routeSummary = lawyerRouteSummary
+        ? [lawyerRouteSummary.duration, lawyerRouteSummary.distance].filter(Boolean).join(" • ")
+        : "Allow location to see live ETA";
+
+    const origin = lawyerUserLoc ? `${lawyerUserLoc.lat},${lawyerUserLoc.lng}` : "";
+    const destination = `${firm.lat},${firm.lng}`;
+    const googleMapsUrl = `https://www.google.com/maps/dir/?api=1&origin=${encodeURIComponent(origin)}&destination=${encodeURIComponent(destination)}&travelmode=driving`;
+    const wazeUrl = `https://waze.com/ul?ll=${encodeURIComponent(destination)}&navigate=yes`;
+
+    return `
+    <div class="basic-card">
+      <div class="basic-card-header">
+        <div class="basic-title" title="${escapeHtml(name)}">${escapeHtml(name)}</div>
+        <div class="basic-pill${availabilityClass}">${availabilityText}</div>
+      </div>
+
+      <div class="basic-meta-row">
+        <span>${escapeHtml(rating)} ${escapeHtml(reviews)}</span>
+        <span class="basic-dot">•</span>
+        <span>${escapeHtml(routeSummary)}</span>
+      </div>
+
+      <div class="basic-service-row">
+        <span class="basic-label">Services</span>
+        <span class="type-line" title="${safeTypeTitle}">${escapeHtml(typeDisplay)}</span>
+      </div>
+
+      <div class="basic-sub">${escapeHtml(address || "Address not available")}</div>
+      <div class="basic-sub">${escapeHtml(phone || "Phone not available")}</div>
+
+      <div class="basic-actions">
+        <a class="nav-btn nav-btn-primary" href="${googleMapsUrl}" target="_blank" rel="noopener">Google Maps</a>
+        <a class="nav-btn" href="${wazeUrl}" target="_blank" rel="noopener">Waze</a>
+      </div>
+    </div>
+  `;
+}
+
+async function updateLawyerRouteAndCard() {
+    if (!selectedFirm || !lawyerMap || !lawyerMarker || !lawyerInfoWindow) return;
+
+    if (!lawyerUserLoc) {
+        lawyerUserLoc = await ensureLawyerUserLocation();
+        if (lawyerUserLoc) {
+            placeLawyerUserMarker();
+        }
+    }
+
+    const destination = { lat: selectedFirm.lat, lng: selectedFirm.lng };
+    const place = await fetchPlaceDetails(selectedFirm);
+    const requestId = ++lawyerRouteRequestId;
+
+    if (lawyerUserLoc) {
+        await drawLawyerRoute(lawyerUserLoc, destination, requestId);
+    } else {
+        invalidateLawyerRoute();
+        fitLawyerMapBounds();
+    }
+
+    lawyerInfoWindow.setContent(buildLawyerCardHtml(selectedFirm, place));
+    lawyerInfoWindow.open({ map: lawyerMap, anchor: lawyerMarker });
 }
 
 window.initLawyerMap = initLawyerMap;

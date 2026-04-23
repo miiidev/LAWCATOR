@@ -15,7 +15,12 @@
 <body class="lawyer-details-page">
     <header class="navbar">
         <img class="navbar-logo" src="../assets/images/lawcator-logo-white.png" alt="">
-        <nav>
+        <button class="navbar-toggle" type="button" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="primary-navigation">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <nav id="primary-navigation">
             <a href="index.html">Home</a>
             <a class="active" href="find.html">Find Lawyer</a>
             <a href="map.html">Map</a>
@@ -181,6 +186,7 @@
 
     <div class="lawyer-demo-toast" data-demo-toast role="status" aria-live="polite" hidden></div>
 
+    <script src="../assets/js/navbar-toggle.js"></script>
     <script src="../assets/js/lawyer-details.js"></script>
 </body>
 

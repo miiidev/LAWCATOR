@@ -3,6 +3,7 @@ let userLoc;
 let firmMarkers = [];
 let infoWindow;
 let routePolylines = [];
+let routeRequestId = 0;
 let allFirms = [];
 const placeDetailsCache = new Map();
 const routeInfoCache = new Map();
@@ -42,6 +43,10 @@ async function initMap() {
       });
 
       infoWindow = new google.maps.InfoWindow();
+      infoWindow.addListener("closeclick", () => {
+        invalidateRoute();
+        fitMapToVisibleMarkers();
+      });
 
       const userPin = new PinElement({
         background: "#1e88e5",
@@ -167,7 +172,8 @@ function renderNearestMarkers(list) {
     });
 
     marker.addListener("gmp-click", async () => {
-      await showRoute(userLoc, { lat: firm.lat, lng: firm.lng }, firm);
+      const requestId = ++routeRequestId;
+      await showRoute(userLoc, { lat: firm.lat, lng: firm.lng }, firm, requestId);
       showPlaceCard(firm, marker);
     });
 
@@ -281,7 +287,7 @@ function buildCardHtml(firm, place) {
   `;
 }
 
-async function showRoute(origin, destination, firm) {
+async function showRoute(origin, destination, firm, requestId) {
   clearRoute();
 
   try {
@@ -293,6 +299,7 @@ async function showRoute(origin, destination, firm) {
     });
 
     if (!routes || routes.length === 0) return;
+    if (requestId !== routeRequestId) return;
 
     const route = routes[0];
 
@@ -328,6 +335,11 @@ async function showRoute(origin, destination, firm) {
 function clearRoute() {
   routePolylines.forEach(p => p.setMap(null));
   routePolylines = [];
+}
+
+function invalidateRoute() {
+  routeRequestId += 1;
+  clearRoute();
 }
 
 function fitMapToVisibleMarkers() {

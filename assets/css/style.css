@@ -792,7 +792,7 @@ body {
 }
 
 .map-page .map-box {
-  height: clamp(360px, 62vh, 700px);
+  height: clamp(500px, 62vh, 700px);
 }
 
 .sort-filter-btn {
@@ -996,7 +996,7 @@ body {
 }
 
 .lawyer-details-page #map.map-box {
-  height: 340px;
+  height: 500px;
   box-shadow: none;
 }
 

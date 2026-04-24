@@ -707,14 +707,12 @@ body {
   background: #fff;
   font-size: 14px;
   outline: none;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.06);
   transition: border-color 0.25s ease, box-shadow 0.25s ease;
 }
 
 .filter-field select:hover,
 .filter-field select:focus {
   border-color: #334155;
-  box-shadow: 0 10px 22px rgba(0, 0, 0, 0.16);
 }
 
 .clear-filter-btn {

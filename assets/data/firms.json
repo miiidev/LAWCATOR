@@ -767,7 +767,7 @@
     {
         "firmId": "firm_041",
         "placeId": "ElQxNSwgSmFsYW4gQmVyYW5hbmcgMyAyNy8xNGMsIFRhbWFuIEJ1bmdhIE5lZ2FyYSwgNDA0MDAgU2hhaCBBbGFtLCBTZWxhbmdvciwgTWFsYXlzaWEiMBIuChQKEglX5vTuJ7PNMRHwRifjxENffhAPKhQKEglX5vTuJ7PNMRFmxLg3htRGag",
-        "name": "AIN RAZALI & CO",
+        "name": "AIN RAZALI & CO.",
         "city": "Shah Alam",
         "lat": 3.024540219230892,
         "lng": 101.57136543660182,
@@ -848,7 +848,7 @@
         "custom": {
             "budget": "Medium",
             "available": true,
-            "phone": "03-79719099",
+            "phone": "0379719099",
             "address": "No. 11, Jalan 2/115a, Taman Pagar Ruyong, Kuala Lumpur, Federal Territory of Kuala Lumpur",
             "type": [
                 "Administrative and Constitutional Law",
@@ -944,7 +944,7 @@
         "custom": {
             "budget": "Medium",
             "available": true,
-            "phone": "03-21784805",
+            "phone": "0321784805",
             "address": "33-01, 33RD FLOOR, MENARA KECK SENG, 203, JALAN BUKIT BINTANG, 55100 Kuala Lumpur, Wilayah Persekutuan Kuala Lumpur",
             "type": [
                 "Commercial Crime",
@@ -971,6 +971,355 @@
                 "Criminal",
                 "Offences Affecting the Human Body",
                 "Offences against Property"
+            ]
+        }
+    },
+    {
+        "firmId": "firm_052",
+        "placeId": "ChIJHxAQR4BJzDERiOBMIFt4zzo",
+        "name": "RAHMAN ROHAIDA",
+        "city": "Kuala Lumpur",
+        "lat": 3.1148632955600943,
+        "lng": 101.66325440961582,
+        "custom": {
+            "budget": "Medium",
+            "available": true,
+            "phone": "0379323277",
+            "address": "E-07-07, MENARA SUEZCAP 2, KL GATEWAY, NO.2 JALAN KERINCHI, GERBANG KERINCHI LESTARI, 59200 Kuala Lumpur, Wilayah Persekutuan Kuala Lumpur",
+            "type": [
+                "Corporate and Commercial",
+                "Environmental, Social and Governance (ESG)"
+            ]
+        }
+    },
+    {
+        "firmId": "firm_053",
+        "placeId": "ChIJ4cerDNtLzDERuZd4L2yfoFI",
+        "name": "SIVANANTHAN",
+        "city": "Petaling Jaya",
+        "lat": 3.104948091163268,
+        "lng": 101.64570757631014,
+        "custom": {
+            "budget": "Medium",
+            "available": true,
+            "phone": "0374919055",
+            "address": "SUITE NO. 1, L17-01, PJX TOWER, NO. 16A, PERSIARAN BARAT, 46050 Petaling Jaya, Selangor",
+            "type": [
+                "Commercial Crime",
+                "Corporate Compliance and Regulatory Issues",
+                "Criminal",
+                "Customs and Immigration",
+                "Cybercrime",
+                "Defamation",
+                "Disciplinary Proceedings",
+                "Extradition and Mutual Assistance",
+                "Fraud and Asset Recovery",
+                "Human Rights",
+                "International",
+                "Offences Affecting the Human Body",
+                "Offences against Property",
+                "Professional Conduct and Discipline"
+            ]
+        }
+    },
+    {
+        "firmId": "firm_054",
+        "placeId": "hIJfQSQDC1t2jERCFQec8Jbrx0",
+        "name": "TAM YUEN HUNG & CO",
+        "city": "Johor Bahru",
+        "lat": 1.4798091289404425,
+        "lng": 103.76523382310933,
+        "custom": {
+            "budget": "Medium",
+            "available": true,
+            "phone": "01163948664",
+            "address": "OFFICE #1650, LEVEL 16, MENARA PELANGI, NO 2 JALAN KUNING, TAMAN PELANGI, 80400 Johor Bahru, Johor",
+            "type": [
+                "Family",
+                "Family Mediation"
+            ]
+        }
+    },
+    {
+        "firmId": "firm_055",
+        "placeId": "Ekc0LCBKYWxhbiBTdWFyYXNhIDgvNCwgVHVuIEh1c3NlaW4gT25uLCA0MzIwMCBDaGVyYXMsIFNlbGFuZ29yLCBNYWxheXNpYSIwEi4KFAoSCRMSkb_bNMwxEWJQVdg6Hto_EAQqFAoSCXcrseXbNMwxEaOQaZq3cG0V",
+        "name": "W. ASMALIZA & CO",
+        "city": "Cheras",
+        "lat": 3.046213684160506,
+        "lng": 101.75964609427311,
+        "custom": {
+            "budget": "Medium",
+            "available": true,
+            "phone": "0122343581",
+            "address": "4C, 2nd FLOOR, JALAN SUARASA 8/4, BANDAR TUN HUSSIEN ONN, 43200 Cheras, Selangor",
+            "type": [
+                "Faraid",
+                "Syariah"
+            ]
+        }
+    },
+    {
+        "firmId": "firm_056",
+        "placeId": "hIJfQSQDC1t2jERCFQec8Jbrx0",
+        "name": "TAM YUEN HUNG & CO",
+        "city": "Johor Bahru",
+        "lat": 1.4798091289404425,
+        "lng": 103.76523382310933,
+        "custom": {
+            "budget": "Medium",
+            "available": true,
+            "phone": "01163948664",
+            "address": "OFFICE #1650, LEVEL 16, MENARA PELANGI, NO 2 JALAN KUNING, TAMAN PELANGI, 80400 Johor Bahru, Johor",
+            "type": [
+                "Family",
+                "Family Mediation"
+            ]
+        }
+    },
+    {
+        "firmId": "firm_057",
+        "placeId": "EmMxc3QgZmxvb3IsIDEyLCBMb3JvbmcgWWFwIEhpbiwgUHVkdSwgNTUxMDAgS3VhbGEgTHVtcHVyLCBXaWxheWFoIFBlcnNla3V0dWFuIEt1YWxhIEx1bXB1ciwgTWFsYXlzaWEiJRojChYKFAoSCa3Hzo8jNswxER2Wdga5tXGvEgkxc3QgZmxvb3I",
+        "name": "S Y LAI & ASSOCIATES",
+        "city": "Kuala Lumpur",
+        "lat": 3.136127426694081,
+        "lng": 101.7144763077662,
+        "custom": {
+            "budget": "Medium",
+            "available": true,
+            "phone": "0321412068",
+            "address": "12-1, 1ST FLOOR, LORONG YAP HIN, OFF JALAN PASAR, 55100 Kuala Lumpur, Wilayah Persekutuan Kuala Lumpur",
+            "type": [
+                "Family Court",
+                "Notary Public"
+            ]
+        }
+    },
+    {
+        "firmId": "firm_058",
+        "placeId": "ChIJ1_6OgcWDt4cRRtLBkclRW_o",
+        "name": "TEH & YU",
+        "city": "Kuala Lumpur",
+        "lat": 3.1662026478491305,
+        "lng": 101.65201769236255,
+        "custom": {
+            "budget": "Medium",
+            "available": true,
+            "phone": "0364191888",
+            "address": "E-05-17, PLAZA MONT KIARA, JALAN KIARA, MONT KIARA, 50480 Kuala Lumpur, Wilayah Persekutuan Kuala Lumpur",
+            "type": [
+                "Family Court",
+                "Banking, Finance and Securities",
+                "Conveyancing and Property",
+                "Family",
+                "Family Court",
+                "Wills, Probate and Estate Administration"
+            ]
+        }
+    },
+    {
+        "firmId": "firm_059",
+        "placeId": "Ej1KYWxhbiBVbHUgUGF1aCwgRmVsZGEgQ2h1cGluZywgMDI1MDAgS2FuZ2FyLCBQZXJsaXMsIE1hbGF5c2lhIi4qLAoUChIJQ1zPxJa8TDARsxCw9eQbYsgSFAoSCb1INcb0vEwwEbPNjvM7Bzhg",
+        "name": "WIDYA LAW OFFICE",
+        "city": "Pauh",
+        "lat": 6.498056152535586,
+        "lng": 100.33440115010866,
+        "custom": {
+            "budget": "Medium",
+            "available": true,
+            "phone": "0196196128",
+            "address": "LOT 6837, JALAN ULU PAUH, KG.HILIR ULU PAUH, 02600 Pauh, Perlis",
+            "type": [
+                "Criminal",
+                "Family Court"
+            ]
+        }
+    },
+    {
+        "firmId": "firm_060",
+        "placeId": "ChIJf-JGFgfDSjARoSiuAb6thg4",
+        "name": "ASWAR, SIMON & AZHAR",
+        "city": "George Town",
+        "lat": 5.432981850199745,
+        "lng": 100.31202463874354,
+        "custom": {
+            "budget": "Medium",
+            "available": true,
+            "phone": "042297210",
+            "address": "41-5-4, 5TH FLOOR, WISMA PRUDENTIAL, CANTONMENT ROAD, 10250 Georgetown, Penang",
+            "type": [
+                "Contractual Disputes",
+                "Defamation",
+                "Family",
+                "Wills, Probate and Estate Administration"
+            ]
+        }
+    },
+    {
+        "firmId": "firm_061",
+        "placeId": "EmFKYWxhbiBTb2xhcmlzLCBTb2xhcmlzIE1vbnQgS2lhcmEsIDUwNDgwIEt1YWxhIEx1bXB1ciwgV2lsYXlhaCBQZXJzZWt1dHVhbiBLdWFsYSBMdW1wdXIsIE1hbGF5c2lhIi4qLAoUChIJWykYaopIzDERtmtBD9uhSs8SFAoSCT3_JT-KSMwxEVpsw4pwLN_d",
+        "name": "CHAMBERS OF AMINAHTUL MARDIAH",
+        "city": "Kuala Lumpur",
+        "lat": 3.17516490704433,
+        "lng": 101.65990038078027,
+        "custom": {
+            "budget": "Medium",
+            "available": true,
+            "phone": "0364131093",
+            "address": "L-05-02, JALAN SOLARIS, SOLARIS MONT KIARA, 50480 Kuala Lumpur, Wilayah Persekutuan Kuala Lumpur",
+            "type": [
+                "Criminal",
+                "Defamation",
+                "Human Rights",
+                "Medical Negligence"
+            ]
+        }
+    },
+    {
+        "firmId": "firm_062",
+        "placeId": "ChIJFc5qehI4zDERjbIb2qrDsDA",
+        "name": "FAIZAL RAHMAN & CO",
+        "city": "Kuala Lumpur",
+        "lat": 3.2072981384846777,
+        "lng": 101.71866242188658,
+        "custom": {
+            "budget": "Medium",
+            "available": true,
+            "phone": "0341443953",
+            "address": "NO. 25-2, BLOK A, PLATINUM WALK, JALAN LANGKAWI 2, DANAU KOTA, 53300 Setapak, Wilayah Persekutuan Kuala Lumpur",
+            "type": [
+                "Criminal",
+                "Defamation"
+            ]
+        }
+    },
+    {
+        "firmId": "firm_063",
+        "placeId": "ChIJvetklARJzDERUtwy2bh8dXA",
+        "name": "J. LEE & CO",
+        "city": "Kuala Lumpur",
+        "lat": 3.1526431740266583,
+        "lng": 101.665200563588,
+        "custom": {
+            "budget": "Medium",
+            "available": true,
+            "phone": "0387441999",
+            "address": "SUITE 1219, LEVEL 11 & 12, MENARA DUNGUN, 46, JALAN DUNGUN, DAMANSARA HEIGHTS, 50490 Kuala Lumpur, Wilayah Persekutuan Kuala Lumpur",
+            "type": [
+                "Corporate Disputes",
+                "Defamation"
+            ]
+        }
+    },
+    {
+        "firmId": "firm_064",
+        "placeId": "ChIJmyKjJS44zDERut3odvAbHvI",
+        "name": "KHALIQ NAZERI & CO.",
+        "city": "Kuala Lumpur",
+        "lat": 3.1997834067405266,
+        "lng": 101.74467846805618,
+        "custom": {
+            "budget": "Medium",
+            "available": true,
+            "phone": "0175232529",
+            "address": "NO. 23-2-S08, 2ND FLOOR, JALAN WANGSA DELIMA 5, SEKSYEN 5, WANGSA MAJU, 53300 Kuala Lumpur, Wilayah Persekutuan Kuala Lumpur",
+            "type": [
+                "Criminal",
+                "Defamation",
+                "Employment",
+                "Insolvency and Winding Up"
+            ]
+        }
+    },
+    {
+        "firmId": "firm_065",
+        "placeId": "ChIJn6kWU5a6yDER5nvw083pfkQ",
+        "name": "KHUDERI & CO.",
+        "city": "Kuantan",
+        "lat": 3.8140388712521727,
+        "lng": 103.3332097362333,
+        "custom": {
+            "budget": "Medium",
+            "available": true,
+            "phone": "01167643384",
+            "address": "A29 1st FLOOR, KUANTAN AVENUE, JALAN BESERAH, 25000 Kuantan, Pahang",
+            "type": [
+                "Corporate Disputes",
+                "Defamation"
+            ]
+        }
+    },
+    {
+        "firmId": "firm_066",
+        "placeId": "EmBzdWl0ZSBhLCA0LCBKYWxhbiBQZXJtYXMgOS8zLCBCYW5kYXIgQmFydSBQZXJtYXMgSmF5YSwgODE3NTAgTWFzYWksIEpvaG9yIERhcnVsIFRhJ3ppbSwgTWFsYXlzaWEiPRo7CjASLgoUChIJc_-kBp9s2jERivoexmqY4usQBCoUChIJHZd9KGBr2jERR9JvU0L9YmASB3N1aXRlIGE",
+        "name": "LAM & CO.",
+        "city": "Masai",
+        "lat": 1.497842718603316,
+        "lng": 103.81873380011953,
+        "custom": {
+            "budget": "Medium",
+            "available": true,
+            "phone": "01165783096",
+            "address": "SUITE A, NO. 4-01, JALAN PERMAS 9/3, BANDAR BARU PERMAS JAYA, 81750 Masai, Johor",
+            "type": [
+                "Defamation",
+                "Family",
+                "General and Civil Litigation",
+                "Tax"
+            ]
+        }
+    },
+    {
+        "firmId": "firm_067",
+        "placeId": "ElUxMywgNywgUGVyc2lhcmFuIFN1a2FuLCBMYW1hbiBTZXJpIEJ1c2luZXNzIFBhcmssIDQwMzAwIFNoYWggQWxhbSwgU2VsYW5nb3IsIE1hbGF5c2lhIh4aHAoWChQKEglXQI6qlU3MMREnO74yTPNWKRICMTM",
+        "name": "LIYANA & CO.",
+        "city": "Shah Alam",
+        "lat": 3.0917646953922153,
+        "lng": 101.54501461413346,
+        "custom": {
+            "budget": "Medium",
+            "available": true,
+            "phone": "0123640086",
+            "address": "UNIT 105, BLOCK 1, NO.7, PERSIARAN SUKAN, LAMAN SERI BUSINESS PARK, SEKSYEN 13, 40100 Shah Alam, Selangor",
+            "type": [
+                "Defamation",
+                "General and Civil Litigation",
+                "Hibah and Wasiat"
+            ]
+        }
+    },
+    {
+        "firmId": "firm_068",
+        "placeId": "ChIJecSR5F1IzDERyI6R3POXCaQ",
+        "name": "SHERMAL",
+        "city": "Kuala Lumpur",
+        "lat": 3.170988369840007,
+        "lng": 101.66739969427329,
+        "custom": {
+            "budget": "Medium",
+            "available": true,
+            "phone": "0126889575",
+            "address": "B4-6-1, SOLARIS DUTAMAS, 1 JALAN DUTAMAS 1, 50480 Kuala Lumpur, Wilayah Persekutuan Kuala Lumpur",
+            "type": [
+                "Corporate Disputes",
+                "Defamation"
+            ]
+        }
+    },
+    {
+        "firmId": "firm_069",
+        "placeId": "ChIJwzlDN_XBSjARqN1833dmpEU",
+        "name": "SS THIND",
+        "city": "Ayer Itam",
+        "lat": 5.389082392823977,
+        "lng": 100.28175097893761,
+        "custom": {
+            "budget": "Medium",
+            "available": true,
+            "phone": "0164741978",
+            "address": "NO. 47-B LINTANG ANGSANA, FARLIM, 11500 Ayer Itam, Penang",
+            "type": [
+                "Administrative and Constitutional Law",
+                "Defamation"
             ]
         }
     }

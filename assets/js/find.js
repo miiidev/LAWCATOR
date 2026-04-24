@@ -1,9 +1,30 @@
 const listEl = document.getElementById("lawyerList");
 const typeSearch = document.getElementById("typeSearch");
 const suggestionsEl = document.getElementById("typeSuggestions");
+const cityFilter = document.getElementById("cityFilter");
 const budgetFilter = document.getElementById("budgetFilter");
+const availabilityFilter = document.getElementById("availabilityFilter");
 const sortFilter = document.getElementById("sortFilter");
+const clearFiltersBtn = document.getElementById("clearFilters");
 const typeSearchForm = document.getElementById("typeSearchForm");
+const searchBar = typeSearch ? typeSearch.closest(".search-bar") : null;
+
+const PLACEHOLDER_MESSAGES = [
+  "Search legal category...",
+  "Try: Family Law",
+  "Try: Property Disputes",
+  "Try: Corporate Advisory",
+  "Try: Criminal Defense"
+];
+const PLACEHOLDER_INTERVAL_MS = 3200;
+
+let placeholderEl = null;
+let placeholderIndex = 0;
+let placeholderTimer = null;
+
+const state = {
+  activeIndex: -1
+};
 
 const categories = [
   "Accidents and Personal Injury Claims",
@@ -79,6 +100,149 @@ const categories = [
 let lawyers = [];
 let firms = [];
 
+function uniqSorted(arr) {
+  return Array.from(new Set(arr)).sort((a, b) => a.localeCompare(b));
+}
+
+function fillSelect(selectEl, values, allLabel) {
+  if (!selectEl) return;
+
+  selectEl.innerHTML = "";
+
+  const first = document.createElement("option");
+  first.value = "";
+  first.textContent = allLabel;
+  selectEl.appendChild(first);
+
+  values.forEach(value => {
+    const opt = document.createElement("option");
+    opt.value = value;
+    opt.textContent = value;
+    selectEl.appendChild(opt);
+  });
+}
+
+function escapeHtml(text) {
+  return String(text || "")
+    .replace(/&/g, "&amp;")
+    .replace(/</g, "&lt;")
+    .replace(/>/g, "&gt;")
+    .replace(/\"/g, "&quot;")
+    .replace(/'/g, "&#39;");
+}
+
+function highlightLabel(label, query) {
+  const safeLabel = escapeHtml(label);
+  const q = String(query || "").trim();
+  if (!q) return safeLabel;
+
+  const idx = label.toLowerCase().indexOf(q.toLowerCase());
+  if (idx < 0) return safeLabel;
+
+  const before = escapeHtml(label.slice(0, idx));
+  const match = escapeHtml(label.slice(idx, idx + q.length));
+  const after = escapeHtml(label.slice(idx + q.length));
+  return before + "<mark>" + match + "</mark>" + after;
+}
+
+function ensureAnimatedPlaceholder() {
+  if (!searchBar || placeholderEl) return;
+
+  placeholderEl = document.createElement("span");
+  placeholderEl.className = "search-placeholder-anim";
+  placeholderEl.setAttribute("aria-hidden", "true");
+  placeholderEl.textContent = PLACEHOLDER_MESSAGES[0];
+  searchBar.appendChild(placeholderEl);
+}
+
+function syncPlaceholderVisibility() {
+  if (!typeSearchForm || !placeholderEl) return;
+  typeSearchForm.classList.toggle("has-value", typeSearch.value.trim().length > 0);
+}
+
+function animatePlaceholderTo(nextText) {
+  if (!placeholderEl) return;
+
+  placeholderEl.classList.remove("swipe-in");
+  placeholderEl.classList.add("swipe-out");
+
+  const handleOut = event => {
+    if (event.animationName !== "placeholder-swipe-out") return;
+    placeholderEl.removeEventListener("animationend", handleOut);
+
+    placeholderEl.textContent = nextText;
+    placeholderEl.classList.remove("swipe-out");
+    placeholderEl.classList.add("swipe-in");
+
+    const handleIn = inEvent => {
+      if (inEvent.animationName !== "placeholder-swipe-in") return;
+      placeholderEl.removeEventListener("animationend", handleIn);
+      placeholderEl.classList.remove("swipe-in");
+    };
+
+    placeholderEl.addEventListener("animationend", handleIn);
+  };
+
+  placeholderEl.addEventListener("animationend", handleOut);
+}
+
+function startPlaceholderShuffle() {
+  ensureAnimatedPlaceholder();
+  if (!placeholderEl) return;
+
+  typeSearch.setAttribute("placeholder", "");
+  syncPlaceholderVisibility();
+
+  if (placeholderTimer) {
+    window.clearInterval(placeholderTimer);
+  }
+
+  placeholderTimer = window.setInterval(() => {
+    if (typeSearch.value.trim()) return;
+    placeholderIndex = (placeholderIndex + 1) % PLACEHOLDER_MESSAGES.length;
+    animatePlaceholderTo(PLACEHOLDER_MESSAGES[placeholderIndex]);
+  }, PLACEHOLDER_INTERVAL_MS);
+}
+
+function closeSuggestions() {
+  suggestionsEl.innerHTML = "";
+  state.activeIndex = -1;
+  typeSearch.setAttribute("aria-expanded", "false");
+  typeSearch.removeAttribute("aria-activedescendant");
+}
+
+function renderSuggestions(items) {
+  if (!items.length) {
+    closeSuggestions();
+    return;
+  }
+
+  suggestionsEl.innerHTML = items
+    .map((item, idx) => (
+      '<li class="suggestion-item" id="type-suggestion-' + idx + '" role="option" aria-selected="false" data-index="' + idx + '" data-value="' + escapeHtml(item) + '">' +
+      '<span class="suggestion-main">' + highlightLabel(item, typeSearch.value) + "</span>" +
+      '<span class="suggestion-hint">Category</span>' +
+      "</li>"
+    ))
+    .join("");
+
+  state.activeIndex = -1;
+  typeSearch.setAttribute("aria-expanded", "true");
+}
+
+function applySearch(rawQuery) {
+  const q = String(rawQuery || "").trim();
+  if (!q) {
+    closeSuggestions();
+    renderList();
+    return;
+  }
+
+  const results = FuseSearch.search(q, 6);
+  renderSuggestions(results);
+  renderList();
+}
+
 // init fuse once
 FuseSearch.init(categories);
 
@@ -88,37 +252,125 @@ Promise.all([
 ]).then(([lawyerData, firmData]) => {
   lawyers = lawyerData;
   firms = firmData;
+
+  fillSelect(
+    cityFilter,
+    uniqSorted(firms.map(f => f.city).filter(Boolean)),
+    "All cities"
+  );
+
+  fillSelect(
+    budgetFilter,
+    uniqSorted(firms.map(f => f.custom?.budget).filter(Boolean)),
+    "All budgets"
+  );
+
   renderList();
 });
 
 // realtime suggestions
 typeSearch.addEventListener("input", () => {
-  const q = typeSearch.value.trim();
-  const results = FuseSearch.search(q, 6);
+  syncPlaceholderVisibility();
+  applySearch(typeSearch.value);
+});
 
-  suggestionsEl.innerHTML = results
-    .map(item => `<li class="suggestion-item">${item}</li>`)
-    .join("");
+typeSearch.addEventListener("keydown", e => {
+  const items = Array.from(suggestionsEl.querySelectorAll(".suggestion-item"));
+  if (!items.length) return;
 
-  renderList();
+  if (e.key === "ArrowDown") {
+    e.preventDefault();
+    state.activeIndex = (state.activeIndex + 1) % items.length;
+  } else if (e.key === "ArrowUp") {
+    e.preventDefault();
+    state.activeIndex = (state.activeIndex - 1 + items.length) % items.length;
+  } else if (e.key === "Enter") {
+    if (state.activeIndex >= 0 && items[state.activeIndex]) {
+      e.preventDefault();
+      const value = items[state.activeIndex].getAttribute("data-value") || "";
+      typeSearch.value = value;
+      syncPlaceholderVisibility();
+      closeSuggestions();
+      renderList();
+    }
+    return;
+  } else if (e.key === "Escape") {
+    closeSuggestions();
+    return;
+  }
+
+  items.forEach((el, idx) => {
+    const isActive = idx === state.activeIndex;
+    el.classList.toggle("active", isActive);
+    el.setAttribute("aria-selected", isActive ? "true" : "false");
+    if (isActive) {
+      typeSearch.setAttribute("aria-activedescendant", el.id);
+      el.scrollIntoView({ block: "nearest" });
+    }
+  });
 });
 
 typeSearchForm.addEventListener("submit", e => {
   e.preventDefault();
+  closeSuggestions();
   renderList();
 });
 
 suggestionsEl.addEventListener("click", e => {
-  if (e.target.classList.contains("suggestion-item")) {
-    typeSearch.value = e.target.textContent;
-    suggestionsEl.innerHTML = "";
-    renderList();
+  const item = e.target.closest(".suggestion-item");
+  if (!item) return;
+
+  const value = item.getAttribute("data-value") || "";
+  typeSearch.value = value;
+  syncPlaceholderVisibility();
+  closeSuggestions();
+  renderList();
+});
+
+suggestionsEl.addEventListener("mousemove", e => {
+  const item = e.target.closest(".suggestion-item");
+  if (!item) return;
+
+  const items = Array.from(suggestionsEl.querySelectorAll(".suggestion-item"));
+  const idx = Number(item.getAttribute("data-index"));
+  if (!Number.isFinite(idx)) return;
+
+  state.activeIndex = idx;
+  items.forEach((el, currentIdx) => {
+    const isActive = currentIdx === idx;
+    el.classList.toggle("active", isActive);
+    el.setAttribute("aria-selected", isActive ? "true" : "false");
+  });
+  typeSearch.setAttribute("aria-activedescendant", item.id);
+});
+
+document.addEventListener("click", e => {
+  if (!typeSearchForm.contains(e.target) && !suggestionsEl.contains(e.target)) {
+    closeSuggestions();
   }
 });
 
-[budgetFilter, sortFilter].forEach(el =>
-  el.addEventListener("change", renderList)
-);
+[cityFilter, budgetFilter, availabilityFilter, sortFilter].forEach(el => {
+  if (!el) return;
+  el.addEventListener("change", renderList);
+});
+
+if (clearFiltersBtn) {
+  clearFiltersBtn.addEventListener("click", () => {
+    typeSearch.value = "";
+    syncPlaceholderVisibility();
+
+    if (cityFilter) cityFilter.value = "";
+    if (budgetFilter) budgetFilter.value = "";
+    if (availabilityFilter) availabilityFilter.value = "";
+    if (sortFilter) sortFilter.value = "rating";
+
+    closeSuggestions();
+    renderList();
+  });
+}
+
+startPlaceholderShuffle();
 
 function renderList() {
   const firmMap = new Map(firms.map(f => [f.firmId, f]));
@@ -138,6 +390,17 @@ function renderList() {
 
   if (budgetFilter.value) {
     merged = merged.filter(l => l.firm?.custom?.budget === budgetFilter.value);
+  }
+
+  if (cityFilter && cityFilter.value) {
+    merged = merged.filter(l => l.firm?.city === cityFilter.value);
+  }
+
+  if (availabilityFilter && availabilityFilter.value) {
+    const requiredAvailability = availabilityFilter.value === "true";
+    merged = merged.filter(l =>
+      Boolean(l.firm?.custom?.availability) === requiredAvailability
+    );
   }
 
   if (sortFilter.value === "name") {

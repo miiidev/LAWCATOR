@@ -1,0 +1,18 @@
+/* About page styles */
+/*
+  Future usage:
+  1) Add class="about-page" to <body> in pages/about.html.
+  2) Keep page-specific rules scoped with .about-page.
+*/
+
+.about-page .team {
+  /* Add about section styles here */
+}
+
+.about-page .team-grid {
+  /* Add team grid styles here */
+}
+
+.about-page .team-card {
+  /* Add team card styles here */
+}

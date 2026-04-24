@@ -1,0 +1,155 @@
+.map-page .map-controls {
+  width: min(1200px, calc(100% - 32px));
+  margin: 14px auto 0;
+}
+
+.map-page .flex-search {
+  margin-top: 0;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.map-page .search-form {
+  width: auto;
+  max-width: none;
+  flex: 1 1 460px;
+}
+
+.map-page .suggestions {
+  left: 0;
+  width: 100%;
+}
+
+.mobile-filter-toggle {
+  display: none;
+  height: 50px;
+  border: 2px solid #111111;
+  border-radius: 999px;
+  background: #ffffff;
+  color: #111111;
+  font-weight: 700;
+  padding: 0 14px;
+  gap: 8px;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.mobile-filter-toggle .material-symbols-outlined {
+  font-size: 20px;
+  line-height: 1;
+}
+
+.mobile-filter-toggle:hover,
+.mobile-filter-toggle:focus-visible {
+  background: #f5f5f5;
+}
+
+.map-page .map-filters {
+  margin-top: 12px;
+  padding: 14px 16px;
+  border: 1px solid #d6dde5;
+  border-radius: 16px;
+  background: #ffffff;
+  box-shadow: 0 12px 24px rgba(2, 6, 23, 0.08);
+}
+
+.map-page .filter-field select {
+  min-width: 150px;
+}
+
+.map-page .map-notice {
+  padding: 0 4px;
+  margin-top: 8px;
+}
+
+.map-page .map-container {
+  width: min(1200px, calc(100% - 32px));
+  margin: 14px auto 26px;
+  padding: 0;
+  height: auto;
+}
+
+.map-page .map-container h2 {
+  margin: 0 0 10px;
+}
+
+.map-page .map-box {
+  height: clamp(500px, 62vh, 700px);
+}
+
+@media (max-width: 1024px) {
+.map-page .filters-left {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 10px;
+  }
+
+.map-page .filter-field,
+  .map-page .filter-field select {
+    width: 100%;
+    min-width: 0;
+  }
+
+.map-page .filters-right {
+    width: 100%;
+    justify-content: flex-end;
+  }
+}
+
+@media (max-width: 820px) {
+.map-page .mobile-filter-toggle {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+.map-page .map-filters {
+    display: none;
+  }
+
+.map-page .map-filters.is-open {
+    display: flex;
+  }
+
+.map-page .filters-left {
+    grid-template-columns: 1fr;
+  }
+
+.map-page .filters-right {
+    justify-content: stretch;
+  }
+
+.map-page .clear-filter-btn {
+    width: 100%;
+    border-radius: 10px;
+  }
+
+.map-page .map-box {
+    height: 56vh;
+    min-height: 320px;
+  }
+}
+
+@media (max-width: 620px) {
+.map-page .map-controls,
+  .map-page .map-container {
+    width: calc(100% - 20px);
+  }
+
+.map-page .search-form {
+    flex-basis: 100%;
+  }
+
+.map-page .mobile-filter-toggle {
+    width: 100%;
+  }
+
+.map-page .map-box {
+    height: 52vh;
+    min-height: 280px;
+  }
+}

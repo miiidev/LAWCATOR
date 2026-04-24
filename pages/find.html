@@ -11,7 +11,7 @@
     href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=search" />
 </head>
 
-<body>
+<body class="find-page">
   <header class="navbar">
     <img class="navbar-logo" src="../assets/images/lawcator-logo-white.png" alt="">
     <button class="navbar-toggle" type="button" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="primary-navigation">
@@ -46,17 +46,44 @@
         <ul id="typeSuggestions" class="suggestions" role="listbox"></ul>
       </div>
 
-      <select id="budgetFilter">
-        <option value="">All Budgets</option>
-        <option value="Low">Low</option>
-        <option value="Medium">Medium</option>
-        <option value="High">High</option>
-      </select>
+      <div class="map-filters" aria-label="Lawyer filters">
+        <div class="filters-left">
+          <label class="filter-field">
+            <span>City</span>
+            <select id="cityFilter">
+              <option value="">All cities</option>
+            </select>
+          </label>
 
-      <select id="sortFilter">
-        <option value="rating">Sort by Rating</option>
-        <option value="name">Sort by Name</option>
-      </select>
+          <label class="filter-field">
+            <span>Budget</span>
+            <select id="budgetFilter">
+              <option value="">All budgets</option>
+            </select>
+          </label>
+
+          <label class="filter-field">
+            <span>Availability</span>
+            <select id="availabilityFilter">
+              <option value="">All</option>
+              <option value="true">Available now</option>
+              <option value="false">Not available</option>
+            </select>
+          </label>
+
+          <label class="filter-field">
+            <span>Sort</span>
+            <select id="sortFilter">
+              <option value="rating">Rating</option>
+              <option value="name">Name</option>
+            </select>
+          </label>
+        </div>
+
+        <div class="filters-right">
+          <button id="clearFilters" type="button" class="clear-filter-btn">Clear</button>
+        </div>
+      </div>
     </div>
 
     <div id="lawyerList" class="card-grid"></div>

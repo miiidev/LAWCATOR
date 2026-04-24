@@ -1,0 +1,14 @@
+/* Home page styles */
+/*
+  Future usage:
+  1) Add class="home-page" to <body> in pages/index.html.
+  2) Keep page-specific rules scoped with .home-page.
+*/
+
+.home-page .hero {
+  /* Add home hero styles here */
+}
+
+.home-page .search-bar {
+  /* Add home search bar overrides here */
+}

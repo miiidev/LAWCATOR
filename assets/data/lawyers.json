@@ -2,7 +2,7 @@
   {
     "id": "lawyer_001",
     "firmId": "firm_001",
-    "name": "Ahmad Khalid",
+    "name": "Fuji Kiseki",
     "type": [
       "Employment",
       "General and Civil Litigation"
@@ -19,12 +19,13 @@
     "contact": {
       "phone": "+60 12-300 0001",
       "email": "ahmad.khalid@firm001.com"
-    }
+    },
+    "biography": "Fuji Kiseki has 12 years of experience in employment and general and civil litigation matters and advises clients in English, Malay. Like a true Uma Musume ace, Fuji Kiseki runs every case with elegant pace and a strong final sprint."
   },
   {
     "id": "lawyer_002",
     "firmId": "firm_001",
-    "name": "Nur Aisyah",
+    "name": "Zul Ariffin",
     "type": [
       "Employment",
       "General and Civil Litigation"
@@ -41,12 +42,13 @@
     "contact": {
       "phone": "+60 12-300 0002",
       "email": "aisyah@firm001.com"
-    }
+    },
+    "biography": "Zul Ariffin has 8 years of experience in civil litigation and employment matters and advises clients in Malay, English. Known for practical legal strategy, clear communication, and calm handling of high-pressure matters."
   },
   {
     "id": "lawyer_003",
     "firmId": "firm_002",
-    "name": "Tan Wei Jian",
+    "name": "Bell Ngasri",
     "type": [
       "Conveyancing and Property",
       "Wills, Probate and Estate Administration"
@@ -63,12 +65,13 @@
     "contact": {
       "phone": "+60 12-300 0003",
       "email": "weijian@firm002.com"
-    }
+    },
+    "biography": "Bell Ngasri has 11 years of experience in conveyancing and property and wills, probate and estate administration matters and advises clients in English, Chinese. Known for practical legal strategy, clear communication, and calm handling of high-pressure matters."
   },
   {
     "id": "lawyer_004",
     "firmId": "firm_003",
-    "name": "Siti Farhana",
+    "name": "Kazuma Satou",
     "type": [
       "Aviation",
       "Mergers and Acquisitions"
@@ -85,12 +88,13 @@
     "contact": {
       "phone": "+60 12-300 0004",
       "email": "farhana@firm003.com"
-    }
+    },
+    "biography": "Kazuma Satou has 9 years of experience in aviation and mergers and acquisitions matters and advises clients in Malay, English. Like in Konosuba, Kazuma turns chaotic situations into surprisingly effective legal wins."
   },
   {
     "id": "lawyer_005",
     "firmId": "firm_004",
-    "name": "Halim Yusuf",
+    "name": "Ayanokoji Kiyotaka",
     "type": [
       "General and Civil Litigation"
     ],
@@ -106,12 +110,13 @@
     "contact": {
       "phone": "+60 12-300 0005",
       "email": "halim@firm004.com"
-    }
+    },
+    "biography": "Ayanokoji Kiyotaka has 13 years of experience in general and civil litigation matters and advises clients in Malay, English. Classroom of the Elite style: quiet, analytical, and somehow always three steps ahead."
   },
   {
     "id": "lawyer_006",
     "firmId": "firm_005",
-    "name": "Akmal Saufi",
+    "name": "Koro Sensei",
     "type": [
       "Conveyancing and Property",
       "Debt Recovery"
@@ -128,12 +133,13 @@
     "contact": {
       "phone": "+60 12-300 0006",
       "email": "akmal@firm005.com"
-    }
+    },
+    "biography": "Koro Sensei has 14 years of experience in debt recovery and conveyancing and property matters and advises clients in Malay, English. Assassination Classroom energy included: fast turnaround, clear lessons, and zero missed deadlines."
   },
   {
     "id": "lawyer_007",
     "firmId": "firm_005",
-    "name": "Sharon Lim",
+    "name": "Levi Ackerman",
     "type": [
       "Conveyancing and Property",
       "Debt Recovery"
@@ -150,12 +156,13 @@
     "contact": {
       "phone": "+60 12-300 0007",
       "email": "sharon@firm005.com"
-    }
+    },
+    "biography": "Levi Ackerman has 7 years of experience in conveyancing and property and debt recovery matters and advises clients in English, Chinese. Attack on Titan precision: case files are kept cleaner than Levi keeps the barracks."
   },
   {
     "id": "lawyer_008",
     "firmId": "firm_006",
-    "name": "Alan Lim",
+    "name": "Gintoki Sakata",
     "type": [
       "Conveyancing and Property",
       "General and Civil Litigation"
@@ -172,12 +179,13 @@
     "contact": {
       "phone": "+60 12-300 0008",
       "email": "alan@firm006.com"
-    }
+    },
+    "biography": "Gintoki Sakata has 10 years of experience in general and civil litigation and conveyancing and property matters and advises clients in English, Chinese. Gintama mood in meetings, samurai-level seriousness when hearings begin."
   },
   {
     "id": "lawyer_009",
     "firmId": "firm_007",
-    "name": "Alda Khairi",
+    "name": "Sung Jin Woo",
     "type": [
       "Conveyancing and Property"
     ],
@@ -193,12 +201,13 @@
     "contact": {
       "phone": "+60 12-300 0009",
       "email": "alda@firm007.com"
-    }
+    },
+    "biography": "Sung Jin Woo has 6 years of experience in conveyancing and property matters and advises clients in Malay, English. Solo Leveling mindset: each legal challenge is cleared like a boss dungeon, then leveled up."
   },
   {
     "id": "lawyer_010",
     "firmId": "firm_008",
-    "name": "Shukri Ahmad",
+    "name": "Arataka Reigen",
     "type": [
       "Conveyancing and Property",
       "General and Civil Litigation"
@@ -215,12 +224,13 @@
     "contact": {
       "phone": "+60 12-300 0010",
       "email": "shukri@firm008.com"
-    }
+    },
+    "biography": "Arataka Reigen has 12 years of experience in general and civil litigation and conveyancing and property matters and advises clients in Malay, English. Mob Psycho 100 charm, but with genuine legal strategy and no spirit consultation fees."
   },
   {
     "id": "lawyer_011",
     "firmId": "firm_009",
-    "name": "Alex Chang",
+    "name": "Toshinori Yagi",
     "type": [
       "Corporate Disputes",
       "Debt Recovery"
@@ -237,12 +247,13 @@
     "contact": {
       "phone": "+60 12-300 0011",
       "email": "alex@firm009.com"
-    }
+    },
+    "biography": "Toshinori Yagi has 11 years of experience in corporate disputes and debt recovery matters and advises clients in English, Chinese. All Might spirit: plus-ultra commitment for clients, with fully grounded legal advice."
   },
   {
     "id": "lawyer_012",
     "firmId": "firm_010",
-    "name": "Alice Kang",
+    "name": "Mejiro McQueen",
     "type": [
       "General and Civil Litigation",
       "Trademark"
@@ -259,12 +270,13 @@
     "contact": {
       "phone": "+60 12-300 0012",
       "email": "alice@firm010.com"
-    }
+    },
+    "biography": "Mejiro McQueen has 9 years of experience in trademark and general and civil litigation matters and advises clients in English, Chinese. Uma Musume composure: refined briefs, steady pace, and championship-level consistency."
   },
   {
     "id": "lawyer_013",
     "firmId": "firm_011",
-    "name": "Alicia Nicholson",
+    "name": "Saitama",
     "type": [
       "Family",
       "General and Civil Litigation"
@@ -280,12 +292,13 @@
     "contact": {
       "phone": "+60 12-300 0013",
       "email": "alicia@firm011.com"
-    }
+    },
+    "biography": "Saitama has 15 years of experience in family and general and civil litigation matters and advises clients in English. One-Punch Man efficiency: complicated disputes solved in one clean hit of legal logic."
   },
   {
     "id": "lawyer_014",
     "firmId": "firm_012",
-    "name": "Amalia Rose",
+    "name": "Zenitsu Agatsuma",
     "type": [
       "General and Civil Litigation"
     ],
@@ -301,12 +314,13 @@
     "contact": {
       "phone": "+60 12-300 0014",
       "email": "amalia@firm012.com"
-    }
+    },
+    "biography": "Zenitsu Agatsuma has 10 years of experience in general and civil litigation matters and advises clients in Malay, English. Demon Slayer mode: nervous before trial prep, lightning-fast once the real work starts."
   },
   {
     "id": "lawyer_015",
     "firmId": "firm_013",
-    "name": "Amalin Aziz",
+    "name": "Itachi Uchiha",
     "type": [
       "Accidents and Personal Injury Claims",
       "General and Civil Litigation"
@@ -323,12 +337,13 @@
     "contact": {
       "phone": "+60 12-300 0015",
       "email": "amalin@firm013.com"
-    }
+    },
+    "biography": "Itachi Uchiha has 8 years of experience in accidents and personal injury claims and general and civil litigation matters and advises clients in Malay, English. Naruto-level strategy: calm judgment, minimal drama, and maximum long-game thinking."
   },
   {
     "id": "lawyer_016",
     "firmId": "firm_014",
-    "name": "Amanda Pang",
+    "name": "Choi Seung Hyun",
     "type": [
       "Conveyancing and Property",
       "Intellectual Property"
@@ -345,12 +360,13 @@
     "contact": {
       "phone": "+60 12-300 0016",
       "email": "amanda@firm014.com"
-    }
+    },
+    "biography": "Choi Seung Hyun has 12 years of experience in intellectual property and conveyancing and property matters and advises clients in English, Chinese. Known for practical legal strategy, clear communication, and calm handling of high-pressure matters."
   },
   {
     "id": "lawyer_017",
     "firmId": "firm_015",
-    "name": "Amir Khusyairi",
+    "name": "Lee Jung-Jae",
     "type": [
       "Criminal",
       "Wills, Probate and Estate Administration"
@@ -367,12 +383,13 @@
     "contact": {
       "phone": "+60 12-300 0017",
       "email": "amir@firm015.com"
-    }
+    },
+    "biography": "Lee Jung-Jae has 14 years of experience in criminal and wills, probate and estate administration matters and advises clients in Malay, English. Known for practical legal strategy, clear communication, and calm handling of high-pressure matters."
   },
   {
     "id": "lawyer_018",
     "firmId": "firm_016",
-    "name": "Lim Malik",
+    "name": "Kim Tae-ri",
     "type": [
       "Conveyancing and Property",
       "General and Civil Litigation"
@@ -389,12 +406,13 @@
     "contact": {
       "phone": "+60 12-300 0018",
       "email": "malik@firm016.com"
-    }
+    },
+    "biography": "Kim Tae-ri has 9 years of experience in conveyancing and property and general and civil litigation matters and advises clients in English, Malay. Known for practical legal strategy, clear communication, and calm handling of high-pressure matters."
   },
   {
     "id": "lawyer_019",
     "firmId": "firm_017",
-    "name": "Joshua Tan",
+    "name": "Nam Joo-hyuk",
     "type": [
       "Family",
       "Wills, Probate and Estate Administration"
@@ -411,12 +429,13 @@
     "contact": {
       "phone": "+60 12-300 0019",
       "email": "joshua@firm017.com"
-    }
+    },
+    "biography": "Nam Joo-hyuk has 10 years of experience in family and wills, probate and estate administration matters and advises clients in English, Malay. Known for practical legal strategy, clear communication, and calm handling of high-pressure matters."
   },
   {
     "id": "lawyer_020",
     "firmId": "firm_018",
-    "name": "Syariful Ahmad",
+    "name": "Song Joong-ki",
     "type": [
       "Accidents and Personal Injury Claims",
       "Land Disputes"
@@ -433,12 +452,13 @@
     "contact": {
       "phone": "+60 12-300 0020",
       "email": "syariful@firm018.com"
-    }
+    },
+    "biography": "Song Joong-ki has 7 years of experience in land disputes and accidents and personal injury claims matters and advises clients in Malay, English. Known for practical legal strategy, clear communication, and calm handling of high-pressure matters."
   },
   {
     "id": "lawyer_021",
     "firmId": "firm_019",
-    "name": "Aizat Dzar",
+    "name": "Harry Potter",
     "type": [
       "Banking, Finance and Securities",
       "Conveyancing and Property"
@@ -455,12 +475,13 @@
     "contact": {
       "phone": "+60 12-300 0021",
       "email": "aizat@firm019.com"
-    }
+    },
+    "biography": "Harry Potter has 13 years of experience in banking, finance and securities and conveyancing and property matters and advises clients in English, Malay. Straight from Hogwarts vibes: no spells in court, just magically clear legal drafting."
   },
   {
     "id": "lawyer_022",
     "firmId": "firm_020",
-    "name": "Syazana Nasir",
+    "name": "Marshall Bruce Mathers III",
     "type": [
       "General and Civil Litigation",
       "Syariah"
@@ -477,12 +498,13 @@
     "contact": {
       "phone": "+60 12-300 0022",
       "email": "syazana@firm020.com"
-    }
+    },
+    "biography": "Marshall Bruce Mathers III has 9 years of experience in syariah and general and civil litigation matters and advises clients in Malay, English. Known for practical legal strategy, clear communication, and calm handling of high-pressure matters."
   },
   {
     "id": "lawyer_023",
     "firmId": "firm_021",
-    "name": "Krishna Dallumah",
+    "name": "Hiromi Higuruma",
     "type": [
       "Corporate and General",
       "General and Civil Litigation"
@@ -500,12 +522,13 @@
     "contact": {
       "phone": "+60 12-300 0023",
       "email": "krishna@firm021.com"
-    }
+    },
+    "biography": "Hiromi Higuruma has 16 years of experience in corporate and general and general and civil litigation matters and advises clients in English, Tamil, Malay. Jujutsu Kaisen courtroom aura: objections land hard, but every point is statute-backed."
   },
   {
     "id": "lawyer_024",
     "firmId": "firm_022",
-    "name": "Nor Adibah",
+    "name": "Kim Eung-soo",
     "type": [
       "Conveyancing and Property",
       "Wealth Management, Inheritance and Succession Planning"
@@ -522,12 +545,13 @@
     "contact": {
       "phone": "+60 12-300 0024",
       "email": "nor@firm022.com"
-    }
+    },
+    "biography": "Kim Eung-soo has 11 years of experience in wealth management, inheritance and succession planning and conveyancing and property matters and advises clients in Malay, English. Known for practical legal strategy, clear communication, and calm handling of high-pressure matters."
   },
   {
     "id": "lawyer_025",
     "firmId": "firm_023",
-    "name": "C.L. Lee",
+    "name": "Park Hae-jin",
     "type": [
       "Commisioner for Oaths",
       "Conveyancing and Property"
@@ -544,12 +568,13 @@
     "contact": {
       "phone": "+60 12-300 0025",
       "email": "clee@firm023.com"
-    }
+    },
+    "biography": "Park Hae-jin has 12 years of experience in commisioner for oaths and conveyancing and property matters and advises clients in English, Chinese. Known for practical legal strategy, clear communication, and calm handling of high-pressure matters."
   },
   {
     "id": "lawyer_026",
     "firmId": "firm_024",
-    "name": "Choy Mei Ling",
+    "name": "Song Hye-kyo",
     "type": [
       "Contentious Probate Proceeding",
       "General and Civil Litigation"
@@ -566,12 +591,13 @@
     "contact": {
       "phone": "+60 12-300 0026",
       "email": "meiling@firm024.com"
-    }
+    },
+    "biography": "Song Hye-kyo has 10 years of experience in contentious probate proceeding and general and civil litigation matters and advises clients in English, Chinese. Known for practical legal strategy, clear communication, and calm handling of high-pressure matters."
   },
   {
     "id": "lawyer_027",
     "firmId": "firm_025",
-    "name": "Ezri Ahmad",
+    "name": "Ahn Hyo-seop",
     "type": [
       "Notary Public",
       "General and Civil Litigation"
@@ -588,12 +614,13 @@
     "contact": {
       "phone": "+60 12-300 0027",
       "email": "ezri@firm025.com"
-    }
+    },
+    "biography": "Ahn Hyo-seop has 8 years of experience in notary public and general and civil litigation matters and advises clients in Malay, English. Known for practical legal strategy, clear communication, and calm handling of high-pressure matters."
   },
   {
     "id": "lawyer_028",
     "firmId": "firm_026",
-    "name": "Ezri Wan",
+    "name": "Kim Sejeong",
     "type": [
       "Employment",
       "Arbitration and Alternate Dispute Resolution"
@@ -610,12 +637,13 @@
     "contact": {
       "phone": "+60 12-300 0028",
       "email": "ezri.wan@firm026.com"
-    }
+    },
+    "biography": "Kim Sejeong has 7 years of experience in employment and arbitration and alternate dispute resolution matters and advises clients in Malay, English. Known for practical legal strategy, clear communication, and calm handling of high-pressure matters."
   },
   {
     "id": "lawyer_029",
     "firmId": "firm_027",
-    "name": "Marcus Hoo",
+    "name": "Lee Byung-hun",
     "type": [
       "General and Civil Litigation",
       "Syariah"
@@ -632,12 +660,13 @@
     "contact": {
       "phone": "+60 12-300 0029",
       "email": "marcus@firm027.com"
-    }
+    },
+    "biography": "Lee Byung-hun has 13 years of experience in syariah and general and civil litigation matters and advises clients in English, Chinese. Known for practical legal strategy, clear communication, and calm handling of high-pressure matters."
   },
   {
     "id": "lawyer_030",
     "firmId": "firm_028",
-    "name": "Mohtar Man",
+    "name": "Hyun Woo-sung",
     "type": [
       "Employment",
       "Arbitration and Alternate Dispute Resolution"
@@ -654,12 +683,13 @@
     "contact": {
       "phone": "+60 12-300 0030",
       "email": "mohtar@firm028.com"
-    }
+    },
+    "biography": "Hyun Woo-sung has 9 years of experience in arbitration and alternate dispute resolution and employment matters and advises clients in Malay, English. Known for practical legal strategy, clear communication, and calm handling of high-pressure matters."
   },
   {
     "id": "lawyer_031",
     "firmId": "firm_029",
-    "name": "Ezri Noor",
+    "name": "James Arthur",
     "type": [
       "Conveyancing and Property",
       "Hibah and Wasiat"
@@ -676,12 +706,13 @@
     "contact": {
       "phone": "+60 12-300 0031",
       "email": "ezri.noor@firm029.com"
-    }
+    },
+    "biography": "James Arthur has 10 years of experience in hibah and wasiat and conveyancing and property matters and advises clients in Malay, English. Known for practical legal strategy, clear communication, and calm handling of high-pressure matters."
   },
   {
     "id": "lawyer_032",
     "firmId": "firm_030",
-    "name": "Sudesh Narinder",
+    "name": "Pheonix Wright",
     "type": [
       "Accidents and Personal Injury Claims",
       "Criminal"
@@ -698,12 +729,13 @@
     "contact": {
       "phone": "+60 12-300 0032",
       "email": "sudesh@firm030.com"
-    }
+    },
+    "biography": "Pheonix Wright has 14 years of experience in criminal and accidents and personal injury claims matters and advises clients in English, Malay. Ace Attorney style: dramatic Objection! timing, followed by rock-solid legal reasoning."
   },
   {
     "id": "lawyer_033",
     "firmId": "firm_031",
-    "name": "Syahirah Azman",
+    "name": "Lilas Ikuta",
     "type": [
       "Accidents and Personal Injury Claims",
       "Syariah"
@@ -720,12 +752,13 @@
     "contact": {
       "phone": "+60 12-300 0033",
       "email": "syahirah@firm031.com"
-    }
+    },
+    "biography": "Lilas Ikuta has 8 years of experience in accidents and personal injury claims and syariah matters and advises clients in Malay, English. Known for practical legal strategy, clear communication, and calm handling of high-pressure matters."
   },
   {
     "id": "lawyer_034",
     "firmId": "firm_032",
-    "name": "Y.N. Teoh",
+    "name": "Jeon Jung-kook",
     "type": [
       "Conveyancing and Property",
       "Family"
@@ -742,12 +775,13 @@
     "contact": {
       "phone": "+60 12-300 0034",
       "email": "ynteoh@firm032.com"
-    }
+    },
+    "biography": "Jeon Jung-kook has 12 years of experience in family and conveyancing and property matters and advises clients in English, Chinese. Known for practical legal strategy, clear communication, and calm handling of high-pressure matters."
   },
   {
     "id": "lawyer_035",
     "firmId": "firm_033",
-    "name": "WJ Ng",
+    "name": "Lee Hyun-seo",
     "type": [
       "Debt Recovery",
       "General and Civil Litigation"
@@ -764,12 +798,13 @@
     "contact": {
       "phone": "+60 12-300 0035",
       "email": "wjng@firm033.com"
-    }
+    },
+    "biography": "Lee Hyun-seo has 11 years of experience in debt recovery and general and civil litigation matters and advises clients in English, Chinese. Known for practical legal strategy, clear communication, and calm handling of high-pressure matters."
   },
   {
     "id": "lawyer_036",
     "firmId": "firm_034",
-    "name": "Yasmeen Hajar",
+    "name": "Mike Mandell",
     "type": [
       "General and Civil Litigation",
       "Conveyancing and Property",
@@ -789,12 +824,13 @@
     "contact": {
       "phone": "+60 12-300 0036",
       "email": "yasmeen@firm034.com"
-    }
+    },
+    "biography": "Mike Mandell has 10 years of experience in corporate and general and general and civil litigation matters and advises clients in Malay, English. Known for practical legal strategy, clear communication, and calm handling of high-pressure matters."
   },
   {
     "id": "lawyer_037",
     "firmId": "firm_035",
-    "name": "Chia Hui Ming",
+    "name": "Enami Asa",
     "type": [
       "Construction Adjudication",
       "Employment"
@@ -811,12 +847,13 @@
     "contact": {
       "phone": "+60 12-300 0037",
       "email": "chia@firm035.com"
-    }
+    },
+    "biography": "Enami Asa has 9 years of experience in construction adjudication and employment matters and advises clients in English, Chinese. Known for practical legal strategy, clear communication, and calm handling of high-pressure matters."
   },
   {
     "id": "lawyer_038",
     "firmId": "firm_036",
-    "name": "Dennis Lim",
+    "name": "Dato' Sri Siti Nurhaliza",
     "type": [
       "Corporate and Commercial",
       "General and Civil Litigation"
@@ -833,12 +870,13 @@
     "contact": {
       "phone": "+60 12-300 0038",
       "email": "dennis@firm036.com"
-    }
+    },
+    "biography": "Dato' Sri Siti Nurhaliza has 13 years of experience in corporate and commercial and general and civil litigation matters and advises clients in English, Chinese. Known for practical legal strategy, clear communication, and calm handling of high-pressure matters."
   },
   {
     "id": "lawyer_039",
     "firmId": "firm_037",
-    "name": "Haizan Choo",
+    "name": "Satono Diamond",
     "type": [
       "Contratual Disputes",
       "Land Disputes"
@@ -855,12 +893,13 @@
     "contact": {
       "phone": "+60 12-300 0039",
       "email": "haizan@firm037.com"
-    }
+    },
+    "biography": "Satono Diamond has 12 years of experience in land disputes and contratual disputes matters and advises clients in English, Chinese. Uma Musume elegance with reliable late-race strength in complex case timelines."
   },
   {
     "id": "lawyer_040",
     "firmId": "firm_038",
-    "name": "Ho-Yong Tan",
+    "name": "Wataru Kurenai",
     "type": [
       "Corporate and Commercial",
       "Incorporation of Companies"
@@ -877,12 +916,13 @@
     "contact": {
       "phone": "+60 12-300 0040",
       "email": "hoyong@firm038.com"
-    }
+    },
+    "biography": "Wataru Kurenai has 11 years of experience in incorporation of companies and corporate and commercial matters and advises clients in English, Chinese. Beyblade determination: every matter is fought with full focus until the final spin."
   },
   {
     "id": "lawyer_041",
     "firmId": "firm_039",
-    "name": "Kennie Ang",
+    "name": "Souji Tendo",
     "type": [
       "Corporate and Commercial",
       "Insolvency and Winding Up"
@@ -899,12 +939,13 @@
     "contact": {
       "phone": "+60 12-300 0041",
       "email": "kennie@firm039.com"
-    }
+    },
+    "biography": "Souji Tendo has 15 years of experience in insolvency and winding up and corporate and commercial matters and advises clients in English, Chinese. Kamen Rider Kabuto confidence: walking the path of law with calm, precise execution."
   },
   {
     "id": "lawyer_042",
     "firmId": "firm_040",
-    "name": "Mah Weng Kwai",
+    "name": "Kim Ga-eul",
     "type": [
       "Construction Adjudication",
       "Employment",
@@ -966,12 +1007,13 @@
     "contact": {
       "phone": "+60 12-300 0042",
       "email": "mah@firm040.com"
-    }
+    },
+    "biography": "Kim Ga-eul has 18 years of experience in corporate disputes and construction adjudication matters and advises clients in English, Malay, Chinese. Known for practical legal strategy, clear communication, and calm handling of high-pressure matters."
   },
   {
     "id": "lawyer_043",
     "firmId": "firm_020",
-    "name": "Haziq Amir",
+    "name": "Franziska von Karma",
     "type": [
       "General and Civil Litigation",
       "Syariah"
@@ -988,12 +1030,13 @@
     "contact": {
       "phone": "+60 12-300 0043",
       "email": "haziq@firm020.com"
-    }
+    },
+    "biography": "Franziska von Karma has 7 years of experience in general and civil litigation and syariah matters and advises clients in Malay, English. Ace Attorney intensity: cross-examinations are sharp, stylish, and ruthlessly well-prepared."
   },
   {
     "id": "lawyer_044",
     "firmId": "firm_015",
-    "name": "Nadia Karim",
+    "name": "Gold Ship",
     "type": [
       "Criminal",
       "Wills, Probate and Estate Administration"
@@ -1010,12 +1053,13 @@
     "contact": {
       "phone": "+60 12-300 0044",
       "email": "nadia@firm015.com"
-    }
+    },
+    "biography": "Gold Ship has 6 years of experience in wills, probate and estate administration and criminal matters and advises clients in English, Malay. Uma Musume unpredictability with professional control: bold strategy, disciplined outcomes."
   },
   {
     "id": "lawyer_045",
     "firmId": "firm_010",
-    "name": "Lim Yu Xin",
+    "name": "Kim Ji-won",
     "type": [
       "General and Civil Litigation",
       "Trademark"
@@ -1032,12 +1076,13 @@
     "contact": {
       "phone": "+60 12-300 0045",
       "email": "yuxin@firm010.com"
-    }
+    },
+    "biography": "Kim Ji-won has 8 years of experience in general and civil litigation and trademark matters and advises clients in English, Chinese. Known for practical legal strategy, clear communication, and calm handling of high-pressure matters."
   },
   {
     "id": "lawyer_046",
     "firmId": "firm_012",
-    "name": "Farah Nadirah",
+    "name": "Maruzensky",
     "type": [
       "General and Civil Litigation"
     ],
@@ -1053,12 +1098,13 @@
     "contact": {
       "phone": "+60 12-300 0046",
       "email": "farah@firm012.com"
-    }
+    },
+    "biography": "Maruzensky has 9 years of experience in general and civil litigation matters and advises clients in Malay, English. Uma Musume speedster energy: early momentum, clean execution, and strong finishes."
   },
   {
     "id": "lawyer_047",
     "firmId": "firm_014",
-    "name": "Lee Mei Ling",
+    "name": "Hishi Amazon",
     "type": [
       "Conveyancing and Property",
       "Intellectual Property"
@@ -1075,12 +1121,13 @@
     "contact": {
       "phone": "+60 12-300 0047",
       "email": "meiling@firm014.com"
-    }
+    },
+    "biography": "Hishi Amazon has 7 years of experience in conveyancing and property and intellectual property matters and advises clients in English, Chinese. Uma Musume power-running spirit: assertive advocacy with dependable client care."
   },
   {
     "id": "lawyer_048",
     "firmId": "firm_005",
-    "name": "Jason Wong",
+    "name": "Oguri Cap",
     "type": [
       "Conveyancing and Property",
       "Debt Recovery"
@@ -1097,12 +1144,13 @@
     "contact": {
       "phone": "+60 12-300 0048",
       "email": "jason@firm005.com"
-    }
+    },
+    "biography": "Oguri Cap has 5 years of experience in debt recovery and conveyancing and property matters and advises clients in English, Chinese. Uma Musume legend mindset: relentless stamina for heavy caseloads and high-pressure deadlines."
   },
   {
     "id": "lawyer_049",
     "firmId": "firm_008",
-    "name": "Nur Izzah",
+    "name": "Dio Brando",
     "type": [
       "Conveyancing and Property",
       "General and Civil Litigation"
@@ -1119,12 +1167,13 @@
     "contact": {
       "phone": "+60 12-300 0049",
       "email": "izzah@firm008.com"
-    }
+    },
+    "biography": "Dio Brando has 6 years of experience in general and civil litigation and conveyancing and property matters and advises clients in Malay, English. JoJo reference accepted: time may stop in anime, but filing deadlines remain unstoppable."
   },
   {
     "id": "lawyer_050",
     "firmId": "firm_021",
-    "name": "Indran Kumar",
+    "name": "Jotaro Kujo",
     "type": [
       "Corporate and General",
       "General and Civil Litigation"
@@ -1142,6 +1191,7 @@
     "contact": {
       "phone": "+60 12-300 0050",
       "email": "indran@firm021.com"
-    }
+    },
+    "biography": "Jotaro Kujo has 14 years of experience in general and civil litigation and corporate and general matters and advises clients in English, Tamil, Malay. JoJo calm: cool under pressure, direct in argument, and always focused on the facts."
   }
 ]

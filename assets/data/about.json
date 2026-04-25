@@ -1,0 +1,47 @@
+[
+  {
+    "name": "AHMAD SYAHMI BIN JAMALUDIN",
+    "matric number": "250507",
+    "role": "leader",
+    "date of birth": "3 MAY 2007",
+    "fun fact": "I went to the same school as Iman Troye",
+    "email": "ahmad.syahmi3211@gmail.com",
+    "phone number": "+60104246750"
+  },
+  {
+    "name": "ADAM DARWISH BIN DASWIRA",
+    "matric number": "250095",
+    "role": "Co-leader",
+    "date of birth": "20 JANUARY 2007",
+    "fun fact": "I have a nickname which is walker",
+    "email": "adam.darwish@student.iium.edu.my",
+    "phone number": "+601170012004"
+  },
+  {
+    "name": "AHMAD IFWAT HAZIQ BIN MOHD ZABIDIN",
+    "matric number": "250409",
+    "role": "UI/UX Designer",
+    "date of birth": "15 MARCH 2007",
+    "fun fact": " I was in a textbook",
+    "email": "ifwatzabidin@gmail.com",
+    "phone number": "+60132446202"
+  },
+  {
+    "name": "AHMAD FAWWAZ BIN MOHD SABRI",
+    "matric number": "250374",
+    "role": "Data manager",
+    "date of birth": "7 NOVEMBER 2007",
+    "fun fact": "I was in an Indah Water commercial",
+    "email": "fawwazsabrii@gmail.com",
+    "phone number": "+60183515674"
+  },
+  {
+    "name": "ADAM MUKHRIEZ SHAH BIN SHAH RIZAILLI",
+    "matric number": "250118",
+    "role": "DOCUMENTATION SUPPORT",
+    "date of birth": "30 JUNE 2007",
+    "fun fact": "I build and collect gundam models",
+    "email": "mymukhriez@gmail.com",
+    "phone number": "+60195561518"
+  }
+]

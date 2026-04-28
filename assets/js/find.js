@@ -370,6 +370,40 @@ if (clearFiltersBtn) {
   });
 }
 
+// Mobile filter toggle functionality
+const mobileFilterToggle = document.getElementById("mobileFilterToggle");
+const findFiltersPanel = document.getElementById("findFiltersPanel");
+
+function setFiltersPanelOpen(isOpen) {
+  if (!findFiltersPanel || !mobileFilterToggle) return;
+
+  findFiltersPanel.classList.toggle("is-open", isOpen);
+  mobileFilterToggle.setAttribute("aria-expanded", isOpen ? "true" : "false");
+}
+
+function closeFiltersPanel() {
+  if (!findFiltersPanel || !mobileFilterToggle) return;
+
+  if (findFiltersPanel.classList.contains("is-open")) {
+    findFiltersPanel.classList.remove("is-open");
+    mobileFilterToggle.setAttribute("aria-expanded", "false");
+  }
+}
+
+function updateMobileFilterToggleOnResize() {
+  const open = findFiltersPanel.classList.contains("is-open");
+  mobileFilterToggle.setAttribute("aria-expanded", open ? "true" : "false");
+}
+
+if (mobileFilterToggle && findFiltersPanel) {
+  mobileFilterToggle.addEventListener("click", () => {
+    const isOpen = findFiltersPanel.classList.contains("is-open");
+    setFiltersPanelOpen(!isOpen);
+  });
+
+  window.addEventListener("resize", updateMobileFilterToggleOnResize);
+}
+
 startPlaceholderShuffle();
 
 function renderList() {

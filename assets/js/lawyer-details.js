@@ -165,12 +165,6 @@ function initAccordion() {
 
             openAccordionItem(item);
             scheduleAutoScrollForExpandedItem(item);
-
-            if (item.querySelector("#map") && selectedFirm) {
-                window.setTimeout(() => {
-                    requestMapRender();
-                }, 250);
-            }
         });
     });
 
@@ -415,7 +409,7 @@ Promise.all([
   `;
 
     document.querySelector(".lawyer-section.about p").textContent =
-        lawyer.bio || "No biography available.";
+        lawyer.biography  || "No biography available.";
 
     document.querySelector(".service-list").innerHTML =
         (lawyer.type || []).map(t => `<li>${t}</li>`).join("");

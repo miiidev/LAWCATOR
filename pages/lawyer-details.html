@@ -30,115 +30,118 @@
     </header>
 
     <main class="container">
-        <!-- Profile Header -->
-        <section class="lawyer-hero">
-            <div class="lawyer-avatar">
-                <img src="../assets/images/lawyer.jpg" alt="Lawyer Photo" />
-            </div>
-            <div class="lawyer-info">
-                <h2></h2>
-                <p class="lawyer-specialty"></p>
-                <p class="lawyer-location"></p>
-                <div class="lawyer-meta"></div>
-                <div class="lawyer-actions">
-                    <button class="btn-primary" type="button" data-modal-open="book-consultation">Book Consultation</button>
-                    <button class="btn-secondary" type="button" data-modal-open="message-lawyer">Message</button>
-                </div>
-            </div>
-        </section>
-
-        <!-- About -->
-        <section class="lawyer-section accordion-item about is-open" data-accordion-item>
-            <button class="accordion-trigger" type="button" aria-expanded="true">
-                <span>About</span>
-                <span class="accordion-icon" aria-hidden="true"></span>
-            </button>
-            <div class="accordion-panel" data-accordion-panel>
-                <div class="accordion-content">
-                    <p></p>
-                </div>
-            </div>
-        </section>
-
-        <!-- Services -->
-        <section class="lawyer-section accordion-item" data-accordion-item>
-            <button class="accordion-trigger" type="button" aria-expanded="false">
-                <span>Services</span>
-                <span class="accordion-icon" aria-hidden="true"></span>
-            </button>
-            <div class="accordion-panel" data-accordion-panel>
-                <div class="accordion-content">
-                    <ul class="service-list"></ul>
-                </div>
-            </div>
-        </section>
-
-        <!-- Fees -->
-        <section class="lawyer-section accordion-item" data-accordion-item>
-            <button class="accordion-trigger" type="button" aria-expanded="false">
-                <span>Fees</span>
-                <span class="accordion-icon" aria-hidden="true"></span>
-            </button>
-            <div class="accordion-panel" data-accordion-panel>
-                <div class="accordion-content">
-                    <div class="fee-grid">
-                        <div class="fee-card">
-                            <span class="fee-label">Consultation</span>
-                            <span class="fee-value">RM 150 / hour</span>
-                        </div>
-                        <div class="fee-card">
-                            <span class="fee-label">Drafting</span>
-                            <span class="fee-value">RM 300+</span>
-                        </div>
-                        <div class="fee-card">
-                            <span class="fee-label">Court Appearance</span>
-                            <span class="fee-value">RM 800+</span>
+        <div class="lawyer-bento-layout">
+            <div class="lawyer-bento-layout__left">
+                <!-- Profile Header -->
+                <section class="lawyer-hero">
+                    <div class="lawyer-avatar">
+                        <img src="../assets/images/lawyer.jpg" alt="Lawyer Photo" />
+                    </div>
+                    <div class="lawyer-info">
+                        <h2></h2>
+                        <p class="lawyer-specialty"></p>
+                        <p class="lawyer-location"></p>
+                        <div class="lawyer-meta"></div>
+                        <div class="lawyer-actions">
+                            <button class="btn-primary" type="button" data-modal-open="book-consultation">Book Consultation</button>
+                            <button class="btn-secondary" type="button" data-modal-open="message-lawyer">Message</button>
                         </div>
                     </div>
-                </div>
-            </div>
-        </section>
+                </section>
 
-        <!-- Availability -->
-        <section class="lawyer-section accordion-item availability" data-accordion-item>
-            <button class="accordion-trigger" type="button" aria-expanded="false">
-                <span>Availability</span>
-                <span class="accordion-icon" aria-hidden="true"></span>
-            </button>
-            <div class="accordion-panel" data-accordion-panel>
-                <div class="accordion-content">
-                    <p class="availability-mon-fri">Mon-Fri: N/A</p>
-                    <p class="availability-sat">Sat: N/A</p>
-                </div>
+                <!-- Map -->
+                <section class="lawyer-section lawyer-map-section">
+                    <div class="lawyer-map-header">
+                        <h3>Office Location</h3>
+                    </div>
+                    <div class="lawyer-map-body">
+                        <div id="map" class="map-box"></div>
+                    </div>
+                </section>
             </div>
-        </section>
 
-        <!-- Contact -->
-        <section class="lawyer-section accordion-item contact" data-accordion-item>
-            <button class="accordion-trigger" type="button" aria-expanded="false">
-                <span>Contact</span>
-                <span class="accordion-icon" aria-hidden="true"></span>
-            </button>
-            <div class="accordion-panel" data-accordion-panel>
-                <div class="accordion-content">
-                    <p class="contact-phone">N/A</p>
-                    <p class="contact-address">N/A</p>
-                </div>
-            </div>
-        </section>
+            <div class="lawyer-bento-layout__right">
+                <!-- About -->
+                <section class="lawyer-section accordion-item about is-open" data-accordion-item>
+                    <button class="accordion-trigger" type="button" aria-expanded="true">
+                        <span>Biography</span>
+                        <span class="accordion-icon" aria-hidden="true"></span>
+                    </button>
+                    <div class="accordion-panel" data-accordion-panel>
+                        <div class="accordion-content">
+                            <p></p>
+                        </div>
+                    </div>
+                </section>
 
-        <!-- Map -->
-        <section class="lawyer-section accordion-item is-open" data-accordion-item>
-            <button class="accordion-trigger" type="button" aria-expanded="false">
-                <span>Office Location</span>
-                <span class="accordion-icon" aria-hidden="true"></span>
-            </button>
-            <div class="accordion-panel" data-accordion-panel>
-                <div class="accordion-content">
-                    <div id="map" class="map-box"></div>
-                </div>
+                <!-- Services -->
+                <section class="lawyer-section accordion-item" data-accordion-item>
+                    <button class="accordion-trigger" type="button" aria-expanded="false">
+                        <span>Services</span>
+                        <span class="accordion-icon" aria-hidden="true"></span>
+                    </button>
+                    <div class="accordion-panel" data-accordion-panel>
+                        <div class="accordion-content">
+                            <ul class="service-list"></ul>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Fees -->
+                <section class="lawyer-section accordion-item" data-accordion-item>
+                    <button class="accordion-trigger" type="button" aria-expanded="false">
+                        <span>Fees</span>
+                        <span class="accordion-icon" aria-hidden="true"></span>
+                    </button>
+                    <div class="accordion-panel" data-accordion-panel>
+                        <div class="accordion-content">
+                            <div class="fee-grid">
+                                <div class="fee-card">
+                                    <span class="fee-label">Consultation</span>
+                                    <span class="fee-value">RM 150 / hour</span>
+                                </div>
+                                <div class="fee-card">
+                                    <span class="fee-label">Drafting</span>
+                                    <span class="fee-value">RM 300+</span>
+                                </div>
+                                <div class="fee-card">
+                                    <span class="fee-label">Court Appearance</span>
+                                    <span class="fee-value">RM 800+</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Availability -->
+                <section class="lawyer-section accordion-item availability" data-accordion-item>
+                    <button class="accordion-trigger" type="button" aria-expanded="false">
+                        <span>Availability</span>
+                        <span class="accordion-icon" aria-hidden="true"></span>
+                    </button>
+                    <div class="accordion-panel" data-accordion-panel>
+                        <div class="accordion-content">
+                            <p class="availability-mon-fri">Mon-Fri: N/A</p>
+                            <p class="availability-sat">Sat: N/A</p>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Contact -->
+                <section class="lawyer-section accordion-item contact" data-accordion-item>
+                    <button class="accordion-trigger" type="button" aria-expanded="false">
+                        <span>Contact</span>
+                        <span class="accordion-icon" aria-hidden="true"></span>
+                    </button>
+                    <div class="accordion-panel" data-accordion-panel>
+                        <div class="accordion-content">
+                            <p class="contact-phone">N/A</p>
+                            <p class="contact-address">N/A</p>
+                        </div>
+                    </div>
+                </section>
             </div>
-        </section>
+        </div>
     </main>
 
     <footer class="site-footer">

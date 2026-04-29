@@ -442,8 +442,8 @@
   }
 }
 
-/* ── Responsive: ≤620px ── */
-@media (max-width: 620px) {
+/* ── Responsive: ≤650px ── */
+@media (max-width: 650px) {
   .map-page .map-controls,
   .map-page .map-container {
     width: calc(100% - 20px);

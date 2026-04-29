@@ -1,51 +1,89 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>CariLawyer | Home</title>
-  <link rel="stylesheet" href="../assets/css/shared.css"/>
-  <link rel="stylesheet" href="../assets/css/home.css"/>
-</head>
-<body class="home-page">
-  <header class="navbar">
-    <img class="navbar-logo" src="../assets/images/lawcator-logo-white.png" alt="">
-    <button class="navbar-toggle" type="button" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="primary-navigation">
-      <span></span>
-      <span></span>
-      <span></span>
-    </button>
-    <nav id="primary-navigation">
-      <a class="active" href="index.html">Home</a>
-      <a href="find.html">Find Lawyer</a>
-      <a href="map.html">Map</a>
-      <a href="about.html">About</a>
-    </nav>
-  </header>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LAWCATOR | Home</title>
+    <link rel="stylesheet" href="../assets/css/shared.css" />
+    <link rel="stylesheet" href="../assets/css/home.css" />
+    <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=search" />
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet"> <!--bebas neue font-->
 
-  <main class="container">
-    <section class="hero">
-      <h2>Find the right lawyer fast.</h2>
-      <p>Search by case type, budget, and availability.</p>
-
-      <div class="search-bar">
-        <input type="text" id="searchInput" placeholder="Search by city or firm name...">
-        <button onclick="location.href='find.html'">Find Lawyer</button>
-      </div>
-
-      <button class="alert-btn" onclick="alert('If this is an emergency, contact a lawyer immediately.')">
-        Emergency Help
-      </button>
-    </section>
-  </main>
-
-  <footer class="site-footer">
-    <div class="site-footer__inner">
-      <p class="site-footer__meta">LAWCATOR Demo Project</p>
-      <p class="site-footer__disclaimer">Disclaimer: The lawyer profiles, firms, service details, fees, availability, and contact information shown on this website are dummy data for educational purposes only and do not represent real legal services.</p>
+  </head>
+  <body class="home-page">
+    <div class="map-video-layer" aria-hidden="true">
+        <video class="map-background-video" autoplay muted loop playsinline preload="auto">
+            <source src="../assets/videos/test.mp4" type="video/mp4" />
+        </video>
+        <div class="map-video-overlay"></div>
     </div>
-  </footer>
 
-  <script src="../assets/js/navbar-toggle.js"></script>
-</body>
+    <header class="navbar">
+      <img
+        class="navbar-logo"
+        src="../assets/images/lawcator-logo-white.png"
+        alt=""
+      />
+      <button
+        class="navbar-toggle"
+        type="button"
+        aria-label="Toggle navigation menu"
+        aria-expanded="false"
+        aria-controls="primary-navigation"
+      >
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <nav id="primary-navigation">
+        <a class="active" href="index.html">Home</a>
+        <a href="find.html">Find Lawyer</a>
+        <a href="map.html">Map</a>
+        <a href="about.html">About</a>
+      </nav>
+    </header>
+
+    <main class="container">
+      <section class="hero">
+        <img src="../assets/images/lawcator-logo-white.png" />
+        <p class="Motto">LEGAL SERVICES, WITHIN REACH.</p>
+
+        <div class="flex-search">
+          <form id="typeSearchForm" class="search-form" role="search">
+            <div class="search-bar">
+              <input
+                class="search-input"
+                id="typeSearch"
+                type="text"
+                placeholder="Search legal category..."
+                autocomplete="off"
+                aria-label="Search legal category"
+                aria-controls="typeSuggestions"
+                aria-expanded="false"
+              />
+              <button class="search-btn" type="submit" aria-label="Search">
+                <span class="material-symbols-outlined"> search </span>
+              </button>
+            </div>
+          </form>
+          <ul id="typeSuggestions" class="suggestions" role="listbox"></ul>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="site-footer__inner">
+        <p class="site-footer__meta">LAWCATOR Demo Project</p>
+        <p class="site-footer__disclaimer">
+          Disclaimer: The lawyer profiles, firms, service details, fees,
+          availability, and contact information shown on this website are dummy
+          data for educational purposes only and do not represent real legal
+          services.
+        </p>
+      </div>
+    </footer>
+
+    <script src="../assets/js/navbar-toggle.js"></script>
+  </body>
 </html>

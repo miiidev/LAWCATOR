@@ -306,17 +306,15 @@ if (mobileFilterToggle && mapFiltersPanel) {
 if (clearFiltersBtn) {
     clearFiltersBtn.addEventListener("click", () => {
         typeSearch.value = "";
-        syncPlaceholderVisibility();
+        if (typeaheadInstance && typeof typeaheadInstance.syncPlaceholderVisibility === "function") {
+            typeaheadInstance.syncPlaceholderVisibility();
+        }
         if (scopeFilter) scopeFilter.value = "nearest";
         if (cityFilter) cityFilter.value = "";
         if (budgetFilter) budgetFilter.value = "";
         if (availabilityFilter) availabilityFilter.value = "";
         closeSuggestions();
         applyAllFilters();
-
-        if (window.matchMedia("(max-width: 820px)").matches) {
-            setFiltersPanelOpen(false);
-        }
     });
 }
 

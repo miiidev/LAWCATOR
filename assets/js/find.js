@@ -259,7 +259,9 @@ function renderSuggestions(items) {
 if (clearFiltersBtn) {
   clearFiltersBtn.addEventListener("click", () => {
     typeSearch.value = "";
-    syncPlaceholderVisibility();
+    if (typeaheadInstance && typeof typeaheadInstance.syncPlaceholderVisibility === "function") {
+      typeaheadInstance.syncPlaceholderVisibility();
+    }
 
     if (cityFilter) cityFilter.value = "";
     if (budgetFilter) budgetFilter.value = "";

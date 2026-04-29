@@ -21,10 +21,6 @@ const PLACEHOLDER_MESSAGES = [
 ];
 const PLACEHOLDER_INTERVAL_MS = 3200;
 
-let placeholderEl = null;
-let placeholderIndex = 0;
-let placeholderTimer = null;
-
 const state = {
     categories: [],
     fuse: null,
@@ -66,65 +62,33 @@ function uniqSorted(arr) {
     return Array.from(new Set(arr)).sort((a, b) => a.localeCompare(b));
 }
 
-function ensureAnimatedPlaceholder() {
-    if (!searchBar || placeholderEl) return;
-
-    placeholderEl = document.createElement("span");
-    placeholderEl.className = "search-placeholder-anim";
-    placeholderEl.setAttribute("aria-hidden", "true");
-    placeholderEl.textContent = PLACEHOLDER_MESSAGES[0];
-    searchBar.appendChild(placeholderEl);
-}
-
-function syncPlaceholderVisibility() {
-    if (!typeSearchForm || !placeholderEl) return;
-    typeSearchForm.classList.toggle("has-value", typeSearch.value.trim().length > 0);
-}
-
-function animatePlaceholderTo(nextText) {
-    if (!placeholderEl) return;
-
-    placeholderEl.classList.remove("swipe-in");
-    placeholderEl.classList.add("swipe-out");
-
-    const handleOut = event => {
-        if (event.animationName !== "placeholder-swipe-out") return;
-        placeholderEl.removeEventListener("animationend", handleOut);
-
-        placeholderEl.textContent = nextText;
-        placeholderEl.classList.remove("swipe-out");
-        placeholderEl.classList.add("swipe-in");
-
-        const handleIn = inEvent => {
-            if (inEvent.animationName !== "placeholder-swipe-in") return;
-            placeholderEl.removeEventListener("animationend", handleIn);
-            placeholderEl.classList.remove("swipe-in");
-        };
-
-        placeholderEl.addEventListener("animationend", handleIn);
-    };
-
-    placeholderEl.addEventListener("animationend", handleOut);
-}
-
-function startPlaceholderShuffle() {
-    ensureAnimatedPlaceholder();
-    if (!placeholderEl) return;
-
-    // Keep native placeholder as empty so custom animated text does not overlap.
-    typeSearch.setAttribute("placeholder", "");
-    syncPlaceholderVisibility();
-
-    if (placeholderTimer) {
-        window.clearInterval(placeholderTimer);
+// Use shared typeahead helper for suggestions and placeholder
+let typeaheadInstance = null;
+typeaheadInstance = createTypeahead({
+    input: typeSearch,
+    suggestions: typeSuggestions,
+    form: typeSearchForm,
+    placeholderMessages: PLACEHOLDER_MESSAGES,
+    placeholderIntervalMs: PLACEHOLDER_INTERVAL_MS,
+    fetchSuggestions(q) {
+        return getMatches(q);
+    },
+    renderItem(item, idx, q) {
+        return '<li class="suggestion-item" id="type-suggestion-' + idx + '" role="option" aria-selected="false" data-index="' + idx + '" data-value="' + escapeHtml(item) + '">' +
+            '<span class="suggestion-main">' + highlightLabel(item, q) + '</span>' +
+            '<span class="suggestion-hint">Category</span>' +
+            '</li>';
+    },
+    onSelect(value) {
+        typeSearch.value = value;
+        typeaheadInstance.syncPlaceholderVisibility();
+        typeaheadInstance.closeSuggestions();
+        applyAllFilters([value]);
+    },
+    onApply(q, results) {
+        applyAllFilters(results.slice(0, 1));
     }
-
-    placeholderTimer = window.setInterval(() => {
-        if (typeSearch.value.trim()) return;
-        placeholderIndex = (placeholderIndex + 1) % PLACEHOLDER_MESSAGES.length;
-        animatePlaceholderTo(PLACEHOLDER_MESSAGES[placeholderIndex]);
-    }, PLACEHOLDER_INTERVAL_MS);
-}
+});
 
 async function loadCategoriesFromFirms() {
     try {
@@ -317,95 +281,12 @@ function applyAllFilters(typeMatchesOverride) {
     }
 }
 
-typeSearch.addEventListener("input", () => {
-    syncPlaceholderVisibility();
-    applySearch(typeSearch.value);
-});
-
-typeSearch.addEventListener("keydown", e => {
-    const items = Array.from(typeSuggestions.querySelectorAll(".suggestion-item"));
-    if (!items.length) return;
-
-    if (e.key === "ArrowDown") {
-        e.preventDefault();
-        state.activeIndex = (state.activeIndex + 1) % items.length;
-    } else if (e.key === "ArrowUp") {
-        e.preventDefault();
-        state.activeIndex = (state.activeIndex - 1 + items.length) % items.length;
-    } else if (e.key === "Enter") {
-        if (state.activeIndex >= 0 && items[state.activeIndex]) {
-            e.preventDefault();
-            const value = items[state.activeIndex].getAttribute("data-value");
-            typeSearch.value = value;
-            syncPlaceholderVisibility();
-            closeSuggestions();
-            applyAllFilters([value]);
-        }
-        return;
-    } else if (e.key === "Escape") {
-        closeSuggestions();
-        return;
+// start placeholder animation
+function startPlaceholderShuffle() {
+    if (typeaheadInstance && typeof typeaheadInstance.startPlaceholderShuffle === 'function') {
+        typeaheadInstance.startPlaceholderShuffle();
     }
-
-    items.forEach((el, idx) => {
-        const isActive = idx === state.activeIndex;
-        el.classList.toggle("active", isActive);
-        el.setAttribute("aria-selected", isActive ? "true" : "false");
-        if (isActive) {
-            typeSearch.setAttribute("aria-activedescendant", el.id);
-            el.scrollIntoView({ block: "nearest" });
-        }
-    });
-});
-
-typeSuggestions.addEventListener("mousemove", e => {
-    const item = e.target.closest(".suggestion-item");
-    if (!item) return;
-
-    const items = Array.from(typeSuggestions.querySelectorAll(".suggestion-item"));
-    const idx = Number(item.getAttribute("data-index"));
-    if (!Number.isFinite(idx)) return;
-
-    state.activeIndex = idx;
-    items.forEach((el, currentIdx) => {
-        const isActive = currentIdx === idx;
-        el.classList.toggle("active", isActive);
-        el.setAttribute("aria-selected", isActive ? "true" : "false");
-    });
-    typeSearch.setAttribute("aria-activedescendant", item.id);
-});
-
-typeSuggestions.addEventListener("click", e => {
-    const item = e.target.closest(".suggestion-item");
-    if (!item) return;
-
-    const value = item.getAttribute("data-value") || "";
-    typeSearch.value = value;
-    syncPlaceholderVisibility();
-    closeSuggestions();
-    applyAllFilters([value]);
-});
-
-typeSearchForm.addEventListener("submit", e => {
-    e.preventDefault();
-
-    const q = typeSearch.value.trim();
-    if (!q) {
-        closeSuggestions();
-        applyAllFilters([]);
-        return;
-    }
-
-    const matches = getMatches(q);
-    closeSuggestions();
-    applyAllFilters(matches.slice(0, 1));
-});
-
-document.addEventListener("click", e => {
-    if (!typeSearchForm.contains(e.target) && !typeSuggestions.contains(e.target)) {
-        closeSuggestions();
-    }
-});
+}
 
 [scopeFilter, cityFilter, budgetFilter, availabilityFilter].forEach(el => {
     if (!el) return;

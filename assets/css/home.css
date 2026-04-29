@@ -4,6 +4,7 @@
   1) Add class="home-page" to <body> in pages/index.html.
   2) Keep page-specific rules scoped with .home-page.
 */
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 
 .home-page {
   --map-ink: #0f172a;
@@ -22,6 +23,34 @@
   font-family: "Inter", "Segoe UI", "Helvetica Neue", Arial, sans-serif;
   background:
     linear-gradient(180deg, rgba(8, 12, 24, 0.88), rgba(12, 18, 31, 0.76));
+}
+
+.home-page .map-background-video {
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+  object-position: center;
+  filter: saturate(0.9) contrast(1.05) brightness(0.55) sepia(0.15);
+  transform: scale(1.03);
+  transform-origin: center center;
+  will-change: transform;
+}
+
+.home-page .map-video-layer {
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+.home-page .map-video-overlay {
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(circle at top left, rgba(184, 138, 45, 0.18), transparent 32%),
+    radial-gradient(circle at top right, rgba(111, 29, 47, 0.18), transparent 28%),
+    linear-gradient(180deg, rgba(8, 12, 24, 0.42), rgba(8, 12, 24, 0.72));
 }
 
 .home-page::before {
@@ -46,9 +75,55 @@
 }
 
 .home-page .hero {
-  /* Add home hero styles here */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+  z-index: 1;
+}
+
+.home-page .hero p {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 2em;
+  margin:10px 0;
+  letter-spacing: 2px;
+}
+
+ .hero img{
+  width: 40%;
+  margin-top: 50px;
+  z-index: 1;
 }
 
 .home-page .search-bar {
-  /* Add home search bar overrides here */
+  border: 1px solid rgba(255, 236, 201, 0.28);
+  background: rgba(255, 250, 240, 0.42);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.56), 0 10px 24px rgba(0, 0, 0, 0.22), 0 0 16px rgba(216, 177, 99, 0.2);
+  backdrop-filter: blur(18px) saturate(150%);
+  -webkit-backdrop-filter: blur(18px) saturate(150%);
+  border-radius: 16px;
 }
+
+.home-page .search-input {
+  background: transparent;
+  border: 0;
+  color: #0f172a;
+  font-size: 1em;
+  border-radius: 16px;
+}
+
+.home-page .search-input::placeholder {
+  color: rgba(248, 242, 231, 0.72);
+}
+
+.home-page .search-btn {
+  background: linear-gradient(135deg, #6f1d2f, #b88a2d);
+  color: #ffffff;
+  box-shadow: none;
+  border-radius: 16px;
+}
+
+.motto{
+  font-family: 'Bebas Neue';
+}
+

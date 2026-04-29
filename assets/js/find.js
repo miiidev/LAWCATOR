@@ -18,10 +18,6 @@ const PLACEHOLDER_MESSAGES = [
 ];
 const PLACEHOLDER_INTERVAL_MS = 3200;
 
-let placeholderEl = null;
-let placeholderIndex = 0;
-let placeholderTimer = null;
-
 const state = {
   activeIndex: -1
 };
@@ -145,63 +141,33 @@ function highlightLabel(label, query) {
   return before + "<mark>" + match + "</mark>" + after;
 }
 
-function ensureAnimatedPlaceholder() {
-  if (!searchBar || placeholderEl) return;
-
-  placeholderEl = document.createElement("span");
-  placeholderEl.className = "search-placeholder-anim";
-  placeholderEl.setAttribute("aria-hidden", "true");
-  placeholderEl.textContent = PLACEHOLDER_MESSAGES[0];
-  searchBar.appendChild(placeholderEl);
-}
-
-function syncPlaceholderVisibility() {
-  if (!typeSearchForm || !placeholderEl) return;
-  typeSearchForm.classList.toggle("has-value", typeSearch.value.trim().length > 0);
-}
-
-function animatePlaceholderTo(nextText) {
-  if (!placeholderEl) return;
-
-  placeholderEl.classList.remove("swipe-in");
-  placeholderEl.classList.add("swipe-out");
-
-  const handleOut = event => {
-    if (event.animationName !== "placeholder-swipe-out") return;
-    placeholderEl.removeEventListener("animationend", handleOut);
-
-    placeholderEl.textContent = nextText;
-    placeholderEl.classList.remove("swipe-out");
-    placeholderEl.classList.add("swipe-in");
-
-    const handleIn = inEvent => {
-      if (inEvent.animationName !== "placeholder-swipe-in") return;
-      placeholderEl.removeEventListener("animationend", handleIn);
-      placeholderEl.classList.remove("swipe-in");
-    };
-
-    placeholderEl.addEventListener("animationend", handleIn);
-  };
-
-  placeholderEl.addEventListener("animationend", handleOut);
-}
+// wire up shared typeahead
+let typeaheadInstance = null;
+typeaheadInstance = createTypeahead({
+  input: typeSearch,
+  suggestions: suggestionsEl,
+  form: typeSearchForm,
+  placeholderMessages: PLACEHOLDER_MESSAGES,
+  placeholderIntervalMs: PLACEHOLDER_INTERVAL_MS,
+  fetchSuggestions(q) {
+    return FuseSearch.search(q, 6);
+  },
+  onSelect(value) {
+    typeSearch.value = value;
+    typeaheadInstance.syncPlaceholderVisibility();
+    typeaheadInstance.closeSuggestions();
+    renderList();
+  },
+  onApply(q, results) {
+    renderSuggestions(results);
+    renderList();
+  }
+});
 
 function startPlaceholderShuffle() {
-  ensureAnimatedPlaceholder();
-  if (!placeholderEl) return;
-
-  typeSearch.setAttribute("placeholder", "");
-  syncPlaceholderVisibility();
-
-  if (placeholderTimer) {
-    window.clearInterval(placeholderTimer);
+  if (typeaheadInstance && typeof typeaheadInstance.startPlaceholderShuffle === 'function') {
+    typeaheadInstance.startPlaceholderShuffle();
   }
-
-  placeholderTimer = window.setInterval(() => {
-    if (typeSearch.value.trim()) return;
-    placeholderIndex = (placeholderIndex + 1) % PLACEHOLDER_MESSAGES.length;
-    animatePlaceholderTo(PLACEHOLDER_MESSAGES[placeholderIndex]);
-  }, PLACEHOLDER_INTERVAL_MS);
 }
 
 function closeSuggestions() {
@@ -268,87 +234,22 @@ Promise.all([
   renderList();
 });
 
-// realtime suggestions
-typeSearch.addEventListener("input", () => {
-  syncPlaceholderVisibility();
-  applySearch(typeSearch.value);
-});
-
-typeSearch.addEventListener("keydown", e => {
-  const items = Array.from(suggestionsEl.querySelectorAll(".suggestion-item"));
-  if (!items.length) return;
-
-  if (e.key === "ArrowDown") {
-    e.preventDefault();
-    state.activeIndex = (state.activeIndex + 1) % items.length;
-  } else if (e.key === "ArrowUp") {
-    e.preventDefault();
-    state.activeIndex = (state.activeIndex - 1 + items.length) % items.length;
-  } else if (e.key === "Enter") {
-    if (state.activeIndex >= 0 && items[state.activeIndex]) {
-      e.preventDefault();
-      const value = items[state.activeIndex].getAttribute("data-value") || "";
-      typeSearch.value = value;
-      syncPlaceholderVisibility();
-      closeSuggestions();
-      renderList();
-    }
-    return;
-  } else if (e.key === "Escape") {
-    closeSuggestions();
+// legacy functions kept for compatibility with other code in this file
+function renderSuggestions(items) {
+  if (!items || !items.length) {
+    if (typeaheadInstance) typeaheadInstance.closeSuggestions();
     return;
   }
 
-  items.forEach((el, idx) => {
-    const isActive = idx === state.activeIndex;
-    el.classList.toggle("active", isActive);
-    el.setAttribute("aria-selected", isActive ? "true" : "false");
-    if (isActive) {
-      typeSearch.setAttribute("aria-activedescendant", el.id);
-      el.scrollIntoView({ block: "nearest" });
-    }
-  });
-});
-
-typeSearchForm.addEventListener("submit", e => {
-  e.preventDefault();
-  closeSuggestions();
-  renderList();
-});
-
-suggestionsEl.addEventListener("click", e => {
-  const item = e.target.closest(".suggestion-item");
-  if (!item) return;
-
-  const value = item.getAttribute("data-value") || "";
-  typeSearch.value = value;
-  syncPlaceholderVisibility();
-  closeSuggestions();
-  renderList();
-});
-
-suggestionsEl.addEventListener("mousemove", e => {
-  const item = e.target.closest(".suggestion-item");
-  if (!item) return;
-
-  const items = Array.from(suggestionsEl.querySelectorAll(".suggestion-item"));
-  const idx = Number(item.getAttribute("data-index"));
-  if (!Number.isFinite(idx)) return;
-
-  state.activeIndex = idx;
-  items.forEach((el, currentIdx) => {
-    const isActive = currentIdx === idx;
-    el.classList.toggle("active", isActive);
-    el.setAttribute("aria-selected", isActive ? "true" : "false");
-  });
-  typeSearch.setAttribute("aria-activedescendant", item.id);
-});
-
-document.addEventListener("click", e => {
-  if (!typeSearchForm.contains(e.target) && !suggestionsEl.contains(e.target)) {
-    closeSuggestions();
-  }
-});
+  suggestionsEl.innerHTML = items
+    .map((item, idx) => (
+      '<li class="suggestion-item" id="type-suggestion-' + idx + '" role="option" aria-selected="false" data-index="' + idx + '" data-value="' + escapeHtml(item) + '">' +
+      '<span class="suggestion-main">' + highlightLabel(item, typeSearch.value) + "</span>" +
+      '<span class="suggestion-hint">Category</span>' +
+      "</li>"
+    ))
+    .join("");
+}
 
 [cityFilter, budgetFilter, availabilityFilter, sortFilter].forEach(el => {
   if (!el) return;

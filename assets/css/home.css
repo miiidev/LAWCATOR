@@ -84,14 +84,14 @@
 
 .home-page .hero p {
   font-family: 'Bebas Neue', sans-serif;
-  font-size: 2em;
-  margin:10px 0;
+  font-size: 3em;
+  margin:15px 0;
   letter-spacing: 2px;
 }
 
  .hero img{
   width: 40%;
-  margin-top: 50px;
+  margin-top: 220px;
   z-index: 1;
 }
 

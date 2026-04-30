@@ -1,12 +1,16 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Lawyer Details</title>
     <link rel="stylesheet" href="../assets/css/shared.css" />
     <link rel="stylesheet" href="../assets/css/lawyer-details.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap"
+      rel="stylesheet"
+    />
+    <!--bebas neue font-->
 
     <script src="../assets/js/map-state.js"></script>
     <script src="../assets/js/map-utils.js"></script>
@@ -14,197 +18,320 @@
     <script src="../assets/js/map-route.js"></script>
     <script src="../assets/js/map-markers.js"></script>
     <script src="../assets/js/map.js"></script>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAWzVaKWj94jiKiaoHNgRB7vpJhAL0jT9w&callback=initLawyerMap&loading=async" async
-        defer></script>
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAWzVaKWj94jiKiaoHNgRB7vpJhAL0jT9w&callback=initLawyerMap&loading=async"
+      async
+      defer
+    ></script>
     <script src="../assets/js/ui.js"></script>
-</head>
+  </head>
 
-<body class="lawyer-details-page">
+  <body class="lawyer-details-page">
     <header class="navbar">
-        <img class="navbar-logo" src="../assets/images/lawcator-logo-white.png" alt="">
-        <button class="navbar-toggle" type="button" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="primary-navigation">
-            <span></span>
-            <span></span>
-            <span></span>
-        </button>
-        <nav id="primary-navigation">
-            <a href="index.html">Home</a>
-            <a class="active" href="find.html">Find Lawyer</a>
-            <a href="map.html">Map</a>
-            <a href="about.html">About</a>
-        </nav>
+      <a href="index.html">
+        <img
+        class="navbar-logo"
+        src="../assets/images/lawcator-logo-white.png"
+        alt=""
+      />
+      </a>
+      <button
+        class="navbar-toggle"
+        type="button"
+        aria-label="Toggle navigation menu"
+        aria-expanded="false"
+        aria-controls="primary-navigation"
+      >
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <nav id="primary-navigation">
+        <a href="index.html">Home</a>
+        <a class="active" href="find.html">Find Lawyer</a>
+        <a href="map.html">Map</a>
+        <a href="about.html">About</a>
+      </nav>
     </header>
 
     <main class="container">
-        <div class="lawyer-bento-layout">
-            <div class="lawyer-bento-layout__left">
-                <!-- Profile Header -->
-                <section class="lawyer-hero">
-                    <div class="lawyer-avatar">
-                        <img src="../assets/images/lawyer.jpg" alt="Lawyer Photo" />
-                    </div>
-                    <div class="lawyer-info">
-                        <h2></h2>
-                        <p class="lawyer-specialty"></p>
-                        <p class="lawyer-location"></p>
-                        <div class="lawyer-meta"></div>
-                        <div class="lawyer-actions">
-                            <button class="btn-primary" type="button" data-modal-open="book-consultation">Book Consultation</button>
-                            <button class="btn-secondary" type="button" data-modal-open="message-lawyer">Message</button>
-                        </div>
-                    </div>
-                </section>
-
-                <!-- Map -->
-                <section class="lawyer-section lawyer-map-section">
-                    <div class="lawyer-map-header">
-                        <h3>Office Location</h3>
-                    </div>
-                    <div class="lawyer-map-body">
-                        <div id="map" class="map-box"></div>
-                    </div>
-                </section>
+      <div class="lawyer-bento-layout">
+        <div class="lawyer-bento-layout__left">
+          <!-- Profile Header -->
+          <section class="lawyer-hero">
+            <div class="lawyer-avatar">
+              <img src="../assets/images/lawyer.jpg" alt="Lawyer Photo" />
             </div>
-
-            <div class="lawyer-bento-layout__right">
-                <!-- About -->
-                <section class="lawyer-section accordion-item about is-open" data-accordion-item>
-                    <button class="accordion-trigger" type="button" aria-expanded="true">
-                        <span>Biography</span>
-                        <span class="accordion-icon" aria-hidden="true"></span>
-                    </button>
-                    <div class="accordion-panel" data-accordion-panel>
-                        <div class="accordion-content">
-                            <p></p>
-                        </div>
-                    </div>
-                </section>
-
-                <!-- Services -->
-                <section class="lawyer-section accordion-item" data-accordion-item>
-                    <button class="accordion-trigger" type="button" aria-expanded="false">
-                        <span>Services</span>
-                        <span class="accordion-icon" aria-hidden="true"></span>
-                    </button>
-                    <div class="accordion-panel" data-accordion-panel>
-                        <div class="accordion-content">
-                            <ul class="service-list"></ul>
-                        </div>
-                    </div>
-                </section>
-
-                <!-- Fees -->
-                <section class="lawyer-section accordion-item" data-accordion-item>
-                    <button class="accordion-trigger" type="button" aria-expanded="false">
-                        <span>Fees</span>
-                        <span class="accordion-icon" aria-hidden="true"></span>
-                    </button>
-                    <div class="accordion-panel" data-accordion-panel>
-                        <div class="accordion-content">
-                            <div class="fee-grid">
-                                <div class="fee-card">
-                                    <span class="fee-label">Consultation</span>
-                                    <span class="fee-value">RM 150 / hour</span>
-                                </div>
-                                <div class="fee-card">
-                                    <span class="fee-label">Drafting</span>
-                                    <span class="fee-value">RM 300+</span>
-                                </div>
-                                <div class="fee-card">
-                                    <span class="fee-label">Court Appearance</span>
-                                    <span class="fee-value">RM 800+</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-
-                <!-- Availability -->
-                <section class="lawyer-section accordion-item availability" data-accordion-item>
-                    <button class="accordion-trigger" type="button" aria-expanded="false">
-                        <span>Availability</span>
-                        <span class="accordion-icon" aria-hidden="true"></span>
-                    </button>
-                    <div class="accordion-panel" data-accordion-panel>
-                        <div class="accordion-content">
-                            <p class="availability-mon-fri">Mon-Fri: N/A</p>
-                            <p class="availability-sat">Sat: N/A</p>
-                        </div>
-                    </div>
-                </section>
-
-                <!-- Contact -->
-                <section class="lawyer-section accordion-item contact" data-accordion-item>
-                    <button class="accordion-trigger" type="button" aria-expanded="false">
-                        <span>Contact</span>
-                        <span class="accordion-icon" aria-hidden="true"></span>
-                    </button>
-                    <div class="accordion-panel" data-accordion-panel>
-                        <div class="accordion-content">
-                            <p class="contact-phone">N/A</p>
-                            <p class="contact-address">N/A</p>
-                        </div>
-                    </div>
-                </section>
+            <div class="lawyer-info">
+              <h2></h2>
+              <p class="lawyer-specialty"></p>
+              <p class="lawyer-location"></p>
+              <div class="lawyer-meta"></div>
+              <div class="lawyer-actions">
+                <button
+                  class="btn-primary"
+                  type="button"
+                  data-modal-open="book-consultation"
+                >
+                  Book Consultation
+                </button>
+                <button
+                  class="btn-secondary"
+                  type="button"
+                  data-modal-open="message-lawyer"
+                >
+                  Message
+                </button>
+              </div>
             </div>
+          </section>
+
+          <!-- Map -->
+          <section class="lawyer-section lawyer-map-section">
+            <div class="lawyer-map-header">
+              <h3>Office Location</h3>
+            </div>
+            <div class="lawyer-map-body">
+              <div id="map" class="map-box"></div>
+            </div>
+          </section>
         </div>
+
+        <div class="lawyer-bento-layout__right">
+          <!-- About -->
+          <section
+            class="lawyer-section accordion-item about is-open"
+            data-accordion-item
+          >
+            <button
+              class="accordion-trigger"
+              type="button"
+              aria-expanded="true"
+            >
+              <span>Biography</span>
+              <span class="accordion-icon" aria-hidden="true"></span>
+            </button>
+            <div class="accordion-panel" data-accordion-panel>
+              <div class="accordion-content">
+                <p></p>
+              </div>
+            </div>
+          </section>
+
+          <!-- Services -->
+          <section class="lawyer-section accordion-item" data-accordion-item>
+            <button
+              class="accordion-trigger"
+              type="button"
+              aria-expanded="false"
+            >
+              <span>Services</span>
+              <span class="accordion-icon" aria-hidden="true"></span>
+            </button>
+            <div class="accordion-panel" data-accordion-panel>
+              <div class="accordion-content">
+                <ul class="service-list"></ul>
+              </div>
+            </div>
+          </section>
+
+          <!-- Fees -->
+          <section class="lawyer-section accordion-item" data-accordion-item>
+            <button
+              class="accordion-trigger"
+              type="button"
+              aria-expanded="false"
+            >
+              <span>Fees</span>
+              <span class="accordion-icon" aria-hidden="true"></span>
+            </button>
+            <div class="accordion-panel" data-accordion-panel>
+              <div class="accordion-content">
+                <div class="fee-grid">
+                  <div class="fee-card">
+                    <span class="fee-label">Consultation</span>
+                    <span class="fee-value">RM 150 / hour</span>
+                  </div>
+                  <div class="fee-card">
+                    <span class="fee-label">Drafting</span>
+                    <span class="fee-value">RM 300+</span>
+                  </div>
+                  <div class="fee-card">
+                    <span class="fee-label">Court Appearance</span>
+                    <span class="fee-value">RM 800+</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!-- Availability -->
+          <section
+            class="lawyer-section accordion-item availability"
+            data-accordion-item
+          >
+            <button
+              class="accordion-trigger"
+              type="button"
+              aria-expanded="false"
+            >
+              <span>Availability</span>
+              <span class="accordion-icon" aria-hidden="true"></span>
+            </button>
+            <div class="accordion-panel" data-accordion-panel>
+              <div class="accordion-content">
+                <p class="availability-mon-fri">Mon-Fri: N/A</p>
+                <p class="availability-sat">Sat: N/A</p>
+              </div>
+            </div>
+          </section>
+
+          <!-- Contact -->
+          <section
+            class="lawyer-section accordion-item contact"
+            data-accordion-item
+          >
+            <button
+              class="accordion-trigger"
+              type="button"
+              aria-expanded="false"
+            >
+              <span>Contact</span>
+              <span class="accordion-icon" aria-hidden="true"></span>
+            </button>
+            <div class="accordion-panel" data-accordion-panel>
+              <div class="accordion-content">
+                <p class="contact-phone">N/A</p>
+                <p class="contact-address">N/A</p>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
     </main>
 
     <footer class="site-footer">
-        <div class="site-footer__inner">
-            <p class="site-footer__meta">LAWCAATOR Demo Project</p>
-            <p class="site-footer__disclaimer">Disclaimer: The lawyer profiles, firms, service details, fees, availability, and contact information shown on this website are dummy data for educational purposes only and do not represent real legal services.</p>
-        </div>
+      <div class="site-footer__inner">
+        <p class="site-footer__meta">LAWCAATOR Demo Project</p>
+        <p class="site-footer__disclaimer">
+          Disclaimer: The lawyer profiles, firms, service details, fees,
+          availability, and contact information shown on this website are dummy
+          data for educational purposes only and do not represent real legal
+          services.
+        </p>
+      </div>
     </footer>
 
     <div class="lawyer-modal" data-modal-id="book-consultation" hidden>
-        <div class="lawyer-modal__dialog" role="dialog" aria-modal="true" aria-labelledby="book-consultation-title">
-            <div class="lawyer-modal__header">
-                <h3 id="book-consultation-title">Book Consultation</h3>
-                <button type="button" class="lawyer-modal__close" data-modal-close aria-label="Close consultation modal">Close</button>
-            </div>
-            <p class="lawyer-modal__demo-note" data-demo-note>
-                Demo only: this form does not send real bookings to a lawyer.
-            </p>
-            <form class="lawyer-modal__form" data-booking-form>
-                <label for="demo-client-name">Your Name</label>
-                <input id="demo-client-name" type="text" name="clientName" required data-modal-initial-focus />
-
-                <label for="demo-client-email">Email</label>
-                <input id="demo-client-email" type="email" name="clientEmail" required />
-
-                <label for="demo-consultation-date">Preferred Date</label>
-                <input id="demo-consultation-date" type="date" name="consultationDate" required />
-
-                <label for="demo-consultation-notes">Notes (Optional)</label>
-                <textarea id="demo-consultation-notes" name="consultationNotes" rows="4" placeholder="Share basic details for this demo request."></textarea>
-
-                <button class="lawyer-modal__submit" type="submit">Submit Demo Request</button>
-            </form>
+      <div
+        class="lawyer-modal__dialog"
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby="book-consultation-title"
+      >
+        <div class="lawyer-modal__header">
+          <h3 id="book-consultation-title">Book Consultation</h3>
+          <button
+            type="button"
+            class="lawyer-modal__close"
+            data-modal-close
+            aria-label="Close consultation modal"
+          >
+            Close
+          </button>
         </div>
+        <p class="lawyer-modal__demo-note" data-demo-note>
+          Demo only: this form does not send real bookings to a lawyer.
+        </p>
+        <form class="lawyer-modal__form" data-booking-form>
+          <label for="demo-client-name">Your Name</label>
+          <input
+            id="demo-client-name"
+            type="text"
+            name="clientName"
+            required
+            data-modal-initial-focus
+          />
+
+          <label for="demo-client-email">Email</label>
+          <input
+            id="demo-client-email"
+            type="email"
+            name="clientEmail"
+            required
+          />
+
+          <label for="demo-consultation-date">Preferred Date</label>
+          <input
+            id="demo-consultation-date"
+            type="date"
+            name="consultationDate"
+            required
+          />
+
+          <label for="demo-consultation-notes">Notes (Optional)</label>
+          <textarea
+            id="demo-consultation-notes"
+            name="consultationNotes"
+            rows="4"
+            placeholder="Share basic details for this demo request."
+          ></textarea>
+
+          <button class="lawyer-modal__submit" type="submit">
+            Submit Demo Request
+          </button>
+        </form>
+      </div>
     </div>
 
     <div class="lawyer-modal" data-modal-id="message-lawyer" hidden>
-        <div class="lawyer-modal__dialog" role="dialog" aria-modal="true" aria-labelledby="message-lawyer-title">
-            <div class="lawyer-modal__header">
-                <h3 id="message-lawyer-title">Message Lawyer</h3>
-                <button type="button" class="lawyer-modal__close" data-modal-close aria-label="Close message modal">Close</button>
-            </div>
-            <p class="lawyer-modal__demo-note" data-demo-note>
-                Demo only: this message stays on this page and is not delivered.
-            </p>
-            <form class="lawyer-modal__form" data-message-form>
-                <label for="demo-message-body">Message</label>
-                <textarea id="demo-message-body" name="message" rows="6" required data-message-input data-modal-initial-focus placeholder="Type your message for demo purposes."></textarea>
-                <button class="lawyer-modal__submit" type="submit">Send Demo Message</button>
-            </form>
+      <div
+        class="lawyer-modal__dialog"
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby="message-lawyer-title"
+      >
+        <div class="lawyer-modal__header">
+          <h3 id="message-lawyer-title">Message Lawyer</h3>
+          <button
+            type="button"
+            class="lawyer-modal__close"
+            data-modal-close
+            aria-label="Close message modal"
+          >
+            Close
+          </button>
         </div>
+        <p class="lawyer-modal__demo-note" data-demo-note>
+          Demo only: this message stays on this page and is not delivered.
+        </p>
+        <form class="lawyer-modal__form" data-message-form>
+          <label for="demo-message-body">Message</label>
+          <textarea
+            id="demo-message-body"
+            name="message"
+            rows="6"
+            required
+            data-message-input
+            data-modal-initial-focus
+            placeholder="Type your message for demo purposes."
+          ></textarea>
+          <button class="lawyer-modal__submit" type="submit">
+            Send Demo Message
+          </button>
+        </form>
+      </div>
     </div>
 
-    <div class="lawyer-demo-toast" data-demo-toast role="status" aria-live="polite" hidden></div>
+    <div
+      class="lawyer-demo-toast"
+      data-demo-toast
+      role="status"
+      aria-live="polite"
+      hidden
+    ></div>
 
     <script src="../assets/js/navbar-toggle.js"></script>
     <script src="../assets/js/lawyer-details.js"></script>
-</body>
-
+  </body>
 </html>

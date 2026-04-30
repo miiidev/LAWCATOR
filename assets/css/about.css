@@ -41,7 +41,6 @@
 .about-page .navbar,
 .about-page .container,
 .about-page .site-footer {
-  position: relative;
   z-index: 1;
 }
 

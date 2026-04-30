@@ -69,7 +69,6 @@
 .home-page .navbar,
 .home-page .container,
 .home-page .site-footer {
-  position: relative;
   z-index: 1;
 }
 

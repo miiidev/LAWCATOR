@@ -1,20 +1,20 @@
 .find-page {
-  --map-ink: #0f172a;
-  --map-ink-soft: #334155;
-  --map-gold: #b88a2d;
-  --map-gold-glow: rgba(216, 177, 99, 0.34);
-  --map-gold-soft: rgba(184, 138, 45, 0.22);
-  --map-burgundy: #6f1d2f;
-  --map-surface: rgba(255, 248, 232, 0.55);
-  --map-surface-strong: rgba(255, 248, 232, 0.78);
-  --map-border: rgba(255, 236, 201, 0.45);
+  --map-ink: var(--theme-text);
+  --map-ink-soft: var(--theme-text-muted);
+  --map-gold: var(--theme-accent);
+  --map-gold-glow: var(--theme-glow);
+  --map-gold-soft: var(--theme-accent-soft);
+  --map-burgundy: #1f1f1f;
+  --map-surface: var(--theme-surface);
+  --map-surface-strong: var(--theme-surface-strong);
+  --map-border: var(--theme-border);
   position: relative;
   isolation: isolate;
   overflow-x: clip;
   max-width: 100%;
   font-family: "Inter", "Segoe UI", "Helvetica Neue", Arial, sans-serif;
   background:
-    linear-gradient(180deg, rgba(8, 12, 24, 0.88), rgba(12, 18, 31, 0.76));
+    linear-gradient(180deg, rgba(8, 8, 8, 0.92), rgba(18, 18, 18, 0.82));
 }
 
 .find-page::before {
@@ -23,9 +23,9 @@
   inset: 0;
   pointer-events: none;
   background:
-    radial-gradient(circle at 18% 18%, rgba(255, 248, 232, 0.16), transparent 24%),
-    radial-gradient(circle at 82% 14%, rgba(184, 138, 45, 0.14), transparent 20%),
-    radial-gradient(circle at 68% 84%, rgba(111, 29, 47, 0.12), transparent 26%);
+    radial-gradient(circle at 18% 18%, rgba(255, 255, 255, 0.14), transparent 24%),
+    radial-gradient(circle at 82% 14%, rgba(255, 255, 255, 0.1), transparent 20%),
+    radial-gradient(circle at 68% 84%, rgba(255, 255, 255, 0.08), transparent 26%);
   opacity: 1;
   z-index: 0;
 }
@@ -51,12 +51,12 @@
   margin: 14px auto 0;
   z-index: 3;
   padding: 16px;
-  border: 1px solid rgba(255, 236, 201, 0.34);
+  border: 1px solid rgba(255, 255, 255, 0.16);
   border-radius: 24px;
-  background: linear-gradient(180deg, rgba(255, 248, 232, 0.38), rgba(255, 248, 232, 0.18));
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.12), rgba(255, 255, 255, 0.06));
   backdrop-filter: blur(22px) saturate(150%);
   -webkit-backdrop-filter: blur(22px) saturate(150%);
-  box-shadow: 0 18px 54px rgba(0, 0, 0, 0.28), 0 0 0 1px rgba(255, 236, 201, 0.16), 0 0 24px var(--map-gold-glow);
+  box-shadow: 0 18px 54px rgba(0, 0, 0, 0.28), 0 0 0 1px rgba(255, 255, 255, 0.1), 0 0 24px var(--map-gold-glow);
 }
 
 .find-page .flex-search {
@@ -84,9 +84,9 @@
 }
 
 .find-page .search-bar {
-  border: 1px solid rgba(255, 236, 201, 0.28);
-  background: rgba(255, 250, 240, 0.42);
-  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.56), 0 10px 24px rgba(0, 0, 0, 0.22), 0 0 16px rgba(216, 177, 99, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  background: rgba(255, 255, 255, 0.08);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.16), 0 10px 24px rgba(0, 0, 0, 0.22), 0 0 16px rgba(255, 255, 255, 0.12);
   backdrop-filter: blur(18px) saturate(150%);
   -webkit-backdrop-filter: blur(18px) saturate(150%);
 }
@@ -94,17 +94,17 @@
 .find-page .search-input {
   background: transparent;
   border: 0;
-  color: #0f172a;
+  color: var(--theme-text);
   font-size: 1em;
 }
 
 .find-page .search-input::placeholder {
-  color: rgba(248, 242, 231, 0.72);
+  color: var(--theme-text-muted);
 }
 
 .find-page .search-btn {
-  background: linear-gradient(135deg, #6f1d2f, #b88a2d);
-  color: #ffffff;
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.18), rgba(255, 255, 255, 0.08));
+  color: var(--theme-text);
   box-shadow: none;
 }
 
@@ -117,49 +117,49 @@
   left: 0;
   width: 100%;
   z-index: 80;
-  border: 1px solid rgba(255, 236, 201, 0.22);
-  background: rgba(16, 22, 36, 0.82);
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  background: rgba(10, 10, 10, 0.92);
   backdrop-filter: blur(16px) saturate(150%);
   -webkit-backdrop-filter: blur(16px) saturate(150%);
-  box-shadow: 0 16px 36px rgba(0, 0, 0, 0.28), 0 0 20px rgba(216, 177, 99, 0.18);
+  box-shadow: 0 16px 36px rgba(0, 0, 0, 0.28), 0 0 20px rgba(255, 255, 255, 0.1);
 }
 
 .find-page .suggestion-item {
-  color: #f8f2e7;
+  color: var(--theme-text);
 }
 
 .find-page .suggestion-item:hover,
 .find-page .suggestion-item.active {
-  background: rgba(184, 138, 45, 0.2);
-  border-color: rgba(255, 236, 201, 0.45);
+  background: rgba(255, 255, 255, 0.08);
+  border-color: rgba(255, 255, 255, 0.24);
 }
 
 .find-page .suggestion-item:hover::before,
 .find-page .suggestion-item.active::before {
-  background: #d8b163;
+  background: var(--theme-accent-strong);
 }
 
 .find-page .suggestion-main mark {
-  background: rgba(216, 177, 99, 0.28);
-  color: #fff6dd;
+  background: rgba(255, 255, 255, 0.16);
+  color: var(--theme-accent-strong);
 }
 
 .find-page .suggestion-hint {
-  color: #fff2d2;
-  background: rgba(111, 29, 47, 0.45);
-  border-color: rgba(255, 236, 201, 0.28);
+  color: var(--theme-text-muted);
+  background: rgba(255, 255, 255, 0.08);
+  border-color: rgba(255, 255, 255, 0.16);
 }
 
 .find-page .suggestions::-webkit-scrollbar-thumb {
-  background: rgba(255, 236, 201, 0.45);
-  border-color: rgba(16, 22, 36, 0.82);
+  background: rgba(255, 255, 255, 0.24);
+  border-color: rgba(10, 10, 10, 0.92);
 }
 
 .find-page .clear-filter-btn {
-  border: 1px solid rgba(111, 29, 47, 0.3);
-  background: linear-gradient(135deg, #6f1d2f, #b88a2d);
-  color: #fff8ec;
-  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.18), 0 10px 20px rgba(0, 0, 0, 0.16);
+  border: 1px solid rgba(255, 255, 255, 0.22);
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.16), rgba(255, 255, 255, 0.08));
+  color: var(--theme-text);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.14), 0 10px 20px rgba(0, 0, 0, 0.16);
 }
 
 .find-page .clear-filter-btn:hover,
@@ -170,17 +170,17 @@
 .find-page .mobile-filter-toggle {
   display: none;
   height: 50px;
-  border: 1px solid rgba(255, 236, 201, 0.3);
+  border: 1px solid rgba(255, 255, 255, 0.18);
   border-radius: 999px;
-  background: linear-gradient(180deg, rgba(255, 248, 232, 0.44), rgba(255, 248, 232, 0.22));
-  color: #f8f2e7;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.14), rgba(255, 255, 255, 0.08));
+  color: var(--theme-text);
   font-weight: 700;
   padding: 0 14px;
   gap: 8px;
   align-items: center;
   justify-content: center;
   cursor: pointer;
-  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.58), 0 10px 24px rgba(0, 0, 0, 0.22);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.18), 0 10px 24px rgba(0, 0, 0, 0.22);
   backdrop-filter: blur(14px) saturate(145%);
   -webkit-backdrop-filter: blur(14px) saturate(145%);
 }
@@ -192,17 +192,17 @@
 
 .find-page .mobile-filter-toggle:hover,
 .find-page .mobile-filter-toggle:focus-visible {
-  background: linear-gradient(180deg, rgba(255, 248, 232, 0.56), rgba(255, 248, 232, 0.3));
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.1));
 }
 
 /* ── Filters panel ── */
 .find-page .map-filters {
   margin-top: 12px;
   padding: 14px 16px;
-  border: 1px solid rgba(255, 236, 201, 0.34);
+  border: 1px solid rgba(255, 255, 255, 0.16);
   border-radius: 24px;
-  background: linear-gradient(180deg, rgba(255, 248, 232, 0.34), rgba(255, 248, 232, 0.16));
-  box-shadow: 0 18px 50px rgba(0, 0, 0, 0.24), 0 0 0 1px rgba(255, 236, 201, 0.14), 0 0 24px rgba(216, 177, 99, 0.24);
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.12), rgba(255, 255, 255, 0.06));
+  box-shadow: 0 18px 50px rgba(0, 0, 0, 0.24), 0 0 0 1px rgba(255, 255, 255, 0.1), 0 0 24px rgba(255, 255, 255, 0.1);
   backdrop-filter: blur(22px) saturate(150%);
   -webkit-backdrop-filter: blur(22px) saturate(150%);
 }
@@ -210,9 +210,9 @@
 .find-page .filter-field select {
   min-width: 0;
   width: 100%;
-  border: 2px solid rgba(255, 236, 201, 0.24);
-  background: rgba(16, 22, 36, 0.6);
-  color: #f8f2e7;
+  border: 2px solid rgba(255, 255, 255, 0.16);
+  background: rgba(255, 255, 255, 0.08);
+  color: var(--theme-text);
   box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.12);
   transition: border-color 0.24s ease, box-shadow 0.24s ease;
 }
@@ -220,8 +220,8 @@
 /* ── Gold glow on hover / focus ── */
 .find-page .filter-field select:hover,
 .find-page .filter-field select:focus {
-  border-color: #b88a2d;
-  box-shadow: 0 0 0 3px rgba(216, 177, 99, 0.22), 0 0 14px rgba(216, 177, 99, 0.36);
+  border-color: rgba(255, 255, 255, 0.28);
+  box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.14), 0 0 14px rgba(255, 255, 255, 0.24);
   outline: none;
 }
 
@@ -277,7 +277,7 @@
     margin-top: 12px;
     padding-top: 14px;
     padding-bottom: 14px;
-    border-color: rgba(255, 236, 201, 0.26);
+    border-color: rgba(255, 255, 255, 0.18);
     box-shadow: 0 18px 50px rgba(0, 0, 0, 0.24);
   }
 
@@ -341,6 +341,6 @@
   .find-page .search-bar,
   .find-page .mobile-filter-toggle,
   .find-page .suggestions {
-    background: rgba(16, 22, 36, 0.92);
+    background: rgba(10, 10, 10, 0.94);
   }
 }

@@ -39,7 +39,7 @@ window.MapRoute = (function () {
       const polylines = route.createPolylines();
       polylines.forEach((poly) => {
         poly.setOptions({
-          strokeColor: "#1E88E5",
+          strokeColor: window.MapTheme?.getRouteColor?.() || "#0000ff",
           strokeOpacity: 0.9,
           strokeWeight: 5
         });

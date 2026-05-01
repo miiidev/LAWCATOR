@@ -2,6 +2,18 @@
 window.MapView = (function () {
   const State = window.MapState;
   const Utils = window.MapUtils;
+  const getThemeToken = (name, fallback) => {
+    const value = getComputedStyle(document.documentElement).getPropertyValue(name).trim();
+    return value || fallback;
+  };
+
+  window.MapTheme = window.MapTheme || {
+    getToken: getThemeToken,
+    getRouteColor: () => getThemeToken("--theme-route", "#0000ff"),
+    getPinBackground: () => getThemeToken("--theme-pin", "#4285F4"),
+    getPinBorder: () => getThemeToken("--theme-pin-border", "#4285F4"),
+    getPinGlyph: () => getThemeToken("--theme-pin-glyph", "#ffffff")
+  };
 
   async function initMap() {
     await google.maps.importLibrary("maps");
@@ -45,9 +57,9 @@ window.MapView = (function () {
       State.setInfoWindow(infoWindow);
 
       const userPin = new PinElement({
-        background: "#1e88e5",
-        borderColor: "#1e88e5",
-        glyphColor: "#fff"
+        background: window.MapTheme.getPinBackground(),
+        borderColor: window.MapTheme.getPinBorder(),
+        glyphColor: window.MapTheme.getPinGlyph()
       });
 
       new AdvancedMarkerElement({

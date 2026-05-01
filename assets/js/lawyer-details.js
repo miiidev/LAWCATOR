@@ -225,9 +225,9 @@ function placeLawyerUserMarker() {
 
     const userPin = LawyerPinElement
         ? new LawyerPinElement({
-            background: "#1e88e5",
-            borderColor: "#1e88e5",
-            glyphColor: "#fff"
+            background: window.MapTheme?.getPinBackground?.() || "#d7d7d7",
+            borderColor: window.MapTheme?.getPinBorder?.() || "#8a8a8a",
+            glyphColor: window.MapTheme?.getPinGlyph?.() || "#101010"
         })
         : null;
 
@@ -378,7 +378,7 @@ async function drawLawyerRoute(origin, destination, requestId) {
         lawyerRoutePolylines = route.createPolylines();
         lawyerRoutePolylines.forEach((polyline) => {
             polyline.setOptions({
-                strokeColor: "#1E88E5",
+                strokeColor: window.MapTheme?.getRouteColor?.() || "#0000ff",
                 strokeOpacity: 0.9,
                 strokeWeight: 5
             });

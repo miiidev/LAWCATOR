@@ -6,22 +6,22 @@
 */
 
 .about-page {
-  --map-ink: #0f172a;
-  --map-ink-soft: #334155;
-  --map-gold: #b88a2d;
-  --map-gold-glow: rgba(216, 177, 99, 0.34);
-  --map-gold-soft: rgba(184, 138, 45, 0.22);
-  --map-burgundy: #6f1d2f;
-  --map-surface: rgba(255, 248, 232, 0.55);
-  --map-surface-strong: rgba(255, 248, 232, 0.78);
-  --map-border: rgba(255, 236, 201, 0.45);
+  --map-ink: var(--theme-text);
+  --map-ink-soft: var(--theme-text-muted);
+  --map-gold: var(--theme-accent);
+  --map-gold-glow: var(--theme-glow);
+  --map-gold-soft: var(--theme-accent-soft);
+  --map-burgundy: #1f1f1f;
+  --map-surface: var(--theme-surface);
+  --map-surface-strong: var(--theme-surface-strong);
+  --map-border: var(--theme-border);
   position: relative;
   isolation: isolate;
   overflow-x: clip;
   max-width: 100%;
   font-family: "Inter", "Segoe UI", "Helvetica Neue", Arial, sans-serif;
   background:
-    linear-gradient(180deg, rgba(8, 12, 24, 0.88), rgba(12, 18, 31, 0.76));
+    linear-gradient(180deg, rgba(8, 8, 8, 0.92), rgba(18, 18, 18, 0.82));
 }
 
 .about-page::before {
@@ -30,9 +30,9 @@
   inset: 0;
   pointer-events: none;
   background:
-    radial-gradient(circle at 18% 18%, rgba(255, 248, 232, 0.16), transparent 24%),
-    radial-gradient(circle at 82% 14%, rgba(184, 138, 45, 0.14), transparent 20%),
-    radial-gradient(circle at 68% 84%, rgba(111, 29, 47, 0.12), transparent 26%);
+    radial-gradient(circle at 18% 18%, rgba(255, 255, 255, 0.14), transparent 24%),
+    radial-gradient(circle at 82% 14%, rgba(255, 255, 255, 0.1), transparent 20%),
+    radial-gradient(circle at 68% 84%, rgba(255, 255, 255, 0.08), transparent 26%);
   opacity: 1;
   z-index: 0;
 }
@@ -41,7 +41,6 @@
 .about-page .navbar,
 .about-page .container,
 .about-page .site-footer {
-  position: relative;
   z-index: 1;
 }
 

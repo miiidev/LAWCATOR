@@ -38,9 +38,13 @@
 }
 
 /* ── Stacking context for all page content ── */
-.about-page .navbar,
+.about-page .navbar {
+  z-index: 60;
+}
+
 .about-page .container,
 .about-page .site-footer {
+  position: relative;
   z-index: 1;
 }
 

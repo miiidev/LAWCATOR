@@ -41,14 +41,48 @@
     </header>
 
     <main class="container">
-      <h2>About the Project</h2>
-      <p>CariLawyer helps users find legal services quickly in Malaysia.</p>
+      <h2>About</h2>
+      <p class="about-intro">
+        CariLawyer helps users find legal services quickly in Malaysia.
+      </p>
+
+      <section class="about-accordion" aria-label="Project details">
+        <h3>Project Highlights</h3>
+        <div class="accordion">
+          <details class="accordion-item">
+            <summary>What does CariLawyer provide?</summary>
+            <div class="accordion-panel">
+              <p>
+                A clean overview of firms, services, and lawyer profiles, plus
+                search tools that make it easy to explore options.
+              </p>
+            </div>
+          </details>
+          <details class="accordion-item">
+            <summary>Where does the data come from?</summary>
+            <div class="accordion-panel">
+              <p>
+                All listings are dummy data prepared for coursework and
+                demonstrations. Nothing shown represents real legal services.
+              </p>
+            </div>
+          </details>
+          <details class="accordion-item">
+            <summary>What is planned next?</summary>
+            <div class="accordion-panel">
+              <p>
+                Refinements to filtering, map interactions, and more detailed
+                firm profiles to improve the browsing experience.
+              </p>
+            </div>
+          </details>
+        </div>
+      </section>
 
       <section class="team">
         <h3>Our Team</h3>
-        <div class="team-grid">
-          <div class="team-card">Member 1 (Matric)</div>
-          <div class="team-card">Member 2 (Matric)</div>
+        <div class="team-grid" id="team-grid">
+          <p class="team-loading">Loading team...</p>
         </div>
       </section>
     </main>
@@ -66,5 +100,6 @@
     </footer>
 
     <script src="../assets/js/navbar-toggle.js"></script>
+    <script src="../assets/js/about.js"></script>
   </body>
 </html>

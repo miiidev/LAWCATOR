@@ -65,7 +65,7 @@
   /* Stops it from stretching too wide on giant desktop monitors */
   margin: 0 auto;
   /* Automatically centers the container and adjusts the side margins */
-  padding: 0 24px;
+  padding: 20px 24px;
   /* Adds a safe 24px breathing room on the sides for mobile */
   box-sizing: border-box;
   /* Ensures the padding doesn't break the 100% width */

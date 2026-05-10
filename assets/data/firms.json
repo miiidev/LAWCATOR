@@ -1403,7 +1403,7 @@
         "custom": {
             "budget": "Medium",
             "available": true,
-            "phone": "0164741978",
+            "phone": "0198886763",
             "address": "SN VOON & ASSOCIATES, NO.9 FIRST FLOOR, MAONG BAZAAR 3RD MILE, ROCK ROAD, 93250 Kuching, Sarawak",
             "type": [
                 "Divorce Cases",
@@ -1426,7 +1426,7 @@
         "custom": {
             "budget": "Medium",
             "available": true,
-            "phone": "0164741978",
+            "phone": "082752782",
             "address": "21 (1st Floor), Block A2 Saradise, off, Jalan Stutong, 93350 Kuching, Sarawak",
             "type": [
                 "Administration Of Estates",
@@ -1535,7 +1535,7 @@
         "custom": {
             "budget": "Medium",
             "available": true,
-            "phone": "0164741978",
+            "phone": "088485948",
             "address": "Lot A3-2, 2nd Floor, Block A, Plaza Utama Jalan Penampang By-Pass, Pusat Bandar Kota Kinabalu, 88300 Kota Kinabalu, Sabah",
             "type": [
                 [
@@ -1584,7 +1584,7 @@
         "custom": {
             "budget": "Medium",
             "available": true,
-            "phone": "0164741978",
+            "phone": "088438746",
             "address": "1st Floor, 23-1, Block A, Lorong Plaza Kingfisher, Phase 3, Likas, 88450 Kota Kinabalu, Sabah",
             "type": [
                 [
@@ -1617,7 +1617,7 @@
         "custom": {
             "budget": "Medium",
             "available": true,
-            "phone": "0164741978",
+            "phone": "088727787",
             "address": "Lot A3-2, 2nd Floor, Block A, Plaza Utama Jalan Penampang By-Pass, Pusat Bandar Kota Kinabalu, 88300 Kota Kinabalu, Sabah",
             "type": [
                 [
@@ -1646,5 +1646,675 @@
                 ]
             ]
         }
+    },
+    {
+        "firmId": "firm_075",
+        "placeId": "ChIJC_JotuRpOzIRSZOOXhIbGwY",
+        "name": "Michele Sim & AP Lee - Advocates & Solicitors",
+        "city": "Kota Kinabalu",
+        "state": "Sabah",
+        "lat": 5.927404368471791,
+        "lng": 116.07533058828507,
+        "custom": {
+            "budget": "Medium",
+            "available": true,
+            "phone": "0106668679",
+            "address": "D-15-1, First Floor, Block D, Pintas Avenue, Jalan Penampang Bypass, 88300 Kota Kinabalu, Sabah",
+            "type": [
+                [
+                    "Trusts and estates litigation",
+                    "Civil rights litigation",
+                    "Property damage litigation",
+                    "Small business litigation",
+                    "Property dispute litigation",
+                    "Landlord and tenant litigation",
+                    "Debt settlement",
+                    "Will writing",
+                    "Legal consulting",
+                    "Business Arrangements",
+                    "Civil Disputes",
+                    "Civil Litigation",
+                    "Contract Law",
+                    "Contractual Disputes",
+                    "Conveyancing",
+                    "Conveyancing Services",
+                    "Debt Collection",
+                    "Debt Recovery",
+                    "Drafting Contracts",
+                    "Employment Law",
+                    "Estate Administration",
+                    "Estate Planning",
+                    "Family Law",
+                    "Family Matters",
+                    "Joint Venture Agreements",
+                    "Labor Disputes",
+                    "Labour Dispute",
+                    "Legal Advice",
+                    "Legal Assistance",
+                    "Legal Documentation",
+                    "Legal Guidance",
+                    "Legal Representation",
+                    "Legal Support",
+                    "Personalized Solutions",
+                    "Property Investments",
+                    "Property Transactions",
+                    "Property Transfer",
+                    "Real Estate Law",
+                    "Selling Property",
+                    "Tenancy Agreements",
+                    "Will Drafting"
+                ]
+            ]
+        }
+    },
+    {
+        "firmId": "firm_076",
+        "placeId": "ChIJ0zJ2j0JpOzIRI4lrSxqirsw",
+        "name": "RYCO Law Firm",
+        "city": "Kota Kinabalu",
+        "state": "Sabah",
+        "lat": 5.9776248615382235,
+        "lng": 116.11319711305232,
+        "custom": {
+            "budget": "Medium",
+            "available": true,
+            "phone": "088335166",
+            "address": "Lots 7 & 8, 1st Floor, Block A, Metro Town, Jln Lintas, 88300 Kota Kinabalu, Sabah",
+            "type": [
+                [
+                    "Commercial Contracts",
+                    "Contract Dispute",
+                    "Corporate Advisory",
+                    "Dispute Resolution",
+                    "Employment Disputes",
+                    "Employment Law",
+                    "Estate Administration",
+                    "Family Law",
+                    "Land Laws",
+                    "Legal Services",
+                    "Property Law"
+                ]
+            ]
+        }
+    },
+    {
+        "firmId": "firm_077",
+        "placeId": "ChIJzaF4D1ZoOzIR9VBQC_TJQ0Y",
+        "name": "Chang & Kamarudin",
+        "city": "Kota Kinabalu",
+        "state": "Sabah",
+        "lat": 5.946555073948535,
+        "lng": 116.08789226544762,
+        "custom": {
+            "budget": "Medium",
+            "available": true,
+            "phone": "088317933",
+            "address": "13-2, Lintas Plaza 4, Jln Lintas, Lintas Plaza, 88300 Kota Kinabalu, Sabah",
+            "type": [
+                [
+                    "Corporate litigation",
+                    "Government litigation",
+                    "Insurance litigation",
+                    "Intellectual property litigation",
+                    "Landlord and tenant litigation",
+                    "Legal consulting",
+                    "Legal representation",
+                    "Maritime litigation",
+                    "Power of attorney",
+                    "Probate litigation",
+                    "Property dispute litigation",
+                    "Trusts and estates litigation",
+                    "Will writing"
+                ]
+            ]
+        }
+    },
+    {
+        "firmId": "firm_078",
+        "placeId": "ChIJ5fjlx4ZpOzIR25nmmchBJPs",
+        "name": "LV Partners Sabah Kota Kinabalu",
+        "city": "Kota Kinabalu",
+        "state": "Sabah",
+        "lat": 5.962799734367338,
+        "lng": 116.08905148384659,
+        "custom": {
+            "budget": "Medium",
+            "available": true,
+            "phone": "0132883028",
+            "address": "No 1, 2nd Floor, Block A, Damai Plaza, Phase 3, Jalan Damai, Luyang Commercial Centre, 88300 Kota Kinabalu, Sabah",
+            "type": [
+                [
+                    "Accident & Personal Injury",
+                    "Adoption",
+                    "Affair & Adultery",
+                    "Application for Grant of Probate",
+                    "Application for Letter of Administration",
+                    "Application for Small Estate Distribution Order",
+                    "Bankruptcy & Insolvency",
+                    "China Desk",
+                    "Commercial & Corporate Law",
+                    "Commercial Contacts & Advisory",
+                    "Construction Arbitration & Adjudication",
+                    "Consumer Protection Disputes",
+                    "Corporate & Commercial Disputes",
+                    "Corporate Compliance & Regulatory Approvals",
+                    "Corporate Real Estate",
+                    "Cryptocurrency, Fintech & Blockchain Technology",
+                    "Custodianship of Children",
+                    "Debt Recovery/ Fraud", 
+                    "Defamation",
+                    "Dispute Resolution/ Civil Litigation Law",
+                    "Division of Property / Assets",
+                    "Divorce & Family Law",
+                    "Divorce Planning",
+                    "Divorce Proceeding (Contested & Uncontested)",
+                    "Employment Law",
+                    "Employment Law",
+                    "Estate Administration & Distribution",
+                    "Family Law",
+                    "Foreign Investment",
+                    "Foreign Service Desk",
+                    "Foreigner's Divorce",
+                    "IPO / Corporate Finance / Capital Market",
+                    "Immigration Services",
+                    "Indonesia Desk",
+                    "Intellectual Property",
+                    "Intellectual Property & Technology",
+                    "Islamic Finance",
+                    "Japan Desk",
+                    "Korea Desk",
+                    "Leasehold Extension or Renewal",
+                    "Loan, Banking & Finance Law",
+                    "Mediation",
+                    "Medical & Dental Negligence",
+                    "Mergers & Acquisitions",
+                    "Pre-court Strategy Analysis",
+                    "Privacy & Cybersecurity",
+                    "Professional Misconduct & Malpractice",
+                    "Projects & Infrastructure",
+                    "Property Disputes",
+                    "Property Sale & Purchase",
+                    "Real Estate Law",
+                    "Resealing of Probate & Letter of Administration",
+                    "Shipping & Maritime Law",
+                    "Singapore Desk",
+                    "Start-up / Company Incorporation",
+                    "Technology, Media & Tele-Communications",
+                    "Tenancy & Lease",
+                    "Venture Capital & Private Equity",
+                    "Wife & Children Maintenance",
+                    "Will Writing",
+                    "Will, Probate & Estate Administration Law",
+                    "Will, Probate & Estate Disputes"
+                ]
+            ]
+        }
+    },
+    {
+        "firmId": "firm_079",
+        "placeId": "ChIJKy3ugmRsOzIRm-to4yAsNJc",
+        "name": "ROXANA & CO | Advocates & Solicitors | Peguambela & Peguamcara Kota Kinabalu LAW FIRM",
+        "city": "Kota Kinabalu",
+        "state": "Sabah",
+        "lat": 5.976392251893855,
+        "lng": 116.08661102311919,
+        "custom": {
+            "budget": "Medium",
+            "available": true,
+            "phone": "088288244",
+            "address": "M-04 Mezzanine Floor, Wisma Wanita KM 3, 5, Jalan Tuaran, 88999 Kota Kinabalu, Sabah",
+            "type": [
+                [
+                    "Boundary Disputes",
+                    "Building Contracts",
+                    "Company Law",
+                    "Conflict Resolution",
+                    "Contracts Disputes",
+                    "Contractual Disputes",
+                    "Corporate Litigation",
+                    "Debt Recovery",
+                    "Dispute Resolution",
+                    "Divorce Petitions",
+                    "Divorce Proceedings",
+                    "Employment Laws",
+                    "Grants Of Probate",
+                    "Legal Services",
+                    "Personal Injury",
+                    "Tenancy Agreements",
+                    "Will Writing Service"
+                ]
+            ]
+        }
+    },
+    {
+        "firmId": "firm_080",
+        "placeId": "ChIJZ6Y8lbBpOzIR8SnZdU4jcCw",
+        "name": "C & K CHAMBERS, Kota Kinabalu",
+        "city": "Kota Kinabalu",
+        "state": "Sabah",
+        "lat": 5.954409942151124,
+        "lng": 116.0774670519546,
+        "custom": {
+            "budget": "Medium",
+            "available": true,
+            "phone": "0168105468",
+            "address": "Lot No. 18, 2nd Floor, Block C Fortuna Commercial Centre, Lrg Seroja 1, 88200 Kota Kinabalu, Sabah",
+            "type": [
+                [
+                    "Application for Grant of Probate",
+                    "Drafting of the Last Will and Testaments"
+                ]
+            ]
+        }
+    },
+    {
+        "firmId": "firm_081",
+        "placeId": "ChIJ6duIprwZIzIRfaRPbb0xQmc",
+        "name": "Ehsan & Yeo",
+        "city": "Labuan",
+        "state": "Sabah",
+        "lat": 5.27977902778878,
+        "lng": 115.24218178078664,
+        "custom": {
+            "budget": "Medium",
+            "available": true,
+            "phone": "087414199",
+            "address": "W.P, Lot 2B, Level 5, Wisma Lazenda, Jalan Kemajuan, Down town, 87000 Labuan, Labuan Federal Territory",
+            "type": [
+                [
+                    "Water litigation",
+                    "Legal malpractice litigation",
+                    "Trusts and estates litigation",
+                    "Civil rights litigation",
+                    "Intellectual property litigation",
+                    "Insurance litigation",
+                    "Maritime litigation",
+                    "Government litigation",
+                    "Property damage litigation",
+                    "Corporate litigation",
+                    "Lemon law litigation",
+                    "Disability benefits litigation",
+                    "Nonprofit litigation",
+                    "Criminal defence litigation",
+                    "Small business litigation",
+                    "Property dispute litigation",
+                    "Probate litigation",
+                    "Consumer advocacy litigation",
+                    "Landlord and tenant litigation",
+                    "Debt settlement",
+                    "Will writing",
+                    "Legal consulting",
+                    "Power of attorney",
+                    "International law",
+                    "Entertainment law",
+                    "Commercial Litigation",
+                    "Contractual Disputes",
+                    "Conveyancing Law",
+                    "Conveyancing Matters",
+                    "Corporate Banking",
+                    "Criminal Justice",
+                    "Criminal Litigation",
+                    "Debt Capital Markets",
+                    "Debt Recovery",
+                    "Dispute Resolution",
+                    "Distribution Agreements",
+                    "Divorce Proceedings",
+                    "Family Matters",
+                    "Insolvency Bankruptcy",
+                    "Insolvency Insolvency",
+                    "Intellectual Property Disputes",
+                    "Joint Venture Agreements",
+                    "Land Disputes",
+                    "Lease Agreement",
+                    "Legal Representation",
+                    "Letters Of Administration",
+                    "Partnership Agreements",
+                    "Property Sale",
+                    "Real Estate",
+                    "Share Sale Agreements",
+                    "Structured Banking",
+                    "Trade Finance"
+                ]
+            ]
+        }
+    },
+    {
+        "firmId": "firm_082",
+        "placeId": "ChIJbQC1MewZIzIRCvM5TdEC1P0",
+        "name": "Anuar Yusof & Partners (Labuan)",
+        "city": "Labuan",
+        "state": "Sabah",
+        "lat": 5.2792885278918105,
+        "lng": 115.24629223660838,
+        "custom": {
+            "budget": "Medium",
+            "available": true,
+            "phone": "087424542",
+            "address": "1st Floor, Lot 12, Lazenda Phase III, Jalan Okk Abdullah, Bandar Labuan, 87000 Labuan, Wilayah Persekutuan Labuan",
+            "type": [
+                [
+                    "Business transactions",
+                    "Civil litigation",
+                    "Contracts and agreements litigation",
+                    "Corporate litigation",
+                    "Criminal defence litigation",
+                    "Criminal litigation",
+                    "Divorce litigation",
+                    "Legal advice",
+                    "Litigation",
+                    "Mediation",
+                    "Property litigation"
+                ]
+            ]
+        }
+    },
+    {
+        "firmId": "firm_083",
+        "placeId": "ChIJm4GoJcen-zER0VXvQSOf6B0",
+        "name": "David Allan ST Advocates",
+        "city": "Kuching",
+        "state": "Sarawak",
+        "lat": 1.5548474966189558,
+        "lng": 110.36292907893097,
+        "custom": {
+            "budget": "Medium",
+            "available": true,
+            "phone": "082238122",
+            "address": "A2 - 4, Wisma Nation Horizon, Jalan Petanak, 93740 Kuching, Sarawak",
+            "type": [
+                [
+                    "Commercial Law",
+                    "Commercial Litigation",
+                    "Criminal Litigation",
+                    "Family Law",
+                    "Insurance Law",
+                    "Intellectual Property Law",
+                    "Maritime Law",
+                    "Property Development",
+                    "Property Transactions",
+                    "Real Estate",
+                    "Succession Law"
+                ]
+            ]
+        }
+    },
+    {
+        "firmId": "firm_084",
+        "placeId": "ChIJR2WG1jJPHzIRDIo5vKxYLoM",
+        "name": "Awang, Lai, Sandhu & Co.",
+        "city": "Miri",
+        "state": "Sarawak",
+        "lat": 4.3973064269867965,
+        "lng": 113.98636976729001,
+        "custom": {
+            "budget": "Medium",
+            "available": true,
+            "phone": "085416688",
+            "address": "Miri Waterfront Commercial Centre, Lot 1155 & 1154, 1st floor, Jalan Sri Dagang, 98000, 98000 Miri, Sarawak",
+            "type": [
+                [
+                    "Civil Litigation",
+                    "Commercial Litigation",
+                    "Joint Venture Agreements",
+                    "Specialises in Corporate Commercial", 
+                    "Banking Law", 
+                    "Family Law", 
+                    "Civil Litigation", 
+                    "Contracts and Agreements", 
+                    "Mediation"
+                ]
+            ]
+        }
+    },
+    {
+        "firmId": "firm_085",
+        "placeId": "ChIJV5d2G_ym-zER-I-WievTGwg",
+        "name": "Alex, Jason & Co. (Advocates & Solicitors)",
+        "city": "Kuching",
+        "state": "Sarawak",
+        "lat": 1.5008903777008207,
+        "lng": 110.34188216543794,
+        "custom": {
+            "budget": "Medium",
+            "available": true,
+            "phone": "082265571",
+            "address": "3rd Floor Sublot 10 Royal Richmond Square, Jalan Datuk Bandar Mustapha, 93250 Kuching, Sarawak",
+            "type": [
+                [
+                    "Advocates & Solicitors",
+                    "Arbitration",
+                    "Certified Language Translation Service",
+                    "Commissioner for Oaths",
+                    "Construction Adjudication",
+                    "Mediation",
+                    "Trademark Agent"
+                ]
+            ]
+        }
+    },
+    {
+        "firmId": "firm_086",
+        "placeId": "ChIJ-2yjmoyn-zERuvSpayHJfFA",
+        "name": "Arthur Lee, Lin & Co. Advocates",
+        "city": "Kuching",
+        "state": "Sarawak",
+        "lat": 1.5510157463703715,
+        "lng": 110.3372554635883,
+        "custom": {
+            "budget": "Medium",
+            "available": true,
+            "phone": "082416199",
+            "address": "Bangunan Cheema 543, (2ndFloor, Q3A, 93400 Kuching, Sarawak",
+            "type": [
+                [
+                    "Alternative Dispute Resolution",
+                    "Banking Law",
+                    "Commercial Disputes",
+                    "Construction Disputes",
+                    "Construction Law",
+                    "Contract Law",
+                    "Contractual Documents",
+                    "Court Cases",
+                    "Court Proceedings",
+                    "Criminal Law",
+                    "Debt Collection",
+                    "General Litigation",
+                    "Housing Development",
+                    "Insurance Claims",
+                    "Insurance Law",
+                    "Intellectual Property Legislation",
+                    "Land Acquisitions",
+                    "Land Law",
+                    "Land Transactions",
+                    "Legal Documents",
+                    "Mediation Services",
+                    "Personal Injuries",
+                    "Shipping Law"
+                ]
+            ]
+        }
+    },
+    {
+        "firmId": "firm_087",
+        "placeId": "ChIJXRdC4vGn-zER3urayzreteQ",
+        "name": "Reddi & Co Advocates",
+        "city": "Kuching",
+        "state": "Sarawak",
+        "lat": 1.5589550703408241,
+        "lng": 110.34277759427349,
+        "custom": {
+            "budget": "Medium",
+            "available": true,
+            "phone": "082248866",
+            "address": "No. 29, 1st Floor, Lane Building, Lrg Kai Joo Off Jalan Khoo Hun Yeang, Kuching, Sarawak, 93000 Kuching",
+            "type": [
+                [
+                    "Civil Litigation",
+                    "Commercial Developments",
+                    "Commercial Law",
+                    "Commercial Leases",
+                    "Commercial Litigation",
+                    "Commercial Properties",
+                    "Contractual Disputes",
+                    "Corporate Insolvency",
+                    "Corporate Laws",
+                    "Corporation Disputes",
+                    "Court Matters",
+                    "Debt Collection",
+                    "Equity Finance",
+                    "Industrial And Plants Developments",
+                    "Infrastructure Projects",
+                    "Labour Law",
+                    "Land Laws",
+                    "Legal Services",
+                    "Mining Projects",
+                    "Probate Disputes",
+                    "Residential Developments",
+                    "Telecommunication Projects",
+                    "Wills Drafting",
+                    "Wills Probate"
+                ]
+            ]
+        }
+    },
+    {
+        "firmId": "firm_088",
+        "placeId": "ChIJ3wU2QKCn-zERDorTnEG0qiM",
+        "name": "George Lo & Partners Advocates & Solicitors",
+        "city": "Kuching",
+        "state": "Sarawak",
+        "lat": 1.5280671487616002,
+        "lng": 110.36010576543788,
+        "custom": {
+            "budget": "Medium",
+            "available": true,
+            "phone": "082455166",
+            "address": "49, 1st Floor, Block F, King's Centre, Jalan Simpang Tiga, King Centre, 93350 Kuching, Sarawak",
+            "type": [
+                [
+                    "Litigation",
+                    "Property litigation",
+                    "Entertainment litigation",
+                    "Corporate litigation",
+                    "Environment litigation",
+                    "Civil litigation",
+                    "Bankruptcy representation",
+                    "Appellate advocacy",
+                    "Business Formations",
+                    "Business Law",
+                    "Civil Litigation",
+                    "Commercial Law",
+                    "Commercial Litigation",
+                    "Construction Law",
+                    "Consumer Protection",
+                    "Contractual Disputes",
+                    "Corporate Disputes",
+                    "Court Proceedings",
+                    "Debt Recovery",
+                    "Defamation Law",
+                    "Dispute Resolution",
+                    "Employment Disputes",
+                    "Employment Law",
+                    "Estate Disputes",
+                    "Estate Management",
+                    "Financial Law",
+                    "Insurance Disputes",
+                    "Legal Help",
+                    "Litigation Lawyers",
+                    "Mergers And Acquisitions",
+                    "Property Law",
+                    "Tax Disputes"
+                ]
+            ]
+        }
+    },
+    {
+        "firmId": "firm_089",
+        "placeId": "ChIJ77DIcL2n-zERv9UPL2y-1R8",
+        "name": "Chan Khoon Moh Advocates",
+        "city": "Kuching",
+        "state": "Sarawak",
+        "lat": 1.5463141219685321,
+        "lng": 110.35552807893086,
+        "custom": {
+            "budget": "Medium",
+            "available": true,
+            "phone": "082255399",
+            "address": "P9-1-9(D), Chong Lin Park, Jalan Tabuan, 93200 Kuching, Sarawak",
+            "type": [
+                [
+                    "Trusts and estates litigation",
+                    "Civil rights litigation",
+                    "Government litigation",
+                    "Property damage litigation",
+                    "Corporate litigation",
+                    "Criminal defence litigation",
+                    "Small business litigation",
+                    "Property dispute litigation",
+                    "Probate litigation",
+                    "Consumer advocacy litigation",
+                    "Landlord and tenant litigation",
+                    "Debt settlement",
+                    "Will writing",
+                    "Legal consulting",
+                    "Power of attorney",
+                    "Family Law"
+                ]
+            ]
+        }
+    },
+    {
+        "firmId": "firm_090",
+        "placeId": "ChIJSfBugoGn-zERe4hllI9GBrc",
+        "name": "Tang Advocates",
+        "city": "Kuching",
+        "state": "Sarawak",
+        "lat": 1.5508748965724248,
+        "lng": 110.37349612310915,
+        "custom": {
+            "budget": "Medium",
+            "available": true,
+            "phone": "082343212",
+            "address": "Lot C 348-377, Block C Level 3 iCOM Square, 93450 Kuching, Sarawak",
+            "type": [
+                [
+                    "Litigation",
+                    "Labour litigation",
+                    "Property litigation",
+                    "Criminal litigation",
+                    "Contracts and agreements litigation",
+                    "Corporate litigation",
+                    "Employment litigation",
+                    "Divorce litigation",
+                    "Civil litigation",
+                    "Legal advice",
+                    "Will writing",
+                    "Legal settlements",
+                    "Property title services",
+                    "Bankruptcy representation",
+                    "Small claims representation",
+                    "Appellate advocacy",
+                    "Advisory Services",
+                    "Agreements Drafting",
+                    "Civil Litigation",
+                    "Contractual Disputes",
+                    "Criminal Matters",
+                    "Employment Contracts",
+                    "Employment Disputes",
+                    "Estate Management",
+                    "Intellectual Property",
+                    "Intellectual Property Disputes",
+                    "Partnership Agreements",
+                    "Personal Injuries",
+                    "Personal Injuries Claims",
+                    "Properties Financing",
+                    "Property Disputes",
+                    "Real Property",
+                    "Trust Deeds"
+                ]
+            ]
+        }
     }
 ]
+
+        

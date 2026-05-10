@@ -24,7 +24,7 @@ document.addEventListener("DOMContentLoaded", async () => {
         // 🐛 FIX: Declared these objects before trying to use them!
         const stateFirmCounts = {};
         const stateLawyerCounts = {};
-        const firmLookup = {}; 
+        const firmLookup = {};
 
         firmsData.forEach(firm => {
             const state = firm.state;
@@ -70,16 +70,17 @@ document.addEventListener("DOMContentLoaded", async () => {
         const option = {
             tooltip: {
                 trigger: "item",
-                backgroundColor: "rgba(15, 23, 42, 0.6)",
-                borderColor: "rgba(255, 255, 255, 0.15)",
+                // Matches --theme-bg with some transparency
+                backgroundColor: "rgba(11, 11, 11, 0.7)",
+                // Matches --theme-border
+                borderColor: "rgba(255, 255, 255, 0.18)",
                 borderWidth: 1,
                 padding: [12, 16],
                 extraCssText: "backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); box-shadow: 0 8px 32px rgba(0, 0, 0, 0.5); border-radius: 12px;",
                 textStyle: {
-                    color: "#ffffff",
+                    color: "#f5f5f5", // Matches --theme-text
                     fontFamily: "sans-serif"
                 },
-                // 🐛 FIX: Dynamic tooltip to switch between "Lawyer" and "Law Firm" text
                 formatter: function (params) {
                     const stateName = params.name;
                     const count = params.value || 0;
@@ -88,8 +89,8 @@ document.addEventListener("DOMContentLoaded", async () => {
         <div style="font-family: 'Bebas Neue', sans-serif; font-size: 20px; letter-spacing: 1px; color: #ffffff; margin-bottom: 4px; text-shadow: 0 2px 4px rgba(0,0,0,0.5);">
           ${stateName}
         </div>
-        <div style="font-family: sans-serif; font-size: 14px; color: #cbd5e1;">
-          <strong style="color: #38bdf8;">${count}</strong> ${label}${count !== 1 ? 's' : ''}
+        <div style="font-family: sans-serif; font-size: 14px; color: #c8c8c8;">
+          <strong style="color: #ffffff; font-size: 16px;">${count}</strong> ${label}${count !== 1 ? 's' : ''}
         </div>
       `;
                 }
@@ -100,7 +101,8 @@ document.addEventListener("DOMContentLoaded", async () => {
                 min: 0,
                 max: 20,
                 inRange: {
-                    color: ["rgba(30, 41, 59, 0.7)", "#0ea5e9"]
+                    // Gradient: Very faint glass to solid frosted white for states with higher counts
+                    color: ["rgba(255, 255, 255, 0.02)", "rgba(255, 255, 255, 0.35)"]
                 }
             },
 
@@ -111,8 +113,9 @@ document.addEventListener("DOMContentLoaded", async () => {
                     map: "Malaysia",
                     roam: false,
                     itemStyle: {
-                        color: "rgba(30, 41, 59, 0.8)",
-                        borderColor: "rgba(255, 255, 255, 0.4)",
+                        // The base glass layer matches --theme-surface-muted
+                        color: "rgba(255, 255, 255, 0.05)",
+                        borderColor: "rgba(255, 255, 255, 0.18)", // Matches --theme-border
                         borderWidth: 0.5,
                         shadowBlur: 0,
                         shadowOffsetX: 0,
@@ -120,13 +123,14 @@ document.addEventListener("DOMContentLoaded", async () => {
                     },
                     emphasis: {
                         itemStyle: {
-                            areaColor: "rgba(56, 189, 248, 0.8)",
-                            shadowColor: "rgba(0, 0, 0, 0.7)",
+                            // Bright white frosted glass on hover
+                            areaColor: "rgba(255, 255, 255, 0.25)",
+                            shadowColor: "rgba(0, 0, 0, 0.8)", // Deep drop shadow for the 3D lift
                             shadowBlur: 15,
                             shadowOffsetX: 8,
                             shadowOffsetY: 12,
                             borderColor: "#ffffff",
-                            borderWidth: 2
+                            borderWidth: 1.5
                         },
                         label: {
                             show: true,
@@ -138,7 +142,7 @@ document.addEventListener("DOMContentLoaded", async () => {
                             }
                         }
                     },
-                    data: lawyerData // 🐛 FIX: Set default data directly to lawyerData
+                    data: lawyerData
                 }
             ],
 
@@ -182,9 +186,9 @@ document.addEventListener("DOMContentLoaded", async () => {
                 // Determine mode and update chart data
                 currentMode = e.target.getAttribute('data-type');
                 const newData = currentMode === "lawyers" ? lawyerData : firmData;
-                
+
                 // Update the title dynamically
-                if(headerTitle) {
+                if (headerTitle) {
                     headerTitle.textContent = currentMode === "lawyers" ? "Lawyers Across Malaysia" : "Law Firms Across Malaysia";
                 }
 

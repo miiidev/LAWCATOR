@@ -217,6 +217,10 @@
   transition: border-color 0.24s ease, box-shadow 0.24s ease;
 }
 
+.find-page .filter-field select option {
+  color: black;
+}
+
 /* ── Gold glow on hover / focus ── */
 .find-page .filter-field select:hover,
 .find-page .filter-field select:focus {

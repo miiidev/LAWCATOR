@@ -395,7 +395,7 @@
   padding: 2rem;
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
   width: 90%;
-  margin: 2rem auto;
+  margin: 4rem auto;
 }
 
 #malaysia-map {
@@ -422,7 +422,7 @@
   .home-map-section {
     padding: 1rem;
     border-radius: 16px;
-    margin: 64px auto 0 auto;
+    margin: 128px auto 0 auto;
     width: 95%;
   }
 

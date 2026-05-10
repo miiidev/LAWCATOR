@@ -184,8 +184,10 @@ body {
 /* ─── Generic Card ───────────────────────────────────────────────────────── */
 .card-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
   gap: 1rem;
+  grid-auto-rows: 1fr;
+  margin-inline: 120px;
 }
 
 .card {
@@ -204,14 +206,47 @@ body {
 
 /* ─── Lawyer Card ────────────────────────────────────────────────────────── */
 .lawyer-card {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+  padding: 22px;
+  border-radius: 24px;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.12), rgba(255, 255, 255, 0.06));
+  backdrop-filter: blur(20px) saturate(148%);
+  box-shadow: 0 18px 46px rgba(0, 0, 0, 0.32), 0 0 0 1px rgba(255, 255, 255, 0.1), 0 0 20px rgba(255, 255, 255, 0.1);
+  color: var(--details-ink);
   text-decoration: none;
-  color: black;
+  /*
+    color: black;
+  */
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.lawyer-card div:last-child {
+  min-width: 0;
+  flex: 1;
 }
 
 .lawyer-card:hover {
   transform: translateY(-5px);
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+.card.lawyer-card h3 {
+  margin: 0;
+  color: var(--theme-text);
+  font-size: clamp(24px, 3vw, 32px);
+  line-height: 1.15;
+}
+
+.card.lawyer-card p {
+  margin: 7px 0 0;
+  color: var(--theme-text-muted);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: block;
+  width: 100%; /* Or a specific max-width */
 }
 
 .card.lawyer-card img {

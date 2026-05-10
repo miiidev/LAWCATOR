@@ -209,13 +209,27 @@
   will-change: transform, opacity;
 }
 
-.card-item .div-firm {
+.card-item .div-carousel-info {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
+  justify-content: center ;
 }
 
-.card-item .div-firm .lawyer-firm {
+.card-item .div-carousel-info  .lawyer-loc {
+  color: white;
+  background-color: rgba(141, 141, 141, 0.476);
+  backdrop-filter: blur(18px) saturate(110%);
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  border-radius: 50px;
+  padding: 5px 11px;
+  width: fit-content;
+  margin: 4px 100px;
+  text-align: center;
+  font-size: 15px;
+}
+
+.card-item .div-carousel-info  .lawyer-cat   {
   color: white;
   background-color: rgba(255, 255, 255, 0.08);
   backdrop-filter: blur(18px) saturate(110%);
@@ -223,11 +237,12 @@
   border-radius: 50px;
   padding: 5px 11px;
   width: fit-content;
-  margin: 2px;
+  margin: 4px 4px;
   text-align: center;
-  font-size: 15px;
-
+  font-size: 15px;  
 }
+
+
 
 .card-list .card-item.is-center {
   opacity: 1;
@@ -303,7 +318,7 @@
 
 
 .card-list .card-item .card-link {
-  width: 300px;
+  width: 380px;
   height: auto;
   display: block;
   background: linear-gradient(180deg, rgb(67, 65, 65), rgb(0, 0, 0));
@@ -327,6 +342,10 @@
   .lawyer-name {
     text-shadow: 0px 0px 5px rgba(255, 255, 255, 0.742);
   }
+
+  .card-image {
+    border: 2px solid rgba(255, 255, 255, 0.742);
+  }
 }
 
 .card-item .card-link .card-image {
@@ -336,13 +355,14 @@
   height: 120px;
   border-radius: 50%;
   object-fit: cover;
-  border: 3px solid rgb(255, 255, 255);
+  border: 2px solid rgba(255, 255, 255, 0.407);
 }
+
 
 .card-item .card-link .lawyer-name {
   color: rgb(255, 255, 255);
   text-align: center;
-}
+} 
 
 
 .card-item .card-link .card-button {

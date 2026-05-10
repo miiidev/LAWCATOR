@@ -1193,5 +1193,1721 @@
       "email": "indran@firm021.com"
     },
     "biography": "Jotaro Kujo has 14 years of experience in general and civil litigation and corporate and general matters and advises clients in English, Tamil, Malay. JoJo calm: cool under pressure, direct in argument, and always focused on the facts."
+  },
+  {
+    "id": "lawyer_051",
+    "firmId": "firm_041",
+    "name": "Farah Ong",
+    "type": [
+      "Criminal",
+      "Defamation",
+      "General and Civil Litigation",
+      "Wills, Probate and Estate Administration"
+    ],
+    "specialties": [
+      "Criminal"
+    ],
+    "experience_years": 11,
+    "languages": [
+      "Malay",
+      "English"
+    ],
+    "profile_image": "lawyer_images/lawyer_051.jpg",
+    "contact": {
+      "phone": "+60 12-300 0051",
+      "email": "lawyer51@firm_041.com"
+    },
+    "biography": "This lawyer specializes in criminal matters and has extensive experience handling legal cases for clients across Malaysia."
+  },
+  {
+    "id": "lawyer_052",
+    "firmId": "firm_042",
+    "name": "Aina Teoh",
+    "type": [
+      "Corporate and Commercial",
+      "Energy, Natural Resources and Green Technology"
+    ],
+    "specialties": [
+      "Corporate and Commercial"
+    ],
+    "experience_years": 13,
+    "languages": [
+      "Malay",
+      "English",
+      "Tamil"
+    ],
+    "profile_image": "lawyer_images/lawyer_052.jpg",
+    "contact": {
+      "phone": "+60 12-300 0052",
+      "email": "lawyer52@firm_042.com"
+    },
+    "biography": "This lawyer specializes in corporate and commercial matters and has extensive experience handling legal cases for clients across Malaysia."
+  },
+  {
+    "id": "lawyer_053",
+    "firmId": "firm_043",
+    "name": "Irfan Kaur",
+    "type": [
+      "Banking, Finance and Securities",
+      "Environmental, Social and Governance (ESG)"
+    ],
+    "specialties": [
+      "Banking, Finance and Securities"
+    ],
+    "experience_years": 10,
+    "languages": [
+      "English"
+    ],
+    "profile_image": "lawyer_images/lawyer_053.jpg",
+    "contact": {
+      "phone": "+60 12-300 0053",
+      "email": "lawyer53@firm_043.com"
+    },
+    "biography": "This lawyer specializes in banking, finance and securities matters and has extensive experience handling legal cases for clients across Malaysia."
+  },
+  {
+    "id": "lawyer_054",
+    "firmId": "firm_044",
+    "name": "Farah Lee",
+    "type": [
+      "Extradition and Mutual Assistance",
+      "Media and Entertainment"
+    ],
+    "specialties": [
+      "Extradition and Mutual Assistance"
+    ],
+    "experience_years": 13,
+    "languages": [
+      "Malay",
+      "English"
+    ],
+    "profile_image": "lawyer_images/lawyer_054.jpg",
+    "contact": {
+      "phone": "+60 12-300 0054",
+      "email": "lawyer54@firm_044.com"
+    },
+    "biography": "This lawyer specializes in extradition and mutual assistance matters and has extensive experience handling legal cases for clients across Malaysia."
+  },
+  {
+    "id": "lawyer_055",
+    "firmId": "firm_045",
+    "name": "Alicia Lim",
+    "type": [
+      "Administrative and Constitutional Law",
+      "Conveyancing and Property",
+      "Family Court",
+      "General and Civil Litigation",
+      "Wills, Probate and Estate Administration"
+    ],
+    "specialties": [
+      "Administrative and Constitutional Law"
+    ],
+    "experience_years": 11,
+    "languages": [
+      "Malay",
+      "English"
+    ],
+    "profile_image": "lawyer_images/lawyer_055.jpg",
+    "contact": {
+      "phone": "+60 12-300 0055",
+      "email": "lawyer55@firm_045.com"
+    },
+    "biography": "This lawyer specializes in administrative and constitutional law matters and has extensive experience handling legal cases for clients across Malaysia."
+  },
+  {
+    "id": "lawyer_056",
+    "firmId": "firm_046",
+    "name": "Melissa Lee",
+    "type": [
+      "Family",
+      "Family Court",
+      "Family Mediation"
+    ],
+    "specialties": [
+      "Family"
+    ],
+    "experience_years": 15,
+    "languages": [
+      "Malay",
+      "English"
+    ],
+    "profile_image": "lawyer_images/lawyer_056.jpg",
+    "contact": {
+      "phone": "+60 12-300 0056",
+      "email": "lawyer56@firm_046.com"
+    },
+    "biography": "This lawyer specializes in family matters and has extensive experience handling legal cases for clients across Malaysia."
+  },
+  {
+    "id": "lawyer_057",
+    "firmId": "firm_047",
+    "name": "Bryan Mahmud",
+    "type": [
+      "Contentious Probate Proceedings",
+      "Employment",
+      "Faraid",
+      "Land Disputes"
+    ],
+    "specialties": [
+      "Contentious Probate Proceedings"
+    ],
+    "experience_years": 8,
+    "languages": [
+      "English"
+    ],
+    "profile_image": "lawyer_images/lawyer_057.jpg",
+    "contact": {
+      "phone": "+60 12-300 0057",
+      "email": "lawyer57@firm_047.com"
+    },
+    "biography": "This lawyer specializes in contentious probate proceedings matters and has extensive experience handling legal cases for clients across Malaysia."
+  },
+  {
+    "id": "lawyer_058",
+    "firmId": "firm_048",
+    "name": "Leon Rahman",
+    "type": [
+      "Customs and Immigration",
+      "Fraud and Asset Recovery"
+    ],
+    "specialties": [
+      "Customs and Immigration"
+    ],
+    "experience_years": 17,
+    "languages": [
+      "Malay",
+      "English"
+    ],
+    "profile_image": "lawyer_images/lawyer_058.jpg",
+    "contact": {
+      "phone": "+60 12-300 0058",
+      "email": "lawyer58@firm_048.com"
+    },
+    "biography": "This lawyer specializes in customs and immigration matters and has extensive experience handling legal cases for clients across Malaysia."
+  },
+  {
+    "id": "lawyer_059",
+    "firmId": "firm_049",
+    "name": "Hakim Yusof",
+    "type": [
+      "Insurance and Reinsurance",
+      "Medical Negligence"
+    ],
+    "specialties": [
+      "Insurance and Reinsurance"
+    ],
+    "experience_years": 17,
+    "languages": [
+      "English",
+      "Chinese"
+    ],
+    "profile_image": "lawyer_images/lawyer_059.jpg",
+    "contact": {
+      "phone": "+60 12-300 0059",
+      "email": "lawyer59@firm_049.com"
+    },
+    "biography": "This lawyer specializes in insurance and reinsurance matters and has extensive experience handling legal cases for clients across Malaysia."
+  },
+  {
+    "id": "lawyer_060",
+    "firmId": "firm_050",
+    "name": "Irfan Yusof",
+    "type": [
+      "Commercial Crime",
+      "Criminal",
+      "Offences Affecting the Human Body",
+      "Offences against Property"
+    ],
+    "specialties": [
+      "Commercial Crime"
+    ],
+    "experience_years": 16,
+    "languages": [
+      "Malay",
+      "English",
+      "Tamil"
+    ],
+    "profile_image": "lawyer_images/lawyer_060.jpg",
+    "contact": {
+      "phone": "+60 12-300 0060",
+      "email": "lawyer60@firm_050.com"
+    },
+    "biography": "This lawyer specializes in commercial crime matters and has extensive experience handling legal cases for clients across Malaysia."
+  },
+  {
+    "id": "lawyer_061",
+    "firmId": "firm_051",
+    "name": "Nurul Lim",
+    "type": [
+      "Commercial Crime",
+      "Criminal",
+      "Offences Affecting the Human Body",
+      "Offences against Property"
+    ],
+    "specialties": [
+      "Commercial Crime"
+    ],
+    "experience_years": 11,
+    "languages": [
+      "English"
+    ],
+    "profile_image": "lawyer_images/lawyer_061.jpg",
+    "contact": {
+      "phone": "+60 12-300 0061",
+      "email": "lawyer61@firm_051.com"
+    },
+    "biography": "This lawyer specializes in commercial crime matters and has extensive experience handling legal cases for clients across Malaysia."
+  },
+  {
+    "id": "lawyer_062",
+    "firmId": "firm_052",
+    "name": "Jasmine Teoh",
+    "type": [
+      "Corporate and Commercial",
+      "Environmental, Social and Governance (ESG)"
+    ],
+    "specialties": [
+      "Corporate and Commercial"
+    ],
+    "experience_years": 17,
+    "languages": [
+      "English",
+      "Chinese"
+    ],
+    "profile_image": "lawyer_images/lawyer_062.jpg",
+    "contact": {
+      "phone": "+60 12-300 0062",
+      "email": "lawyer62@firm_052.com"
+    },
+    "biography": "This lawyer specializes in corporate and commercial matters and has extensive experience handling legal cases for clients across Malaysia."
+  },
+  {
+    "id": "lawyer_063",
+    "firmId": "firm_053",
+    "name": "Alicia Tan",
+    "type": [
+      "Commercial Crime",
+      "Corporate Compliance and Regulatory Issues",
+      "Criminal",
+      "Customs and Immigration",
+      "Cybercrime",
+      "Defamation",
+      "Disciplinary Proceedings",
+      "Extradition and Mutual Assistance",
+      "Fraud and Asset Recovery",
+      "Human Rights",
+      "International",
+      "Offences Affecting the Human Body",
+      "Offences against Property",
+      "Professional Conduct and Discipline"
+    ],
+    "specialties": [
+      "Commercial Crime"
+    ],
+    "experience_years": 5,
+    "languages": [
+      "Malay",
+      "English",
+      "Tamil"
+    ],
+    "profile_image": "lawyer_images/lawyer_063.jpg",
+    "contact": {
+      "phone": "+60 12-300 0063",
+      "email": "lawyer63@firm_053.com"
+    },
+    "biography": "This lawyer specializes in commercial crime matters and has extensive experience handling legal cases for clients across Malaysia."
+  },
+  {
+    "id": "lawyer_064",
+    "firmId": "firm_054",
+    "name": "Melissa Lim",
+    "type": [
+      "Family",
+      "Family Mediation"
+    ],
+    "specialties": [
+      "Family"
+    ],
+    "experience_years": 10,
+    "languages": [
+      "Malay",
+      "English",
+      "Tamil"
+    ],
+    "profile_image": "lawyer_images/lawyer_064.jpg",
+    "contact": {
+      "phone": "+60 12-300 0064",
+      "email": "lawyer64@firm_054.com"
+    },
+    "biography": "This lawyer specializes in family matters and has extensive experience handling legal cases for clients across Malaysia."
+  },
+  {
+    "id": "lawyer_065",
+    "firmId": "firm_055",
+    "name": "Alicia Lim",
+    "type": [
+      "Faraid",
+      "Syariah"
+    ],
+    "specialties": [
+      "Faraid"
+    ],
+    "experience_years": 17,
+    "languages": [
+      "English"
+    ],
+    "profile_image": "lawyer_images/lawyer_065.jpg",
+    "contact": {
+      "phone": "+60 12-300 0065",
+      "email": "lawyer65@firm_055.com"
+    },
+    "biography": "This lawyer specializes in faraid matters and has extensive experience handling legal cases for clients across Malaysia."
+  },
+  {
+    "id": "lawyer_066",
+    "firmId": "firm_056",
+    "name": "Sofia Low",
+    "type": [
+      "Family",
+      "Family Mediation"
+    ],
+    "specialties": [
+      "Family"
+    ],
+    "experience_years": 6,
+    "languages": [
+      "Malay",
+      "English",
+      "Tamil"
+    ],
+    "profile_image": "lawyer_images/lawyer_066.jpg",
+    "contact": {
+      "phone": "+60 12-300 0066",
+      "email": "lawyer66@firm_056.com"
+    },
+    "biography": "This lawyer specializes in family matters and has extensive experience handling legal cases for clients across Malaysia."
+  },
+  {
+    "id": "lawyer_067",
+    "firmId": "firm_057",
+    "name": "Hakim Ong",
+    "type": [
+      "Family Court",
+      "Notary Public"
+    ],
+    "specialties": [
+      "Family Court"
+    ],
+    "experience_years": 5,
+    "languages": [
+      "Malay",
+      "English"
+    ],
+    "profile_image": "lawyer_images/lawyer_067.jpg",
+    "contact": {
+      "phone": "+60 12-300 0067",
+      "email": "lawyer67@firm_057.com"
+    },
+    "biography": "This lawyer specializes in family court matters and has extensive experience handling legal cases for clients across Malaysia."
+  },
+  {
+    "id": "lawyer_068",
+    "firmId": "firm_058",
+    "name": "Nurul Khalid",
+    "type": [
+      "Family Court",
+      "Banking, Finance and Securities",
+      "Conveyancing and Property",
+      "Family",
+      "Family Court",
+      "Wills, Probate and Estate Administration"
+    ],
+    "specialties": [
+      "Family Court"
+    ],
+    "experience_years": 6,
+    "languages": [
+      "Malay",
+      "English",
+      "Tamil"
+    ],
+    "profile_image": "lawyer_images/lawyer_068.jpg",
+    "contact": {
+      "phone": "+60 12-300 0068",
+      "email": "lawyer68@firm_058.com"
+    },
+    "biography": "This lawyer specializes in family court matters and has extensive experience handling legal cases for clients across Malaysia."
+  },
+  {
+    "id": "lawyer_069",
+    "firmId": "firm_059",
+    "name": "Sarah Teoh",
+    "type": [
+      "Criminal",
+      "Family Court"
+    ],
+    "specialties": [
+      "Criminal"
+    ],
+    "experience_years": 10,
+    "languages": [
+      "English"
+    ],
+    "profile_image": "lawyer_images/lawyer_069.jpg",
+    "contact": {
+      "phone": "+60 12-300 0069",
+      "email": "lawyer69@firm_059.com"
+    },
+    "biography": "This lawyer specializes in criminal matters and has extensive experience handling legal cases for clients across Malaysia."
+  },
+  {
+    "id": "lawyer_070",
+    "firmId": "firm_060",
+    "name": "Farah Wong",
+    "type": [
+      "Contractual Disputes",
+      "Defamation",
+      "Family",
+      "Wills, Probate and Estate Administration"
+    ],
+    "specialties": [
+      "Contractual Disputes"
+    ],
+    "experience_years": 13,
+    "languages": [
+      "Malay",
+      "English",
+      "Tamil"
+    ],
+    "profile_image": "lawyer_images/lawyer_070.jpg",
+    "contact": {
+      "phone": "+60 12-300 0070",
+      "email": "lawyer70@firm_060.com"
+    },
+    "biography": "This lawyer specializes in contractual disputes matters and has extensive experience handling legal cases for clients across Malaysia."
+  },
+  {
+    "id": "lawyer_071",
+    "firmId": "firm_061",
+    "name": "Bryan Chan",
+    "type": [
+      "Criminal",
+      "Defamation",
+      "Human Rights",
+      "Medical Negligence"
+    ],
+    "specialties": [
+      "Criminal"
+    ],
+    "experience_years": 9,
+    "languages": [
+      "Malay",
+      "English",
+      "Tamil"
+    ],
+    "profile_image": "lawyer_images/lawyer_071.jpg",
+    "contact": {
+      "phone": "+60 12-300 0071",
+      "email": "lawyer71@firm_061.com"
+    },
+    "biography": "This lawyer specializes in criminal matters and has extensive experience handling legal cases for clients across Malaysia."
+  },
+  {
+    "id": "lawyer_072",
+    "firmId": "firm_062",
+    "name": "Melissa Mahmud",
+    "type": [
+      "Criminal",
+      "Defamation"
+    ],
+    "specialties": [
+      "Criminal"
+    ],
+    "experience_years": 11,
+    "languages": [
+      "Malay",
+      "English",
+      "Tamil"
+    ],
+    "profile_image": "lawyer_images/lawyer_072.jpg",
+    "contact": {
+      "phone": "+60 12-300 0072",
+      "email": "lawyer72@firm_062.com"
+    },
+    "biography": "This lawyer specializes in criminal matters and has extensive experience handling legal cases for clients across Malaysia."
+  },
+  {
+    "id": "lawyer_073",
+    "firmId": "firm_063",
+    "name": "Melissa Tan",
+    "type": [
+      "Corporate Disputes",
+      "Defamation"
+    ],
+    "specialties": [
+      "Corporate Disputes"
+    ],
+    "experience_years": 8,
+    "languages": [
+      "English"
+    ],
+    "profile_image": "lawyer_images/lawyer_073.jpg",
+    "contact": {
+      "phone": "+60 12-300 0073",
+      "email": "lawyer73@firm_063.com"
+    },
+    "biography": "This lawyer specializes in corporate disputes matters and has extensive experience handling legal cases for clients across Malaysia."
+  },
+  {
+    "id": "lawyer_074",
+    "firmId": "firm_064",
+    "name": "Aina Lee",
+    "type": [
+      "Criminal",
+      "Defamation",
+      "Employment",
+      "Insolvency and Winding Up"
+    ],
+    "specialties": [
+      "Criminal"
+    ],
+    "experience_years": 16,
+    "languages": [
+      "Malay",
+      "English",
+      "Tamil"
+    ],
+    "profile_image": "lawyer_images/lawyer_074.jpg",
+    "contact": {
+      "phone": "+60 12-300 0074",
+      "email": "lawyer74@firm_064.com"
+    },
+    "biography": "This lawyer specializes in criminal matters and has extensive experience handling legal cases for clients across Malaysia."
+  },
+  {
+    "id": "lawyer_075",
+    "firmId": "firm_065",
+    "name": "Jason Chan",
+    "type": [
+      "Corporate Disputes",
+      "Defamation"
+    ],
+    "specialties": [
+      "Corporate Disputes"
+    ],
+    "experience_years": 16,
+    "languages": [
+      "Malay",
+      "English",
+      "Tamil"
+    ],
+    "profile_image": "lawyer_images/lawyer_075.jpg",
+    "contact": {
+      "phone": "+60 12-300 0075",
+      "email": "lawyer75@firm_065.com"
+    },
+    "biography": "This lawyer specializes in corporate disputes matters and has extensive experience handling legal cases for clients across Malaysia."
+  },
+  {
+    "id": "lawyer_076",
+    "firmId": "firm_066",
+    "name": "Irfan Ng",
+    "type": [
+      "Defamation",
+      "Family",
+      "General and Civil Litigation",
+      "Tax"
+    ],
+    "specialties": [
+      "Defamation"
+    ],
+    "experience_years": 14,
+    "languages": [
+      "English",
+      "Chinese"
+    ],
+    "profile_image": "lawyer_images/lawyer_076.jpg",
+    "contact": {
+      "phone": "+60 12-300 0076",
+      "email": "lawyer76@firm_066.com"
+    },
+    "biography": "This lawyer specializes in defamation matters and has extensive experience handling legal cases for clients across Malaysia."
+  },
+  {
+    "id": "lawyer_077",
+    "firmId": "firm_067",
+    "name": "Sofia Teoh",
+    "type": [
+      "Defamation",
+      "General and Civil Litigation",
+      "Hibah and Wasiat"
+    ],
+    "specialties": [
+      "Defamation"
+    ],
+    "experience_years": 16,
+    "languages": [
+      "English",
+      "Chinese"
+    ],
+    "profile_image": "lawyer_images/lawyer_077.jpg",
+    "contact": {
+      "phone": "+60 12-300 0077",
+      "email": "lawyer77@firm_067.com"
+    },
+    "biography": "This lawyer specializes in defamation matters and has extensive experience handling legal cases for clients across Malaysia."
+  },
+  {
+    "id": "lawyer_078",
+    "firmId": "firm_068",
+    "name": "Adam Lee",
+    "type": [
+      "Corporate Disputes",
+      "Defamation"
+    ],
+    "specialties": [
+      "Corporate Disputes"
+    ],
+    "experience_years": 14,
+    "languages": [
+      "Malay",
+      "English"
+    ],
+    "profile_image": "lawyer_images/lawyer_078.jpg",
+    "contact": {
+      "phone": "+60 12-300 0078",
+      "email": "lawyer78@firm_068.com"
+    },
+    "biography": "This lawyer specializes in corporate disputes matters and has extensive experience handling legal cases for clients across Malaysia."
+  },
+  {
+    "id": "lawyer_079",
+    "firmId": "firm_069",
+    "name": "Adam Yusof",
+    "type": [
+      "Administrative and Constitutional Law",
+      "Defamation"
+    ],
+    "specialties": [
+      "Administrative and Constitutional Law"
+    ],
+    "experience_years": 13,
+    "languages": [
+      "Malay",
+      "English"
+    ],
+    "profile_image": "lawyer_images/lawyer_079.jpg",
+    "contact": {
+      "phone": "+60 12-300 0079",
+      "email": "lawyer79@firm_069.com"
+    },
+    "biography": "This lawyer specializes in administrative and constitutional law matters and has extensive experience handling legal cases for clients across Malaysia."
+  },
+  {
+    "id": "lawyer_080",
+    "firmId": "firm_070",
+    "name": "Hakim Ong",
+    "type": [
+      "Divorce Cases",
+      "Sale and Purchase of Property",
+      "Property Transfers",
+      "Wills, Probate and Estate Administration",
+      "Debt Recovery",
+      "General and Litigation"
+    ],
+    "specialties": [
+      "Divorce Cases"
+    ],
+    "experience_years": 15,
+    "languages": [
+      "English"
+    ],
+    "profile_image": "lawyer_images/lawyer_080.jpg",
+    "contact": {
+      "phone": "+60 12-300 0080",
+      "email": "lawyer80@firm_070.com"
+    },
+    "biography": "This lawyer specializes in divorce cases matters and has extensive experience handling legal cases for clients across Malaysia."
+  },
+  {
+    "id": "lawyer_081",
+    "firmId": "firm_071",
+    "name": "Leon Ariff",
+    "type": [
+      "Administration Of Estates",
+      "Affair & Adultery",
+      "Agreement Legal",
+      "Application for Grant of Probate",
+      "Application for Letter of Administration",
+      "Application for Small Estate Distribution Order",
+      "Business Plans",
+      "China Desk",
+      "Civil Suit",
+      "Commercial & Corporate Law",
+      "Commercial Contracts",
+      "Commercial Disputes",
+      "Commercial Loan",
+      "Construction Arbitration & Adjudication",
+      "Consumer Protection Disputes",
+      "Corporate & Commercial Disputes",
+      "Corporate & Commercial Law",
+      "Corporate Compliance",
+      "Corporate Compliance & Regulatory Approvals",
+      "Corporate Finance",
+      "Court Trial",
+      "Custodianship of Children",
+      "Data Protection",
+      "Debt Recovery",
+      "Debt Recovery/ Fraud",
+      "Defamation",
+      "Dispute Resolution",
+      "Dispute Resolution/ Civil Litigation Law",
+      "Distribution Agreements",
+      "Division & Settlement of Matrimonial Assets",
+      "Division of Property/Assests",
+      "Divorce & Family Law",
+      "Divorce Law",
+      "Divorce Lawyer",
+      "Divorce Planning",
+      "Divorce Proceeding",
+      "Divorce Proceeding (contested & uncontested)",
+      "Divorce Proceedings",
+      "Documentation Preparation",
+      "Draft Contracts",
+      "Due Diligence",
+      "Employment Contracts",
+      "Employment Law",
+      "Estate Administration",
+      "Family Law",
+      "Foreigner's Divorce",
+      "General Civil Litigation",
+      "Home Loan",
+      "Housing Development",
+      "Housing Loan",
+      "IPO / Corporate Finance / Capital Market",
+      "Immigration Services",
+      "Intellectual Property",
+      "Intellectual Property Licensing",
+      "Intellectual Property Rights",
+      "Islamic Finance",
+      "Japan Desk",
+      "Korea Desk",
+      "Land Acquisition",
+      "Leasehold Extension or Renewal",
+      "Legal Advice",
+      "Legal Counsel",
+      "Legal Document",
+      "Legal Documents",
+      "Legal Due Diligence",
+      "Legal Representation",
+      "Legal Support",
+      "Licensing Agreements",
+      "Litigation Lawyer",
+      "Loan Agreement",
+      "Mediation",
+      "Medical & Dental Negligence",
+      "Medical Malpractice",
+      "Medical Negligence",
+      "Mergers & Acquisitions",
+      "Patent Registration",
+      "Pre-court Strategy Analysis",
+      "Privacy & Cybersecurity",
+      "Professional Misconduct & Malpractice",
+      "Property Purchase",
+      "Property Sale & Purchase",
+      "Property Sales",
+      "Real Estate Law",
+      "Shipping & Maritime Law",
+      "Singapore Desk",
+      "Small Estate Distribution",
+      "Start-up / Company Incorporation",
+      "Tenancy Agreement",
+      "Trademark Registration",
+      "Wife & Children Maintenance",
+      "Will Writing",
+      "Will, Probate & Estate Disputes"
+    ],
+    "specialties": [
+      "Administration Of Estates"
+    ],
+    "experience_years": 18,
+    "languages": [
+      "Malay",
+      "English",
+      "Tamil"
+    ],
+    "profile_image": "lawyer_images/lawyer_081.jpg",
+    "contact": {
+      "phone": "+60 12-300 0081",
+      "email": "lawyer81@firm_071.com"
+    },
+    "biography": "This lawyer specializes in administration of estates matters and has extensive experience handling legal cases for clients across Malaysia."
+  },
+  {
+    "id": "lawyer_082",
+    "firmId": "firm_072",
+    "name": "Hakim Lim",
+    "type": [
+      [
+        "Alternative Dispute Resolutions",
+        "Asset Management",
+        "Building Contracts",
+        "Business Disputes",
+        "Civil Litigation",
+        "Commercial Disputes",
+        "Company Secretarial",
+        "Construction Claims",
+        "Construction Law",
+        "Construction Litigation",
+        "Conveyancing Matters",
+        "Corporate Banking",
+        "Corporate Financing",
+        "Corporate Laws",
+        "Corporate Matters",
+        "Criminal Cases",
+        "Criminal Charges",
+        "Criminal Litigation",
+        "Criminal Matters",
+        "Debt Recovery",
+        "Disposal Of Properties",
+        "General Litigation",
+        "Islamic Financing",
+        "Legal Aid",
+        "Legal Consultant",
+        "Legal Documents",
+        "Property Development",
+        "Property Transfers",
+        "Real Estate And Land Laws",
+        "Web Consulting"
+      ]
+    ],
+    "specialties": [
+      "Alternative Dispute Resolutions"
+    ],
+    "experience_years": 12,
+    "languages": [
+      "Malay",
+      "English"
+    ],
+    "profile_image": "lawyer_images/lawyer_082.jpg",
+    "contact": {
+      "phone": "+60 12-300 0082",
+      "email": "lawyer82@firm_072.com"
+    },
+    "biography": "This lawyer specializes in alternative dispute resolutions matters and has extensive experience handling legal cases for clients across Malaysia."
+  },
+  {
+    "id": "lawyer_083",
+    "firmId": "firm_073",
+    "name": "Farah Tan",
+    "type": [
+      [
+        "Debt settlement",
+        "Legal consulting",
+        "Bankruptcy",
+        "Constructive Dismissal",
+        "Contractual Disputes",
+        "Corporate & Commercial",
+        "Criminal Litigation",
+        "Debt Recovery",
+        "Employment Issues",
+        "Employment Law",
+        "Land Disputes",
+        "Legal Services",
+        "Litigation",
+        "Online Consultation"
+      ]
+    ],
+    "specialties": [
+      "Debt settlement"
+    ],
+    "experience_years": 9,
+    "languages": [
+      "English"
+    ],
+    "profile_image": "lawyer_images/lawyer_083.jpg",
+    "contact": {
+      "phone": "+60 12-300 0083",
+      "email": "lawyer83@firm_073.com"
+    },
+    "biography": "This lawyer specializes in debt settlement matters and has extensive experience handling legal cases for clients across Malaysia."
+  },
+  {
+    "id": "lawyer_084",
+    "firmId": "firm_074",
+    "name": "Adam Ong",
+    "type": [
+      [
+        "Administrative Laws",
+        "Bail and remand application",
+        "Case Management",
+        "Cheating and breach of trust",
+        "Civil Cases",
+        "Commercial Disputes",
+        "Commercial Laws",
+        "Corporate Services",
+        "Criminal Cases",
+        "Criminal Defence",
+        "Criminal Justice",
+        "Criminal Lawyer",
+        "Criminal Litigation",
+        "Criminal Matters",
+        "Criminal Offences",
+        "Defamation",
+        "Divorce Matters",
+        "Divorce Petition",
+        "Drugs possession and trafficking",
+        "Family Laws",
+        "Inheritance Laws",
+        "Legal Services"
+      ]
+    ],
+    "specialties": [
+      "Administrative Laws"
+    ],
+    "experience_years": 14,
+    "languages": [
+      "Malay",
+      "English"
+    ],
+    "profile_image": "lawyer_images/lawyer_084.jpg",
+    "contact": {
+      "phone": "+60 12-300 0084",
+      "email": "lawyer84@firm_074.com"
+    },
+    "biography": "This lawyer specializes in administrative laws matters and has extensive experience handling legal cases for clients across Malaysia."
+  },
+  {
+    "id": "lawyer_085",
+    "firmId": "firm_075",
+    "name": "Sofia Ng",
+    "type": [
+      [
+        "Trusts and estates litigation",
+        "Civil rights litigation",
+        "Property damage litigation",
+        "Small business litigation",
+        "Property dispute litigation",
+        "Landlord and tenant litigation",
+        "Debt settlement",
+        "Will writing",
+        "Legal consulting",
+        "Business Arrangements",
+        "Civil Disputes",
+        "Civil Litigation",
+        "Contract Law",
+        "Contractual Disputes",
+        "Conveyancing",
+        "Conveyancing Services",
+        "Debt Collection",
+        "Debt Recovery",
+        "Drafting Contracts",
+        "Employment Law",
+        "Estate Administration",
+        "Estate Planning",
+        "Family Law",
+        "Family Matters",
+        "Joint Venture Agreements",
+        "Labor Disputes",
+        "Labour Dispute",
+        "Legal Advice",
+        "Legal Assistance",
+        "Legal Documentation",
+        "Legal Guidance",
+        "Legal Representation",
+        "Legal Support",
+        "Personalized Solutions",
+        "Property Investments",
+        "Property Transactions",
+        "Property Transfer",
+        "Real Estate Law",
+        "Selling Property",
+        "Tenancy Agreements",
+        "Will Drafting"
+      ]
+    ],
+    "specialties": [
+      "Trusts and estates litigation"
+    ],
+    "experience_years": 8,
+    "languages": [
+      "Malay",
+      "English",
+      "Tamil"
+    ],
+    "profile_image": "lawyer_images/lawyer_085.jpg",
+    "contact": {
+      "phone": "+60 12-300 0085",
+      "email": "lawyer85@firm_075.com"
+    },
+    "biography": "This lawyer specializes in trusts and estates litigation matters and has extensive experience handling legal cases for clients across Malaysia."
+  },
+  {
+    "id": "lawyer_086",
+    "firmId": "firm_076",
+    "name": "Jason Ariff",
+    "type": [
+      [
+        "Commercial Contracts",
+        "Contract Dispute",
+        "Corporate Advisory",
+        "Dispute Resolution",
+        "Employment Disputes",
+        "Employment Law",
+        "Estate Administration",
+        "Family Law",
+        "Land Laws",
+        "Legal Services",
+        "Property Law"
+      ]
+    ],
+    "specialties": [
+      "Commercial Contracts"
+    ],
+    "experience_years": 6,
+    "languages": [
+      "Malay",
+      "English",
+      "Tamil"
+    ],
+    "profile_image": "lawyer_images/lawyer_086.jpg",
+    "contact": {
+      "phone": "+60 12-300 0086",
+      "email": "lawyer86@firm_076.com"
+    },
+    "biography": "This lawyer specializes in commercial contracts matters and has extensive experience handling legal cases for clients across Malaysia."
+  },
+  {
+    "id": "lawyer_087",
+    "firmId": "firm_077",
+    "name": "Hakim Wong",
+    "type": [
+      [
+        "Corporate litigation",
+        "Government litigation",
+        "Insurance litigation",
+        "Intellectual property litigation",
+        "Landlord and tenant litigation",
+        "Legal consulting",
+        "Legal representation",
+        "Maritime litigation",
+        "Power of attorney",
+        "Probate litigation",
+        "Property dispute litigation",
+        "Trusts and estates litigation",
+        "Will writing"
+      ]
+    ],
+    "specialties": [
+      "Corporate litigation"
+    ],
+    "experience_years": 6,
+    "languages": [
+      "English"
+    ],
+    "profile_image": "lawyer_images/lawyer_087.jpg",
+    "contact": {
+      "phone": "+60 12-300 0087",
+      "email": "lawyer87@firm_077.com"
+    },
+    "biography": "This lawyer specializes in corporate litigation matters and has extensive experience handling legal cases for clients across Malaysia."
+  },
+  {
+    "id": "lawyer_088",
+    "firmId": "firm_078",
+    "name": "Adam Lim",
+    "type": [
+      [
+        "Accident & Personal Injury",
+        "Adoption",
+        "Affair & Adultery",
+        "Application for Grant of Probate",
+        "Application for Letter of Administration",
+        "Application for Small Estate Distribution Order",
+        "Bankruptcy & Insolvency",
+        "China Desk",
+        "Commercial & Corporate Law",
+        "Commercial Contacts & Advisory",
+        "Construction Arbitration & Adjudication",
+        "Consumer Protection Disputes",
+        "Corporate & Commercial Disputes",
+        "Corporate Compliance & Regulatory Approvals",
+        "Corporate Real Estate",
+        "Cryptocurrency, Fintech & Blockchain Technology",
+        "Custodianship of Children",
+        "Debt Recovery/ Fraud",
+        "Defamation",
+        "Dispute Resolution/ Civil Litigation Law",
+        "Division of Property / Assets",
+        "Divorce & Family Law",
+        "Divorce Planning",
+        "Divorce Proceeding (Contested & Uncontested)",
+        "Employment Law",
+        "Employment Law",
+        "Estate Administration & Distribution",
+        "Family Law",
+        "Foreign Investment",
+        "Foreign Service Desk",
+        "Foreigner's Divorce",
+        "IPO / Corporate Finance / Capital Market",
+        "Immigration Services",
+        "Indonesia Desk",
+        "Intellectual Property",
+        "Intellectual Property & Technology",
+        "Islamic Finance",
+        "Japan Desk",
+        "Korea Desk",
+        "Leasehold Extension or Renewal",
+        "Loan, Banking & Finance Law",
+        "Mediation",
+        "Medical & Dental Negligence",
+        "Mergers & Acquisitions",
+        "Pre-court Strategy Analysis",
+        "Privacy & Cybersecurity",
+        "Professional Misconduct & Malpractice",
+        "Projects & Infrastructure",
+        "Property Disputes",
+        "Property Sale & Purchase",
+        "Real Estate Law",
+        "Resealing of Probate & Letter of Administration",
+        "Shipping & Maritime Law",
+        "Singapore Desk",
+        "Start-up / Company Incorporation",
+        "Technology, Media & Tele-Communications",
+        "Tenancy & Lease",
+        "Venture Capital & Private Equity",
+        "Wife & Children Maintenance",
+        "Will Writing",
+        "Will, Probate & Estate Administration Law",
+        "Will, Probate & Estate Disputes"
+      ]
+    ],
+    "specialties": [
+      "Accident & Personal Injury"
+    ],
+    "experience_years": 7,
+    "languages": [
+      "English"
+    ],
+    "profile_image": "lawyer_images/lawyer_088.jpg",
+    "contact": {
+      "phone": "+60 12-300 0088",
+      "email": "lawyer88@firm_078.com"
+    },
+    "biography": "This lawyer specializes in accident & personal injury matters and has extensive experience handling legal cases for clients across Malaysia."
+  },
+  {
+    "id": "lawyer_089",
+    "firmId": "firm_079",
+    "name": "Adam Ismail",
+    "type": [
+      [
+        "Boundary Disputes",
+        "Building Contracts",
+        "Company Law",
+        "Conflict Resolution",
+        "Contracts Disputes",
+        "Contractual Disputes",
+        "Corporate Litigation",
+        "Debt Recovery",
+        "Dispute Resolution",
+        "Divorce Petitions",
+        "Divorce Proceedings",
+        "Employment Laws",
+        "Grants Of Probate",
+        "Legal Services",
+        "Personal Injury",
+        "Tenancy Agreements",
+        "Will Writing Service"
+      ]
+    ],
+    "specialties": [
+      "Boundary Disputes"
+    ],
+    "experience_years": 14,
+    "languages": [
+      "English",
+      "Chinese"
+    ],
+    "profile_image": "lawyer_images/lawyer_089.jpg",
+    "contact": {
+      "phone": "+60 12-300 0089",
+      "email": "lawyer89@firm_079.com"
+    },
+    "biography": "This lawyer specializes in boundary disputes matters and has extensive experience handling legal cases for clients across Malaysia."
+  },
+  {
+    "id": "lawyer_090",
+    "firmId": "firm_080",
+    "name": "Adam Mahmud",
+    "type": [
+      [
+        "Application for Grant of Probate",
+        "Drafting of the Last Will and Testaments"
+      ]
+    ],
+    "specialties": [
+      "Application for Grant of Probate"
+    ],
+    "experience_years": 12,
+    "languages": [
+      "Malay",
+      "English",
+      "Tamil"
+    ],
+    "profile_image": "lawyer_images/lawyer_090.jpg",
+    "contact": {
+      "phone": "+60 12-300 0090",
+      "email": "lawyer90@firm_080.com"
+    },
+    "biography": "This lawyer specializes in application for grant of probate matters and has extensive experience handling legal cases for clients across Malaysia."
+  },
+  {
+    "id": "lawyer_091",
+    "firmId": "firm_081",
+    "name": "Sofia Khalid",
+    "type": [
+      [
+        "Water litigation",
+        "Legal malpractice litigation",
+        "Trusts and estates litigation",
+        "Civil rights litigation",
+        "Intellectual property litigation",
+        "Insurance litigation",
+        "Maritime litigation",
+        "Government litigation",
+        "Property damage litigation",
+        "Corporate litigation",
+        "Lemon law litigation",
+        "Disability benefits litigation",
+        "Nonprofit litigation",
+        "Criminal defence litigation",
+        "Small business litigation",
+        "Property dispute litigation",
+        "Probate litigation",
+        "Consumer advocacy litigation",
+        "Landlord and tenant litigation",
+        "Debt settlement",
+        "Will writing",
+        "Legal consulting",
+        "Power of attorney",
+        "International law",
+        "Entertainment law",
+        "Commercial Litigation",
+        "Contractual Disputes",
+        "Conveyancing Law",
+        "Conveyancing Matters",
+        "Corporate Banking",
+        "Criminal Justice",
+        "Criminal Litigation",
+        "Debt Capital Markets",
+        "Debt Recovery",
+        "Dispute Resolution",
+        "Distribution Agreements",
+        "Divorce Proceedings",
+        "Family Matters",
+        "Insolvency Bankruptcy",
+        "Insolvency Insolvency",
+        "Intellectual Property Disputes",
+        "Joint Venture Agreements",
+        "Land Disputes",
+        "Lease Agreement",
+        "Legal Representation",
+        "Letters Of Administration",
+        "Partnership Agreements",
+        "Property Sale",
+        "Real Estate",
+        "Share Sale Agreements",
+        "Structured Banking",
+        "Trade Finance"
+      ]
+    ],
+    "specialties": [
+      "Water litigation"
+    ],
+    "experience_years": 9,
+    "languages": [
+      "Malay",
+      "English"
+    ],
+    "profile_image": "lawyer_images/lawyer_091.jpg",
+    "contact": {
+      "phone": "+60 12-300 0091",
+      "email": "lawyer91@firm_081.com"
+    },
+    "biography": "This lawyer specializes in water litigation matters and has extensive experience handling legal cases for clients across Malaysia."
+  },
+  {
+    "id": "lawyer_092",
+    "firmId": "firm_082",
+    "name": "Sarah Low",
+    "type": [
+      [
+        "Business transactions",
+        "Civil litigation",
+        "Contracts and agreements litigation",
+        "Corporate litigation",
+        "Criminal defence litigation",
+        "Criminal litigation",
+        "Divorce litigation",
+        "Legal advice",
+        "Litigation",
+        "Mediation",
+        "Property litigation"
+      ]
+    ],
+    "specialties": [
+      "Business transactions"
+    ],
+    "experience_years": 6,
+    "languages": [
+      "Malay",
+      "English"
+    ],
+    "profile_image": "lawyer_images/lawyer_092.jpg",
+    "contact": {
+      "phone": "+60 12-300 0092",
+      "email": "lawyer92@firm_082.com"
+    },
+    "biography": "This lawyer specializes in business transactions matters and has extensive experience handling legal cases for clients across Malaysia."
+  },
+  {
+    "id": "lawyer_093",
+    "firmId": "firm_083",
+    "name": "Alicia Lee",
+    "type": [
+      [
+        "Commercial Law",
+        "Commercial Litigation",
+        "Criminal Litigation",
+        "Family Law",
+        "Insurance Law",
+        "Intellectual Property Law",
+        "Maritime Law",
+        "Property Development",
+        "Property Transactions",
+        "Real Estate",
+        "Succession Law"
+      ]
+    ],
+    "specialties": [
+      "Commercial Law"
+    ],
+    "experience_years": 9,
+    "languages": [
+      "English"
+    ],
+    "profile_image": "lawyer_images/lawyer_093.jpg",
+    "contact": {
+      "phone": "+60 12-300 0093",
+      "email": "lawyer93@firm_083.com"
+    },
+    "biography": "This lawyer specializes in commercial law matters and has extensive experience handling legal cases for clients across Malaysia."
+  },
+  {
+    "id": "lawyer_094",
+    "firmId": "firm_084",
+    "name": "Irfan Khalid",
+    "type": [
+      [
+        "Civil Litigation",
+        "Commercial Litigation",
+        "Joint Venture Agreements",
+        "Specialises in Corporate Commercial",
+        "Banking Law",
+        "Family Law",
+        "Civil Litigation",
+        "Contracts and Agreements",
+        "Mediation"
+      ]
+    ],
+    "specialties": [
+      "Civil Litigation"
+    ],
+    "experience_years": 18,
+    "languages": [
+      "Malay",
+      "English",
+      "Tamil"
+    ],
+    "profile_image": "lawyer_images/lawyer_094.jpg",
+    "contact": {
+      "phone": "+60 12-300 0094",
+      "email": "lawyer94@firm_084.com"
+    },
+    "biography": "This lawyer specializes in civil litigation matters and has extensive experience handling legal cases for clients across Malaysia."
+  },
+  {
+    "id": "lawyer_095",
+    "firmId": "firm_085",
+    "name": "Sarah Wong",
+    "type": [
+      [
+        "Advocates & Solicitors",
+        "Arbitration",
+        "Certified Language Translation Service",
+        "Commissioner for Oaths",
+        "Construction Adjudication",
+        "Mediation",
+        "Trademark Agent"
+      ]
+    ],
+    "specialties": [
+      "Advocates & Solicitors"
+    ],
+    "experience_years": 5,
+    "languages": [
+      "Malay",
+      "English"
+    ],
+    "profile_image": "lawyer_images/lawyer_095.jpg",
+    "contact": {
+      "phone": "+60 12-300 0095",
+      "email": "lawyer95@firm_085.com"
+    },
+    "biography": "This lawyer specializes in advocates & solicitors matters and has extensive experience handling legal cases for clients across Malaysia."
+  },
+  {
+    "id": "lawyer_096",
+    "firmId": "firm_086",
+    "name": "Sarah Yusof",
+    "type": [
+      [
+        "Alternative Dispute Resolution",
+        "Banking Law",
+        "Commercial Disputes",
+        "Construction Disputes",
+        "Construction Law",
+        "Contract Law",
+        "Contractual Documents",
+        "Court Cases",
+        "Court Proceedings",
+        "Criminal Law",
+        "Debt Collection",
+        "General Litigation",
+        "Housing Development",
+        "Insurance Claims",
+        "Insurance Law",
+        "Intellectual Property Legislation",
+        "Land Acquisitions",
+        "Land Law",
+        "Land Transactions",
+        "Legal Documents",
+        "Mediation Services",
+        "Personal Injuries",
+        "Shipping Law"
+      ]
+    ],
+    "specialties": [
+      "Alternative Dispute Resolution"
+    ],
+    "experience_years": 18,
+    "languages": [
+      "Malay",
+      "English",
+      "Tamil"
+    ],
+    "profile_image": "lawyer_images/lawyer_096.jpg",
+    "contact": {
+      "phone": "+60 12-300 0096",
+      "email": "lawyer96@firm_086.com"
+    },
+    "biography": "This lawyer specializes in alternative dispute resolution matters and has extensive experience handling legal cases for clients across Malaysia."
+  },
+  {
+    "id": "lawyer_097",
+    "firmId": "firm_087",
+    "name": "Sarah Ariff",
+    "type": [
+      [
+        "Civil Litigation",
+        "Commercial Developments",
+        "Commercial Law",
+        "Commercial Leases",
+        "Commercial Litigation",
+        "Commercial Properties",
+        "Contractual Disputes",
+        "Corporate Insolvency",
+        "Corporate Laws",
+        "Corporation Disputes",
+        "Court Matters",
+        "Debt Collection",
+        "Equity Finance",
+        "Industrial And Plants Developments",
+        "Infrastructure Projects",
+        "Labour Law",
+        "Land Laws",
+        "Legal Services",
+        "Mining Projects",
+        "Probate Disputes",
+        "Residential Developments",
+        "Telecommunication Projects",
+        "Wills Drafting",
+        "Wills Probate"
+      ]
+    ],
+    "specialties": [
+      "Civil Litigation"
+    ],
+    "experience_years": 18,
+    "languages": [
+      "Malay",
+      "English"
+    ],
+    "profile_image": "lawyer_images/lawyer_097.jpg",
+    "contact": {
+      "phone": "+60 12-300 0097",
+      "email": "lawyer97@firm_087.com"
+    },
+    "biography": "This lawyer specializes in civil litigation matters and has extensive experience handling legal cases for clients across Malaysia."
+  },
+  {
+    "id": "lawyer_098",
+    "firmId": "firm_088",
+    "name": "Alicia Chan",
+    "type": [
+      [
+        "Litigation",
+        "Property litigation",
+        "Entertainment litigation",
+        "Corporate litigation",
+        "Environment litigation",
+        "Civil litigation",
+        "Bankruptcy representation",
+        "Appellate advocacy",
+        "Business Formations",
+        "Business Law",
+        "Civil Litigation",
+        "Commercial Law",
+        "Commercial Litigation",
+        "Construction Law",
+        "Consumer Protection",
+        "Contractual Disputes",
+        "Corporate Disputes",
+        "Court Proceedings",
+        "Debt Recovery",
+        "Defamation Law",
+        "Dispute Resolution",
+        "Employment Disputes",
+        "Employment Law",
+        "Estate Disputes",
+        "Estate Management",
+        "Financial Law",
+        "Insurance Disputes",
+        "Legal Help",
+        "Litigation Lawyers",
+        "Mergers And Acquisitions",
+        "Property Law",
+        "Tax Disputes"
+      ]
+    ],
+    "specialties": [
+      "Litigation"
+    ],
+    "experience_years": 14,
+    "languages": [
+      "Malay",
+      "English",
+      "Tamil"
+    ],
+    "profile_image": "lawyer_images/lawyer_098.jpg",
+    "contact": {
+      "phone": "+60 12-300 0098",
+      "email": "lawyer98@firm_088.com"
+    },
+    "biography": "This lawyer specializes in litigation matters and has extensive experience handling legal cases for clients across Malaysia."
+  },
+  {
+    "id": "lawyer_099",
+    "firmId": "firm_089",
+    "name": "Nurul Ismail",
+    "type": [
+      [
+        "Trusts and estates litigation",
+        "Civil rights litigation",
+        "Government litigation",
+        "Property damage litigation",
+        "Corporate litigation",
+        "Criminal defence litigation",
+        "Small business litigation",
+        "Property dispute litigation",
+        "Probate litigation",
+        "Consumer advocacy litigation",
+        "Landlord and tenant litigation",
+        "Debt settlement",
+        "Will writing",
+        "Legal consulting",
+        "Power of attorney",
+        "Family Law"
+      ]
+    ],
+    "specialties": [
+      "Trusts and estates litigation"
+    ],
+    "experience_years": 6,
+    "languages": [
+      "English"
+    ],
+    "profile_image": "lawyer_images/lawyer_099.jpg",
+    "contact": {
+      "phone": "+60 12-300 0099",
+      "email": "lawyer99@firm_089.com"
+    },
+    "biography": "This lawyer specializes in trusts and estates litigation matters and has extensive experience handling legal cases for clients across Malaysia."
+  },
+  {
+    "id": "lawyer_100",
+    "firmId": "firm_090",
+    "name": "Nurul Kaur",
+    "type": [
+      [
+        "Litigation",
+        "Labour litigation",
+        "Property litigation",
+        "Criminal litigation",
+        "Contracts and agreements litigation",
+        "Corporate litigation",
+        "Employment litigation",
+        "Divorce litigation",
+        "Civil litigation",
+        "Legal advice",
+        "Will writing",
+        "Legal settlements",
+        "Property title services",
+        "Bankruptcy representation",
+        "Small claims representation",
+        "Appellate advocacy",
+        "Advisory Services",
+        "Agreements Drafting",
+        "Civil Litigation",
+        "Contractual Disputes",
+        "Criminal Matters",
+        "Employment Contracts",
+        "Employment Disputes",
+        "Estate Management",
+        "Intellectual Property",
+        "Intellectual Property Disputes",
+        "Partnership Agreements",
+        "Personal Injuries",
+        "Personal Injuries Claims",
+        "Properties Financing",
+        "Property Disputes",
+        "Real Property",
+        "Trust Deeds"
+      ]
+    ],
+    "specialties": [
+      "Litigation"
+    ],
+    "experience_years": 5,
+    "languages": [
+      "English"
+    ],
+    "profile_image": "lawyer_images/lawyer_100.jpg",
+    "contact": {
+      "phone": "+60 12-300 0100",
+      "email": "lawyer100@firm_090.com"
+    },
+    "biography": "This lawyer specializes in litigation matters and has extensive experience handling legal cases for clients across Malaysia."
   }
 ]

@@ -213,10 +213,10 @@
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
-  justify-content: center ;
+  justify-content: center;
 }
 
-.card-item .div-carousel-info  .lawyer-loc {
+.card-item .div-carousel-info .lawyer-loc {
   color: white;
   background-color: rgba(141, 141, 141, 0.476);
   backdrop-filter: blur(18px) saturate(110%);
@@ -229,7 +229,7 @@
   font-size: 15px;
 }
 
-.card-item .div-carousel-info  .lawyer-cat   {
+.card-item .div-carousel-info .lawyer-cat {
   color: white;
   background-color: rgba(255, 255, 255, 0.08);
   backdrop-filter: blur(18px) saturate(110%);
@@ -239,7 +239,7 @@
   width: fit-content;
   margin: 4px 4px;
   text-align: center;
-  font-size: 15px;  
+  font-size: 15px;
 }
 
 
@@ -363,7 +363,7 @@
 .card-item .card-link .lawyer-name {
   color: rgb(255, 255, 255);
   text-align: center;
-} 
+}
 
 
 .card-item .card-link .card-button {
@@ -464,4 +464,45 @@
   100% {
     opacity: 0.5;
   }
+}
+
+/* --- Map Toggle Switch --- */
+.map-toggle-container {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin-bottom: 20px;
+  position: relative;
+  z-index: 10;
+  /* Ensures it stays clickable above the map */
+}
+
+.map-toggle-btn {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  color: #94a3b8;
+  padding: 8px 24px;
+  border-radius: 30px;
+  /* Pill shape */
+  cursor: pointer;
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+}
+
+/* Hover State */
+.map-toggle-btn:hover {
+  background: rgba(255, 255, 255, 0.1);
+  color: #e2e8f0;
+}
+
+/* Active State (The Glowing Blue) */
+.map-toggle-btn.active {
+  background: rgba(56, 189, 248, 0.15);
+  border-color: #38bdf8;
+  color: #ffffff;
+  box-shadow: 0 0 15px rgba(56, 189, 248, 0.3);
 }

@@ -1,6 +1,7 @@
 const listEl = document.getElementById("lawyerList");
 const typeSearch = document.getElementById("typeSearch");
 const suggestionsEl = document.getElementById("typeSuggestions");
+const stateFilter = document.getElementById("stateFilter");
 const cityFilter = document.getElementById("cityFilter");
 const budgetFilter = document.getElementById("budgetFilter");
 const availabilityFilter = document.getElementById("availabilityFilter");
@@ -220,6 +221,12 @@ Promise.all([
   firms = firmData;
 
   fillSelect(
+    stateFilter,
+    uniqSorted(firms.map(f => f.state).filter(Boolean)),
+    "All states"
+  );
+
+  fillSelect(
     cityFilter,
     uniqSorted(firms.map(f => f.city).filter(Boolean)),
     "All cities"
@@ -230,6 +237,17 @@ Promise.all([
     uniqSorted(firms.map(f => f.custom?.budget).filter(Boolean)),
     "All budgets"
   );
+
+  // Check URL parameters for initial filters (e.g. from the interactive map)
+  const urlParams = new URLSearchParams(window.location.search);
+  const stateParam = urlParams.get('state');
+  if (stateParam && stateFilter) {
+    // Attempt to match the state
+    const stateExists = Array.from(stateFilter.options).some(opt => opt.value === stateParam);
+    if (stateExists) {
+      stateFilter.value = stateParam;
+    }
+  }
 
   renderList();
 });
@@ -251,7 +269,7 @@ function renderSuggestions(items) {
     .join("");
 }
 
-[cityFilter, budgetFilter, availabilityFilter, sortFilter].forEach(el => {
+[stateFilter, cityFilter, budgetFilter, availabilityFilter, sortFilter].forEach(el => {
   if (!el) return;
   el.addEventListener("change", renderList);
 });
@@ -263,6 +281,7 @@ if (clearFiltersBtn) {
       typeaheadInstance.syncPlaceholderVisibility();
     }
 
+    if (stateFilter) stateFilter.value = "";
     if (cityFilter) cityFilter.value = "";
     if (budgetFilter) budgetFilter.value = "";
     if (availabilityFilter) availabilityFilter.value = "";
@@ -327,6 +346,10 @@ function renderList() {
 
   if (budgetFilter.value) {
     merged = merged.filter(l => l.firm?.custom?.budget === budgetFilter.value);
+  }
+
+  if (stateFilter && stateFilter.value) {
+    merged = merged.filter(l => l.firm?.state === stateFilter.value);
   }
 
   if (cityFilter && cityFilter.value) {

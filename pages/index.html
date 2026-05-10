@@ -17,6 +17,10 @@
 <body class="home-page">
   <div class="map-video-layer" aria-hidden="true">
     <video class="map-background-video" autoplay muted loop playsinline preload="auto">
+      <!-- Mobile video (triggers on screens 768px wide or smaller) -->
+      <source src="../assets/videos/verticalBgVid.mp4" type="video/mp4" media="(max-width: 768px)" />
+
+      <!-- Desktop video (fallback for larger screens) -->
       <source src="../assets/videos/test.mp4" type="video/mp4" />
     </video>
     <div class="map-video-overlay"></div>

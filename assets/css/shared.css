@@ -1,3 +1,9 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 /* ─── Variables ─────────────────────────────────────────────────────────── */
 :root {
   --primary-color: #ffffff;
@@ -856,7 +862,7 @@ body {
 }
 
 /* ─── Media Queries ──────────────────────────────────────────────────────── */
-@media (max-width: 900px) {
+@media (max-width: 1024px) {
   .card-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
@@ -1006,9 +1012,9 @@ body {
   }
 }
 
-@media (max-width: 620px) {
+@media (max-width: 768px) {
   .card-grid {
-    grid-template-columns: 1fr;
+    grid-template-columns: minmax(0, 1fr);
   }
 
   .site-footer__inner {
@@ -1026,6 +1032,21 @@ body {
   .filters-right {
     width: 100%;
     justify-content: space-between;
+  }
+
+  .find-page .find-controls,
+  .find-page .container {
+    width: calc(100% - 20px);
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .find-page .search-form {
+    flex-basis: 100%;
+  }
+
+  .find-page .mobile-filter-toggle {
+    width: 100%;
   }
 }
 

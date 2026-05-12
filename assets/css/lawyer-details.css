@@ -74,11 +74,11 @@
 }
 
 .lawyer-details-page .lawyer-avatar img {
-  width: 128px;
-  height: 128px;
-  border-radius: 26px;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
   object-fit: cover;
-  border: 1px solid rgba(255, 255, 255, 0.18);
+  border: 3px solid #eceff3;
   box-shadow: 0 14px 28px rgba(12, 18, 28, 0.3);
 }
 
@@ -249,6 +249,12 @@
   padding-left: 18px;
   display: grid;
   gap: 8px;
+}
+
+.lawyer-details-page .service-list.is-scrollable {
+  max-height: calc(10 * 1.55em + 9 * 8px);
+  overflow-y: auto;
+  padding-right: 10px;
 }
 
 .lawyer-details-page .fee-grid {
@@ -501,12 +507,6 @@
     flex-direction: column;
     align-items: flex-start;
     padding: 18px;
-  }
-
-  .lawyer-details-page .lawyer-avatar img {
-    width: 106px;
-    height: 106px;
-    border-radius: 20px;
   }
 
   .lawyer-details-page .lawyer-actions {

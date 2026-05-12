@@ -374,7 +374,8 @@ function renderList() {
     const city = firm.city || "N/A";
     const budget = firm.custom?.budget || "N/A";
     const firmName = firm.name || "Unknown Firm";
-    const rating = l.rating || "N/A";
+    const rawRating = l.rating;
+    const rating = Number.isFinite(Number(rawRating)) ? `⭐ ${Number(rawRating).toFixed(1)}` : "N/A";
     const image = l.profile_image || "lawyer.jpg";
 
     return `
@@ -386,7 +387,7 @@ function renderList() {
         <p>
           <span>${(l.type || []).join(" • ")}</span>
         </p>
-        <p>Rating: ${rating}</p>
+        <p>${rating}</p>
         </div>
       </a>
     `;

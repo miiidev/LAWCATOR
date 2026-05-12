@@ -139,25 +139,83 @@ Promise.all([
     document.querySelector(".lawyer-avatar img").src = `../assets/images/${image}`;
     document.querySelector(".lawyer-avatar img").alt = lawyer.name;
 
+    const typeList = (Array.isArray(lawyer.type) ? lawyer.type : [lawyer.type])
+        .flatMap((type) => String(type || "").split(","))
+        .map((type) => type.trim())
+        .filter(Boolean);
+    const specialties = Array.isArray(lawyer.specialties) ? lawyer.specialties.filter(Boolean) : [];
+    const specialtyText = specialties.length ? specialties.join(" • ") : (typeList.join(" • ") || "N/A");
+    const languages = Array.isArray(lawyer.languages) ? lawyer.languages.filter(Boolean) : [];
+    const languagesText = languages.length ? languages.join(", ") : "N/A";
+    const feeCurrency = lawyer.fees?.currency || "MYR";
+    const formatFee = (value) => {
+        if (!Number.isFinite(Number(value))) return "N/A";
+
+        try {
+            return new Intl.NumberFormat("en-MY", {
+                style: "currency",
+                currency: feeCurrency
+            }).format(Number(value));
+        } catch {
+            return `${feeCurrency} ${Number(value).toLocaleString("en-MY")}`;
+        }
+    };
+    const consultationFee = formatFee(lawyer.fees?.consultation_fee);
+    const hourlyRate = formatFee(lawyer.fees?.hourly_rate);
+    const email = lawyer.contact?.email || "N/A";
+    const availabilityDays = Array.isArray(lawyer.availability?.days) && lawyer.availability.days.length
+        ? lawyer.availability.days.join(", ")
+        : "N/A";
+    const availabilityHours = lawyer.availability?.hours || "N/A";
+
     document.querySelector(".lawyer-info h2").textContent = lawyer.name;
-    document.querySelector(".lawyer-specialty").textContent = (lawyer.type || []).join(" • ");
+    document.querySelector(".lawyer-specialty").textContent = `Specialty: ${specialtyText}`;
     document.querySelector(".lawyer-location").textContent = `📍 ${city}`;
 
     document.querySelector(".lawyer-meta").innerHTML = `
     <span>⭐ ${lawyer.rating || "N/A"}</span>
     <span>💼 ${lawyer.experience_years || "N/A"} years experience</span>
+    <span>🗣️ ${languagesText}</span>
+    <span>🕒 ${availabilityHours}</span>
+    <span>💳 Consult: ${consultationFee}</span>
+    <span>✉️ ${email}</span>
   `;
 
     document.querySelector(".lawyer-section.about p").textContent =
         lawyer.biography  || "No biography available.";
 
-    document.querySelector(".service-list").innerHTML =
-        (lawyer.type || []).map(t => `<li>${t}</li>`).join("");
+        const feeGrid = document.querySelector(".fee-grid");
+        if (feeGrid) {
+                feeGrid.innerHTML = `
+                <div class="fee-card">
+                    <span class="fee-label">Consultation Fee</span>
+                    <span class="fee-value">${consultationFee}</span>
+                </div>
+                <div class="fee-card">
+                    <span class="fee-label">Hourly Rate</span>
+                    <span class="fee-value">${hourlyRate}</span>
+                </div>
+                <div class="fee-card">
+                    <span class="fee-label">Currency</span>
+                    <span class="fee-value">${feeCurrency || "N/A"}</span>
+                </div>
+            `;
+        }
+
+    const serviceTypes = typeList;
+
+    const serviceList = document.querySelector(".service-list");
+    if (serviceList) {
+        serviceList.classList.toggle("is-scrollable", serviceTypes.length > 10);
+    }
+
+    serviceList.innerHTML =
+        serviceTypes.map((type) => `<li>${type}</li>`).join("");
 
         document.querySelector(".availability-mon-fri").textContent =
-                lawyer.availability?.mon_fri || "Mon-Fri: N/A";
+            lawyer.availability?.mon_fri || `Days: ${availabilityDays}`;
         document.querySelector(".availability-sat").textContent =
-                lawyer.availability?.sat || "Sat: N/A";
+            lawyer.availability?.sat || `Hours: ${availabilityHours}`;
 
         document.querySelector(".contact-phone").textContent = phone;
         document.querySelector(".contact-address").textContent = address;

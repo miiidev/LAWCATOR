@@ -97,6 +97,53 @@
   font-family: 'Bebas Neue';
 }
 
+.stats .container-stats {
+  margin: 7%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+.stats .container-stats .available-lawyers-stats {
+  text-align: center;
+  width: 400px;
+  border: 1px solid rgba(255, 255, 255, 0.212);
+  padding: 20px 40px;
+  border-radius: 30px;
+  backdrop-filter: blur(18px);
+  background: rgba(32, 32, 32, 0.418);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
+
+}
+
+.stats .container-stats .available-firms-stats {
+  text-align: center;
+  width: 400px;
+  border: 1px solid rgba(255, 255, 255, 0.212);
+  padding: 20px 40px;
+  border-radius: 30px;
+  backdrop-filter: blur(18px);
+  background: rgba(32, 32, 32, 0.418);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
+
+}
+
+.container-stats {
+  h1 {
+    font-size: 40px;
+    font-family: 'Bebas Neue';
+    letter-spacing: 3px;
+    margin-bottom: 10px;
+  }
+
+  span {
+    font-size: 90px;
+    font-family: 'Bebas Neue';
+  }
+}
+
+
 .carousel {
   margin-top: 6%;
 }
@@ -403,7 +450,7 @@
   /* Dark translucent background */
   backdrop-filter: blur(16px);
   -webkit-backdrop-filter: blur(16px);
-  border: 1px solid rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.212);
   border-radius: 30px;
   padding: 1rem;
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
@@ -495,29 +542,29 @@
 .map-toggle-btn {
   background: rgba(255, 255, 255, 0.05);
   border: 1px solid rgba(255, 255, 255, 0.15);
-  color: #94a3b8;
+  color: #ffffff;
   padding: 8px 24px;
   border-radius: 30px;
-  /* Pill shape */
+  
   cursor: pointer;
   font-family: "Inter", sans-serif;
-  font-size: 14px;
+  font-size: 18px;
   font-weight: 500;
   transition: all 0.3s ease;
   backdrop-filter: blur(8px);
   -webkit-backdrop-filter: blur(8px);
 }
 
-/* Hover State */
+
 .map-toggle-btn:hover {
   background: rgba(255, 255, 255, 0.1);
   color: #e2e8f0;
 }
 
-/* Active State (The Glowing Blue) */
+
 .map-toggle-btn.active {
-  background: rgba(56, 189, 248, 0.15);
-  border-color: #38bdf8;
+  background: rgba(255, 255, 255, 0.11);
+  border-color: #ffffff;
   color: #ffffff;
-  box-shadow: 0 0 15px rgba(56, 189, 248, 0.3);
-}
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.603);
+} 

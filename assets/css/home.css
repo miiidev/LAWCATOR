@@ -98,7 +98,7 @@
 }
 
 .carousel {
-  margin-top: 5%;
+  margin-top: 6%;
 }
 
 .carousel h1 {
@@ -232,6 +232,27 @@
   margin: 4px 4px;
   text-align: center;
   font-size: 15px;
+}
+
+.card-link .card-content .lawyer-card__rating {
+  display: flex;
+  margin-top: 13px;
+  justify-content: center;
+}
+
+.card-link .card-content .lawyer-card__rating .rating-value {
+  color: #ffee00;
+  font-size: 25px;
+  font-family: 'Bebas Neue';
+  letter-spacing: 2px;
+  text-shadow: 0px 0px 3px #ffee00;
+}
+
+.card-link .card-content .lawyer-card__rating .stars {
+  color: #ffee00;
+  margin-left: 5px;
+  font-size: 21px;
+  text-shadow: 0px 0px 3px #ffee00;
 }
 
 
@@ -387,7 +408,7 @@
   padding: 1rem;
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
   width: 90%;
-  margin: 4rem auto;
+  margin: 9rem auto;
 }
 
 #malaysia-map {

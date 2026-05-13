@@ -7,6 +7,7 @@ const mobileFilterToggle = document.getElementById("mobileFilterToggle");
 const mapFiltersPanel = document.getElementById("mapFiltersPanel");
 
 const scopeFilter = document.getElementById("scopeFilter");
+const stateFilter = document.getElementById("stateFilter");
 const cityFilter = document.getElementById("cityFilter");
 const budgetFilter = document.getElementById("budgetFilter");
 const availabilityFilter = document.getElementById("availabilityFilter");
@@ -20,6 +21,8 @@ const PLACEHOLDER_MESSAGES = [
     "Try: Criminal Defense"
 ];
 const PLACEHOLDER_INTERVAL_MS = 3200;
+
+let firms = [];
 
 const state = {
     categories: [],
@@ -93,7 +96,7 @@ typeaheadInstance = createTypeahead({
 async function loadCategoriesFromFirms() {
     try {
         const res = await fetch("../assets/data/firms.json");
-        const firms = await res.json();
+        firms = await res.json();
 
         const types = firms.flatMap(f => {
             const t = f && f.custom && Array.isArray(f.custom.type) ? f.custom.type : [];
@@ -101,6 +104,9 @@ async function loadCategoriesFromFirms() {
         });
 
         state.categories = uniqSorted(types);
+        const states = uniqSorted(
+            firms.map(f => f.state).filter(Boolean)
+        );
         const cities = uniqSorted(
             firms.map(f => f.city).filter(Boolean)
         );
@@ -109,8 +115,10 @@ async function loadCategoriesFromFirms() {
             firms.map(f => f.custom?.budget).filter(Boolean)
         );
 
+        fillSelect(stateFilter, states, "All states");
         fillSelect(cityFilter, cities, "All cities");
         fillSelect(budgetFilter, budgets, "All budgets");
+        syncCityOptionsForState();
 
         state.fuse = new Fuse(
             state.categories.map(label => ({
@@ -202,6 +210,25 @@ function fillSelect(selectEl, values, allLabel) {
     });
 }
 
+function syncCityOptionsForState() {
+    if (!cityFilter || !firms.length) return;
+
+    const selectedState = stateFilter ? stateFilter.value : "";
+    const allowedCities = uniqSorted(
+        firms
+            .filter(f => !selectedState || f.state === selectedState)
+            .map(f => f.city)
+            .filter(Boolean)
+    );
+    const currentCity = cityFilter.value;
+
+    fillSelect(cityFilter, allowedCities, "All cities");
+
+    if (currentCity && !allowedCities.includes(currentCity)) {
+        cityFilter.value = "";
+    }
+}
+
 function setMapNotice(message) {
     if (!mapNotice) return;
     mapNotice.textContent = message || "";
@@ -254,6 +281,7 @@ function applyAllFilters(typeMatchesOverride) {
     const renderedCount = Number(window.updateMarkersByType({
         types: typeMatches,
         scope: scopeFilter ? scopeFilter.value : "nearest",
+        state: stateFilter ? stateFilter.value : "",
         city: cityFilter ? cityFilter.value : "",
         budget: budgetFilter ? budgetFilter.value : "",
         available: availabilityFilter ? availabilityFilter.value : ""
@@ -288,6 +316,13 @@ function startPlaceholderShuffle() {
     }
 }
 
+if (stateFilter) {
+    stateFilter.addEventListener("change", () => {
+        syncCityOptionsForState();
+        applyAllFilters();
+    });
+}
+
 [scopeFilter, cityFilter, budgetFilter, availabilityFilter].forEach(el => {
     if (!el) return;
     el.addEventListener("change", applyAllFilters);
@@ -310,6 +345,8 @@ if (clearFiltersBtn) {
             typeaheadInstance.syncPlaceholderVisibility();
         }
         if (scopeFilter) scopeFilter.value = "nearest";
+        if (stateFilter) stateFilter.value = "";
+        syncCityOptionsForState();
         if (cityFilter) cityFilter.value = "";
         if (budgetFilter) budgetFilter.value = "";
         if (availabilityFilter) availabilityFilter.value = "";

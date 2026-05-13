@@ -385,6 +385,7 @@
   .map-page .map-filters.is-open .filter-field:nth-child(2) { transition-delay: 0.03s; }
   .map-page .map-filters.is-open .filter-field:nth-child(3) { transition-delay: 0.06s; }
   .map-page .map-filters.is-open .filter-field:nth-child(4) { transition-delay: 0.09s; }
+  .map-page .map-filters.is-open .filter-field:nth-child(5) { transition-delay: 0.12s; }
 
   .map-page .filters-left {
     grid-template-columns: 1fr;

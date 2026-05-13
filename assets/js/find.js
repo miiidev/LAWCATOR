@@ -119,6 +119,25 @@ function fillSelect(selectEl, values, allLabel) {
   });
 }
 
+function syncCityOptionsForState() {
+  if (!cityFilter || !firms.length) return;
+
+  const selectedState = stateFilter ? stateFilter.value : "";
+  const allowedCities = uniqSorted(
+    firms
+      .filter(f => !selectedState || f.state === selectedState)
+      .map(f => f.city)
+      .filter(Boolean)
+  );
+  const currentCity = cityFilter.value;
+
+  fillSelect(cityFilter, allowedCities, "All cities");
+
+  if (currentCity && !allowedCities.includes(currentCity)) {
+    cityFilter.value = "";
+  }
+}
+
 function escapeHtml(text) {
   return String(text || "")
     .replace(/&/g, "&amp;")
@@ -226,11 +245,7 @@ Promise.all([
     "All states"
   );
 
-  fillSelect(
-    cityFilter,
-    uniqSorted(firms.map(f => f.city).filter(Boolean)),
-    "All cities"
-  );
+  syncCityOptionsForState();
 
   fillSelect(
     budgetFilter,
@@ -248,6 +263,8 @@ Promise.all([
       stateFilter.value = stateParam;
     }
   }
+
+  syncCityOptionsForState();
 
   renderList();
 });
@@ -269,7 +286,14 @@ function renderSuggestions(items) {
     .join("");
 }
 
-[stateFilter, cityFilter, budgetFilter, availabilityFilter, sortFilter].forEach(el => {
+if (stateFilter) {
+  stateFilter.addEventListener("change", () => {
+    syncCityOptionsForState();
+    renderList();
+  });
+}
+
+[cityFilter, budgetFilter, availabilityFilter, sortFilter].forEach(el => {
   if (!el) return;
   el.addEventListener("change", renderList);
 });
@@ -282,6 +306,7 @@ if (clearFiltersBtn) {
     }
 
     if (stateFilter) stateFilter.value = "";
+    syncCityOptionsForState();
     if (cityFilter) cityFilter.value = "";
     if (budgetFilter) budgetFilter.value = "";
     if (availabilityFilter) availabilityFilter.value = "";

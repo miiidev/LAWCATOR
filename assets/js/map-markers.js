@@ -9,17 +9,20 @@ window.MapMarkers = (function () {
 
     const active = filters || {};
     const selectedTypes = Array.isArray(active.types) ? active.types : [];
+    const selectedState = (active.state || "").toLowerCase();
     const selectedCity = (active.city || "").toLowerCase();
     const selectedBudget = (active.budget || "").toLowerCase();
     const selectedAvailability = active.available;
 
     return allFirms.filter((f) => {
       const types = Array.isArray(f.custom?.type) ? f.custom.type : [];
+      const state = (f.state || "").toLowerCase();
       const city = (f.city || "").toLowerCase();
       const budget = (f.custom?.budget || "").toLowerCase();
       const available = !!f.custom?.available;
 
       const typeOk = !selectedTypes.length || types.some((t) => selectedTypes.includes(t));
+      const stateOk = !selectedState || state === selectedState;
       const cityOk = !selectedCity || city === selectedCity;
       const budgetOk = !selectedBudget || budget === selectedBudget;
 
@@ -27,7 +30,7 @@ window.MapMarkers = (function () {
       if (selectedAvailability === "true") availabilityOk = available === true;
       if (selectedAvailability === "false") availabilityOk = available === false;
 
-      return typeOk && cityOk && budgetOk && availabilityOk;
+      return typeOk && stateOk && cityOk && budgetOk && availabilityOk;
     });
   }
 

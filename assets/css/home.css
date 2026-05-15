@@ -43,13 +43,93 @@
   z-index: 1;
 }
 
+/*On scroll animation*/
+.scroll-element {
+  animation: element-appear both;
+  animation-timeline: view();
+  animation-range: entry 20px cover 40%;
+}
+
+@keyframes element-appear {
+  from {
+    opacity: 0;
+    transform: translateY(-100px) scale(0.5);
+    filter: blur(9px);
+    
+  } to {
+    opacity: 1;
+    transform: translateY(0px) scale(1);
+  }
+}
+
+.hero-animation {
+  animation: hero-shrink linear both;
+  animation-timeline: view();
+  animation-range: entry 50% cover 70%;
+}
+
+@keyframes hero-shrink {
+  from{
+    transform: scale(1);
+  } to {
+    transform: scale(0.5);
+  }
+}
+
+@media (min-width: 400px){
+  @keyframes hero-shrink {
+    from{
+      transform: scale(1);
+    } to {
+      transform: scale(0.8);
+    }
+  }
+}
+
+
+
 .home-page .hero {
-  --hero-logo-size: clamp(400px, 40vw, 620px);
   display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 800px;
+
+}
+.home-page .container-hero {
+  display: flex;
+  position: sticky;
+  top: 200px;
+  height: auto;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
   color: var(--theme-text);
   z-index: 1;
+  margin: 0;
+
+  @media (min-width: 400px){
+    --hero-logo-size: clamp(370px, 40vw, 620px);
+  }
+
+   @media (min-width: 560px){
+    --hero-logo-size: clamp(510px, 40vw, 620px);
+  }
+
+  @media (min-width: 660px){
+    --hero-logo-size: clamp(600px, 40vw, 620px);
+  }
+
+  @media (min-width: 768px){
+    --hero-logo-size: clamp(700px, 40vw, 620px);
+  }
+
+  @media (min-width: 1024px){
+    --hero-logo-size: clamp(990px, 40vw, 620px);
+  }
+
+  @media (min-width: 1500px){
+    --hero-logo-size: clamp(1300px, 40vw, 620px);
+  }
 }
 
 .home-page .hero p {
@@ -61,7 +141,6 @@
 
 .home-page .hero img {
   width: var(--hero-logo-size);
-  margin-top: 60px;
   z-index: 1;
 }
 
@@ -98,11 +177,21 @@
 }
 
 .stats .container-stats {
-  margin: 7%;
+  margin: 10%;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 30px;
+  gap: 80px;
+}
+
+@media (min-width: 1000px) {
+  .stats .container-stats {
+  margin: 2%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 80px;
+}
 }
 
 .stats .container-stats .available-lawyers-stats {
@@ -145,7 +234,7 @@
 
 
 .carousel {
-  margin-top: 6%;
+  margin-top: 8%;
 }
 
 .carousel h1 {

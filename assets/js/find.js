@@ -420,7 +420,7 @@ function renderList() {
   if (availabilityFilter && availabilityFilter.value) {
     const requiredAvailability = availabilityFilter.value === "true";
     merged = merged.filter(l =>
-      Boolean(l.firm?.custom?.availability) === requiredAvailability
+      Boolean(l.firm?.custom?.available) === requiredAvailability
     );
   }
 

@@ -205,7 +205,11 @@ document.addEventListener("DOMContentLoaded", async () => {
             const count = params.value || 0;
 
             if (count > 0) {
-                window.location.href = `find.html?state=${encodeURIComponent(stateName)}`;
+                if (currentMode === "lawyers") {
+                    window.location.href = `find.html?state=${encodeURIComponent(stateName)}`;
+                } else {
+                    window.location.href = `map.html?state=${encodeURIComponent(stateName)}`;
+                }
             }
         });
 

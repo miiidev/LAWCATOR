@@ -118,6 +118,21 @@ async function loadCategoriesFromFirms() {
         fillSelect(stateFilter, states, "All states");
         fillSelect(cityFilter, cities, "All cities");
         fillSelect(budgetFilter, budgets, "All budgets");
+
+        // Parse Map state filter from URL
+        const urlParams = window.URLSearchParams ? new URLSearchParams(window.location.search) : null;
+        let urlState = urlParams ? urlParams.get('state') : null;
+
+        if (urlState && stateFilter) {
+            const hasState = Array.from(stateFilter.options).some(opt => opt.value === urlState);
+            if (hasState) {
+                stateFilter.value = urlState;
+                if (scopeFilter) {
+                    scopeFilter.value = "all";
+                }
+            }
+        }
+
         syncCityOptionsForState();
 
         state.fuse = new Fuse(
@@ -316,8 +331,45 @@ function startPlaceholderShuffle() {
     }
 }
 
+function handleUrlParams() {
+    const urlParams = new URLSearchParams(window.location.search);
+    const stateParam = urlParams.get('state');
+
+    if (stateParam) {
+        const stateFilter = document.getElementById('stateFilter');
+        const scopeFilter = document.getElementById('scopeFilter');
+
+        if (stateFilter) {
+            // 1. Set the dropdown value to the state from the URL
+            stateFilter.value = stateParam;
+
+            // 2. Set scope to "all" so the user sees all firms in that state 
+            // instead of just the "nearest" few.
+            if (scopeFilter) {
+                scopeFilter.value = 'all';
+            }
+
+            // 3. Trigger the map update logic defined in map.js
+            if (typeof window.updateMarkersByType === 'function') {
+                window.updateMarkersByType({
+                    state: stateParam,
+                    scope: 'all'
+                });
+            }
+        }
+    }
+}
+
+window.addEventListener('load', () => {
+    // Small delay to ensure dynamic dropdown options (if any) are rendered
+    setTimeout(handleUrlParams, 100);
+});
+
 if (stateFilter) {
     stateFilter.addEventListener("change", () => {
+        if (stateFilter.value !== "" && scopeFilter) {
+            scopeFilter.value = "all";
+        }
         syncCityOptionsForState();
         applyAllFilters();
     });

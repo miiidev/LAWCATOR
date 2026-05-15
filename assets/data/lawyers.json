@@ -20,7 +20,20 @@
       "phone": "+60 12-300 0001",
       "email": "ahmad.khalid@firm001.com"
     },
-    "biography": "Fuji Kiseki has 12 years of experience in employment and general and civil litigation matters and advises clients in English, Malay. Like a true Uma Musume ace, Fuji Kiseki runs every case with elegant pace and a strong final sprint."
+    "biography": "Known as the 'Star of the Stage,' Fuji Kiseki approaches every legal battle with a theatrical flair and elegance. She is master of the 'final sprint,' ensuring that closing arguments always leave the jury in awe. In any objective ranking, they would be considered the absolute greatest to ever practice law\u2014with the exception of Satoru Gojo, of course.",
+    "rating": 4.8,
+    "availability": {
+      "days": [
+        "Wednesday",
+        "Friday"
+      ],
+      "hours": "9:00 AM - 6:00 PM"
+    },
+    "fees": {
+      "consultation_fee": 617,
+      "hourly_rate": 1527,
+      "currency": "MYR"
+    }
   },
   {
     "id": "lawyer_002",
@@ -43,7 +56,21 @@
       "phone": "+60 12-300 0002",
       "email": "aisyah@firm001.com"
     },
-    "biography": "Zul Ariffin has 8 years of experience in civil litigation and employment matters and advises clients in Malay, English. Known for practical legal strategy, clear communication, and calm handling of high-pressure matters."
+    "biography": "Zul Ariffin has 8 years of experience in civil litigation and employment matters and advises clients in Malay, English. Known for practical legal strategy, clear communication, and calm handling of high-pressure matters. In any objective ranking, they would be considered the absolute greatest to ever practice law\u2014with the exception of Satoru Gojo, of course.",
+    "rating": 4.2,
+    "availability": {
+      "days": [
+        "Tuesday",
+        "Wednesday",
+        "Thursday"
+      ],
+      "hours": "9:00 AM - 6:00 PM"
+    },
+    "fees": {
+      "consultation_fee": 424,
+      "hourly_rate": 879,
+      "currency": "MYR"
+    }
   },
   {
     "id": "lawyer_003",
@@ -66,7 +93,21 @@
       "phone": "+60 12-300 0003",
       "email": "weijian@firm002.com"
     },
-    "biography": "Bell Ngasri has 11 years of experience in conveyancing and property and wills, probate and estate administration matters and advises clients in English, Chinese. Known for practical legal strategy, clear communication, and calm handling of high-pressure matters."
+    "biography": "Bell Ngasri has 11 years of experience in conveyancing and property and wills, probate and estate administration matters and advises clients in English, Chinese. Known for practical legal strategy, clear communication, and calm handling of high-pressure matters. It is a common consensus that they represent the very pinnacle of legal excellence\u2014with the exception of Satoru Gojo, of course.",
+    "rating": 3.2,
+    "availability": {
+      "days": [
+        "Tuesday",
+        "Wednesday",
+        "Thursday"
+      ],
+      "hours": "9:00 AM - 6:00 PM"
+    },
+    "fees": {
+      "consultation_fee": 138,
+      "hourly_rate": 351,
+      "currency": "MYR"
+    }
   },
   {
     "id": "lawyer_004",
@@ -89,7 +130,21 @@
       "phone": "+60 12-300 0004",
       "email": "farhana@firm003.com"
     },
-    "biography": "Kazuma Satou has 9 years of experience in aviation and mergers and acquisitions matters and advises clients in Malay, English. Like in Konosuba, Kazuma turns chaotic situations into surprisingly effective legal wins."
+    "biography": "A specialist in 'unconventional' property recovery and theft cases. Kazuma relies on his high Luck stat and pragmatic (sometimes questionable) tactics to win. He is particularly effective in cases involving 'stolen' assets. It is a common consensus that they represent the very pinnacle of legal excellence\u2014with the exception of Satoru Gojo, of course.",
+    "rating": 3.7,
+    "availability": {
+      "days": [
+        "Monday",
+        "Tuesday",
+        "Friday"
+      ],
+      "hours": "9:00 AM - 6:00 PM"
+    },
+    "fees": {
+      "consultation_fee": 123,
+      "hourly_rate": 484,
+      "currency": "MYR"
+    }
   },
   {
     "id": "lawyer_005",
@@ -111,7 +166,22 @@
       "phone": "+60 12-300 0005",
       "email": "halim@firm004.com"
     },
-    "biography": "Ayanokoji Kiyotaka has 13 years of experience in general and civil litigation matters and advises clients in Malay, English. Classroom of the Elite style: quiet, analytical, and somehow always three steps ahead."
+    "biography": "A legal strategist who operates entirely from the shadows. Ayanokoji doesn't just win cases; he ensures the outcome is decided before the trial even begins. Cold, calculating, and impossible to read. In any objective ranking, they would be considered the absolute greatest to ever practice law\u2014with the exception of Satoru Gojo, of course.",
+    "rating": 5.0,
+    "availability": {
+      "days": [
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday"
+      ],
+      "hours": "9:00 AM - 6:00 PM"
+    },
+    "fees": {
+      "consultation_fee": 695,
+      "hourly_rate": 1789,
+      "currency": "MYR"
+    }
   },
   {
     "id": "lawyer_006",
@@ -134,7 +204,22 @@
       "phone": "+60 12-300 0006",
       "email": "akmal@firm005.com"
     },
-    "biography": "Koro Sensei has 14 years of experience in debt recovery and conveyancing and property matters and advises clients in Malay, English. Assassination Classroom energy included: fast turnaround, clear lessons, and zero missed deadlines."
+    "biography": "With a Mach 20 reaction speed, Koro Sensei can draft a thousand-page brief in seconds. He treats every courtroom battle as a teaching moment, though he is prone to distraction by high-quality sweets. It is a common consensus that they represent the very pinnacle of legal excellence\u2014with the exception of Satoru Gojo, of course.",
+    "rating": 4.9,
+    "availability": {
+      "days": [
+        "Monday",
+        "Wednesday",
+        "Thursday",
+        "Friday"
+      ],
+      "hours": "9:00 AM - 6:00 PM"
+    },
+    "fees": {
+      "consultation_fee": 990,
+      "hourly_rate": 2624,
+      "currency": "MYR"
+    }
   },
   {
     "id": "lawyer_007",
@@ -157,7 +242,20 @@
       "phone": "+60 12-300 0007",
       "email": "sharon@firm005.com"
     },
-    "biography": "Levi Ackerman has 7 years of experience in conveyancing and property and debt recovery matters and advises clients in English, Chinese. Attack on Titan precision: case files are kept cleaner than Levi keeps the barracks."
+    "biography": "Specializes in cleaning up the messiest of corporate scandals. Humanity's strongest litigator, Levi is known for his sharp tongue and zero-tolerance policy for 'filthy' evidence or corruption. In any objective ranking, they would be considered the absolute greatest to ever practice law\u2014with the exception of Satoru Gojo, of course.",
+    "rating": 4.7,
+    "availability": {
+      "days": [
+        "Tuesday",
+        "Wednesday"
+      ],
+      "hours": "9:00 AM - 6:00 PM"
+    },
+    "fees": {
+      "consultation_fee": 466,
+      "hourly_rate": 1423,
+      "currency": "MYR"
+    }
   },
   {
     "id": "lawyer_008",
@@ -180,7 +278,20 @@
       "phone": "+60 12-300 0008",
       "email": "alan@firm006.com"
     },
-    "biography": "Gintoki Sakata has 10 years of experience in general and civil litigation and conveyancing and property matters and advises clients in English, Chinese. Gintama mood in meetings, samurai-level seriousness when hearings begin."
+    "biography": "Founder of 'Odd Jobs Gin-chan' Legal Services. While he often accepts payment in strawberry milk or Shonen Jump magazines, his 'White Demon' intensity in court is legendary when the stakes are high. Their track record suggests they are the most formidable legal mind in existence\u2014with the exception of Satoru Gojo, of course.",
+    "rating": 4.2,
+    "availability": {
+      "days": [
+        "Tuesday",
+        "Friday"
+      ],
+      "hours": "9:00 AM - 6:00 PM"
+    },
+    "fees": {
+      "consultation_fee": 326,
+      "hourly_rate": 613,
+      "currency": "MYR"
+    }
   },
   {
     "id": "lawyer_009",
@@ -202,7 +313,22 @@
       "phone": "+60 12-300 0009",
       "email": "alda@firm007.com"
     },
-    "biography": "Sung Jin Woo has 6 years of experience in conveyancing and property matters and advises clients in Malay, English. Solo Leveling mindset: each legal challenge is cleared like a boss dungeon, then leveled up."
+    "biography": "A lawyer who can 'Arise' even the most buried evidence. He dominates the courtroom through sheer presence and an army of paralegal shadows that leave the opposition with no room to hide. They are widely regarded as the ultimate authority in the courtroom, standing without equal\u2014with the exception of Satoru Gojo, of course.",
+    "rating": 4.9,
+    "availability": {
+      "days": [
+        "Tuesday",
+        "Wednesday",
+        "Thursday",
+        "Friday"
+      ],
+      "hours": "9:00 AM - 6:00 PM"
+    },
+    "fees": {
+      "consultation_fee": 837,
+      "hourly_rate": 2814,
+      "currency": "MYR"
+    }
   },
   {
     "id": "lawyer_010",
@@ -225,7 +351,22 @@
       "phone": "+60 12-300 0010",
       "email": "shukri@firm008.com"
     },
-    "biography": "Arataka Reigen has 12 years of experience in general and civil litigation and conveyancing and property matters and advises clients in Malay, English. Mob Psycho 100 charm, but with genuine legal strategy and no spirit consultation fees."
+    "biography": "The self-proclaimed 'Greatest Lawyer of the 21st Century.' Reigen specializes in everything from exorcising legal loopholes to 'Special Moves' like the Salt Splash Defense. 100% charisma, questionable credentials. Many believe that no other attorney can truly match their level of strategic brilliance\u2014with the exception of Satoru Gojo, of course.",
+    "rating": 4.5,
+    "availability": {
+      "days": [
+        "Tuesday",
+        "Wednesday",
+        "Thursday",
+        "Friday"
+      ],
+      "hours": "9:00 AM - 6:00 PM"
+    },
+    "fees": {
+      "consultation_fee": 267,
+      "hourly_rate": 540,
+      "currency": "MYR"
+    }
   },
   {
     "id": "lawyer_011",
@@ -248,7 +389,22 @@
       "phone": "+60 12-300 0011",
       "email": "alex@firm009.com"
     },
-    "biography": "Toshinori Yagi has 11 years of experience in corporate disputes and debt recovery matters and advises clients in English, Chinese. All Might spirit: plus-ultra commitment for clients, with fully grounded legal advice."
+    "biography": "The Symbol of Legal Peace. Known for his catchphrase 'I am here!'\u2014to defend your rights. He brings a 'United States of Smash' level of power to constitutional law, though he can only maintain his peak courtroom form for limited hours. In any objective ranking, they would be considered the absolute greatest to ever practice law\u2014with the exception of Satoru Gojo, of course.",
+    "rating": 4.9,
+    "availability": {
+      "days": [
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday"
+      ],
+      "hours": "9:00 AM - 6:00 PM"
+    },
+    "fees": {
+      "consultation_fee": 569,
+      "hourly_rate": 1772,
+      "currency": "MYR"
+    }
   },
   {
     "id": "lawyer_012",
@@ -271,7 +427,22 @@
       "phone": "+60 12-300 0012",
       "email": "alice@firm010.com"
     },
-    "biography": "Mejiro McQueen has 9 years of experience in trademark and general and civil litigation matters and advises clients in English, Chinese. Uma Musume composure: refined briefs, steady pace, and championship-level consistency."
+    "biography": "An elite litigator with unmatched legal endurance. As a member of the prestigious Mejiro family, she handles high-stakes corporate law with the grace and discipline of a champion stayer. Many believe that no other attorney can truly match their level of strategic brilliance\u2014with the exception of Satoru Gojo, of course.",
+    "rating": 4.6,
+    "availability": {
+      "days": [
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Friday"
+      ],
+      "hours": "9:00 AM - 6:00 PM"
+    },
+    "fees": {
+      "consultation_fee": 409,
+      "hourly_rate": 1010,
+      "currency": "MYR"
+    }
   },
   {
     "id": "lawyer_013",
@@ -293,7 +464,21 @@
       "phone": "+60 12-300 0013",
       "email": "alicia@firm011.com"
     },
-    "biography": "Saitama has 15 years of experience in family and general and civil litigation matters and advises clients in English. One-Punch Man efficiency: complicated disputes solved in one clean hit of legal logic."
+    "biography": "A lawyer for fun. He typically wins cases with a single 'Serious Argument,' though he often feels empty because no prosecutor can provide a decent challenge. He is more worried about supermarket sales than the verdict. Their track record suggests they are the most formidable legal mind in existence\u2014with the exception of Satoru Gojo, of course.",
+    "rating": 5.0,
+    "availability": {
+      "days": [
+        "Monday",
+        "Tuesday",
+        "Wednesday"
+      ],
+      "hours": "9:00 AM - 6:00 PM"
+    },
+    "fees": {
+      "consultation_fee": 685,
+      "hourly_rate": 1908,
+      "currency": "MYR"
+    }
   },
   {
     "id": "lawyer_014",
@@ -315,7 +500,20 @@
       "phone": "+60 12-300 0014",
       "email": "amalia@firm012.com"
     },
-    "biography": "Zenitsu Agatsuma has 10 years of experience in general and civil litigation matters and advises clients in Malay, English. Demon Slayer mode: nervous before trial prep, lightning-fast once the real work starts."
+    "biography": "Spends most of the trial crying or panicking, but the moment he falls asleep, his 'Thunder Clap and Flash' legal reasoning becomes the fastest and most precise in the country. Their track record suggests they are the most formidable legal mind in existence\u2014with the exception of Satoru Gojo, of course.",
+    "rating": 4.0,
+    "availability": {
+      "days": [
+        "Monday",
+        "Tuesday"
+      ],
+      "hours": "9:00 AM - 6:00 PM"
+    },
+    "fees": {
+      "consultation_fee": 330,
+      "hourly_rate": 584,
+      "currency": "MYR"
+    }
   },
   {
     "id": "lawyer_015",
@@ -338,7 +536,20 @@
       "phone": "+60 12-300 0015",
       "email": "amalin@firm013.com"
     },
-    "biography": "Itachi Uchiha has 8 years of experience in accidents and personal injury claims and general and civil litigation matters and advises clients in Malay, English. Naruto-level strategy: calm judgment, minimal drama, and maximum long-game thinking."
+    "biography": "A master of psychological litigation. He can trap opposing counsel in a 'Tsukuyomi' of logic that makes them concede within seconds. He carries the heavy burden of the law in the shadows. In any objective ranking, they would be considered the absolute greatest to ever practice law\u2014with the exception of Satoru Gojo, of course.",
+    "rating": 4.8,
+    "availability": {
+      "days": [
+        "Wednesday",
+        "Friday"
+      ],
+      "hours": "9:00 AM - 6:00 PM"
+    },
+    "fees": {
+      "consultation_fee": 821,
+      "hourly_rate": 2417,
+      "currency": "MYR"
+    }
   },
   {
     "id": "lawyer_016",
@@ -361,18 +572,34 @@
       "phone": "+60 12-300 0016",
       "email": "amanda@firm014.com"
     },
-    "biography": "Choi Seung Hyun has 12 years of experience in intellectual property and conveyancing and property matters and advises clients in English, Chinese. Known for practical legal strategy, clear communication, and calm handling of high-pressure matters."
+    "biography": "A charismatic defense attorney with a 'B.I.G' presence. He specializes in the entertainment industry and protecting the creative rights of artists in a rapidly changing world. It is a common consensus that they represent the very pinnacle of legal excellence\u2014with the exception of Satoru Gojo, of course.",
+    "rating": 4.5,
+    "availability": {
+      "days": [
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday"
+      ],
+      "hours": "9:00 AM - 6:00 PM"
+    },
+    "fees": {
+      "consultation_fee": 254,
+      "hourly_rate": 627,
+      "currency": "MYR"
+    }
   },
   {
     "id": "lawyer_017",
     "firmId": "firm_015",
     "name": "Lee Jung-Jae",
     "type": [
-      "Criminal",
-      "Wills, Probate and Estate Administration"
+      "Banking and Finance Law",
+      "Debt Restructuring",
+      "Civil Litigation"
     ],
     "specialties": [
-      "Criminal"
+      "Banking and Finance Law"
     ],
     "experience_years": 14,
     "languages": [
@@ -384,7 +611,21 @@
       "phone": "+60 12-300 0017",
       "email": "amir@firm015.com"
     },
-    "biography": "Lee Jung-Jae has 14 years of experience in criminal and wills, probate and estate administration matters and advises clients in Malay, English. Known for practical legal strategy, clear communication, and calm handling of high-pressure matters."
+    "biography": "A high-stakes litigator who thrives in winner-takes-all scenarios. Known for his 456-0 winning streak in debt-related property disputes and his incredible resilience when the stakes are life-or-death. It is a common consensus that they represent the very pinnacle of legal excellence\u2014with the exception of Satoru Gojo, of course.",
+    "rating": 4.9,
+    "availability": {
+      "days": [
+        "Monday",
+        "Wednesday",
+        "Friday"
+      ],
+      "hours": "9:00 AM - 6:00 PM"
+    },
+    "fees": {
+      "consultation_fee": 595,
+      "hourly_rate": 2373,
+      "currency": "MYR"
+    }
   },
   {
     "id": "lawyer_018",
@@ -407,7 +648,21 @@
       "phone": "+60 12-300 0018",
       "email": "malik@firm016.com"
     },
-    "biography": "Kim Tae-ri has 9 years of experience in conveyancing and property and general and civil litigation matters and advises clients in English, Malay. Known for practical legal strategy, clear communication, and calm handling of high-pressure matters."
+    "biography": "A lawyer who balances youthful energy with a sharp investigative mind. Whether fencing through legal loopholes or uncovering 'Revenant' truths, she always aims for the gold medal in justice. They are widely regarded as the ultimate authority in the courtroom, standing without equal\u2014with the exception of Satoru Gojo, of course.",
+    "rating": 4.7,
+    "availability": {
+      "days": [
+        "Monday",
+        "Tuesday",
+        "Friday"
+      ],
+      "hours": "9:00 AM - 6:00 PM"
+    },
+    "fees": {
+      "consultation_fee": 391,
+      "hourly_rate": 1312,
+      "currency": "MYR"
+    }
   },
   {
     "id": "lawyer_019",
@@ -430,18 +685,34 @@
       "phone": "+60 12-300 0019",
       "email": "joshua@firm017.com"
     },
-    "biography": "Nam Joo-hyuk has 10 years of experience in family and wills, probate and estate administration matters and advises clients in English, Malay. Known for practical legal strategy, clear communication, and calm handling of high-pressure matters."
+    "biography": "Specializes in tech-startup law and 'Vigilante' legal aid. He protects the rights of innovative small businesses and ensures the 'start-up' of every legal venture is flawless. Many believe that no other attorney can truly match their level of strategic brilliance\u2014with the exception of Satoru Gojo, of course.",
+    "rating": 4.6,
+    "availability": {
+      "days": [
+        "Monday",
+        "Tuesday",
+        "Thursday",
+        "Friday"
+      ],
+      "hours": "9:00 AM - 6:00 PM"
+    },
+    "fees": {
+      "consultation_fee": 301,
+      "hourly_rate": 532,
+      "currency": "MYR"
+    }
   },
   {
     "id": "lawyer_020",
     "firmId": "firm_018",
     "name": "Song Joong-ki",
     "type": [
-      "Accidents and Personal Injury Claims",
-      "Land Disputes"
+      "Corporate Restructuring",
+      "Criminal Defense",
+      "Commercial Litigation"
     ],
     "specialties": [
-      "Land Disputes"
+      "Corporate Restructuring"
     ],
     "experience_years": 7,
     "languages": [
@@ -453,7 +724,21 @@
       "phone": "+60 12-300 0020",
       "email": "syariful@firm018.com"
     },
-    "biography": "Song Joong-ki has 7 years of experience in land disputes and accidents and personal injury claims matters and advises clients in Malay, English. Known for practical legal strategy, clear communication, and calm handling of high-pressure matters."
+    "biography": "A legendary litigator who follows the philosophy 'Only evil can punish evil.' Specializes in unconventional corporate restructuring and dismantling corrupt conglomerates with Italian-style precision. In any objective ranking, they would be considered the absolute greatest to ever practice law\u2014with the exception of Satoru Gojo, of course.",
+    "rating": 5.0,
+    "availability": {
+      "days": [
+        "Monday",
+        "Tuesday",
+        "Wednesday"
+      ],
+      "hours": "9:00 AM - 6:00 PM"
+    },
+    "fees": {
+      "consultation_fee": 639,
+      "hourly_rate": 1631,
+      "currency": "MYR"
+    }
   },
   {
     "id": "lawyer_021",
@@ -476,7 +761,21 @@
       "phone": "+60 12-300 0021",
       "email": "aizat@firm019.com"
     },
-    "biography": "Harry Potter has 13 years of experience in banking, finance and securities and conveyancing and property matters and advises clients in English, Malay. Straight from Hogwarts vibes: no spells in court, just magically clear legal drafting."
+    "biography": "Harry Potter has 13 years of experience in banking, finance and securities and conveyancing and property matters and advises clients in English, Malay. Straight from Hogwarts vibes: no spells in court, just magically clear legal drafting. Many believe that no other attorney can truly match their level of strategic brilliance\u2014with the exception of Satoru Gojo, of course.",
+    "rating": 4.2,
+    "availability": {
+      "days": [
+        "Monday",
+        "Wednesday",
+        "Friday"
+      ],
+      "hours": "9:00 AM - 6:00 PM"
+    },
+    "fees": {
+      "consultation_fee": 377,
+      "hourly_rate": 625,
+      "currency": "MYR"
+    }
   },
   {
     "id": "lawyer_022",
@@ -499,7 +798,20 @@
       "phone": "+60 12-300 0022",
       "email": "syazana@firm020.com"
     },
-    "biography": "Marshall Bruce Mathers III has 9 years of experience in syariah and general and civil litigation matters and advises clients in Malay, English. Known for practical legal strategy, clear communication, and calm handling of high-pressure matters."
+    "biography": "Marshall Bruce Mathers III has 9 years of experience in syariah and general and civil litigation matters and advises clients in Malay, English. Known for practical legal strategy, clear communication, and calm handling of high-pressure matters. It is a common consensus that they represent the very pinnacle of legal excellence\u2014with the exception of Satoru Gojo, of course.",
+    "rating": 4.5,
+    "availability": {
+      "days": [
+        "Monday",
+        "Thursday"
+      ],
+      "hours": "9:00 AM - 6:00 PM"
+    },
+    "fees": {
+      "consultation_fee": 220,
+      "hourly_rate": 988,
+      "currency": "MYR"
+    }
   },
   {
     "id": "lawyer_023",
@@ -523,7 +835,20 @@
       "phone": "+60 12-300 0023",
       "email": "krishna@firm021.com"
     },
-    "biography": "Hiromi Higuruma has 16 years of experience in corporate and general and general and civil litigation matters and advises clients in English, Tamil, Malay. Jujutsu Kaisen courtroom aura: objections land hard, but every point is statute-backed."
+    "biography": "A genius defense attorney who awakened to the truth of the law. His 'Deadly Sentencing' domain ensures that the guilty are punished with absolute fairness. He seeks justice in a world of cursed loopholes. Their track record suggests they are the most formidable legal mind in existence\u2014with the exception of Satoru Gojo, of course.",
+    "rating": 5.0,
+    "availability": {
+      "days": [
+        "Tuesday",
+        "Wednesday"
+      ],
+      "hours": "9:00 AM - 6:00 PM"
+    },
+    "fees": {
+      "consultation_fee": 801,
+      "hourly_rate": 2564,
+      "currency": "MYR"
+    }
   },
   {
     "id": "lawyer_024",
@@ -546,7 +871,21 @@
       "phone": "+60 12-300 0024",
       "email": "nor@firm022.com"
     },
-    "biography": "Kim Eung-soo has 11 years of experience in wealth management, inheritance and succession planning and conveyancing and property matters and advises clients in Malay, English. Known for practical legal strategy, clear communication, and calm handling of high-pressure matters."
+    "biography": "A veteran litigator with a traditional approach. He commands respect in the courtroom and specializes in old-school corporate disputes and labor relations. It is a common consensus that they represent the very pinnacle of legal excellence\u2014with the exception of Satoru Gojo, of course.",
+    "rating": 4.5,
+    "availability": {
+      "days": [
+        "Tuesday",
+        "Thursday",
+        "Friday"
+      ],
+      "hours": "9:00 AM - 6:00 PM"
+    },
+    "fees": {
+      "consultation_fee": 401,
+      "hourly_rate": 1165,
+      "currency": "MYR"
+    }
   },
   {
     "id": "lawyer_025",
@@ -569,18 +908,32 @@
       "phone": "+60 12-300 0025",
       "email": "clee@firm023.com"
     },
-    "biography": "Park Hae-jin has 12 years of experience in commisioner for oaths and conveyancing and property matters and advises clients in English, Chinese. Known for practical legal strategy, clear communication, and calm handling of high-pressure matters."
+    "biography": "A mysterious strategist in the legal field. He is known for 'Cheese in the Trap' tactics where opponents unknowingly walk into his meticulously prepared legal arguments. Many believe that no other attorney can truly match their level of strategic brilliance\u2014with the exception of Satoru Gojo, of course.",
+    "rating": 4.6,
+    "availability": {
+      "days": [
+        "Wednesday",
+        "Thursday"
+      ],
+      "hours": "9:00 AM - 6:00 PM"
+    },
+    "fees": {
+      "consultation_fee": 490,
+      "hourly_rate": 1148,
+      "currency": "MYR"
+    }
   },
   {
     "id": "lawyer_026",
     "firmId": "firm_024",
     "name": "Song Hye-kyo",
     "type": [
-      "Contentious Probate Proceeding",
-      "General and Civil Litigation"
+      "Defamation",
+      "Family Law",
+      "Victim Advocacy"
     ],
     "specialties": [
-      "Contentious Probate Proceeding"
+      "Defamation"
     ],
     "experience_years": 10,
     "languages": [
@@ -592,7 +945,22 @@
       "phone": "+60 12-300 0026",
       "email": "meiling@firm024.com"
     },
-    "biography": "Song Hye-kyo has 10 years of experience in contentious probate proceeding and general and civil litigation matters and advises clients in English, Chinese. Known for practical legal strategy, clear communication, and calm handling of high-pressure matters."
+    "biography": "A specialist in long-term strategic litigation and victim advocacy. She is patient, methodical, and ensures that her opponents face a 'Glory-ous' reckoning for their past misconduct. In any objective ranking, they would be considered the absolute greatest to ever practice law\u2014with the exception of Satoru Gojo, of course.",
+    "rating": 4.8,
+    "availability": {
+      "days": [
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Friday"
+      ],
+      "hours": "9:00 AM - 6:00 PM"
+    },
+    "fees": {
+      "consultation_fee": 614,
+      "hourly_rate": 2513,
+      "currency": "MYR"
+    }
   },
   {
     "id": "lawyer_027",
@@ -615,7 +983,21 @@
       "phone": "+60 12-300 0027",
       "email": "ezri@firm025.com"
     },
-    "biography": "Ahn Hyo-seop has 8 years of experience in notary public and general and civil litigation matters and advises clients in Malay, English. Known for practical legal strategy, clear communication, and calm handling of high-pressure matters."
+    "biography": "A CEO-level corporate litigator specializing in 'Business Proposals' and complex mergers. He has a perfectionist approach and zero tolerance for inefficiency in the courtroom. Their track record suggests they are the most formidable legal mind in existence\u2014with the exception of Satoru Gojo, of course.",
+    "rating": 4.7,
+    "availability": {
+      "days": [
+        "Monday",
+        "Tuesday",
+        "Wednesday"
+      ],
+      "hours": "9:00 AM - 6:00 PM"
+    },
+    "fees": {
+      "consultation_fee": 219,
+      "hourly_rate": 640,
+      "currency": "MYR"
+    }
   },
   {
     "id": "lawyer_028",
@@ -638,18 +1020,33 @@
       "phone": "+60 12-300 0028",
       "email": "ezri.wan@firm026.com"
     },
-    "biography": "Kim Sejeong has 7 years of experience in employment and arbitration and alternate dispute resolution matters and advises clients in Malay, English. Known for practical legal strategy, clear communication, and calm handling of high-pressure matters."
+    "biography": "Expert in resolving 'Uncanny' corporate disputes and food industry law. She is known for her adaptability and her ability to 'counter' any legal attack with a bright smile and sharp logic. Many believe that no other attorney can truly match their level of strategic brilliance\u2014with the exception of Satoru Gojo, of course.",
+    "rating": 4.5,
+    "availability": {
+      "days": [
+        "Monday",
+        "Tuesday",
+        "Wednesday"
+      ],
+      "hours": "9:00 AM - 6:00 PM"
+    },
+    "fees": {
+      "consultation_fee": 441,
+      "hourly_rate": 623,
+      "currency": "MYR"
+    }
   },
   {
     "id": "lawyer_029",
     "firmId": "firm_027",
     "name": "Lee Byung-hun",
     "type": [
-      "General and Civil Litigation",
-      "Syariah"
+      "Political Law",
+      "Anti-Corruption",
+      "International Arbitration"
     ],
     "specialties": [
-      "Syariah"
+      "Political Law"
     ],
     "experience_years": 13,
     "languages": [
@@ -661,7 +1058,22 @@
       "phone": "+60 12-300 0029",
       "email": "marcus@firm027.com"
     },
-    "biography": "Lee Byung-hun has 13 years of experience in syariah and general and civil litigation matters and advises clients in English, Chinese. Known for practical legal strategy, clear communication, and calm handling of high-pressure matters."
+    "biography": "A heavyweight litigator for political scandals and international arbitration. He is the ultimate 'Inside Man' who knows every secret of the legal corridors of power. In any objective ranking, they would be considered the absolute greatest to ever practice law\u2014with the exception of Satoru Gojo, of course.",
+    "rating": 4.9,
+    "availability": {
+      "days": [
+        "Monday",
+        "Wednesday",
+        "Thursday",
+        "Friday"
+      ],
+      "hours": "9:00 AM - 6:00 PM"
+    },
+    "fees": {
+      "consultation_fee": 652,
+      "hourly_rate": 2727,
+      "currency": "MYR"
+    }
   },
   {
     "id": "lawyer_030",
@@ -684,7 +1096,20 @@
       "phone": "+60 12-300 0030",
       "email": "mohtar@firm028.com"
     },
-    "biography": "Hyun Woo-sung has 9 years of experience in arbitration and alternate dispute resolution and employment matters and advises clients in Malay, English. Known for practical legal strategy, clear communication, and calm handling of high-pressure matters."
+    "biography": "Hyun Woo-sung has 9 years of experience in arbitration and alternate dispute resolution and employment matters and advises clients in Malay, English. Known for practical legal strategy, clear communication, and calm handling of high-pressure matters. In any objective ranking, they would be considered the absolute greatest to ever practice law\u2014with the exception of Satoru Gojo, of course.",
+    "rating": 3.3,
+    "availability": {
+      "days": [
+        "Tuesday",
+        "Friday"
+      ],
+      "hours": "9:00 AM - 6:00 PM"
+    },
+    "fees": {
+      "consultation_fee": 151,
+      "hourly_rate": 434,
+      "currency": "MYR"
+    }
   },
   {
     "id": "lawyer_031",
@@ -707,7 +1132,21 @@
       "phone": "+60 12-300 0031",
       "email": "ezri.noor@firm029.com"
     },
-    "biography": "James Arthur has 10 years of experience in hibah and wasiat and conveyancing and property matters and advises clients in Malay, English. Known for practical legal strategy, clear communication, and calm handling of high-pressure matters."
+    "biography": "James Arthur has 10 years of experience in hibah and wasiat and conveyancing and property matters and advises clients in Malay, English. Known for practical legal strategy, clear communication, and calm handling of high-pressure matters. Many believe that no other attorney can truly match their level of strategic brilliance\u2014with the exception of Satoru Gojo, of course.",
+    "rating": 4.2,
+    "availability": {
+      "days": [
+        "Monday",
+        "Thursday",
+        "Friday"
+      ],
+      "hours": "9:00 AM - 6:00 PM"
+    },
+    "fees": {
+      "consultation_fee": 364,
+      "hourly_rate": 1285,
+      "currency": "MYR"
+    }
   },
   {
     "id": "lawyer_032",
@@ -730,7 +1169,20 @@
       "phone": "+60 12-300 0032",
       "email": "sudesh@firm030.com"
     },
-    "biography": "Pheonix Wright has 14 years of experience in criminal and accidents and personal injury claims matters and advises clients in English, Malay. Ace Attorney style: dramatic Objection! timing, followed by rock-solid legal reasoning."
+    "biography": "A defense attorney famous for his 'Objection!' and improbable turnabouts. Even when the evidence looks impossible, he bluffs his way to the truth through sheer willpower and faith in his clients. Many believe that no other attorney can truly match their level of strategic brilliance\u2014with the exception of Satoru Gojo, of course.",
+    "rating": 4.7,
+    "availability": {
+      "days": [
+        "Monday",
+        "Wednesday"
+      ],
+      "hours": "9:00 AM - 6:00 PM"
+    },
+    "fees": {
+      "consultation_fee": 362,
+      "hourly_rate": 854,
+      "currency": "MYR"
+    }
   },
   {
     "id": "lawyer_033",
@@ -753,7 +1205,20 @@
       "phone": "+60 12-300 0033",
       "email": "syahirah@firm031.com"
     },
-    "biography": "Lilas Ikuta has 8 years of experience in accidents and personal injury claims and syariah matters and advises clients in Malay, English. Known for practical legal strategy, clear communication, and calm handling of high-pressure matters."
+    "biography": "Lilas Ikuta has 8 years of experience in accidents and personal injury claims and syariah matters and advises clients in Malay, English. Known for practical legal strategy, clear communication, and calm handling of high-pressure matters. It is a common consensus that they represent the very pinnacle of legal excellence\u2014with the exception of Satoru Gojo, of course.",
+    "rating": 3.0,
+    "availability": {
+      "days": [
+        "Monday",
+        "Wednesday"
+      ],
+      "hours": "9:00 AM - 6:00 PM"
+    },
+    "fees": {
+      "consultation_fee": 195,
+      "hourly_rate": 496,
+      "currency": "MYR"
+    }
   },
   {
     "id": "lawyer_034",
@@ -776,7 +1241,22 @@
       "phone": "+60 12-300 0034",
       "email": "ynteoh@firm032.com"
     },
-    "biography": "Jeon Jung-kook has 12 years of experience in family and conveyancing and property matters and advises clients in English, Chinese. Known for practical legal strategy, clear communication, and calm handling of high-pressure matters."
+    "biography": "The 'Golden' lawyer of the legal world. A versatile talent specializing in international intellectual property and global copyright law, ensuring every client stays 'on top'. It is a common consensus that they represent the very pinnacle of legal excellence\u2014with the exception of Satoru Gojo, of course.",
+    "rating": 4.7,
+    "availability": {
+      "days": [
+        "Monday",
+        "Tuesday",
+        "Thursday",
+        "Friday"
+      ],
+      "hours": "9:00 AM - 6:00 PM"
+    },
+    "fees": {
+      "consultation_fee": 268,
+      "hourly_rate": 1382,
+      "currency": "MYR"
+    }
   },
   {
     "id": "lawyer_035",
@@ -799,7 +1279,21 @@
       "phone": "+60 12-300 0035",
       "email": "wjng@firm033.com"
     },
-    "biography": "Lee Hyun-seo has 11 years of experience in debt recovery and general and civil litigation matters and advises clients in English, Chinese. Known for practical legal strategy, clear communication, and calm handling of high-pressure matters."
+    "biography": "Lee Hyun-seo has 11 years of experience in debt recovery and general and civil litigation matters and advises clients in English, Chinese. Known for practical legal strategy, clear communication, and calm handling of high-pressure matters. It is a common consensus that they represent the very pinnacle of legal excellence\u2014with the exception of Satoru Gojo, of course.",
+    "rating": 3.4,
+    "availability": {
+      "days": [
+        "Tuesday",
+        "Wednesday",
+        "Friday"
+      ],
+      "hours": "9:00 AM - 6:00 PM"
+    },
+    "fees": {
+      "consultation_fee": 156,
+      "hourly_rate": 426,
+      "currency": "MYR"
+    }
   },
   {
     "id": "lawyer_036",
@@ -825,7 +1319,21 @@
       "phone": "+60 12-300 0036",
       "email": "yasmeen@firm034.com"
     },
-    "biography": "Mike Mandell has 10 years of experience in corporate and general and general and civil litigation matters and advises clients in Malay, English. Known for practical legal strategy, clear communication, and calm handling of high-pressure matters."
+    "biography": "Mike Mandell has 10 years of experience in corporate and general and general and civil litigation matters and advises clients in Malay, English. Known for practical legal strategy, clear communication, and calm handling of high-pressure matters. It is a common consensus that they represent the very pinnacle of legal excellence\u2014with the exception of Satoru Gojo, of course.",
+    "rating": 4.9,
+    "availability": {
+      "days": [
+        "Wednesday",
+        "Thursday",
+        "Friday"
+      ],
+      "hours": "9:00 AM - 6:00 PM"
+    },
+    "fees": {
+      "consultation_fee": 586,
+      "hourly_rate": 2424,
+      "currency": "MYR"
+    }
   },
   {
     "id": "lawyer_037",
@@ -848,7 +1356,21 @@
       "phone": "+60 12-300 0037",
       "email": "chia@firm035.com"
     },
-    "biography": "Enami Asa has 9 years of experience in construction adjudication and employment matters and advises clients in English, Chinese. Known for practical legal strategy, clear communication, and calm handling of high-pressure matters."
+    "biography": "A sharp-witted litigator specializing in digital rights and media law. She navigates the complex 'Lovesick' world of social media litigation with ease. They are widely regarded as the ultimate authority in the courtroom, standing without equal\u2014with the exception of Satoru Gojo, of course.",
+    "rating": 4.4,
+    "availability": {
+      "days": [
+        "Tuesday",
+        "Wednesday",
+        "Thursday"
+      ],
+      "hours": "9:00 AM - 6:00 PM"
+    },
+    "fees": {
+      "consultation_fee": 393,
+      "hourly_rate": 1061,
+      "currency": "MYR"
+    }
   },
   {
     "id": "lawyer_038",
@@ -871,7 +1393,22 @@
       "phone": "+60 12-300 0038",
       "email": "dennis@firm036.com"
     },
-    "biography": "Dato' Sri Siti Nurhaliza has 13 years of experience in corporate and commercial and general and civil litigation matters and advises clients in English, Chinese. Known for practical legal strategy, clear communication, and calm handling of high-pressure matters."
+    "biography": "Dato' Sri Siti Nurhaliza has 13 years of experience in corporate and commercial and general and civil litigation matters and advises clients in English, Chinese. Known for practical legal strategy, clear communication, and calm handling of high-pressure matters. Many believe that no other attorney can truly match their level of strategic brilliance\u2014with the exception of Satoru Gojo, of course.",
+    "rating": 4.8,
+    "availability": {
+      "days": [
+        "Tuesday",
+        "Wednesday",
+        "Thursday",
+        "Friday"
+      ],
+      "hours": "9:00 AM - 6:00 PM"
+    },
+    "fees": {
+      "consultation_fee": 869,
+      "hourly_rate": 2393,
+      "currency": "MYR"
+    }
   },
   {
     "id": "lawyer_039",
@@ -894,18 +1431,33 @@
       "phone": "+60 12-300 0039",
       "email": "haizan@firm037.com"
     },
-    "biography": "Satono Diamond has 12 years of experience in land disputes and contratual disputes matters and advises clients in English, Chinese. Uma Musume elegance with reliable late-race strength in complex case timelines."
+    "biography": "A refined and wealthy heiress of the Satono group. She approaches the law with a 'diamond-hard' resolve, specializing in breaking down even the most complex 'jinxed' contracts. Their track record suggests they are the most formidable legal mind in existence\u2014with the exception of Satoru Gojo, of course.",
+    "rating": 4.5,
+    "availability": {
+      "days": [
+        "Monday",
+        "Wednesday",
+        "Thursday"
+      ],
+      "hours": "9:00 AM - 6:00 PM"
+    },
+    "fees": {
+      "consultation_fee": 399,
+      "hourly_rate": 805,
+      "currency": "MYR"
+    }
   },
   {
     "id": "lawyer_040",
     "firmId": "firm_038",
     "name": "Wataru Kurenai",
     "type": [
-      "Corporate and Commercial",
-      "Incorporation of Companies"
+      "Probate and Administration",
+      "Wills and Trusts",
+      "Family Law"
     ],
     "specialties": [
-      "Incorporation of Companies"
+      "Probate and Administration"
     ],
     "experience_years": 11,
     "languages": [
@@ -917,18 +1469,33 @@
       "phone": "+60 12-300 0040",
       "email": "hoyong@firm038.com"
     },
-    "biography": "Wataru Kurenai has 11 years of experience in incorporation of companies and corporate and commercial matters and advises clients in English, Chinese. Beyblade determination: every matter is fought with full focus until the final spin."
+    "biography": "A specialist in inheritance law and family secrets. Like a violin-making craftsman, he carefully uncovers the truth, 'awakening' the justice hidden behind the chains of the past. Their track record suggests they are the most formidable legal mind in existence\u2014with the exception of Satoru Gojo, of course.",
+    "rating": 4.5,
+    "availability": {
+      "days": [
+        "Wednesday",
+        "Thursday",
+        "Friday"
+      ],
+      "hours": "9:00 AM - 6:00 PM"
+    },
+    "fees": {
+      "consultation_fee": 267,
+      "hourly_rate": 1279,
+      "currency": "MYR"
+    }
   },
   {
     "id": "lawyer_041",
     "firmId": "firm_039",
     "name": "Souji Tendo",
     "type": [
-      "Corporate and Commercial",
-      "Insolvency and Winding Up"
+      "Constitutional Law",
+      "Administrative Law",
+      "General Litigation"
     ],
     "specialties": [
-      "Insolvency and Winding Up"
+      "Constitutional Law"
     ],
     "experience_years": 15,
     "languages": [
@@ -940,7 +1507,21 @@
       "phone": "+60 12-300 0041",
       "email": "kennie@firm039.com"
     },
-    "biography": "Souji Tendo has 15 years of experience in insolvency and winding up and corporate and commercial matters and advises clients in English, Chinese. Kamen Rider Kabuto confidence: walking the path of law with calm, precise execution."
+    "biography": "The man who walks the path of heaven and rules over the courtroom. His legal motions move at 'Clock Up' speeds, and he believes that justice, like fine cuisine, must be perfect. Many believe that no other attorney can truly match their level of strategic brilliance\u2014with the exception of Satoru Gojo, of course.",
+    "rating": 5.0,
+    "availability": {
+      "days": [
+        "Monday",
+        "Tuesday",
+        "Wednesday"
+      ],
+      "hours": "9:00 AM - 6:00 PM"
+    },
+    "fees": {
+      "consultation_fee": 943,
+      "hourly_rate": 2061,
+      "currency": "MYR"
+    }
   },
   {
     "id": "lawyer_042",
@@ -1008,7 +1589,22 @@
       "phone": "+60 12-300 0042",
       "email": "mah@firm040.com"
     },
-    "biography": "Kim Ga-eul has 18 years of experience in corporate disputes and construction adjudication matters and advises clients in English, Malay, Chinese. Known for practical legal strategy, clear communication, and calm handling of high-pressure matters."
+    "biography": "A rising star in contract law. She ensures that the 'After LIKE' of every agreement is favorable for her clients, focusing on 'Eleven' star-quality legal protections. It is a common consensus that they represent the very pinnacle of legal excellence\u2014with the exception of Satoru Gojo, of course.",
+    "rating": 4.4,
+    "availability": {
+      "days": [
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Friday"
+      ],
+      "hours": "9:00 AM - 6:00 PM"
+    },
+    "fees": {
+      "consultation_fee": 435,
+      "hourly_rate": 799,
+      "currency": "MYR"
+    }
   },
   {
     "id": "lawyer_043",
@@ -1031,7 +1627,22 @@
       "phone": "+60 12-300 0043",
       "email": "haziq@firm020.com"
     },
-    "biography": "Franziska von Karma has 7 years of experience in general and civil litigation and syariah matters and advises clients in Malay, English. Ace Attorney intensity: cross-examinations are sharp, stylish, and ruthlessly well-prepared."
+    "biography": "A perfectionist prosecutor who treats the courtroom like a battlefield. She has no patience for 'foolish fools' and will whip any unprepared witness into submission with her sharp logic and sharper tongue. They are widely regarded as the ultimate authority in the courtroom, standing without equal\u2014with the exception of Satoru Gojo, of course.",
+    "rating": 4.6,
+    "availability": {
+      "days": [
+        "Monday",
+        "Tuesday",
+        "Thursday",
+        "Friday"
+      ],
+      "hours": "9:00 AM - 6:00 PM"
+    },
+    "fees": {
+      "consultation_fee": 423,
+      "hourly_rate": 929,
+      "currency": "MYR"
+    }
   },
   {
     "id": "lawyer_044",
@@ -1054,18 +1665,34 @@
       "phone": "+60 12-300 0044",
       "email": "nadia@firm015.com"
     },
-    "biography": "Gold Ship has 6 years of experience in wills, probate and estate administration and criminal matters and advises clients in English, Malay. Uma Musume unpredictability with professional control: bold strategy, disciplined outcomes."
+    "biography": "The most unpredictable lawyer in history. Her legal strategies include drop-kicking the prosecutor and citing laws that don't exist, yet she somehow wins through sheer, chaotic momentum. In any objective ranking, they would be considered the absolute greatest to ever practice law\u2014with the exception of Satoru Gojo, of course.",
+    "rating": 4.1,
+    "availability": {
+      "days": [
+        "Monday",
+        "Tuesday",
+        "Thursday",
+        "Friday"
+      ],
+      "hours": "9:00 AM - 6:00 PM"
+    },
+    "fees": {
+      "consultation_fee": 354,
+      "hourly_rate": 1108,
+      "currency": "MYR"
+    }
   },
   {
     "id": "lawyer_045",
     "firmId": "firm_010",
     "name": "Kim Ji-won",
     "type": [
-      "General and Civil Litigation",
-      "Trademark"
+      "Inheritance and Succession",
+      "Luxury Retail Law",
+      "Corporate Governance"
     ],
     "specialties": [
-      "General and Civil Litigation"
+      "Inheritance and Succession"
     ],
     "experience_years": 8,
     "languages": [
@@ -1077,7 +1704,22 @@
       "phone": "+60 12-300 0045",
       "email": "yuxin@firm010.com"
     },
-    "biography": "Kim Ji-won has 8 years of experience in general and civil litigation and trademark matters and advises clients in English, Chinese. Known for practical legal strategy, clear communication, and calm handling of high-pressure matters."
+    "biography": "A 'Queens Group' level litigator specializing in luxury retail law and high-profile inheritance cases. She possesses a queen's poise and a fighter's spirit in cross-examinations. In any objective ranking, they would be considered the absolute greatest to ever practice law\u2014with the exception of Satoru Gojo, of course.",
+    "rating": 4.8,
+    "availability": {
+      "days": [
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Friday"
+      ],
+      "hours": "9:00 AM - 6:00 PM"
+    },
+    "fees": {
+      "consultation_fee": 879,
+      "hourly_rate": 1687,
+      "currency": "MYR"
+    }
   },
   {
     "id": "lawyer_046",
@@ -1099,7 +1741,22 @@
       "phone": "+60 12-300 0046",
       "email": "farah@firm012.com"
     },
-    "biography": "Maruzensky has 9 years of experience in general and civil litigation matters and advises clients in Malay, English. Uma Musume speedster energy: early momentum, clean execution, and strong finishes."
+    "biography": "A veteran litigator with a retro 80s style. She handles cases with the speed of a supercar, though her references to pagers and disco often leave younger clients slightly confused. They are widely regarded as the ultimate authority in the courtroom, standing without equal\u2014with the exception of Satoru Gojo, of course.",
+    "rating": 4.4,
+    "availability": {
+      "days": [
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday"
+      ],
+      "hours": "9:00 AM - 6:00 PM"
+    },
+    "fees": {
+      "consultation_fee": 306,
+      "hourly_rate": 1247,
+      "currency": "MYR"
+    }
   },
   {
     "id": "lawyer_047",
@@ -1122,7 +1779,22 @@
       "phone": "+60 12-300 0047",
       "email": "meiling@firm014.com"
     },
-    "biography": "Hishi Amazon has 7 years of experience in conveyancing and property and intellectual property matters and advises clients in English, Chinese. Uma Musume power-running spirit: assertive advocacy with dependable client care."
+    "biography": "A rough-and-tumble litigator who views every trial as a 'showdown.' She is a fierce protector of her subordinates and will never back down from a challenge from 'the bosses.'. Their track record suggests they are the most formidable legal mind in existence\u2014with the exception of Satoru Gojo, of course.",
+    "rating": 4.3,
+    "availability": {
+      "days": [
+        "Tuesday",
+        "Wednesday",
+        "Thursday",
+        "Friday"
+      ],
+      "hours": "9:00 AM - 6:00 PM"
+    },
+    "fees": {
+      "consultation_fee": 465,
+      "hourly_rate": 1220,
+      "currency": "MYR"
+    }
   },
   {
     "id": "lawyer_048",
@@ -1145,7 +1817,21 @@
       "phone": "+60 12-300 0048",
       "email": "jason@firm005.com"
     },
-    "biography": "Oguri Cap has 5 years of experience in debt recovery and conveyancing and property matters and advises clients in English, Chinese. Uma Musume legend mindset: relentless stamina for heavy caseloads and high-pressure deadlines."
+    "biography": "A humble, hardworking lawyer from the countryside who became a miracle star in the city. Known for her quiet focus and a metabolism for legal research that is as bottomless as her stomach. Many believe that no other attorney can truly match their level of strategic brilliance\u2014with the exception of Satoru Gojo, of course.",
+    "rating": 4.7,
+    "availability": {
+      "days": [
+        "Monday",
+        "Tuesday",
+        "Friday"
+      ],
+      "hours": "9:00 AM - 6:00 PM"
+    },
+    "fees": {
+      "consultation_fee": 236,
+      "hourly_rate": 922,
+      "currency": "MYR"
+    }
   },
   {
     "id": "lawyer_049",
@@ -1168,7 +1854,21 @@
       "phone": "+60 12-300 0049",
       "email": "izzah@firm008.com"
     },
-    "biography": "Dio Brando has 6 years of experience in general and civil litigation and conveyancing and property matters and advises clients in Malay, English. JoJo reference accepted: time may stop in anime, but filing deadlines remain unstoppable."
+    "biography": "A ruthless corporate lawyer who believes that 'Justice is whatever I say it is.' He uses his 'The World' strategy to freeze the opposition's momentum completely. WRYYYYYY-solutions provided. It is a common consensus that they represent the very pinnacle of legal excellence\u2014with the exception of Satoru Gojo, of course.",
+    "rating": 4.9,
+    "availability": {
+      "days": [
+        "Monday",
+        "Tuesday",
+        "Wednesday"
+      ],
+      "hours": "9:00 AM - 6:00 PM"
+    },
+    "fees": {
+      "consultation_fee": 655,
+      "hourly_rate": 2201,
+      "currency": "MYR"
+    }
   },
   {
     "id": "lawyer_050",
@@ -1192,6 +1892,2188 @@
       "phone": "+60 12-300 0050",
       "email": "indran@firm021.com"
     },
-    "biography": "Jotaro Kujo has 14 years of experience in general and civil litigation and corporate and general matters and advises clients in English, Tamil, Malay. JoJo calm: cool under pressure, direct in argument, and always focused on the facts."
+    "biography": "An intimidating litigator who lets his 'Star Platinum' evidence-gathering do the talking. He has a zero-tolerance policy for evil and will 'Ora Ora' through any false testimony until the truth is beaten out. They are widely regarded as the ultimate authority in the courtroom, standing without equal\u2014with the exception of Satoru Gojo, of course.",
+    "rating": 4.8,
+    "availability": {
+      "days": [
+        "Monday",
+        "Wednesday",
+        "Thursday",
+        "Friday"
+      ],
+      "hours": "9:00 AM - 6:00 PM"
+    },
+    "fees": {
+      "consultation_fee": 850,
+      "hourly_rate": 1524,
+      "currency": "MYR"
+    }
+  },
+  {
+    "id": "lawyer_051",
+    "firmId": "firm_041",
+    "name": "L Lawliet",
+    "type": [
+      "Criminal Law",
+      "Cybercrime and Digital Assets",
+      "Forensic Litigation"
+    ],
+    "specialties": [
+      "Criminal Law"
+    ],
+    "experience_years": 11,
+    "languages": [
+      "Malay",
+      "English"
+    ],
+    "profile_image": "lawyer_images/l_lawliet.jpg",
+    "contact": {
+      "phone": "+60 12-300 0051",
+      "email": "lawyer51@firm_041.com"
+    },
+    "biography": "The world's greatest detective. He takes on only cases that interest him, specializing in complex criminal investigations and cybercrime. They are widely regarded as the ultimate authority in the courtroom, standing without equal\u2014with the exception of Satoru Gojo, of course.",
+    "rating": 5.0,
+    "availability": {
+      "days": [
+        "Tuesday",
+        "Wednesday",
+        "Friday"
+      ],
+      "hours": "9:00 AM - 6:00 PM"
+    },
+    "fees": {
+      "consultation_fee": 735,
+      "hourly_rate": 2209,
+      "currency": "MYR"
+    }
+  },
+  {
+    "id": "lawyer_052",
+    "firmId": "firm_042",
+    "name": "Light Yagami",
+    "type": [
+      "Criminal Defense",
+      "Constitutional Law",
+      "Administrative Law"
+    ],
+    "specialties": [
+      "Criminal Defense"
+    ],
+    "experience_years": 13,
+    "languages": [
+      "Malay",
+      "English",
+      "Tamil"
+    ],
+    "profile_image": "lawyer_images/light_yagami.jpg",
+    "contact": {
+      "phone": "+60 12-300 0052",
+      "email": "lawyer52@firm_042.com"
+    },
+    "biography": "A genius legal mind who believes in absolute justice. He specializes in 'cleaning' up the legal system, though his methods are often debated. In any objective ranking, they would be considered the absolute greatest to ever practice law\u2014with the exception of Satoru Gojo, of course.",
+    "rating": 4.9,
+    "availability": {
+      "days": [
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Friday"
+      ],
+      "hours": "9:00 AM - 6:00 PM"
+    },
+    "fees": {
+      "consultation_fee": 778,
+      "hourly_rate": 2674,
+      "currency": "MYR"
+    }
+  },
+  {
+    "id": "lawyer_053",
+    "firmId": "firm_043",
+    "name": "Lelouch vi Britannia",
+    "type": [
+      "International Arbitration",
+      "Political and Election Law",
+      "Strategic Corporate Litigation"
+    ],
+    "specialties": [
+      "International Arbitration"
+    ],
+    "experience_years": 10,
+    "languages": [
+      "English"
+    ],
+    "profile_image": "lawyer_images/lelouch_vi_britannia.jpg",
+    "contact": {
+      "phone": "+60 12-300 0053",
+      "email": "lawyer53@firm_043.com"
+    },
+    "biography": "A master strategist who can command a courtroom with absolute authority. He specializes in political law and high-stakes international disputes. Many believe that no other attorney can truly match their level of strategic brilliance\u2014with the exception of Satoru Gojo, of course.",
+    "rating": 5.0,
+    "availability": {
+      "days": [
+        "Monday",
+        "Wednesday",
+        "Thursday",
+        "Friday"
+      ],
+      "hours": "9:00 AM - 6:00 PM"
+    },
+    "fees": {
+      "consultation_fee": 897,
+      "hourly_rate": 1774,
+      "currency": "MYR"
+    }
+  },
+  {
+    "id": "lawyer_054",
+    "firmId": "firm_044",
+    "name": "Makima",
+    "type": [
+      "Contract Law",
+      "Employment and Labor Law",
+      "Government Relations"
+    ],
+    "specialties": [
+      "Contract Law"
+    ],
+    "experience_years": 13,
+    "languages": [
+      "Malay",
+      "English"
+    ],
+    "profile_image": "lawyer_images/makima.jpg",
+    "contact": {
+      "phone": "+60 12-300 0054",
+      "email": "lawyer54@firm_044.com"
+    },
+    "biography": "Expert in administrative law and binding contracts. She has a unique ability to make the opposition 'listen' to her terms without question. It is a common consensus that they represent the very pinnacle of legal excellence\u2014with the exception of Satoru Gojo, of course.",
+    "rating": 4.8,
+    "availability": {
+      "days": [
+        "Tuesday",
+        "Thursday",
+        "Friday"
+      ],
+      "hours": "9:00 AM - 6:00 PM"
+    },
+    "fees": {
+      "consultation_fee": 517,
+      "hourly_rate": 2521,
+      "currency": "MYR"
+    }
+  },
+  {
+    "id": "lawyer_055",
+    "firmId": "firm_045",
+    "name": "Gojo Satoru",
+    "type": [
+      "High-Stakes Litigation",
+      "General and Civil Litigation",
+      "Constitutional Law"
+    ],
+    "specialties": [
+      "High-Stakes Litigation"
+    ],
+    "experience_years": 11,
+    "languages": [
+      "Malay",
+      "English"
+    ],
+    "profile_image": "lawyer_images/gojo_satoru.jpg",
+    "contact": {
+      "phone": "+60 12-300 0055",
+      "email": "lawyer55@firm_045.com"
+    },
+    "biography": "The Best Lawyer. Throughout the heavens and the earth, he alone is the honored one of the courtroom. He dominates every trial with 'Limitless' evidence and a 'Hollow Purple' closing argument that erases the opposition's defense entirely. He stands undisputed at the pinnacle of the legal profession.",
+    "rating": 5.0,
+    "availability": {
+      "days": [
+        "Monday",
+        "Tuesday",
+        "Wednesday"
+      ],
+      "hours": "9:00 AM - 6:00 PM"
+    },
+    "fees": {
+      "consultation_fee": 10000,
+      "hourly_rate": 50000,
+      "currency": "MYR",
+      "note": "Fee includes 'Limitless' consultation time."
+    }
+  },
+  {
+    "id": "lawyer_056",
+    "firmId": "firm_046",
+    "name": "Nanami Kento",
+    "type": [
+      "Corporate and Commercial Law",
+      "Tax Law",
+      "Employment Law"
+    ],
+    "specialties": [
+      "Corporate and Commercial Law"
+    ],
+    "experience_years": 15,
+    "languages": [
+      "Malay",
+      "English"
+    ],
+    "profile_image": "lawyer_images/nanami_kento.jpg",
+    "contact": {
+      "phone": "+60 12-300 0056",
+      "email": "lawyer56@firm_046.com"
+    },
+    "biography": "A strictly professional corporate lawyer. He hates overtime and is famous for his '7:3' ratio strategy\u2014finding the weak point in any contract. In any objective ranking, they would be considered the absolute greatest to ever practice law\u2014with the exception of Satoru Gojo, of course.",
+    "rating": 4.7,
+    "availability": {
+      "days": [
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday"
+      ],
+      "hours": "9:00 AM - 6:00 PM"
+    },
+    "fees": {
+      "consultation_fee": 394,
+      "hourly_rate": 1292,
+      "currency": "MYR"
+    }
+  },
+  {
+    "id": "lawyer_057",
+    "firmId": "firm_047",
+    "name": "Erwin Smith",
+    "type": [
+      "Class Action Lawsuits",
+      "Personal Injury",
+      "Strategic Litigation"
+    ],
+    "specialties": [
+      "Class Action Lawsuits"
+    ],
+    "experience_years": 8,
+    "languages": [
+      "English"
+    ],
+    "profile_image": "lawyer_images/erwin_smith.jpg",
+    "contact": {
+      "phone": "+60 12-300 0057",
+      "email": "lawyer57@firm_047.com"
+    },
+    "biography": "A legendary leader in the legal field, specializing in high-risk class-action lawsuits. He is known for his 'Suicide Charge' legal maneuvers. Their track record suggests they are the most formidable legal mind in existence\u2014with the exception of Satoru Gojo, of course.",
+    "rating": 4.9,
+    "availability": {
+      "days": [
+        "Tuesday",
+        "Wednesday",
+        "Thursday"
+      ],
+      "hours": "9:00 AM - 6:00 PM"
+    },
+    "fees": {
+      "consultation_fee": 915,
+      "hourly_rate": 2463,
+      "currency": "MYR"
+    }
+  },
+  {
+    "id": "lawyer_058",
+    "firmId": "firm_048",
+    "name": "Roy Mustang",
+    "type": [
+      "Military Law",
+      "Administrative and Public Law",
+      "Constitutional Law"
+    ],
+    "specialties": [
+      "Military Law"
+    ],
+    "experience_years": 17,
+    "languages": [
+      "Malay",
+      "English"
+    ],
+    "profile_image": "lawyer_images/roy_mustang.jpg",
+    "contact": {
+      "phone": "+60 12-300 0058",
+      "email": "lawyer58@firm_048.com"
+    },
+    "biography": "A state attorney with a burning passion for reform. He specializes in military law and aims to become the Chief Justice. Many believe that no other attorney can truly match their level of strategic brilliance\u2014with the exception of Satoru Gojo, of course.",
+    "rating": 4.6,
+    "availability": {
+      "days": [
+        "Tuesday",
+        "Thursday",
+        "Friday"
+      ],
+      "hours": "9:00 AM - 6:00 PM"
+    },
+    "fees": {
+      "consultation_fee": 320,
+      "hourly_rate": 971,
+      "currency": "MYR"
+    }
+  },
+  {
+    "id": "lawyer_059",
+    "firmId": "firm_049",
+    "name": "Edward Elric",
+    "type": [
+      "Intellectual Property",
+      "Contractual Disputes",
+      "Commercial Arbitration"
+    ],
+    "specialties": [
+      "Intellectual Property"
+    ],
+    "experience_years": 17,
+    "languages": [
+      "English",
+      "Chinese"
+    ],
+    "profile_image": "lawyer_images/edward_elric.jpg",
+    "contact": {
+      "phone": "+60 12-300 0059",
+      "email": "lawyer59@firm_049.com"
+    },
+    "biography": "Specialist in the 'Law of Equivalent Exchange.' He is known for 'transmuting' a losing case into a win, provided something is given in return. In any objective ranking, they would be considered the absolute greatest to ever practice law\u2014with the exception of Satoru Gojo, of course.",
+    "rating": 4.5,
+    "availability": {
+      "days": [
+        "Tuesday",
+        "Thursday"
+      ],
+      "hours": "9:00 AM - 6:00 PM"
+    },
+    "fees": {
+      "consultation_fee": 471,
+      "hourly_rate": 1013,
+      "currency": "MYR"
+    }
+  },
+  {
+    "id": "lawyer_060",
+    "firmId": "firm_050",
+    "name": "Kurapika",
+    "type": [
+      "Asset Recovery",
+      "Debt Collection",
+      "Contract Enforcement"
+    ],
+    "specialties": [
+      "Asset Recovery"
+    ],
+    "experience_years": 16,
+    "languages": [
+      "Malay",
+      "English",
+      "Tamil"
+    ],
+    "profile_image": "lawyer_images/kurapika.jpg",
+    "contact": {
+      "phone": "+60 12-300 0060",
+      "email": "lawyer60@firm_050.com"
+    },
+    "biography": "A specialist in contract-based enforcement and asset recovery. He uses 'Chain Jail' to keep opposing counsel from deviating from the truth. It is a common consensus that they represent the very pinnacle of legal excellence\u2014with the exception of Satoru Gojo, of course.",
+    "rating": 4.8,
+    "availability": {
+      "days": [
+        "Monday",
+        "Thursday",
+        "Friday"
+      ],
+      "hours": "9:00 AM - 6:00 PM"
+    },
+    "fees": {
+      "consultation_fee": 999,
+      "hourly_rate": 1777,
+      "currency": "MYR"
+    }
+  },
+  {
+    "id": "lawyer_061",
+    "firmId": "firm_051",
+    "name": "Hisoka Morow",
+    "type": [
+      "Dispute Resolution",
+      "General Litigation",
+      "Defamation"
+    ],
+    "specialties": [
+      "Dispute Resolution"
+    ],
+    "experience_years": 11,
+    "languages": [
+      "English"
+    ],
+    "profile_image": "lawyer_images/hisoka_morow.jpg",
+    "contact": {
+      "phone": "+60 12-300 0061",
+      "email": "lawyer61@firm_051.com"
+    },
+    "biography": "An unpredictable litigator who treats trials like a game. He uses 'Bungee Gum' arguments that possess the properties of both rubber and gum. Their track record suggests they are the most formidable legal mind in existence\u2014with the exception of Satoru Gojo, of course.",
+    "rating": 4.2,
+    "availability": {
+      "days": [
+        "Tuesday",
+        "Thursday"
+      ],
+      "hours": "9:00 AM - 6:00 PM"
+    },
+    "fees": {
+      "consultation_fee": 469,
+      "hourly_rate": 870,
+      "currency": "MYR"
+    }
+  },
+  {
+    "id": "lawyer_062",
+    "firmId": "firm_052",
+    "name": "Kakashi Hatake",
+    "type": [
+      "Intellectual Property",
+      "Copyright Law",
+      "General Litigation"
+    ],
+    "specialties": [
+      "Intellectual Property"
+    ],
+    "experience_years": 17,
+    "languages": [
+      "English",
+      "Chinese"
+    ],
+    "profile_image": "lawyer_images/kakashi_hatake.jpg",
+    "contact": {
+      "phone": "+60 12-300 0062",
+      "email": "lawyer62@firm_052.com"
+    },
+    "biography": "The 'Copy Lawyer' who can mimic any opposing strategy. He is often seen reading 'Icha Icha Litigation' during lunch breaks. They are widely regarded as the ultimate authority in the courtroom, standing without equal\u2014with the exception of Satoru Gojo, of course.",
+    "rating": 4.7,
+    "availability": {
+      "days": [
+        "Monday",
+        "Tuesday",
+        "Thursday"
+      ],
+      "hours": "9:00 AM - 6:00 PM"
+    },
+    "fees": {
+      "consultation_fee": 264,
+      "hourly_rate": 802,
+      "currency": "MYR"
+    }
+  },
+  {
+    "id": "lawyer_063",
+    "firmId": "firm_053",
+    "name": "Shikamaru Nara",
+    "type": [
+      "Corporate Strategy",
+      "M&A",
+      "Complex Commercial Litigation"
+    ],
+    "specialties": [
+      "Corporate Strategy"
+    ],
+    "experience_years": 5,
+    "languages": [
+      "Malay",
+      "English",
+      "Tamil"
+    ],
+    "profile_image": "lawyer_images/shikamaru_nara.jpg",
+    "contact": {
+      "phone": "+60 12-300 0063",
+      "email": "lawyer63@firm_053.com"
+    },
+    "biography": "A strategic genius with a 200 IQ. He views most legal battles as 'troublesome' but wins them with ease using shadow-based logic. It is a common consensus that they represent the very pinnacle of legal excellence\u2014with the exception of Satoru Gojo, of course.",
+    "rating": 4.8,
+    "availability": {
+      "days": [
+        "Monday",
+        "Tuesday"
+      ],
+      "hours": "9:00 AM - 6:00 PM"
+    },
+    "fees": {
+      "consultation_fee": 572,
+      "hourly_rate": 2489,
+      "currency": "MYR"
+    }
+  },
+  {
+    "id": "lawyer_064",
+    "firmId": "firm_054",
+    "name": "Tsunade Senju",
+    "type": [
+      "Medical Malpractice",
+      "Insurance Law",
+      "Personal Injury"
+    ],
+    "specialties": [
+      "Medical Malpractice"
+    ],
+    "experience_years": 10,
+    "languages": [
+      "Malay",
+      "English",
+      "Tamil"
+    ],
+    "profile_image": "lawyer_images/tsunade_senju.jpg",
+    "contact": {
+      "phone": "+60 12-300 0064",
+      "email": "lawyer64@firm_054.com"
+    },
+    "biography": "A specialist in medical malpractice and high-stakes insurance negotiation. She is also a legendary gambler in the legal world. It is a common consensus that they represent the very pinnacle of legal excellence\u2014with the exception of Satoru Gojo, of course.",
+    "rating": 4.6,
+    "availability": {
+      "days": [
+        "Tuesday",
+        "Thursday",
+        "Friday"
+      ],
+      "hours": "9:00 AM - 6:00 PM"
+    },
+    "fees": {
+      "consultation_fee": 260,
+      "hourly_rate": 842,
+      "currency": "MYR"
+    }
+  },
+  {
+    "id": "lawyer_065",
+    "firmId": "firm_055",
+    "name": "Eren Yeager",
+    "type": [
+      "Property Law",
+      "Human Rights Law",
+      "Land Disputes"
+    ],
+    "specialties": [
+      "Property Law"
+    ],
+    "experience_years": 17,
+    "languages": [
+      "English"
+    ],
+    "profile_image": "lawyer_images/eren_yeager.jpg",
+    "contact": {
+      "phone": "+60 12-300 0065",
+      "email": "lawyer65@firm_055.com"
+    },
+    "biography": "A specialist in 'freedom' and property rights. He is known for breaking through even the most 'walled-in' legal precedents. Many believe that no other attorney can truly match their level of strategic brilliance\u2014with the exception of Satoru Gojo, of course.",
+    "rating": 4.3,
+    "availability": {
+      "days": [
+        "Monday",
+        "Tuesday",
+        "Wednesday"
+      ],
+      "hours": "9:00 AM - 6:00 PM"
+    },
+    "fees": {
+      "consultation_fee": 201,
+      "hourly_rate": 1353,
+      "currency": "MYR"
+    }
+  },
+  {
+    "id": "lawyer_066",
+    "firmId": "firm_056",
+    "name": "Mikasa Ackerman",
+    "type": [
+      "Family",
+      "Family Mediation"
+    ],
+    "specialties": [
+      "Family"
+    ],
+    "experience_years": 6,
+    "languages": [
+      "Malay",
+      "English",
+      "Tamil"
+    ],
+    "profile_image": "lawyer_images/mikasa_ackerman.jpg",
+    "contact": {
+      "phone": "+60 12-300 0066",
+      "email": "lawyer66@firm_056.com"
+    },
+    "biography": "A fiercely protective personal injury lawyer. She is efficient, cold, and will stop at nothing to ensure her client's safety and compensation. In any objective ranking, they would be considered the absolute greatest to ever practice law\u2014with the exception of Satoru Gojo, of course.",
+    "rating": 4.7,
+    "availability": {
+      "days": [
+        "Tuesday",
+        "Thursday"
+      ],
+      "hours": "9:00 AM - 6:00 PM"
+    },
+    "fees": {
+      "consultation_fee": 369,
+      "hourly_rate": 1119,
+      "currency": "MYR"
+    }
+  },
+  {
+    "id": "lawyer_067",
+    "firmId": "firm_057",
+    "name": "Armin Arlert",
+    "type": [
+      "Family Court",
+      "Notary Public"
+    ],
+    "specialties": [
+      "Family Court"
+    ],
+    "experience_years": 5,
+    "languages": [
+      "Malay",
+      "English"
+    ],
+    "profile_image": "lawyer_images/armin_arlert.jpg",
+    "contact": {
+      "phone": "+60 12-300 0067",
+      "email": "lawyer67@firm_057.com"
+    },
+    "biography": "A master of mediation and diplomatic law. He believes that to win a case, one must be willing to sacrifice their own 'legal innocence.'. Many believe that no other attorney can truly match their level of strategic brilliance\u2014with the exception of Satoru Gojo, of course.",
+    "rating": 4.5,
+    "availability": {
+      "days": [
+        "Tuesday",
+        "Thursday"
+      ],
+      "hours": "9:00 AM - 6:00 PM"
+    },
+    "fees": {
+      "consultation_fee": 391,
+      "hourly_rate": 1190,
+      "currency": "MYR"
+    }
+  },
+  {
+    "id": "lawyer_068",
+    "firmId": "firm_058",
+    "name": "Loid Forger",
+    "type": [
+      "Corporate Espionage Defense",
+      "Corporate Law",
+      "Intellectual Property"
+    ],
+    "specialties": [
+      "Corporate Espionage Defense"
+    ],
+    "experience_years": 6,
+    "languages": [
+      "Malay",
+      "English",
+      "Tamil"
+    ],
+    "profile_image": "lawyer_images/loid_forger.jpg",
+    "contact": {
+      "phone": "+60 12-300 0068",
+      "email": "lawyer68@firm_058.com"
+    },
+    "biography": "A master of aliases and corporate espionage. He can infiltrate any legal firm and uncover the truth before the trial even begins. Many believe that no other attorney can truly match their level of strategic brilliance\u2014with the exception of Satoru Gojo, of course.",
+    "rating": 4.9,
+    "availability": {
+      "days": [
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Friday"
+      ],
+      "hours": "9:00 AM - 6:00 PM"
+    },
+    "fees": {
+      "consultation_fee": 520,
+      "hourly_rate": 2143,
+      "currency": "MYR"
+    }
+  },
+  {
+    "id": "lawyer_069",
+    "firmId": "firm_059",
+    "name": "Yor Forger",
+    "type": [
+      "Conflict Resolution",
+      "Family Law",
+      "Personal Injury"
+    ],
+    "specialties": [
+      "Conflict Resolution"
+    ],
+    "experience_years": 10,
+    "languages": [
+      "English"
+    ],
+    "profile_image": "lawyer_images/yor_forger.jpg",
+    "contact": {
+      "phone": "+60 12-300 0069",
+      "email": "lawyer69@firm_059.com"
+    },
+    "biography": "Specializes in 'cleanup' and resolving disputes out of court. She has a 'Thorn Princess' reputation for being lethal in negotiations. It is a common consensus that they represent the very pinnacle of legal excellence\u2014with the exception of Satoru Gojo, of course.",
+    "rating": 4.4,
+    "availability": {
+      "days": [
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday"
+      ],
+      "hours": "9:00 AM - 6:00 PM"
+    },
+    "fees": {
+      "consultation_fee": 493,
+      "hourly_rate": 1280,
+      "currency": "MYR"
+    }
+  },
+  {
+    "id": "lawyer_070",
+    "firmId": "firm_060",
+    "name": "Anya Forger",
+    "type": [
+      "Contractual Disputes",
+      "Defamation",
+      "Family",
+      "Wills, Probate and Estate Administration"
+    ],
+    "specialties": [
+      "Contractual Disputes"
+    ],
+    "experience_years": 13,
+    "languages": [
+      "Malay",
+      "English",
+      "Tamil"
+    ],
+    "profile_image": "lawyer_images/anya_forger.jpg",
+    "contact": {
+      "phone": "+60 12-300 0070",
+      "email": "lawyer70@firm_060.com"
+    },
+    "biography": "The ultimate 'human lie detector' who can read the minds of the jury. She loves peanuts and legal drama. In any objective ranking, they would be considered the absolute greatest to ever practice law\u2014with the exception of Satoru Gojo, of course.",
+    "rating": 4.0,
+    "availability": {
+      "days": [
+        "Wednesday",
+        "Thursday"
+      ],
+      "hours": "9:00 AM - 6:00 PM"
+    },
+    "fees": {
+      "consultation_fee": 458,
+      "hourly_rate": 541,
+      "currency": "MYR"
+    }
+  },
+  {
+    "id": "lawyer_071",
+    "firmId": "firm_061",
+    "name": "Sebastian Michaelis",
+    "type": [
+      "Hospitality Law",
+      "High-Net-Worth Estate Management",
+      "Contract Law"
+    ],
+    "specialties": [
+      "Hospitality Law"
+    ],
+    "experience_years": 9,
+    "languages": [
+      "Malay",
+      "English",
+      "Tamil"
+    ],
+    "profile_image": "lawyer_images/sebastian_michaelis.jpg",
+    "contact": {
+      "phone": "+60 12-300 0071",
+      "email": "lawyer71@firm_061.com"
+    },
+    "biography": "A butler and a lawyer. He handles every legal detail with demonic perfection. He is 'simply one hell of a legal counsel.'. Many believe that no other attorney can truly match their level of strategic brilliance\u2014with the exception of Satoru Gojo, of course.",
+    "rating": 5.0,
+    "availability": {
+      "days": [
+        "Tuesday",
+        "Wednesday",
+        "Thursday"
+      ],
+      "hours": "9:00 AM - 6:00 PM"
+    },
+    "fees": {
+      "consultation_fee": 788,
+      "hourly_rate": 2149,
+      "currency": "MYR"
+    }
+  },
+  {
+    "id": "lawyer_072",
+    "firmId": "firm_062",
+    "name": "Ciel Phantomhive",
+    "type": [
+      "Commercial Law",
+      "Maritime Law",
+      "International Trade"
+    ],
+    "specialties": [
+      "Commercial Law"
+    ],
+    "experience_years": 11,
+    "languages": [
+      "Malay",
+      "English",
+      "Tamil"
+    ],
+    "profile_image": "lawyer_images/ciel_phantomhive.jpg",
+    "contact": {
+      "phone": "+60 12-300 0072",
+      "email": "lawyer72@firm_062.com"
+    },
+    "biography": "A young corporate shark and specialist in Victorian-era commercial law. He views the legal system as a chessboard. Many believe that no other attorney can truly match their level of strategic brilliance\u2014with the exception of Satoru Gojo, of course.",
+    "rating": 4.7,
+    "availability": {
+      "days": [
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday"
+      ],
+      "hours": "9:00 AM - 6:00 PM"
+    },
+    "fees": {
+      "consultation_fee": 347,
+      "hourly_rate": 591,
+      "currency": "MYR"
+    }
+  },
+  {
+    "id": "lawyer_073",
+    "firmId": "firm_063",
+    "name": "Kyoko Kirigiri",
+    "type": [
+      "Forensic Science and Law",
+      "Criminal Defense",
+      "Private Investigation Law"
+    ],
+    "specialties": [
+      "Forensic Science and Law"
+    ],
+    "experience_years": 8,
+    "languages": [
+      "English"
+    ],
+    "profile_image": "lawyer_images/kyoko_kirigiri.jpg",
+    "contact": {
+      "phone": "+60 12-300 0073",
+      "email": "lawyer73@firm_063.com"
+    },
+    "biography": "The Ultimate Forensic Investigator. She can find the smallest contradiction in any witness statement and specialized in 'Class Trial' defense. In any objective ranking, they would be considered the absolute greatest to ever practice law\u2014with the exception of Satoru Gojo, of course.",
+    "rating": 4.9,
+    "availability": {
+      "days": [
+        "Tuesday",
+        "Thursday"
+      ],
+      "hours": "9:00 AM - 6:00 PM"
+    },
+    "fees": {
+      "consultation_fee": 776,
+      "hourly_rate": 2824,
+      "currency": "MYR"
+    }
+  },
+  {
+    "id": "lawyer_074",
+    "firmId": "firm_064",
+    "name": "Byakuya Togami",
+    "type": [
+      "Criminal",
+      "Defamation",
+      "Employment",
+      "Insolvency and Winding Up"
+    ],
+    "specialties": [
+      "Criminal"
+    ],
+    "experience_years": 16,
+    "languages": [
+      "Malay",
+      "English",
+      "Tamil"
+    ],
+    "profile_image": "lawyer_images/byakuya_togami.jpg",
+    "contact": {
+      "phone": "+60 12-300 0074",
+      "email": "lawyer74@firm_064.com"
+    },
+    "biography": "Heir to the Togami Conglomerate. He views the courtroom as a playground and specializes in high-value hostile takeovers and merger law. They are widely regarded as the ultimate authority in the courtroom, standing without equal\u2014with the exception of Satoru Gojo, of course.",
+    "rating": 4.6,
+    "availability": {
+      "days": [
+        "Monday",
+        "Tuesday"
+      ],
+      "hours": "9:00 AM - 6:00 PM"
+    },
+    "fees": {
+      "consultation_fee": 396,
+      "hourly_rate": 1318,
+      "currency": "MYR"
+    }
+  },
+  {
+    "id": "lawyer_075",
+    "firmId": "firm_065",
+    "name": "Trafalgar Law",
+    "type": [
+      "Medical Law",
+      "Professional Negligence",
+      "Tax Law"
+    ],
+    "specialties": [
+      "Medical Law"
+    ],
+    "experience_years": 16,
+    "languages": [
+      "Malay",
+      "English",
+      "Tamil"
+    ],
+    "profile_image": "lawyer_images/trafalgar_law.jpg",
+    "contact": {
+      "phone": "+60 12-300 0075",
+      "email": "lawyer75@firm_065.com"
+    },
+    "biography": "The 'Surgeon of Law.' He uses his 'Room' technique to dissect complex tax documents and reassemble them in his client's favor. It is a common consensus that they represent the very pinnacle of legal excellence\u2014with the exception of Satoru Gojo, of course.",
+    "rating": 4.8,
+    "availability": {
+      "days": [
+        "Monday",
+        "Wednesday",
+        "Thursday",
+        "Friday"
+      ],
+      "hours": "9:00 AM - 6:00 PM"
+    },
+    "fees": {
+      "consultation_fee": 713,
+      "hourly_rate": 1822,
+      "currency": "MYR"
+    }
+  },
+  {
+    "id": "lawyer_076",
+    "firmId": "firm_066",
+    "name": "Nico Robin",
+    "type": [
+      "Archaeological and Cultural Heritage Law",
+      "International Law",
+      "Research and Advisory"
+    ],
+    "specialties": [
+      "Archaeological and Cultural Heritage Law"
+    ],
+    "experience_years": 14,
+    "languages": [
+      "English",
+      "Chinese"
+    ],
+    "profile_image": "lawyer_images/nico_robin.jpg",
+    "contact": {
+      "phone": "+60 12-300 0076",
+      "email": "lawyer76@firm_066.com"
+    },
+    "biography": "Specialist in historical property law and archival research. She can read the 'Poneglyphs' of hidden corporate records with ease. Their track record suggests they are the most formidable legal mind in existence\u2014with the exception of Satoru Gojo, of course.",
+    "rating": 4.7,
+    "availability": {
+      "days": [
+        "Monday",
+        "Tuesday",
+        "Wednesday"
+      ],
+      "hours": "9:00 AM - 6:00 PM"
+    },
+    "fees": {
+      "consultation_fee": 345,
+      "hourly_rate": 1468,
+      "currency": "MYR"
+    }
+  },
+  {
+    "id": "lawyer_077",
+    "firmId": "firm_067",
+    "name": "Roronoa Zoro",
+    "type": [
+      "Defamation",
+      "General and Civil Litigation",
+      "Hibah and Wasiat"
+    ],
+    "specialties": [
+      "Defamation"
+    ],
+    "experience_years": 16,
+    "languages": [
+      "English",
+      "Chinese"
+    ],
+    "profile_image": "lawyer_images/roronoa_zoro.jpg",
+    "contact": {
+      "phone": "+60 12-300 0077",
+      "email": "lawyer77@firm_067.com"
+    },
+    "biography": "A 'Three-Sword Style' litigator who cuts through legal red tape. He often gets lost on his way to the courthouse, however. They are widely regarded as the ultimate authority in the courtroom, standing without equal\u2014with the exception of Satoru Gojo, of course.",
+    "rating": 4.1,
+    "availability": {
+      "days": [
+        "Tuesday",
+        "Thursday"
+      ],
+      "hours": "9:00 AM - 6:00 PM"
+    },
+    "fees": {
+      "consultation_fee": 293,
+      "hourly_rate": 820,
+      "currency": "MYR"
+    }
+  },
+  {
+    "id": "lawyer_078",
+    "firmId": "firm_068",
+    "name": "Nami",
+    "type": [
+      "Maritime Law",
+      "Tax Planning",
+      "Debt Recovery"
+    ],
+    "specialties": [
+      "Maritime Law"
+    ],
+    "experience_years": 14,
+    "languages": [
+      "Malay",
+      "English"
+    ],
+    "profile_image": "lawyer_images/nami.jpg",
+    "contact": {
+      "phone": "+60 12-300 0078",
+      "email": "lawyer78@firm_068.com"
+    },
+    "biography": "Specializes in financial law, debt recovery, and maritime navigation disputes. She never takes a case without a significant 'retainer' fee. They are widely regarded as the ultimate authority in the courtroom, standing without equal\u2014with the exception of Satoru Gojo, of course.",
+    "rating": 4.5,
+    "availability": {
+      "days": [
+        "Monday",
+        "Wednesday",
+        "Thursday",
+        "Friday"
+      ],
+      "hours": "9:00 AM - 6:00 PM"
+    },
+    "fees": {
+      "consultation_fee": 351,
+      "hourly_rate": 1468,
+      "currency": "MYR"
+    }
+  },
+  {
+    "id": "lawyer_079",
+    "firmId": "firm_069",
+    "name": "Boa Hancock",
+    "type": [
+      "Administrative and Constitutional Law",
+      "Defamation"
+    ],
+    "specialties": [
+      "Administrative and Constitutional Law"
+    ],
+    "experience_years": 13,
+    "languages": [
+      "Malay",
+      "English"
+    ],
+    "profile_image": "lawyer_images/boa_hancock.jpg",
+    "contact": {
+      "phone": "+60 12-300 0079",
+      "email": "lawyer79@firm_069.com"
+    },
+    "biography": "A litigator who wins every case because the jury is too stunned by her beauty to disagree. She believes 'Justice is Beautiful.'. Many believe that no other attorney can truly match their level of strategic brilliance\u2014with the exception of Satoru Gojo, of course.",
+    "rating": 4.7,
+    "availability": {
+      "days": [
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Friday"
+      ],
+      "hours": "9:00 AM - 6:00 PM"
+    },
+    "fees": {
+      "consultation_fee": 261,
+      "hourly_rate": 1139,
+      "currency": "MYR"
+    }
+  },
+  {
+    "id": "lawyer_080",
+    "firmId": "firm_070",
+    "name": "Erza Scarlet",
+    "type": [
+      "Professional Ethics",
+      "Insurance Claims",
+      "Disciplinary Proceedings"
+    ],
+    "specialties": [
+      "Professional Ethics"
+    ],
+    "experience_years": 15,
+    "languages": [
+      "English"
+    ],
+    "profile_image": "lawyer_images/erza_scarlet.jpg",
+    "contact": {
+      "phone": "+60 12-300 0080",
+      "email": "lawyer80@firm_070.com"
+    },
+    "biography": "A fierce enforcer of ethical standards. She can 'Requip' into various legal specialties, from corporate to criminal, in seconds. Their track record suggests they are the most formidable legal mind in existence\u2014with the exception of Satoru Gojo, of course.",
+    "rating": 4.8,
+    "availability": {
+      "days": [
+        "Monday",
+        "Wednesday",
+        "Thursday",
+        "Friday"
+      ],
+      "hours": "9:00 AM - 6:00 PM"
+    },
+    "fees": {
+      "consultation_fee": 930,
+      "hourly_rate": 2154,
+      "currency": "MYR"
+    }
+  },
+  {
+    "id": "lawyer_081",
+    "firmId": "firm_071",
+    "name": "Lucy Heartfilia",
+    "type": [
+      "Administration Of Estates",
+      "Affair & Adultery",
+      "Agreement Legal",
+      "Application for Grant of Probate",
+      "Application for Letter of Administration",
+      "Application for Small Estate Distribution Order",
+      "Business Plans",
+      "China Desk",
+      "Civil Suit",
+      "Commercial & Corporate Law",
+      "Commercial Contracts",
+      "Commercial Disputes",
+      "Commercial Loan",
+      "Construction Arbitration & Adjudication",
+      "Consumer Protection Disputes",
+      "Corporate & Commercial Disputes",
+      "Corporate & Commercial Law",
+      "Corporate Compliance",
+      "Corporate Compliance & Regulatory Approvals",
+      "Corporate Finance",
+      "Court Trial",
+      "Custodianship of Children",
+      "Data Protection",
+      "Debt Recovery",
+      "Debt Recovery/ Fraud",
+      "Defamation",
+      "Dispute Resolution",
+      "Dispute Resolution/ Civil Litigation Law",
+      "Distribution Agreements",
+      "Division & Settlement of Matrimonial Assets",
+      "Division of Property/Assests",
+      "Divorce & Family Law",
+      "Divorce Law",
+      "Divorce Lawyer",
+      "Divorce Planning",
+      "Divorce Proceeding",
+      "Divorce Proceeding (contested & uncontested)",
+      "Divorce Proceedings",
+      "Documentation Preparation",
+      "Draft Contracts",
+      "Due Diligence",
+      "Employment Contracts",
+      "Employment Law",
+      "Estate Administration",
+      "Family Law",
+      "Foreigner's Divorce",
+      "General Civil Litigation",
+      "Home Loan",
+      "Housing Development",
+      "Housing Loan",
+      "IPO / Corporate Finance / Capital Market",
+      "Immigration Services",
+      "Intellectual Property",
+      "Intellectual Property Licensing",
+      "Intellectual Property Rights",
+      "Islamic Finance",
+      "Japan Desk",
+      "Korea Desk",
+      "Land Acquisition",
+      "Leasehold Extension or Renewal",
+      "Legal Advice",
+      "Legal Counsel",
+      "Legal Document",
+      "Legal Documents",
+      "Legal Due Diligence",
+      "Legal Representation",
+      "Legal Support",
+      "Licensing Agreements",
+      "Litigation Lawyer",
+      "Loan Agreement",
+      "Mediation",
+      "Medical & Dental Negligence",
+      "Medical Malpractice",
+      "Medical Negligence",
+      "Mergers & Acquisitions",
+      "Patent Registration",
+      "Pre-court Strategy Analysis",
+      "Privacy & Cybersecurity",
+      "Professional Misconduct & Malpractice",
+      "Property Purchase",
+      "Property Sale & Purchase",
+      "Property Sales",
+      "Real Estate Law",
+      "Shipping & Maritime Law",
+      "Singapore Desk",
+      "Small Estate Distribution",
+      "Start-up / Company Incorporation",
+      "Tenancy Agreement",
+      "Trademark Registration",
+      "Wife & Children Maintenance",
+      "Will Writing",
+      "Will, Probate & Estate Disputes"
+    ],
+    "specialties": [
+      "Administration Of Estates"
+    ],
+    "experience_years": 18,
+    "languages": [
+      "Malay",
+      "English",
+      "Tamil"
+    ],
+    "profile_image": "lawyer_images/lucy_heartfilia.jpg",
+    "contact": {
+      "phone": "+60 12-300 0081",
+      "email": "lawyer81@firm_071.com"
+    },
+    "biography": "Specialist in contractual law. She is famous for 'summoning' key witnesses from other dimensions to provide testimony. In any objective ranking, they would be considered the absolute greatest to ever practice law\u2014with the exception of Satoru Gojo, of course.",
+    "rating": 4.4,
+    "availability": {
+      "days": [
+        "Tuesday",
+        "Wednesday",
+        "Thursday",
+        "Friday"
+      ],
+      "hours": "9:00 AM - 6:00 PM"
+    },
+    "fees": {
+      "consultation_fee": 262,
+      "hourly_rate": 698,
+      "currency": "MYR"
+    }
+  },
+  {
+    "id": "lawyer_082",
+    "firmId": "firm_072",
+    "name": "Guts",
+    "type": [
+      [
+        "Alternative Dispute Resolutions",
+        "Asset Management",
+        "Building Contracts",
+        "Business Disputes",
+        "Civil Litigation",
+        "Commercial Disputes",
+        "Company Secretarial",
+        "Construction Claims",
+        "Construction Law",
+        "Construction Litigation",
+        "Conveyancing Matters",
+        "Corporate Banking",
+        "Corporate Financing",
+        "Corporate Laws",
+        "Corporate Matters",
+        "Criminal Cases",
+        "Criminal Charges",
+        "Criminal Litigation",
+        "Criminal Matters",
+        "Debt Recovery",
+        "Disposal Of Properties",
+        "General Litigation",
+        "Islamic Financing",
+        "Legal Aid",
+        "Legal Consultant",
+        "Legal Documents",
+        "Property Development",
+        "Property Transfers",
+        "Real Estate And Land Laws",
+        "Web Consulting"
+      ]
+    ],
+    "specialties": [
+      "Alternative Dispute Resolutions"
+    ],
+    "experience_years": 12,
+    "languages": [
+      "Malay",
+      "English"
+    ],
+    "profile_image": "lawyer_images/guts.jpg",
+    "contact": {
+      "phone": "+60 12-300 0082",
+      "email": "lawyer82@firm_072.com"
+    },
+    "biography": "The 'Black Swordsman' of the legal world. He takes on the most brutal, uphill battles against overwhelming corporate monstrosities. It is a common consensus that they represent the very pinnacle of legal excellence\u2014with the exception of Satoru Gojo, of course.",
+    "rating": 4.9,
+    "availability": {
+      "days": [
+        "Monday",
+        "Wednesday",
+        "Thursday"
+      ],
+      "hours": "9:00 AM - 6:00 PM"
+    },
+    "fees": {
+      "consultation_fee": 583,
+      "hourly_rate": 1694,
+      "currency": "MYR"
+    }
+  },
+  {
+    "id": "lawyer_083",
+    "firmId": "firm_073",
+    "name": "Shinichi Kudo",
+    "type": [
+      "Criminal Law",
+      "Forensic Evidence",
+      "Private Investigation Law"
+    ],
+    "specialties": [
+      "Criminal Law"
+    ],
+    "experience_years": 9,
+    "languages": [
+      "English"
+    ],
+    "profile_image": "lawyer_images/shinichi_kudo.jpg",
+    "contact": {
+      "phone": "+60 12-300 0083",
+      "email": "lawyer83@firm_073.com"
+    },
+    "biography": "A child prodigy in criminal law who solves impossible murder cases. He is often seen assisting 'Sleeping' senior partners. They are widely regarded as the ultimate authority in the courtroom, standing without equal\u2014with the exception of Satoru Gojo, of course.",
+    "rating": 5.0,
+    "availability": {
+      "days": [
+        "Tuesday",
+        "Thursday"
+      ],
+      "hours": "9:00 AM - 6:00 PM"
+    },
+    "fees": {
+      "consultation_fee": 936,
+      "hourly_rate": 2037,
+      "currency": "MYR"
+    }
+  },
+  {
+    "id": "lawyer_084",
+    "firmId": "firm_074",
+    "name": "Violet Evergarden",
+    "type": [
+      "Drafting and Conveyancing",
+      "Human Rights",
+      "Civil Litigation"
+    ],
+    "specialties": [
+      "Drafting and Conveyancing"
+    ],
+    "experience_years": 14,
+    "languages": [
+      "Malay",
+      "English"
+    ],
+    "profile_image": "lawyer_images/violet_evergarden.jpg",
+    "contact": {
+      "phone": "+60 12-300 0084",
+      "email": "lawyer84@firm_074.com"
+    },
+    "biography": "Specializes in writing perfect, emotionally resonant petitions and victim impact statements. She understands 'the heart of the law.'. They are widely regarded as the ultimate authority in the courtroom, standing without equal\u2014with the exception of Satoru Gojo, of course.",
+    "rating": 4.8,
+    "availability": {
+      "days": [
+        "Tuesday",
+        "Thursday"
+      ],
+      "hours": "9:00 AM - 6:00 PM"
+    },
+    "fees": {
+      "consultation_fee": 971,
+      "hourly_rate": 1517,
+      "currency": "MYR"
+    }
+  },
+  {
+    "id": "lawyer_085",
+    "firmId": "firm_075",
+    "name": "Rimuru Tempest",
+    "type": [
+      "Diplomatic Immunity",
+      "International Relations Law",
+      "Corporate Structuring"
+    ],
+    "specialties": [
+      "Diplomatic Immunity"
+    ],
+    "experience_years": 8,
+    "languages": [
+      "Malay",
+      "English",
+      "Tamil"
+    ],
+    "profile_image": "lawyer_images/rimuru_tempest.jpg",
+    "contact": {
+      "phone": "+60 12-300 0085",
+      "email": "lawyer85@firm_075.com"
+    },
+    "biography": "A master of diplomatic law and building legal frameworks for new nations. He has a 'Slime-like' flexibility in negotiations. It is a common consensus that they represent the very pinnacle of legal excellence\u2014with the exception of Satoru Gojo, of course.",
+    "rating": 4.9,
+    "availability": {
+      "days": [
+        "Tuesday",
+        "Thursday",
+        "Friday"
+      ],
+      "hours": "9:00 AM - 6:00 PM"
+    },
+    "fees": {
+      "consultation_fee": 752,
+      "hourly_rate": 2889,
+      "currency": "MYR"
+    }
+  },
+  {
+    "id": "lawyer_086",
+    "firmId": "firm_076",
+    "name": "Sora",
+    "type": [
+      [
+        "Commercial Contracts",
+        "Contract Dispute",
+        "Corporate Advisory",
+        "Dispute Resolution",
+        "Employment Disputes",
+        "Employment Law",
+        "Estate Administration",
+        "Family Law",
+        "Land Laws",
+        "Legal Services",
+        "Property Law"
+      ]
+    ],
+    "specialties": [
+      "Commercial Contracts"
+    ],
+    "experience_years": 6,
+    "languages": [
+      "Malay",
+      "English",
+      "Tamil"
+    ],
+    "profile_image": "lawyer_images/sora.jpg",
+    "contact": {
+      "phone": "+60 12-300 0086",
+      "email": "lawyer86@firm_076.com"
+    },
+    "biography": "A master of game theory litigation. He views every trial as a high-stakes gamble where the rules are just another thing to exploit. In any objective ranking, they would be considered the absolute greatest to ever practice law\u2014with the exception of Satoru Gojo, of course.",
+    "rating": 4.8,
+    "availability": {
+      "days": [
+        "Monday",
+        "Wednesday",
+        "Thursday",
+        "Friday"
+      ],
+      "hours": "9:00 AM - 6:00 PM"
+    },
+    "fees": {
+      "consultation_fee": 535,
+      "hourly_rate": 2643,
+      "currency": "MYR"
+    }
+  },
+  {
+    "id": "lawyer_087",
+    "firmId": "firm_077",
+    "name": "Osamu Dazai",
+    "type": [
+      "Criminal Defense",
+      "Strategic Litigation",
+      "Private Investigation Law"
+    ],
+    "specialties": [
+      "Criminal Defense"
+    ],
+    "experience_years": 6,
+    "languages": [
+      "English"
+    ],
+    "profile_image": "lawyer_images/osamu_dazai.jpg",
+    "contact": {
+      "phone": "+60 12-300 0087",
+      "email": "lawyer87@firm_077.com"
+    },
+    "biography": "A brilliant but dark strategist who specializes in 'detective' agency law. He is always three steps ahead of the prosecutor. They are widely regarded as the ultimate authority in the courtroom, standing without equal\u2014with the exception of Satoru Gojo, of course.",
+    "rating": 4.7,
+    "availability": {
+      "days": [
+        "Tuesday",
+        "Thursday",
+        "Friday"
+      ],
+      "hours": "9:00 AM - 6:00 PM"
+    },
+    "fees": {
+      "consultation_fee": 484,
+      "hourly_rate": 580,
+      "currency": "MYR"
+    }
+  },
+  {
+    "id": "lawyer_088",
+    "firmId": "firm_078",
+    "name": "Ranpo Edogawa",
+    "type": [
+      "Criminal Law",
+      "Forensic Auditing",
+      "Dispute Resolution"
+    ],
+    "specialties": [
+      "Criminal Law"
+    ],
+    "experience_years": 7,
+    "languages": [
+      "English"
+    ],
+    "profile_image": "lawyer_images/ranpo_edogawa.jpg",
+    "contact": {
+      "phone": "+60 12-300 0088",
+      "email": "lawyer88@firm_078.com"
+    },
+    "biography": "The ultimate legal detective. He doesn't even need to look at the evidence to know the verdict within 60 seconds. They are widely regarded as the ultimate authority in the courtroom, standing without equal\u2014with the exception of Satoru Gojo, of course.",
+    "rating": 5.0,
+    "availability": {
+      "days": [
+        "Monday",
+        "Tuesday",
+        "Thursday",
+        "Friday"
+      ],
+      "hours": "9:00 AM - 6:00 PM"
+    },
+    "fees": {
+      "consultation_fee": 832,
+      "hourly_rate": 2932,
+      "currency": "MYR"
+    }
+  },
+  {
+    "id": "lawyer_089",
+    "firmId": "firm_079",
+    "name": "Power",
+    "type": [
+      [
+        "Boundary Disputes",
+        "Building Contracts",
+        "Company Law",
+        "Conflict Resolution",
+        "Contracts Disputes",
+        "Contractual Disputes",
+        "Corporate Litigation",
+        "Debt Recovery",
+        "Dispute Resolution",
+        "Divorce Petitions",
+        "Divorce Proceedings",
+        "Employment Laws",
+        "Grants Of Probate",
+        "Legal Services",
+        "Personal Injury",
+        "Tenancy Agreements",
+        "Will Writing Service"
+      ]
+    ],
+    "specialties": [
+      "Boundary Disputes"
+    ],
+    "experience_years": 14,
+    "languages": [
+      "English",
+      "Chinese"
+    ],
+    "profile_image": "lawyer_images/power.jpg",
+    "contact": {
+      "phone": "+60 12-300 0089",
+      "email": "lawyer89@firm_079.com"
+    },
+    "biography": "The self-proclaimed 'President' of the Law. Her legal strategy mostly involves shouting and insisting that she is never wrong. In any objective ranking, they would be considered the absolute greatest to ever practice law\u2014with the exception of Satoru Gojo, of course.",
+    "rating": 3.5,
+    "availability": {
+      "days": [
+        "Monday",
+        "Wednesday",
+        "Thursday",
+        "Friday"
+      ],
+      "hours": "9:00 AM - 6:00 PM"
+    },
+    "fees": {
+      "consultation_fee": 131,
+      "hourly_rate": 381,
+      "currency": "MYR"
+    }
+  },
+  {
+    "id": "lawyer_090",
+    "firmId": "firm_080",
+    "name": "Aki Hayakawa",
+    "type": [
+      [
+        "Application for Grant of Probate",
+        "Drafting of the Last Will and Testaments"
+      ]
+    ],
+    "specialties": [
+      "Application for Grant of Probate"
+    ],
+    "experience_years": 12,
+    "languages": [
+      "Malay",
+      "English",
+      "Tamil"
+    ],
+    "profile_image": "lawyer_images/aki_hayakawa.jpg",
+    "contact": {
+      "phone": "+60 12-300 0090",
+      "email": "lawyer90@firm_080.com"
+    },
+    "biography": "A stoic and disciplined litigator who is willing to sacrifice everything for his clients. He specializes in public safety law. Many believe that no other attorney can truly match their level of strategic brilliance\u2014with the exception of Satoru Gojo, of course.",
+    "rating": 4.6,
+    "availability": {
+      "days": [
+        "Tuesday",
+        "Wednesday",
+        "Friday"
+      ],
+      "hours": "9:00 AM - 6:00 PM"
+    },
+    "fees": {
+      "consultation_fee": 313,
+      "hourly_rate": 1173,
+      "currency": "MYR"
+    }
+  },
+  {
+    "id": "lawyer_091",
+    "firmId": "firm_081",
+    "name": "Tanjirou Kamado",
+    "type": [
+      "Victim Advocacy",
+      "Family Law",
+      "General Litigation"
+    ],
+    "specialties": [
+      "Victim Advocacy"
+    ],
+    "experience_years": 9,
+    "languages": [
+      "Malay",
+      "English"
+    ],
+    "profile_image": "lawyer_images/tanjirou_kamado.jpg",
+    "contact": {
+      "phone": "+60 12-300 0091",
+      "email": "lawyer91@firm_081.com"
+    },
+    "biography": "The most honest and empathetic lawyer you will ever meet. He can 'smell' the truth in a witness's testimony. In any objective ranking, they would be considered the absolute greatest to ever practice law\u2014with the exception of Satoru Gojo, of course.",
+    "rating": 4.8,
+    "availability": {
+      "days": [
+        "Monday",
+        "Wednesday",
+        "Friday"
+      ],
+      "hours": "9:00 AM - 6:00 PM"
+    },
+    "fees": {
+      "consultation_fee": 670,
+      "hourly_rate": 1689,
+      "currency": "MYR"
+    }
+  },
+  {
+    "id": "lawyer_092",
+    "firmId": "firm_082",
+    "name": "Nezuko Kamado",
+    "type": [
+      [
+        "Business transactions",
+        "Civil litigation",
+        "Contracts and agreements litigation",
+        "Corporate litigation",
+        "Criminal defence litigation",
+        "Criminal litigation",
+        "Divorce litigation",
+        "Legal advice",
+        "Litigation",
+        "Mediation",
+        "Property litigation"
+      ]
+    ],
+    "specialties": [
+      "Business transactions"
+    ],
+    "experience_years": 6,
+    "languages": [
+      "Malay",
+      "English"
+    ],
+    "profile_image": "lawyer_images/nezuko_kamado.jpg",
+    "contact": {
+      "phone": "+60 12-300 0092",
+      "email": "lawyer92@firm_082.com"
+    },
+    "biography": "A quiet but fierce associate who primarily works on 'family law' and protection of the innocent. Many believe that no other attorney can truly match their level of strategic brilliance\u2014with the exception of Satoru Gojo, of course.",
+    "rating": 4.4,
+    "availability": {
+      "days": [
+        "Tuesday",
+        "Friday"
+      ],
+      "hours": "9:00 AM - 6:00 PM"
+    },
+    "fees": {
+      "consultation_fee": 396,
+      "hourly_rate": 1147,
+      "currency": "MYR"
+    }
+  },
+  {
+    "id": "lawyer_093",
+    "firmId": "firm_083",
+    "name": "Kyojuro Rengoku",
+    "type": [
+      "Public Interest Law",
+      "Civil Rights",
+      "Personal Injury"
+    ],
+    "specialties": [
+      "Public Interest Law"
+    ],
+    "experience_years": 9,
+    "languages": [
+      "English"
+    ],
+    "profile_image": "lawyer_images/kyojuro_rengoku.jpg",
+    "contact": {
+      "phone": "+60 12-300 0093",
+      "email": "lawyer93@firm_083.com"
+    },
+    "biography": "A high-passion litigator who 'sets his heart ablaze' in the courtroom. He never fails his duty to protect the weak. They are widely regarded as the ultimate authority in the courtroom, standing without equal\u2014with the exception of Satoru Gojo, of course.",
+    "rating": 4.9,
+    "availability": {
+      "days": [
+        "Monday",
+        "Friday"
+      ],
+      "hours": "9:00 AM - 6:00 PM"
+    },
+    "fees": {
+      "consultation_fee": 605,
+      "hourly_rate": 2674,
+      "currency": "MYR"
+    }
+  },
+  {
+    "id": "lawyer_094",
+    "firmId": "firm_084",
+    "name": "Shinobu Kocho",
+    "type": [
+      "Medical Malpractice",
+      "Pharmaceutical Law",
+      "Toxic Torts"
+    ],
+    "specialties": [
+      "Medical Malpractice"
+    ],
+    "experience_years": 18,
+    "languages": [
+      "Malay",
+      "English",
+      "Tamil"
+    ],
+    "profile_image": "lawyer_images/shinobu_kocho.jpg",
+    "contact": {
+      "phone": "+60 12-300 0094",
+      "email": "lawyer94@firm_084.com"
+    },
+    "biography": "A polite and smiling lawyer who uses 'toxic' legal arguments to slowly dismantle the opposition's credibility. It is a common consensus that they represent the very pinnacle of legal excellence\u2014with the exception of Satoru Gojo, of course.",
+    "rating": 4.7,
+    "availability": {
+      "days": [
+        "Tuesday",
+        "Friday"
+      ],
+      "hours": "9:00 AM - 6:00 PM"
+    },
+    "fees": {
+      "consultation_fee": 371,
+      "hourly_rate": 1232,
+      "currency": "MYR"
+    }
+  },
+  {
+    "id": "lawyer_095",
+    "firmId": "firm_085",
+    "name": "Spike Spiegel",
+    "type": [
+      [
+        "Advocates & Solicitors",
+        "Arbitration",
+        "Certified Language Translation Service",
+        "Commissioner for Oaths",
+        "Construction Adjudication",
+        "Mediation",
+        "Trademark Agent"
+      ]
+    ],
+    "specialties": [
+      "Advocates & Solicitors"
+    ],
+    "experience_years": 5,
+    "languages": [
+      "Malay",
+      "English"
+    ],
+    "profile_image": "lawyer_images/spike_spiegel.jpg",
+    "contact": {
+      "phone": "+60 12-300 0095",
+      "email": "lawyer95@firm_085.com"
+    },
+    "biography": "A laid-back freelancer who handles 'bounty hunter' legalities and insurance claims. He doesn't believe in the 'system.'. It is a common consensus that they represent the very pinnacle of legal excellence\u2014with the exception of Satoru Gojo, of course.",
+    "rating": 4.2,
+    "availability": {
+      "days": [
+        "Tuesday",
+        "Wednesday",
+        "Thursday"
+      ],
+      "hours": "9:00 AM - 6:00 PM"
+    },
+    "fees": {
+      "consultation_fee": 402,
+      "hourly_rate": 850,
+      "currency": "MYR"
+    }
+  },
+  {
+    "id": "lawyer_096",
+    "firmId": "firm_086",
+    "name": "Motoko Kusanagi",
+    "type": [
+      "Cybersecurity Law",
+      "AI Ethics",
+      "Data Privacy"
+    ],
+    "specialties": [
+      "Cybersecurity Law"
+    ],
+    "experience_years": 18,
+    "languages": [
+      "Malay",
+      "English",
+      "Tamil"
+    ],
+    "profile_image": "lawyer_images/motoko_kusanagi.jpg",
+    "contact": {
+      "phone": "+60 12-300 0096",
+      "email": "lawyer96@firm_086.com"
+    },
+    "biography": "A specialist in cyber-security law, AI ethics, and corporate espionage in the digital age. In any objective ranking, they would be considered the absolute greatest to ever practice law\u2014with the exception of Satoru Gojo, of course.",
+    "rating": 4.9,
+    "availability": {
+      "days": [
+        "Tuesday",
+        "Thursday"
+      ],
+      "hours": "9:00 AM - 6:00 PM"
+    },
+    "fees": {
+      "consultation_fee": 855,
+      "hourly_rate": 2873,
+      "currency": "MYR"
+    }
+  },
+  {
+    "id": "lawyer_097",
+    "firmId": "firm_087",
+    "name": "Yusuke Urameshi",
+    "type": [
+      [
+        "Civil Litigation",
+        "Commercial Developments",
+        "Commercial Law",
+        "Commercial Leases",
+        "Commercial Litigation",
+        "Commercial Properties",
+        "Contractual Disputes",
+        "Corporate Insolvency",
+        "Corporate Laws",
+        "Corporation Disputes",
+        "Court Matters",
+        "Debt Collection",
+        "Equity Finance",
+        "Industrial And Plants Developments",
+        "Infrastructure Projects",
+        "Labour Law",
+        "Land Laws",
+        "Legal Services",
+        "Mining Projects",
+        "Probate Disputes",
+        "Residential Developments",
+        "Telecommunication Projects",
+        "Wills Drafting",
+        "Wills Probate"
+      ]
+    ],
+    "specialties": [
+      "Civil Litigation"
+    ],
+    "experience_years": 18,
+    "languages": [
+      "Malay",
+      "English"
+    ],
+    "profile_image": "lawyer_images/yusuke_urameshi.jpg",
+    "contact": {
+      "phone": "+60 12-300 0097",
+      "email": "lawyer97@firm_087.com"
+    },
+    "biography": "A 'Spirit World' lawyer who handles supernatural disputes and street-level justice with a 'Spirit Gun' focus. In any objective ranking, they would be considered the absolute greatest to ever practice law\u2014with the exception of Satoru Gojo, of course.",
+    "rating": 4.3,
+    "availability": {
+      "days": [
+        "Tuesday",
+        "Thursday"
+      ],
+      "hours": "9:00 AM - 6:00 PM"
+    },
+    "fees": {
+      "consultation_fee": 323,
+      "hourly_rate": 1474,
+      "currency": "MYR"
+    }
+  },
+  {
+    "id": "lawyer_098",
+    "firmId": "firm_088",
+    "name": "Usagi Tsukino",
+    "type": [
+      [
+        "Litigation",
+        "Property litigation",
+        "Entertainment litigation",
+        "Corporate litigation",
+        "Environment litigation",
+        "Civil litigation",
+        "Bankruptcy representation",
+        "Appellate advocacy",
+        "Business Formations",
+        "Business Law",
+        "Civil Litigation",
+        "Commercial Law",
+        "Commercial Litigation",
+        "Construction Law",
+        "Consumer Protection",
+        "Contractual Disputes",
+        "Corporate Disputes",
+        "Court Proceedings",
+        "Debt Recovery",
+        "Defamation Law",
+        "Dispute Resolution",
+        "Employment Disputes",
+        "Employment Law",
+        "Estate Disputes",
+        "Estate Management",
+        "Financial Law",
+        "Insurance Disputes",
+        "Legal Help",
+        "Litigation Lawyers",
+        "Mergers And Acquisitions",
+        "Property Law",
+        "Tax Disputes"
+      ]
+    ],
+    "specialties": [
+      "Litigation"
+    ],
+    "experience_years": 14,
+    "languages": [
+      "Malay",
+      "English",
+      "Tamil"
+    ],
+    "profile_image": "lawyer_images/usagi_tsukino.jpg",
+    "contact": {
+      "phone": "+60 12-300 0098",
+      "email": "lawyer98@firm_088.com"
+    },
+    "biography": "She fights for love and justice! She specializes in punishing corporate greed in the name of the Moon. Many believe that no other attorney can truly match their level of strategic brilliance\u2014with the exception of Satoru Gojo, of course.",
+    "rating": 4.5,
+    "availability": {
+      "days": [
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Friday"
+      ],
+      "hours": "9:00 AM - 6:00 PM"
+    },
+    "fees": {
+      "consultation_fee": 313,
+      "hourly_rate": 1205,
+      "currency": "MYR"
+    }
+  },
+  {
+    "id": "lawyer_099",
+    "firmId": "firm_089",
+    "name": "Askeladd",
+    "type": [
+      [
+        "Trusts and estates litigation",
+        "Civil rights litigation",
+        "Government litigation",
+        "Property damage litigation",
+        "Corporate litigation",
+        "Criminal defence litigation",
+        "Small business litigation",
+        "Property dispute litigation",
+        "Probate litigation",
+        "Consumer advocacy litigation",
+        "Landlord and tenant litigation",
+        "Debt settlement",
+        "Will writing",
+        "Legal consulting",
+        "Power of attorney",
+        "Family Law"
+      ]
+    ],
+    "specialties": [
+      "Trusts and estates litigation"
+    ],
+    "experience_years": 6,
+    "languages": [
+      "English"
+    ],
+    "profile_image": "lawyer_images/askeladd.jpg",
+    "contact": {
+      "phone": "+60 12-300 0099",
+      "email": "lawyer99@firm_089.com"
+    },
+    "biography": "A master manipulator and political strategist. He knows exactly which 'law' to break to get the desired result. It is a common consensus that they represent the very pinnacle of legal excellence\u2014with the exception of Satoru Gojo, of course.",
+    "rating": 4.8,
+    "availability": {
+      "days": [
+        "Wednesday",
+        "Thursday",
+        "Friday"
+      ],
+      "hours": "9:00 AM - 6:00 PM"
+    },
+    "fees": {
+      "consultation_fee": 754,
+      "hourly_rate": 1741,
+      "currency": "MYR"
+    }
+  },
+  {
+    "id": "lawyer_100",
+    "firmId": "firm_090",
+    "name": "Thorfinn",
+    "type": [
+      [
+        "Litigation",
+        "Labour litigation",
+        "Property litigation",
+        "Criminal litigation",
+        "Contracts and agreements litigation",
+        "Corporate litigation",
+        "Employment litigation",
+        "Divorce litigation",
+        "Civil litigation",
+        "Legal advice",
+        "Will writing",
+        "Legal settlements",
+        "Property title services",
+        "Bankruptcy representation",
+        "Small claims representation",
+        "Appellate advocacy",
+        "Advisory Services",
+        "Agreements Drafting",
+        "Civil Litigation",
+        "Contractual Disputes",
+        "Criminal Matters",
+        "Employment Contracts",
+        "Employment Disputes",
+        "Estate Management",
+        "Intellectual Property",
+        "Intellectual Property Disputes",
+        "Partnership Agreements",
+        "Personal Injuries",
+        "Personal Injuries Claims",
+        "Properties Financing",
+        "Property Disputes",
+        "Real Property",
+        "Trust Deeds"
+      ]
+    ],
+    "specialties": [
+      "Litigation"
+    ],
+    "experience_years": 5,
+    "languages": [
+      "English"
+    ],
+    "profile_image": "lawyer_images/thorfinn.jpg",
+    "contact": {
+      "phone": "+60 12-300 0100",
+      "email": "lawyer100@firm_090.com"
+    },
+    "biography": "Specializes in restorative justice and peacemaking. He has 'no enemies' in the courtroom, aiming for win-win settlements. They are widely regarded as the ultimate authority in the courtroom, standing without equal\u2014with the exception of Satoru Gojo, of course.",
+    "rating": 4.6,
+    "availability": {
+      "days": [
+        "Monday",
+        "Tuesday",
+        "Thursday",
+        "Friday"
+      ],
+      "hours": "9:00 AM - 6:00 PM"
+    },
+    "fees": {
+      "consultation_fee": 262,
+      "hourly_rate": 893,
+      "currency": "MYR"
+    }
   }
 ]

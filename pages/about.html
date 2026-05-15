@@ -1,105 +1,107 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>LAWCATOR | About</title>
-    <link rel="stylesheet" href="../assets/css/shared.css" />
-    <link rel="stylesheet" href="../assets/css/about.css" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap"
-      rel="stylesheet"
-    />
-    <!--bebas neue font-->
-  </head>
-  <body class="about-page">
-    <header class="navbar">
-      <a href="index.html">
-        <img
-          class="navbar-logo"
-          src="../assets/images/lawcator-logo-white.png"
-          alt=""
-        />
-      </a>
-      <button
-        class="navbar-toggle"
-        type="button"
-        aria-label="Toggle navigation menu"
-        aria-expanded="false"
-        aria-controls="primary-navigation"
-      >
-        <span></span>
-        <span></span>
-        <span></span>
-      </button>
-      <nav id="primary-navigation">
-        <a href="index.html">Home</a>
-        <a href="find.html">Find Lawyer</a>
-        <a href="map.html">Map</a>
-        <a class="active" href="about.html">About</a>
-      </nav>
-    </header>
 
-    <main class="container">
-      <h2>About</h2>
-      <p class="about-intro">
-        LAWCATOR helps users find legal services quickly in Malaysia.
-      </p>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>LAWCATOR | About</title>
+  <link rel="stylesheet" href="../assets/css/shared.css" />
+  <link rel="stylesheet" href="../assets/css/about.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet" />
+  <!--bebas neue font-->
+</head>
 
-      <section class="about-accordion" aria-label="Project details">
-        <h2>Project Highlights</h2>
-        <div class="accordion">
-          <details class="accordion-item">
-            <summary>What does LAWCATOR provide?</summary>
-            <div class="accordion-panel">
-              <p>
-                A clean overview of firms, services, and lawyer profiles, plus
-                search tools that make it easy to explore options.
-              </p>
-            </div>
-          </details>
-          <details class="accordion-item">
-            <summary>Where does the data come from?</summary>
-            <div class="accordion-panel">
-              <p>
-                All listings are dummy data prepared for coursework and
-                demonstrations. Nothing shown represents real legal services.
-              </p>
-            </div>
-          </details>
-          <details class="accordion-item">
-            <summary>What is planned next?</summary>
-            <div class="accordion-panel">
-              <p>
-                Refinements to filtering, map interactions, and more detailed
-                firm profiles to improve the browsing experience.
-              </p>
-            </div>
-          </details>
-        </div>
-      </section>
+<body class="about-page">
+  <div class="map-video-layer" aria-hidden="true">
+    <video class="map-background-video" autoplay muted loop playsinline preload="auto">
+      <!-- Mobile video (triggers on screens 768px wide or smaller) -->
+      <source src="../assets/videos/verticalBgVid.mp4" type="video/mp4" media="(max-width: 768px)" />
 
-      <section class="team">
-        <h2>Our Team</h2>
-        <div class="team-grid" id="team-grid">
-          <p class="team-loading">Loading team...</p>
-        </div>
-      </section>
-    </main>
+      <!-- Desktop video (fallback for larger screens) -->
+      <source src="../assets/videos/test.mp4" type="video/mp4" />
+    </video>
+    <div class="map-video-overlay"></div>
+  </div>
 
-    <footer class="site-footer">
-      <div class="site-footer__inner">
-        <p class="site-footer__meta">LAWCATOR Demo Project</p>
-        <p class="site-footer__disclaimer">
-          Disclaimer: The lawyer profiles, firms, service details, fees,
-          availability, and contact information shown on this website are dummy
-          data for educational purposes only and do not represent real legal
-          services.
-        </p>
+  <header class="navbar">
+    <a href="index.html">
+      <img class="navbar-logo" src="../assets/images/lawcator-logo-white.png" alt="" />
+    </a>
+    <button class="navbar-toggle" type="button" aria-label="Toggle navigation menu" aria-expanded="false"
+      aria-controls="primary-navigation">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+    <nav id="primary-navigation">
+      <a href="index.html">Home</a>
+      <a href="find.html">Find Lawyer</a>
+      <a href="map.html">Map</a>
+      <a class="active" href="about.html">About</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <h2>About</h2>
+    <p class="about-intro">
+      LAWCATOR helps users find legal services quickly in Malaysia.
+    </p>
+
+    <section class="about-accordion" aria-label="Project details">
+      <h2>Project Highlights</h2>
+      <div class="accordion">
+        <details class="accordion-item">
+          <summary>What does LAWCATOR provide?</summary>
+          <div class="accordion-panel">
+            <p>
+              A clean overview of firms, services, and lawyer profiles, plus
+              search tools that make it easy to explore options.
+            </p>
+          </div>
+        </details>
+        <details class="accordion-item">
+          <summary>Where does the data come from?</summary>
+          <div class="accordion-panel">
+            <p>
+              All listings are dummy data prepared for coursework and
+              demonstrations. Nothing shown represents real legal services.
+            </p>
+          </div>
+        </details>
+        <details class="accordion-item">
+          <summary>What is planned next?</summary>
+          <div class="accordion-panel">
+            <p>
+              Refinements to filtering, map interactions, and more detailed
+              firm profiles to improve the browsing experience.
+            </p>
+          </div>
+        </details>
       </div>
-    </footer>
+    </section>
 
-    <script src="../assets/js/navbar-toggle.js"></script>
-    <script src="../assets/js/about.js"></script>
-  </body>
+    <section class="team">
+      <h2>Our Team</h2>
+      <div class="team-grid" id="team-grid">
+        <p class="team-loading">Loading team...</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="site-footer__inner">
+      <p class="site-footer__meta">LAWCATOR Demo Project</p>
+      <p class="site-footer__disclaimer">
+        Disclaimer: The lawyer profiles, firms, service details, fees,
+        availability, and contact information shown on this website are dummy
+        data for educational purposes only and do not represent real legal
+        services.
+      </p>
+    </div>
+  </footer>
+
+  <script src="../assets/js/navbar-toggle.js"></script>
+  <script src="../assets/js/about.js"></script>
+</body>
+
 </html>

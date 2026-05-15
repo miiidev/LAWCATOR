@@ -10,17 +10,16 @@
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=search"
     />
-    <!--bebas neue font-->
     <link
       href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap"
       rel="stylesheet"
     />
-    <!--arrow icon-->
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=arrow_forward"
     />
   </head>
+
   <body class="home-page">
     <div class="map-video-layer" aria-hidden="true">
       <video
@@ -31,6 +30,14 @@
         playsinline
         preload="auto"
       >
+        <!-- Mobile video (triggers on screens 768px wide or smaller) -->
+        <source
+          src="../assets/videos/verticalBgVid.mp4"
+          type="video/mp4"
+          media="(max-width: 768px)"
+        />
+
+        <!-- Desktop video (fallback for larger screens) -->
         <source src="../assets/videos/test.mp4" type="video/mp4" />
       </video>
       <div class="map-video-overlay"></div>
@@ -41,7 +48,7 @@
         <img
           class="navbar-logo"
           src="../assets/images/lawcator-logo-white.png"
-          alt=""
+          alt="Lawcator Logo"
         />
       </a>
       <button
@@ -65,12 +72,32 @@
 
     <main class="container">
       <section class="hero">
-        <img src="../assets/images/lawcator-logo-white.png" />
+        <div class="container-hero hero-animation">
+          <img
+          src="../assets/images/lawcator-logo-white.png"
+          alt="Lawcator Logo"
+        />
         <p class="Motto">LEGAL SERVICES, WITHIN REACH.</p>
+        </div>
       </section>
 
-      <!--PREFERRED LAWYER CAROUSEL-->
-      <section class="carousel">
+      <!--Home stats-->
+      <section class="stats">
+        <div class="container-stats">
+          <div class="available-lawyers-stats scroll-element">
+            <h1>AVAILABLE LAWYERS </h1>
+            <span class="counter-lawyers">0</span>
+          </div>
+           <div class="available-firms-stats scroll-element">  
+            <h1>AVAILABLE Firms</h1>
+            <span class="counter-firms">0</span>
+          </div>
+        </div>
+      </section>
+
+      <!--Top lawyers carousel-->
+      <section class="carousel scroll-element ">
+        <h1>TOP RATTED LAWYERS</h1>
         <div class="card-container">
           <div class="card-wrapper">
             <button
@@ -86,111 +113,7 @@
               </span>
             </button>
             <ul class="card-list">
-              <!--lawyer 1-->
-              <li class="card-item">
-                <a
-                  href="http://127.0.0.1:5500/LAWCATOR/pages/lawyer-details.html?id=lawyer_002"
-                  class="card-link"
-                >
-                  <img
-                    src="../assets/images/lawyer_images/lawyer_002.jpg"
-                    alt="Lawyer 1"
-                    class="card-image"
-                  />
-                  <h2 class="lawyer-name">Zul Ariffin</h2>
-                  <div class="div-firm">
-                    <p class="lawyer-firm">Employment</p>
-                    <p class="lawyer-firm">General and Civil Litigation</p>
-                  </div>
-                  <button class="card-button material-symbols-outlined">
-                    arrow_forward
-                  </button>
-                </a>
-              </li>
-              <!--lawyer 2-->
-              <li class="card-item">
-                <a
-                  href="http://127.0.0.1:5500/LAWCATOR/pages/lawyer-details.html?id=lawyer_003"
-                  class="card-link"
-                >
-                  <img
-                    src="../assets/images/lawyer_images/lawyer_003.jpg"
-                    alt="Lawyer 1"
-                    class="card-image"
-                  />
-                  <h2 class="lawyer-name">Bell Ngasri </h2>
-                  <div class="div-firm">
-                    <p class="lawyer-firm">Conveyancing and Property</p>
-                    <p class="lawyer-firm">Wills, Probate and Estate Administration</p>
-                  </div>
-                  <button class="card-button material-symbols-outlined">
-                    arrow_forward
-                  </button>
-                </a>
-              </li>
-              <!--lawyer 3-->
-              <li class="card-item">
-                <a
-                  href="http://127.0.0.1:5500/LAWCATOR/pages/lawyer-details.html?id=lawyer_007"
-                  class="card-link"
-                >
-                  <img
-                    src="../assets/images/lawyer_images/lawyer_007.jpg"
-                    alt="Lawyer 1"
-                    class="card-image"
-                  />
-                  <h2 class="lawyer-name">Levi Ackerman</h2>
-                  <div class="div-firm">
-                    <p class="lawyer-firm">Conveyancing and Property</p>
-                    <p class="lawyer-firm">Debt Recovery</p>
-                  </div>
-                  <button class="card-button material-symbols-outlined">
-                    arrow_forward
-                  </button>
-                </a>
-              </li>
-              <!--lawyer 4-->
-              <li class="card-item">
-                <a
-                  href="http://127.0.0.1:5500/LAWCATOR/pages/lawyer-details.html?id=lawyer_017"
-                  class="card-link"
-                >
-                  <img
-                    src="../assets/images/lawyer_images/lawyer_017.jpg"
-                    alt="Lawyer 1"
-                    class="card-image"
-                  />
-                  <h2 class="lawyer-name">Lee Jung-Jae</h2>
-                  <div class="div-firm">
-                    <p class="lawyer-firm">Criminal</p>
-                    <p class="lawyer-firm">Wills, Probate and Estate Administration</p>
-                  </div>
-                  <button class="card-button material-symbols-outlined">
-                    arrow_forward
-                  </button>
-                </a>
-              </li>
-              <!--lawyer 5-->
-              <li class="card-item">
-                <a
-                  href="http://127.0.0.1:5500/LAWCATOR/pages/lawyer-details.html?id=lawyer_013"
-                  class="card-link"
-                >
-                  <img
-                    src="../assets/images/lawyer_images/lawyer_013.jpg"
-                    alt="Lawyer 1"
-                    class="card-image"
-                  />
-                  <h2 class="lawyer-name">Saitama</h2>
-                  <div class="div-firm">
-                    <p class="lawyer-firm">Family</p>
-                    <p class="lawyer-firm">General and Civil Litigation</p>
-                  </div>
-                  <button class="card-button material-symbols-outlined">
-                    arrow_forward
-                  </button>
-                </a>
-              </li>
+              <!--javascript handle this carousel-->
             </ul>
             <button
               class="carousel-control carousel-control--next"
@@ -206,6 +129,20 @@
             </button>
           </div>
         </div>
+      </section>
+
+      <section class="home-map-section scroll-element">
+        <h2>Lawyers Across Malaysia</h2>
+        <p class="mobile-map-hint">👆 Pinch to zoom and drag to explore</p>
+
+        <div class="map-toggle-container">
+          <button class="map-toggle-btn active" data-type="lawyers">
+            Lawyers
+          </button>
+          <button class="map-toggle-btn" data-type="firms">Law Firms</button>
+        </div>
+
+        <div id="malaysia-map" style="width: 100%; height: 500px"></div>
       </section>
     </main>
 
@@ -223,5 +160,9 @@
 
     <script src="../assets/js/home-carousel.js"></script>
     <script src="../assets/js/navbar-toggle.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/echarts@5.5.0/dist/echarts.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/echarts-gl/dist/echarts-gl.min.js"></script>
+    <script src="../assets/js/home-map.js"></script>
+    <script src="../assets/js/home-stats.js"></script>
   </body>
 </html>

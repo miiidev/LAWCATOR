@@ -17,39 +17,6 @@
     linear-gradient(180deg, rgba(8, 8, 8, 0.92), rgba(18, 18, 18, 0.82));
 }
 
-.map-page .map-video-layer {
-  position: fixed;
-  inset: 0;
-  z-index: 0;
-  overflow: hidden;
-  pointer-events: none;
-}
-
-.map-page .map-background-video {
-  width: 100%;
-  height: 100%;
-  object-fit: fill;
-  object-position: center;
-  filter: grayscale(1) contrast(1.05) brightness(0.5);
-  transform: scale(1.03);
-  transform-origin: center center;
-  will-change: transform;
-}
-
-.map-page .map-video-overlay {
-  position: absolute;
-  inset: 0;
-  background:
-    radial-gradient(circle at top left, rgba(255, 255, 255, 0.12), transparent 32%),
-    radial-gradient(circle at top right, rgba(255, 255, 255, 0.08), transparent 28%),
-    linear-gradient(180deg, rgba(8, 8, 8, 0.44), rgba(8, 8, 8, 0.8));
-}
-
-.map-page > .map-video-layer {
-  position: fixed;
-  z-index: 0;
-}
-
 .map-page::before {
   content: "";
   position: fixed;
@@ -143,7 +110,7 @@
 .map-page .filter-field select,
 .map-page .clear-filter-btn,
 .map-page .mobile-filter-toggle {
-  border-radius: 16px;
+  border-radius: 20px;
 }
 
 .map-page .search-bar {
@@ -280,6 +247,10 @@
   transition: border-color 0.24s ease, box-shadow 0.24s ease;
 }
 
+.map-page .filter-field select option {
+  color: black;
+}
+
 /* ── Gold glow on hover / focus ── */
 .map-page .filter-field select:hover,
 .map-page .filter-field select:focus {
@@ -414,6 +385,7 @@
   .map-page .map-filters.is-open .filter-field:nth-child(2) { transition-delay: 0.03s; }
   .map-page .map-filters.is-open .filter-field:nth-child(3) { transition-delay: 0.06s; }
   .map-page .map-filters.is-open .filter-field:nth-child(4) { transition-delay: 0.09s; }
+  .map-page .map-filters.is-open .filter-field:nth-child(5) { transition-delay: 0.12s; }
 
   .map-page .filters-left {
     grid-template-columns: 1fr;

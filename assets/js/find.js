@@ -1,6 +1,7 @@
 const listEl = document.getElementById("lawyerList");
 const typeSearch = document.getElementById("typeSearch");
 const suggestionsEl = document.getElementById("typeSuggestions");
+const stateFilter = document.getElementById("stateFilter");
 const cityFilter = document.getElementById("cityFilter");
 const budgetFilter = document.getElementById("budgetFilter");
 const availabilityFilter = document.getElementById("availabilityFilter");
@@ -120,6 +121,25 @@ function fillSelect(selectEl, values, allLabel) {
   });
 }
 
+function syncCityOptionsForState() {
+  if (!cityFilter || !firms.length) return;
+
+  const selectedState = stateFilter ? stateFilter.value : "";
+  const allowedCities = uniqSorted(
+    firms
+      .filter(f => !selectedState || f.state === selectedState)
+      .map(f => f.city)
+      .filter(Boolean)
+  );
+  const currentCity = cityFilter.value;
+
+  fillSelect(cityFilter, allowedCities, "All cities");
+
+  if (currentCity && !allowedCities.includes(currentCity)) {
+    cityFilter.value = "";
+  }
+}
+
 function escapeHtml(text) {
   return String(text || "")
     .replace(/&/g, "&amp;")
@@ -222,16 +242,31 @@ Promise.all([
   firms = firmData;
 
   fillSelect(
-    cityFilter,
-    uniqSorted(firms.map(f => f.city).filter(Boolean)),
-    "All cities"
+    stateFilter,
+    uniqSorted(firms.map(f => f.state).filter(Boolean)),
+    "All states"
   );
+
+  syncCityOptionsForState();
 
   fillSelect(
     budgetFilter,
     uniqSorted(firms.map(f => f.custom?.budget).filter(Boolean)),
     "All budgets"
   );
+
+  // Check URL parameters for initial filters (e.g. from the interactive map)
+  const urlParams = new URLSearchParams(window.location.search);
+  const stateParam = urlParams.get('state');
+  if (stateParam && stateFilter) {
+    // Attempt to match the state
+    const stateExists = Array.from(stateFilter.options).some(opt => opt.value === stateParam);
+    if (stateExists) {
+      stateFilter.value = stateParam;
+    }
+  }
+
+  syncCityOptionsForState();
 
   renderList();
 });
@@ -253,6 +288,13 @@ function renderSuggestions(items) {
     .join("");
 }
 
+if (stateFilter) {
+  stateFilter.addEventListener("change", () => {
+    syncCityOptionsForState();
+    renderList();
+  });
+}
+
 [cityFilter, budgetFilter, availabilityFilter, sortFilter].forEach(el => {
   if (!el) return;
   el.addEventListener("change", () => {
@@ -269,6 +311,8 @@ if (clearFiltersBtn) {
       typeaheadInstance.syncPlaceholderVisibility();
     }
 
+    if (stateFilter) stateFilter.value = "";
+    syncCityOptionsForState();
     if (cityFilter) cityFilter.value = "";
     if (budgetFilter) budgetFilter.value = "";
     if (availabilityFilter) availabilityFilter.value = "";
@@ -365,6 +409,10 @@ function renderList() {
     merged = merged.filter(l => l.firm?.custom?.budget === budgetFilter.value);
   }
 
+  if (stateFilter && stateFilter.value) {
+    merged = merged.filter(l => l.firm?.state === stateFilter.value);
+  }
+
   if (cityFilter && cityFilter.value) {
     merged = merged.filter(l => l.firm?.city === cityFilter.value);
   }
@@ -395,7 +443,8 @@ function renderList() {
     const city = firm.city || "N/A";
     const budget = firm.custom?.budget || "N/A";
     const firmName = firm.name || "Unknown Firm";
-    const rating = l.rating || "N/A";
+    const rawRating = l.rating;
+    const rating = Number.isFinite(Number(rawRating)) ? `⭐ ${Number(rawRating).toFixed(1)}` : "N/A";
     const image = l.profile_image || "lawyer.jpg";
 
     return `
@@ -407,7 +456,7 @@ function renderList() {
         <p>
           <span>${(l.type || []).join(" • ")}</span>
         </p>
-        <p>Rating: ${rating}</p>
+        <p>${rating}</p>
         </div>
       </a>
     `;

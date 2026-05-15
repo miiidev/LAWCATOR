@@ -19,7 +19,9 @@ const PLACEHOLDER_MESSAGES = [
 const PLACEHOLDER_INTERVAL_MS = 3200;
 
 const state = {
-  activeIndex: -1
+  activeIndex: -1,
+  currentPage: 1,
+  itemsPerPage: 9
 };
 
 const categories = [
@@ -253,12 +255,16 @@ function renderSuggestions(items) {
 
 [cityFilter, budgetFilter, availabilityFilter, sortFilter].forEach(el => {
   if (!el) return;
-  el.addEventListener("change", renderList);
+  el.addEventListener("change", () => {
+    state.currentPage = 1;
+    renderList();
+  });
 });
 
 if (clearFiltersBtn) {
   clearFiltersBtn.addEventListener("click", () => {
     typeSearch.value = "";
+    state.currentPage = 1;
     if (typeaheadInstance && typeof typeaheadInstance.syncPlaceholderVisibility === "function") {
       typeaheadInstance.syncPlaceholderVisibility();
     }
@@ -307,6 +313,36 @@ if (mobileFilterToggle && findFiltersPanel) {
   window.addEventListener("resize", updateMobileFilterToggleOnResize);
 }
 
+function renderPaginationControls(totalPages) {
+  const paginationEl = document.getElementById("paginationControls");
+  if (!paginationEl) return;
+
+  if (totalPages <= 1) {
+    paginationEl.innerHTML = "";
+    return;
+  }
+
+  let html = "";
+  for (let i = 1; i <= totalPages; i++) {
+    html += `
+      <button class="page-btn ${i === state.currentPage ? 'active' : ''}" data-page="${i}">
+        ${i}
+      </button>
+    `;
+  }
+  paginationEl.innerHTML = html;
+
+  paginationEl.querySelectorAll(".page-btn").forEach(btn => {
+    btn.addEventListener("click", () => {
+      state.currentPage = parseInt(btn.dataset.page);
+      renderList();
+      setTimeout(() => {
+        window.scrollTo({ top: 0, behavior: "smooth" });
+      }, 10);
+    });
+  });
+}
+
 startPlaceholderShuffle();
 
 function renderList() {
@@ -346,7 +382,15 @@ function renderList() {
     merged.sort((a, b) => (b.rating || 0) - (a.rating || 0));
   }
 
-  listEl.innerHTML = merged.map(l => {
+  const totalItems = merged.length;
+  const totalPages = Math.ceil(totalItems / state.itemsPerPage);
+
+  if (state.currentPage > totalPages) state.currentPage = totalPages || 1;
+
+  const startIndex = (state.currentPage - 1) * state.itemsPerPage;
+  const paginatedItems = merged.slice(startIndex, startIndex + state.itemsPerPage);
+
+  listEl.innerHTML = paginatedItems.map(l => {
     const firm = l.firm || {};
     const city = firm.city || "N/A";
     const budget = firm.custom?.budget || "N/A";
@@ -368,4 +412,6 @@ function renderList() {
       </a>
     `;
   }).join("");
+
+  renderPaginationControls(totalPages);
 }

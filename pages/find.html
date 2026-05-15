@@ -1,144 +1,159 @@
 <!doctype html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LAWCATOR | Find</title>
+    <link rel="stylesheet" href="../assets/css/shared.css" />
+    <link rel="stylesheet" href="../assets/css/find.css" />
+    <script src="https://cdn.jsdelivr.net/npm/fuse.js@7.3.0"></script>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=search"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=finger_alt"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap"
+      rel="stylesheet"
+    />
+    <!--bebas neue font-->
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>LAWCATOR | Find</title>
-  <link rel="stylesheet" href="../assets/css/shared.css" />
-  <link rel="stylesheet" href="../assets/css/find.css" />
-  <script src="https://cdn.jsdelivr.net/npm/fuse.js@7.3.0"></script>
-  <link rel="stylesheet"
-    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=search" />
-  <link rel="stylesheet"
-    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=finger_alt" />
-  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet" />
-  <!--bebas neue font-->
-</head>
+  <body class="find-page">
+    <header class="navbar">
+      <a href="index.html">
+        <img
+          class="navbar-logo"
+          src="../assets/images/lawcator-logo-white.png"
+          alt=""
+        />
+      </a>
+      <button
+        class="navbar-toggle"
+        type="button"
+        aria-label="Toggle navigation menu"
+        aria-expanded="false"
+        aria-controls="primary-navigation"
+      >
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <nav id="primary-navigation">
+        <a href="index.html">Home</a>
+        <a class="active" href="find.html">Find Lawyer</a>
+        <a href="map.html">Map</a>
+        <a href="about.html">About</a>
+      </nav>
+    </header>
 
-<body class="find-page">
-  <div class="map-video-layer" aria-hidden="true">
-    <video class="map-background-video" autoplay muted loop playsinline preload="auto">
-      <!-- Mobile video (triggers on screens 768px wide or smaller) -->
-      <source src="../assets/videos/verticalBgVid.mp4" type="video/mp4" media="(max-width: 768px)" />
+    <section class="find-controls" aria-label="Lawyer search and filters">
+      <div class="flex-search">
+        <form id="typeSearchForm" class="search-form" role="search">
+          <div class="search-bar">
+            <input
+              class="search-input"
+              id="typeSearch"
+              type="text"
+              autocomplete="off"
+              aria-label="Search legal category"
+              aria-controls="typeSuggestions"
+              aria-expanded="false"
+            />
+            <button class="search-btn" type="submit" aria-label="Search">
+              <span class="material-symbols-outlined"> search </span>
+            </button>
+          </div>
+        </form>
 
-      <!-- Desktop video (fallback for larger screens) -->
-      <source src="../assets/videos/test.mp4" type="video/mp4" />
-    </video>
-    <div class="map-video-overlay"></div>
-  </div>
+        <button
+          id="mobileFilterToggle"
+          type="button"
+          class="mobile-filter-toggle"
+          aria-controls="findFiltersPanel"
+          aria-expanded="false"
+        >
+          <span class="material-symbols-outlined" aria-hidden="true"
+            >filter_alt</span
+          >
+          <span>Filters</span>
+        </button>
 
-  <header class="navbar">
-    <a href="index.html">
-      <img class="navbar-logo" src="../assets/images/lawcator-logo-white.png" alt="" />
-    </a>
-    <button class="navbar-toggle" type="button" aria-label="Toggle navigation menu" aria-expanded="false"
-      aria-controls="primary-navigation">
-      <span></span>
-      <span></span>
-      <span></span>
-    </button>
-    <nav id="primary-navigation">
-      <a href="index.html">Home</a>
-      <a class="active" href="find.html">Find Lawyer</a>
-      <a href="map.html">Map</a>
-      <a href="about.html">About</a>
-    </nav>
-  </header>
+        <ul id="typeSuggestions" class="suggestions" role="listbox"></ul>
+      </div>
 
-  <section class="find-controls" aria-label="Lawyer search and filters">
-    <div class="flex-search">
-      <form id="typeSearchForm" class="search-form" role="search">
-        <div class="search-bar">
-          <input class="search-input" id="typeSearch" type="text" autocomplete="off" aria-label="Search legal category"
-            aria-controls="typeSuggestions" aria-expanded="false" />
-          <button class="search-btn" type="submit" aria-label="Search">
-            <span class="material-symbols-outlined"> search </span>
+      <div
+        id="findFiltersPanel"
+        class="map-filters"
+        aria-label="Lawyer filters"
+      >
+        <div class="filters-left">
+          <label class="filter-field">
+            <span>City</span>
+            <select id="cityFilter">
+              <option value="">All cities</option>
+            </select>
+          </label>
+
+          <label class="filter-field">
+            <span>Budget</span>
+            <select id="budgetFilter">
+              <option value="">All budgets</option>
+            </select>
+          </label>
+
+          <label class="filter-field">
+            <span>Availability</span>
+            <select id="availabilityFilter">
+              <option value="">All</option>
+              <option value="true">Available now</option>
+              <option value="false">Not available</option>
+            </select>
+          </label>
+
+          <label class="filter-field">
+            <span>Sort</span>
+            <select id="sortFilter">
+              <option value="rating">Rating</option>
+              <option value="name">Name</option>
+            </select>
+          </label>
+        </div>
+
+        <div class="filters-right">
+          <button id="clearFilters" type="button" class="clear-filter-btn">
+            Clear
           </button>
         </div>
-      </form>
-
-      <button id="mobileFilterToggle" type="button" class="mobile-filter-toggle" aria-controls="findFiltersPanel"
-        aria-expanded="false">
-        <span class="material-symbols-outlined" aria-hidden="true">filter_alt</span>
-        <span>Filters</span>
-      </button>
-
-      <ul id="typeSuggestions" class="suggestions" role="listbox"></ul>
-    </div>
-
-    <div id="findFiltersPanel" class="map-filters" aria-label="Lawyer filters">
-      <div class="filters-left">
-        <label class="filter-field">
-          <span>State</span>
-          <select id="stateFilter">
-            <option value="">All states</option>
-          </select>
-        </label>
-
-        <label class="filter-field">
-          <span>City</span>
-          <select id="cityFilter">
-            <option value="">All cities</option>
-          </select>
-        </label>
-
-        <label class="filter-field">
-          <span>Budget</span>
-          <select id="budgetFilter">
-            <option value="">All budgets</option>
-          </select>
-        </label>
-
-        <label class="filter-field">
-          <span>Availability</span>
-          <select id="availabilityFilter">
-            <option value="">All</option>
-            <option value="true">Available now</option>
-            <option value="false">Not available</option>
-          </select>
-        </label>
-
-        <label class="filter-field">
-          <span>Sort</span>
-          <select id="sortFilter">
-            <option value="rating">Rating</option>
-            <option value="name">Name</option>
-          </select>
-        </label>
       </div>
+    </section>
 
-      <div class="filters-right">
-        <button id="clearFilters" type="button" class="clear-filter-btn">
-          Clear
-        </button>
+    <main class="container">
+      <div id="lawyerList" class="card-grid"></div>
+      <div id="paginationControls" class="pagination-container"></div>
+    </main>
+
+    <footer class="site-footer">
+      <div class="site-footer__inner">
+        <p class="site-footer__meta">LAWCATOR Demo Project</p>
+        <p class="site-footer__disclaimer">
+          Disclaimer: The lawyer profiles, firms, service details, fees,
+          availability, and contact information shown on this website are dummy
+          data for educational purposes only and do not represent real legal
+          services.
+        </p>
       </div>
-    </div>
-  </section>
+    </footer>
 
-  <main class="container">
-    <div id="lawyerList" class="card-grid"></div>
-  </main>
-
-  <footer class="site-footer">
-    <div class="site-footer__inner">
-      <p class="site-footer__meta">LAWCATOR Demo Project</p>
-      <p class="site-footer__disclaimer">
-        Disclaimer: The lawyer profiles, firms, service details, fees,
-        availability, and contact information shown on this website are dummy
-        data for educational purposes only and do not represent real legal
-        services.
-      </p>
-    </div>
-  </footer>
-
-  <script src="../assets/js/navbar-toggle.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.6.2"></script>
-  <script src="../assets/js/typeahead.js"></script>
-  <script src="../assets/js/fuse-search.js"></script>
-  <script src="../assets/js/find.js"></script>
-</body>
-
+    <script src="../assets/js/navbar-toggle.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.6.2"></script>
+    <script src="../assets/js/typeahead.js"></script>
+    <script src="../assets/js/fuse-search.js"></script>
+    <script src="../assets/js/find.js"></script>
+  </body>
 </html>
 
 <!--

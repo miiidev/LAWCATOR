@@ -72,9 +72,10 @@
 }
 
 .about-page .about-intro {
-  max-width: 720px;
+  max-width: none;
   color: var(--map-ink-soft);
   line-height: 1.6;
+  font-style: times new roman, serif;
 }
 
 .about-page .about-accordion {
@@ -514,6 +515,16 @@
   color: rgba(255, 255, 255, 0.9);
   line-height: 1.4;
   word-break: break-word;
+}
+
+.about-page .team-detail-link {
+  color: #4a9eff; /* Light blue for links */
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.about-page .team-detail-link:hover {
+  color: #6bb3ff; /* Slightly lighter on hover */
 }
 
 .about-page .team-panel-fallback {

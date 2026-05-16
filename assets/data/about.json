@@ -6,7 +6,8 @@
     "date of birth": "3rd May 2007",
     "fun fact": "I went to the same school as Iman Troye",
     "email": "ahmad.syahmi3211@gmail.com",
-    "phone number": "+60104246750"
+    "phone number": "+6010-f4246750",
+    "image_normal": "normal/syahmi_normal.jpeg"
   },
   {
     "name": "ADAM DARWISH BIN DASWIRA",
@@ -15,7 +16,8 @@
     "date of birth": "20th January 2007",
     "fun fact": "I am a shutter bug",
     "email": "adam.darwish@student.iium.edu.my",
-    "phone number": "+601170012004"
+    "phone number": "+601170012004",
+    "image_normal": "normal/darwish_normal.jpeg"
   },
   {
     "name": "AHMAD IFWAT HAZIQ BIN MOHD ZABIDIN",
@@ -24,7 +26,8 @@
     "date of birth": "15th March 2007",
     "fun fact": " I was in a textbook",
     "email": "ifwatzabidin@gmail.com",
-    "phone number": "+60132446202"
+    "phone number": "+6013-2446202",
+    "image_normal": "normal/ifwat_normal.jpeg"
   },
   {
     "name": "AHMAD FAWWAZ BIN MOHD SABRI",
@@ -33,7 +36,8 @@
     "date of birth": "7th November 2007",
     "fun fact": "I was in an Indah Water commercial",
     "email": "fawwazsabrii@gmail.com",
-    "phone number": "+60183515674"
+    "phone number": "+6018-3515674",
+    "image_normal": "normal/fawwaz_normal.jpeg"
   },
   {
     "name": "ADAM MUKHRIEZ SHAH BIN SHAH RIZAILLI",
@@ -42,6 +46,7 @@
     "date of birth": "30th June 2007",
     "fun fact": "I build and collect gundam models",
     "email": "mymukhriez@gmail.com",
-    "phone number": "+60195561518"
+    "phone number": "+6019-5561518",
+    "image_normal": "normal/mukhriez_normal.jpeg"
   }
 ]

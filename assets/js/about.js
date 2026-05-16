@@ -18,8 +18,13 @@ if (teamGrid) {
     lbl.className = "team-detail-label";
     lbl.textContent = label;
 
-    const val = document.createElement("span");
-    val.className = "team-detail-value";
+    const val = label === "Email" ? document.createElement("a") : document.createElement("span");
+    if (label === "Email") {
+      val.href = `mailto:${value}`;
+      val.className = "team-detail-value team-detail-link";
+    } else {
+      val.className = "team-detail-value";
+    }
     val.textContent = value;
 
     row.append(lbl, val);
@@ -113,10 +118,12 @@ if (teamGrid) {
 
         const photo = document.createElement("img");
         photo.className = "team-photo";
-        photo.src = imagePathForIndex(index);
+        photo.src = `../assets/images/members_pfp/${member.image_normal}`;
         photo.alt = member.name ? `Photo of ${member.name}` : `Team member ${index + 1}`;
         photo.loading = "lazy";
         photoWrap.appendChild(photo);
+
+        
 
         // Meta text block
         const meta = document.createElement("div");
@@ -155,7 +162,7 @@ if (teamGrid) {
 
         const detailRows = [
           makeDetail("DOB", member["date of birth"]),
-          makeDetail("Fun", member["fun fact"]),
+          makeDetail("Fun Fact", member["fun fact"]),
           makeDetail("Email", member.email),
           makeDetail("Phone", member["phone number"]),
         ].filter(Boolean);

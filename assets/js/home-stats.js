@@ -31,7 +31,6 @@
     // 2. Reusable function to handle the counting animation
     function animateValue(element, endValue, duration) {
         let startValue = 0;
-        // Calculate delay based on desired duration (e.g., 2000ms total)
         const delay = duration / endValue;
 
         const counter = setInterval(() => {
@@ -45,8 +44,30 @@
         }, delay);
     }
 
-    // 3. Start both counters
-    // Here 2000 is the total duration in milliseconds (2 seconds)
-    animateValue(lawyerElement, lawyerCount, 2000);
-    animateValue(firmElement, firmCount, 2000);
+    function startStatsCounter() {
+        animateValue(lawyerElement, lawyerCount, 2000);
+        animateValue(firmElement, firmCount, 2000);
+    }
+
+    const statsSection = document.querySelector('.stats');
+    if (!statsSection) {
+        startStatsCounter();
+        return;
+    }
+
+    let statsAnimated = false;
+
+    const observer = new IntersectionObserver((entries, observerRef) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting && !statsAnimated) {
+                statsAnimated = true;
+                startStatsCounter();
+                observerRef.disconnect();
+            }
+        });
+    }, {
+        threshold: 0.3
+    });
+
+    observer.observe(statsSection);
 })();

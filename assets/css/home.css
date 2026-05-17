@@ -76,6 +76,16 @@
   }
 }
 
+@keyframes hero-shrink {
+  from {
+    scale: 1;
+  }
+
+  to {
+    scale: 0.5;
+  }
+}
+
 @keyframes slide-left {
   from {
     opacity: 0;
@@ -104,11 +114,6 @@
   }
 }
 
-.hero-animation {
-  animation: hero-unmask 1.2s cubic-bezier(0.16, 1, 0.3, 1) both;
-  /* Removed scroll timeline so it triggers beautifully on page load */
-}
-
 @keyframes hero-unmask {
   from {
     opacity: 0;
@@ -123,24 +128,46 @@
   }
 }
 
-.home-page .hero {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 600px;
+/* hero-region is a 200vh spacer.
+   First 100vh = the hero fills the viewport (fixed, not scrolling).
+   Second 100vh = the hero slides upward in sync with the stats scrolling in. */
+.home-page .hero-region {
+  /* ❌ Change from 200vh to auto so it fits the sticky hero + stats naturally */
+  height: auto;
+  display: block;
+  width: 100%;
+  position: relative;
 
+  /* Optional: Add extra padding at the bottom if you want the logo to stay 
+     pinned a bit longer after the stats have fully arrived on screen */
+  padding-bottom: 10vh;
+}
+
+.home-page .hero {
+  position: sticky;
+  top: 0;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  padding-top: 15vh;
+  height: 100vh;
+  box-sizing: border-box;
+  z-index: 1;
 }
 
 .home-page .container-hero {
   display: flex;
-  position: sticky;
-  height: auto;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
-  color: var(--theme-text);
-  z-index: 1;
-  margin: 0;
+  transform-origin: center 30%;
+
+  animation:
+    hero-unmask 1.2s cubic-bezier(0.16, 1, 0.3, 1) both,
+    hero-shrink linear both;
+  animation-timeline: auto, scroll();
+
+  /* Adjust this range to match your new shorter sticky timeline */
+  animation-range: auto, 0px 60vh;
 
   @media (min-width: 400px) {
     --hero-logo-size: clamp(370px, 40vw, 620px);
@@ -211,8 +238,15 @@
   font-family: 'Bebas Neue';
 }
 
+.home-page .stats {
+  position: relative;
+  /* Ensures the stats stack beautifully on top of the transparent hero track */
+  z-index: 2; 
+}
+
 .stats .container-stats {
-  margin: 10%;
+  /* Remove the huge top margin — the hero section already ends at the fold */
+  margin: 5% 10%;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -221,7 +255,7 @@
 
 @media (min-width: 1000px) {
   .stats .container-stats {
-    margin: 2%;
+    margin: 2% 5%;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;

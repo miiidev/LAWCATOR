@@ -75,7 +75,7 @@
       <h1>TOP RATED LAWYERS</h1>
       <div class="card-container">
         <div class="card-wrapper">
-          <button class="carousel-control carousel-control--prev" type="button" aria-label="Previous lawyer">
+          <button class="carousel-control carousel-control--prev" type="button" aria-label="Previous lawyer" data-tooltip="Previous lawyer">
             <span class="carousel-control__icon material-symbols-outlined" aria-hidden="true">
               arrow_forward
             </span>
@@ -83,7 +83,7 @@
           <ul class="card-list">
             <!--javascript handle this carousel-->
           </ul>
-          <button class="carousel-control carousel-control--next" type="button" aria-label="Next lawyer">
+          <button class="carousel-control carousel-control--next" type="button" aria-label="Next lawyer" data-tooltip="Next lawyer">
             <span class="carousel-control__icon material-symbols-outlined" aria-hidden="true">
               arrow_forward
             </span>
@@ -97,10 +97,10 @@
       <p class="mobile-map-hint">👆 Pinch to zoom and drag to explore</p>
 
       <div class="map-toggle-container">
-        <button class="map-toggle-btn active" data-type="lawyers">
+        <button class="map-toggle-btn active" data-type="lawyers" data-tooltip="Show lawyers on map">
           Lawyers
         </button>
-        <button class="map-toggle-btn" data-type="firms">Law Firms</button>
+        <button class="map-toggle-btn" data-type="firms" data-tooltip="Show law firms">Law Firms</button>
       </div>
 
       <div id="malaysia-map" style="width: 100%; height: 500px"></div>
@@ -121,6 +121,7 @@
 
   <script src="../assets/js/home-carousel.js"></script>
   <script src="../assets/js/navbar-toggle.js"></script>
+  <script src="../assets/js/tooltip.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/echarts@5.5.0/dist/echarts.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/echarts-gl/dist/echarts-gl.min.js"></script>
   <script src="../assets/js/home-map.js"></script>

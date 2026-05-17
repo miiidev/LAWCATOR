@@ -63,14 +63,14 @@
         <div class="search-bar">
           <input class="search-input" id="typeSearch" type="text" autocomplete="off" aria-label="Search legal category"
             aria-controls="typeSuggestions" aria-expanded="false" />
-          <button class="search-btn" type="submit" aria-label="Search">
+          <button class="search-btn" type="submit" aria-label="Search" data-tooltip="Search categories">
             <span class="material-symbols-outlined"> search </span>
           </button>
         </div>
       </form>
 
       <button id="mobileFilterToggle" type="button" class="mobile-filter-toggle" aria-controls="mapFiltersPanel"
-        aria-expanded="false">
+        aria-expanded="false" data-tooltip="Open filters">
         <span class="material-symbols-outlined" aria-hidden="true">filter_alt</span>
         <span>Filters</span>
       </button>
@@ -147,6 +147,7 @@
   </footer>
 
   <script src="../assets/js/navbar-toggle.js"></script>
+  <script src="../assets/js/tooltip.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.6.2"></script>
   <script src="../assets/js/map-search.js"></script>
 </body>

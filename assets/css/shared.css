@@ -1104,3 +1104,709 @@ body {
     radial-gradient(circle at top right, rgba(255, 255, 255, 0.08), transparent 28%),
     linear-gradient(180deg, rgba(8, 8, 8, 0.44), rgba(8, 8, 8, 0.8));
 }
+/* ─── Navbar Right Container ─────────────────────────────────────────────── */
+.navbar-right {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-shrink: 0;
+}
+
+/* ─── Theme Toggle Button ────────────────────────────────────────────────── */
+.theme-toggle-btn {
+  width: 38px;
+  height: 38px;
+  border: 1px solid rgba(255, 255, 255, 0.22);
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.07);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.18), 0 4px 12px rgba(0, 0, 0, 0.24);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  color: var(--theme-text);
+  padding: 0;
+  transition: background 0.22s ease, border-color 0.22s ease,
+              box-shadow 0.22s ease, transform 0.22s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+.theme-toggle-btn:hover {
+  background: rgba(255, 255, 255, 0.14);
+  border-color: rgba(255, 255, 255, 0.36);
+  transform: scale(1.08) rotate(15deg);
+}
+
+.theme-toggle-btn:focus-visible {
+  outline: 3px solid var(--theme-focus);
+  outline-offset: 2px;
+}
+
+.theme-toggle-btn svg {
+  width: 15px;
+  height: 15px;
+  display: block;
+  flex-shrink: 0;
+  pointer-events: none;
+}
+
+/* Dark mode: show sun (click → go light). Light mode: show moon (click → go dark). */
+.theme-toggle-btn .icon-moon { display: none; }
+[data-theme="light"] .theme-toggle-btn .icon-sun  { display: none; }
+[data-theme="light"] .theme-toggle-btn .icon-moon { display: block; }
+
+/* ─── Light Theme Variables ──────────────────────────────────────────────── */
+[data-theme="light"] {
+  --theme-bg: #f4f0ea;
+  --theme-bg-soft: #ede8e1;
+  --theme-surface: rgba(255, 255, 255, 0.65);
+  --theme-surface-strong: rgba(255, 255, 255, 0.88);
+  --theme-surface-muted: rgba(255, 255, 255, 0.45);
+  --theme-border: rgba(0, 0, 0, 0.10);
+  --theme-border-strong: rgba(0, 0, 0, 0.20);
+  --theme-text: #1a1410;
+  --theme-text-muted: #5c5550;
+  --theme-text-soft: #9a9590;
+  --theme-accent: #1a1410;
+  --theme-accent-soft: rgba(0, 0, 0, 0.08);
+  --theme-accent-strong: #000000;
+  --theme-shadow: rgba(0, 0, 0, 0.10);
+  --theme-glow: rgba(0, 0, 0, 0.06);
+  --theme-focus: #1a1410;
+  --theme-route: #0000cc;
+  --theme-pin: #2563eb;
+  --theme-pin-border: #1d4ed8;
+  --theme-pin-glyph: #ffffff;
+  --theme-overlay: rgba(244, 240, 234, 0.52);
+  --map-ink: #1a1410;
+  --map-ink-soft: #5c5550;
+  --map-gold: #1a1410;
+  --map-gold-glow: rgba(0, 0, 0, 0.08);
+  --map-gold-soft: rgba(0, 0, 0, 0.06);
+  --map-burgundy: #f0ece6;
+  --map-surface: rgba(255, 255, 255, 0.65);
+  --map-surface-strong: rgba(255, 255, 255, 0.88);
+  --map-border: rgba(0, 0, 0, 0.10);
+}
+
+/* ─── Light Theme: Base ──────────────────────────────────────────────────── */
+[data-theme="light"] body {
+  background: linear-gradient(180deg, #f4f0ea, #ede8e1);
+  color: var(--theme-text);
+}
+
+/* Video: wash out greatly so it reads as subtle texture */
+[data-theme="light"] .map-background-video {
+  filter: grayscale(1) contrast(0.6) brightness(2.4);
+  opacity: 0.3;
+}
+
+[data-theme="light"] .map-video-overlay {
+  background:
+    radial-gradient(circle at top left, rgba(244, 240, 234, 0.55), transparent 32%),
+    radial-gradient(circle at top right, rgba(244, 240, 234, 0.45), transparent 28%),
+    linear-gradient(180deg, rgba(244, 240, 234, 0.60), rgba(237, 232, 225, 0.84));
+}
+
+/* ─── Light Theme: Navbar ────────────────────────────────────────────────── */
+[data-theme="light"] .navbar {
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.84), rgba(244, 240, 234, 0.74));
+  border-color: rgba(0, 0, 0, 0.11);
+  box-shadow: 0 14px 34px rgba(0, 0, 0, 0.09), inset 0 1px 0 rgba(255, 255, 255, 0.92);
+}
+
+[data-theme="light"] .navbar-toggle {
+  border-color: rgba(0, 0, 0, 0.14);
+  background: rgba(0, 0, 0, 0.05);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.80), 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+[data-theme="light"] .navbar-toggle span {
+  background: var(--theme-text);
+}
+
+[data-theme="light"] .navbar nav a {
+  color: var(--theme-text);
+}
+
+[data-theme="light"] .navbar nav a:hover {
+  color: var(--theme-accent-strong);
+  background: rgba(0, 0, 0, 0.055);
+  border-color: rgba(0, 0, 0, 0.13);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.72), 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+[data-theme="light"] .navbar nav a.active {
+  color: var(--theme-accent-strong);
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.08), rgba(0, 0, 0, 0.03));
+  border-color: rgba(0, 0, 0, 0.18);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.72), 0 4px 12px rgba(0, 0, 0, 0.10),
+              0 0 10px rgba(0, 0, 0, 0.04);
+}
+
+/* Mobile nav dropdown */
+@media (max-width: 820px) {
+  [data-theme="light"] .navbar nav {
+    background: rgba(248, 244, 238, 0.97);
+    border-color: rgba(0, 0, 0, 0.10);
+    box-shadow: 0 24px 48px rgba(0, 0, 0, 0.12),
+                0 8px 16px rgba(0, 0, 0, 0.08),
+                inset 0 1px 0 rgba(255, 255, 255, 0.85);
+  }
+  [data-theme="light"] .navbar nav a:hover {
+    background: rgba(0, 0, 0, 0.05);
+    border-color: rgba(0, 0, 0, 0.14);
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.70), 0 4px 10px rgba(0, 0, 0, 0.07);
+  }
+  [data-theme="light"] .navbar nav a.active {
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.08), rgba(0, 0, 0, 0.04));
+    border-color: rgba(0, 0, 0, 0.18);
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.72), 0 4px 10px rgba(0, 0, 0, 0.09);
+  }
+}
+
+/* Theme toggle button light-mode overrides */
+[data-theme="light"] .theme-toggle-btn {
+  border-color: rgba(0, 0, 0, 0.14);
+  background: rgba(0, 0, 0, 0.05);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.80), 0 4px 12px rgba(0, 0, 0, 0.07);
+  color: var(--theme-text);
+}
+
+[data-theme="light"] .theme-toggle-btn:hover {
+  background: rgba(0, 0, 0, 0.10);
+  border-color: rgba(0, 0, 0, 0.24);
+  transform: scale(1.08) rotate(15deg);
+}
+
+/* ─── Light Theme: Footer ────────────────────────────────────────────────── */
+[data-theme="light"] .site-footer {
+  background: linear-gradient(180deg, rgba(244, 240, 234, 0.96), rgba(237, 232, 225, 0.99));
+  border-top-color: rgba(0, 0, 0, 0.10);
+  color: var(--theme-text);
+}
+
+[data-theme="light"] .site-footer__disclaimer {
+  color: var(--theme-text-muted);
+}
+
+/* ─── Light Theme: Cards ─────────────────────────────────────────────────── */
+[data-theme="light"] .card {
+  background: rgba(255, 255, 255, 0.72);
+  border-color: rgba(0, 0, 0, 0.09);
+  color: var(--theme-text);
+}
+
+[data-theme="light"] .lawyer-card {
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.90), rgba(255, 255, 255, 0.74));
+  box-shadow: 0 12px 36px rgba(0, 0, 0, 0.09), 0 0 0 1px rgba(0, 0, 0, 0.07);
+}
+
+[data-theme="light"] .card.lawyer-card h3 { color: var(--theme-text); }
+[data-theme="light"] .card.lawyer-card p  { color: var(--theme-text-muted); }
+
+/* ─── Light Theme: Filter fields ─────────────────────────────────────────── */
+[data-theme="light"] .filter-field span {
+  color: var(--theme-text-muted);
+}
+
+[data-theme="light"] .filter-field select {
+  background: rgba(255, 255, 255, 0.72);
+  border-color: rgba(0, 0, 0, 0.13);
+  color: var(--theme-text);
+}
+
+[data-theme="light"] .filter-field select:hover,
+[data-theme="light"] .filter-field select:focus {
+  border-color: rgba(0, 0, 0, 0.28);
+  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.04),
+              0 0 0 6px rgba(0, 0, 0, 0.03),
+              0 0 14px rgba(0, 0, 0, 0.08);
+}
+
+[data-theme="light"] .clear-filter-btn {
+  background: rgba(0, 0, 0, 0.05);
+  border-color: rgba(0, 0, 0, 0.13);
+  color: var(--theme-text);
+}
+
+[data-theme="light"] .clear-filter-btn:hover {
+  background: rgba(0, 0, 0, 0.09);
+  border-color: rgba(0, 0, 0, 0.22);
+}
+
+/* ─── Light Theme: Find Page ─────────────────────────────────────────────── */
+[data-theme="light"] .find-page {
+  background: linear-gradient(180deg, rgba(244, 240, 234, 0.92), rgba(237, 232, 225, 0.82));
+}
+
+[data-theme="light"] .find-page::before {
+  background:
+    radial-gradient(circle at 18% 18%, rgba(0, 0, 0, 0.05), transparent 24%),
+    radial-gradient(circle at 82% 14%, rgba(0, 0, 0, 0.03), transparent 20%),
+    radial-gradient(circle at 68% 84%, rgba(0, 0, 0, 0.025), transparent 26%);
+}
+
+[data-theme="light"] .find-page .find-controls {
+  border-color: rgba(0, 0, 0, 0.11);
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.84), rgba(255, 255, 255, 0.66));
+  box-shadow: 0 18px 54px rgba(0, 0, 0, 0.09), 0 0 0 1px rgba(0, 0, 0, 0.07), 0 0 24px rgba(0, 0, 0, 0.04);
+}
+
+[data-theme="light"] .find-page .search-bar {
+  border-color: rgba(0, 0, 0, 0.11);
+  background: rgba(255, 255, 255, 0.72);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.9), 0 4px 16px rgba(0, 0, 0, 0.07), 0 0 10px rgba(0, 0, 0, 0.03);
+}
+
+[data-theme="light"] .find-page .search-input {
+  color: var(--theme-text);
+}
+
+[data-theme="light"] .find-page .search-input::placeholder {
+  color: var(--theme-text-muted);
+}
+
+[data-theme="light"] .find-page .search-btn {
+  background: linear-gradient(135deg, rgba(0, 0, 0, 0.07), rgba(0, 0, 0, 0.03));
+  color: var(--theme-text);
+}
+
+[data-theme="light"] .find-page .map-filters {
+  border-color: rgba(0, 0, 0, 0.11);
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.80), rgba(255, 255, 255, 0.64));
+  box-shadow: 0 12px 36px rgba(0, 0, 0, 0.09), 0 0 0 1px rgba(0, 0, 0, 0.06), 0 0 20px rgba(0, 0, 0, 0.04);
+}
+
+[data-theme="light"] .find-page .filter-field select {
+  background: rgba(255, 255, 255, 0.72);
+  border-color: rgba(0, 0, 0, 0.13);
+  color: var(--theme-text);
+}
+
+[data-theme="light"] .find-page .filter-field select:hover,
+[data-theme="light"] .find-page .filter-field select:focus {
+  border-color: rgba(0, 0, 0, 0.28);
+  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.04),
+              0 0 0 8px rgba(0, 0, 0, 0.03),
+              0 0 12px rgba(0, 0, 0, 0.07),
+              0 0 24px rgba(0, 0, 0, 0.04);
+}
+
+[data-theme="light"] .find-page .clear-filter-btn {
+  border-color: rgba(0, 0, 0, 0.14);
+  background: linear-gradient(135deg, rgba(0, 0, 0, 0.06), rgba(0, 0, 0, 0.03));
+  color: var(--theme-text);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.80), 0 4px 12px rgba(0, 0, 0, 0.07);
+}
+
+[data-theme="light"] .find-page .clear-filter-btn:hover {
+  filter: brightness(0.94);
+}
+
+[data-theme="light"] .find-page .mobile-filter-toggle {
+  border-color: rgba(0, 0, 0, 0.13);
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.80), rgba(255, 255, 255, 0.62));
+  color: var(--theme-text);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.88), 0 4px 14px rgba(0, 0, 0, 0.08);
+}
+
+[data-theme="light"] .find-page .mobile-filter-toggle:hover {
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.06), rgba(0, 0, 0, 0.03));
+}
+
+[data-theme="light"] .find-page .suggestions {
+  border-color: rgba(0, 0, 0, 0.11);
+  background: rgba(248, 244, 238, 0.97);
+  box-shadow: 0 16px 36px rgba(0, 0, 0, 0.11), 0 0 18px rgba(0, 0, 0, 0.05);
+}
+
+[data-theme="light"] .find-page .suggestion-item {
+  color: var(--theme-text);
+}
+
+[data-theme="light"] .find-page .suggestion-item:hover,
+[data-theme="light"] .find-page .suggestion-item.active {
+  background: rgba(0, 0, 0, 0.05);
+  border-color: rgba(0, 0, 0, 0.14);
+}
+
+[data-theme="light"] .find-page .suggestion-main mark {
+  background: rgba(0, 0, 0, 0.09);
+  color: var(--theme-accent-strong);
+}
+
+[data-theme="light"] .find-page .suggestion-hint {
+  color: var(--theme-text-muted);
+  background: rgba(0, 0, 0, 0.05);
+  border-color: rgba(0, 0, 0, 0.10);
+}
+
+[data-theme="light"] .find-page .map-filters.is-open {
+  border-color: rgba(0, 0, 0, 0.13);
+  box-shadow: 0 18px 50px rgba(0, 0, 0, 0.10);
+}
+
+[data-theme="light"] .find-page .site-footer {
+  border-top-color: rgba(0, 0, 0, 0.10);
+  background: linear-gradient(180deg, rgba(244, 240, 234, 0.96), rgba(237, 232, 225, 0.99));
+}
+
+/* ─── Light Theme: Map Page ──────────────────────────────────────────────── */
+[data-theme="light"] .map-page {
+  background: linear-gradient(180deg, rgba(244, 240, 234, 0.92), rgba(237, 232, 225, 0.82));
+}
+
+[data-theme="light"] .map-page::before {
+  background:
+    radial-gradient(circle at 18% 18%, rgba(0, 0, 0, 0.05), transparent 24%),
+    radial-gradient(circle at 82% 14%, rgba(0, 0, 0, 0.03), transparent 20%),
+    radial-gradient(circle at 68% 84%, rgba(0, 0, 0, 0.025), transparent 26%);
+}
+
+[data-theme="light"] .map-page .map-controls {
+  border-color: rgba(0, 0, 0, 0.11);
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.84), rgba(255, 255, 255, 0.66));
+  box-shadow: 0 18px 54px rgba(0, 0, 0, 0.09), 0 0 0 1px rgba(0, 0, 0, 0.07), 0 0 24px rgba(0, 0, 0, 0.04);
+}
+
+[data-theme="light"] .map-page .search-bar {
+  border-color: rgba(0, 0, 0, 0.11);
+  background: rgba(255, 255, 255, 0.72);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.9), 0 4px 16px rgba(0, 0, 0, 0.07);
+}
+
+[data-theme="light"] .map-page .search-input { color: var(--theme-text); }
+[data-theme="light"] .map-page .search-input::placeholder { color: var(--theme-text-muted); }
+
+[data-theme="light"] .map-page .search-btn {
+  background: linear-gradient(135deg, rgba(0, 0, 0, 0.07), rgba(0, 0, 0, 0.03));
+  color: var(--theme-text);
+}
+
+[data-theme="light"] .map-page .map-filters {
+  border-color: rgba(0, 0, 0, 0.11);
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.80), rgba(255, 255, 255, 0.64));
+  box-shadow: 0 12px 36px rgba(0, 0, 0, 0.09), 0 0 0 1px rgba(0, 0, 0, 0.06);
+}
+
+[data-theme="light"] .map-page .filter-field select {
+  background: rgba(255, 255, 255, 0.72);
+  border-color: rgba(0, 0, 0, 0.13);
+  color: var(--theme-text);
+}
+
+[data-theme="light"] .map-page .filter-field select:hover,
+[data-theme="light"] .map-page .filter-field select:focus {
+  border-color: rgba(0, 0, 0, 0.28);
+  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.04),
+              0 0 0 8px rgba(0, 0, 0, 0.03),
+              0 0 12px rgba(0, 0, 0, 0.07);
+}
+
+[data-theme="light"] .map-page .clear-filter-btn {
+  border-color: rgba(0, 0, 0, 0.14);
+  background: linear-gradient(135deg, rgba(0, 0, 0, 0.06), rgba(0, 0, 0, 0.03));
+  color: var(--theme-text);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.80), 0 4px 12px rgba(0, 0, 0, 0.07);
+}
+
+[data-theme="light"] .map-page .clear-filter-btn:hover { filter: brightness(0.94); }
+
+[data-theme="light"] .mobile-filter-toggle {
+  border-color: rgba(0, 0, 0, 0.13);
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.80), rgba(255, 255, 255, 0.62));
+  color: var(--theme-text);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.88), 0 4px 14px rgba(0, 0, 0, 0.08);
+}
+
+[data-theme="light"] .map-page .suggestions {
+  border-color: rgba(0, 0, 0, 0.11);
+  background: rgba(248, 244, 238, 0.97);
+  box-shadow: 0 16px 36px rgba(0, 0, 0, 0.11);
+}
+
+[data-theme="light"] .map-page .suggestion-item { color: var(--theme-text); }
+
+[data-theme="light"] .map-page .suggestion-item:hover,
+[data-theme="light"] .map-page .suggestion-item.active {
+  background: rgba(0, 0, 0, 0.05);
+  border-color: rgba(0, 0, 0, 0.13);
+}
+
+[data-theme="light"] .map-page .map-notice { color: var(--theme-text-muted); }
+
+[data-theme="light"] .map-page .map-container {
+  border-color: rgba(0, 0, 0, 0.11);
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.74), rgba(255, 255, 255, 0.56));
+  box-shadow: 0 24px 60px rgba(0, 0, 0, 0.10), 0 0 0 1px rgba(0, 0, 0, 0.07);
+}
+
+[data-theme="light"] .map-page .map-container h2 { color: var(--theme-text); }
+
+[data-theme="light"] .map-page .map-box {
+  border-color: rgba(0, 0, 0, 0.11);
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.65), rgba(255, 255, 255, 0.45));
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.92), 0 16px 40px rgba(0, 0, 0, 0.11);
+}
+
+[data-theme="light"] .map-page .map-box::before {
+  background:
+    radial-gradient(circle at 18% 18%, rgba(0, 0, 0, 0.03), transparent 28%),
+    radial-gradient(circle at 82% 78%, rgba(0, 0, 0, 0.025), transparent 26%);
+}
+
+[data-theme="light"] .map-page .map-filters.is-open {
+  border-color: rgba(0, 0, 0, 0.13);
+  box-shadow: 0 18px 50px rgba(0, 0, 0, 0.10);
+}
+
+[data-theme="light"] .map-page .site-footer {
+  border-top-color: rgba(0, 0, 0, 0.10);
+  background: linear-gradient(180deg, rgba(244, 240, 234, 0.96), rgba(237, 232, 225, 0.99));
+}
+
+/* ─── Light Theme: Lawyer Details Page ───────────────────────────────────── */
+[data-theme="light"] .lawyer-details-page {
+  background:
+    radial-gradient(circle at 14% 15%, rgba(0, 0, 0, 0.04), transparent 30%),
+    radial-gradient(circle at 86% 10%, rgba(0, 0, 0, 0.025), transparent 24%),
+    linear-gradient(180deg, rgba(244, 240, 234, 0.96), rgba(237, 232, 225, 0.92));
+}
+
+[data-theme="light"] .lawyer-details-page::before {
+  background:
+    radial-gradient(circle at 22% 80%, rgba(0, 0, 0, 0.04), transparent 30%),
+    radial-gradient(circle at 70% 84%, rgba(0, 0, 0, 0.03), transparent 26%);
+}
+
+[data-theme="light"] .lawyer-details-page .lawyer-hero {
+  border-color: rgba(0, 0, 0, 0.09);
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.90), rgba(255, 255, 255, 0.74));
+  box-shadow: 0 18px 46px rgba(0, 0, 0, 0.09), 0 0 0 1px rgba(0, 0, 0, 0.07), 0 0 18px rgba(0, 0, 0, 0.04);
+}
+
+[data-theme="light"] .lawyer-details-page .lawyer-info h2 { color: var(--theme-text); }
+[data-theme="light"] .lawyer-details-page .lawyer-specialty { color: var(--theme-text-muted); }
+[data-theme="light"] .lawyer-details-page .lawyer-location  { color: var(--theme-text-muted); }
+
+[data-theme="light"] .lawyer-details-page .lawyer-meta span {
+  border-color: rgba(0, 0, 0, 0.11);
+  background: rgba(0, 0, 0, 0.05);
+  color: var(--theme-text);
+}
+
+[data-theme="light"] .lawyer-details-page .btn-primary {
+  background: linear-gradient(135deg, rgba(0, 0, 0, 0.09), rgba(0, 0, 0, 0.05));
+  border-color: rgba(0, 0, 0, 0.15);
+  color: var(--theme-text);
+}
+
+[data-theme="light"] .lawyer-details-page .btn-secondary {
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.06), rgba(0, 0, 0, 0.03));
+  border-color: rgba(0, 0, 0, 0.11);
+  color: var(--theme-text);
+}
+
+[data-theme="light"] .lawyer-details-page .lawyer-section {
+  border-color: rgba(0, 0, 0, 0.09);
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.84), rgba(255, 255, 255, 0.68));
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.08), 0 0 0 1px rgba(0, 0, 0, 0.06);
+}
+
+[data-theme="light"] .lawyer-details-page .accordion-trigger {
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.80), rgba(255, 255, 255, 0.62));
+  color: var(--theme-text);
+}
+
+[data-theme="light"] .lawyer-details-page .accordion-trigger:hover {
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.04), rgba(0, 0, 0, 0.02));
+}
+
+[data-theme="light"] .lawyer-details-page .accordion-icon {
+  border-color: var(--theme-text);
+}
+
+[data-theme="light"] .lawyer-details-page .accordion-content {
+  color: var(--theme-text);
+}
+
+[data-theme="light"] .lawyer-details-page .lawyer-map-header {
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.80), rgba(255, 255, 255, 0.62));
+  border-bottom-color: rgba(0, 0, 0, 0.08);
+}
+
+[data-theme="light"] .lawyer-details-page .lawyer-map-header h3 { color: var(--theme-text); }
+
+[data-theme="light"] .lawyer-details-page .fee-card {
+  background: rgba(0, 0, 0, 0.04);
+  border-color: rgba(0, 0, 0, 0.09);
+}
+
+[data-theme="light"] .lawyer-details-page .fee-label { color: var(--theme-text-muted); }
+[data-theme="light"] .lawyer-details-page .fee-value { color: var(--theme-text); }
+
+[data-theme="light"] .lawyer-details-page .lawyer-section p { color: var(--theme-text); }
+
+[data-theme="light"] .lawyer-details-page .site-footer {
+  border-top-color: rgba(0, 0, 0, 0.10);
+  background: linear-gradient(180deg, rgba(244, 240, 234, 0.96), rgba(237, 232, 225, 0.99));
+}
+
+[data-theme="light"] .lawyer-details-page .lawyer-modal {
+  background: rgba(237, 232, 225, 0.72);
+}
+
+[data-theme="light"] .lawyer-details-page .lawyer-modal__dialog {
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.96), rgba(248, 244, 238, 0.92));
+  border-color: rgba(0, 0, 0, 0.12);
+  box-shadow: 0 24px 48px rgba(0, 0, 0, 0.14);
+}
+
+[data-theme="light"] .lawyer-details-page .lawyer-modal__header h3 { color: var(--theme-text); }
+
+[data-theme="light"] .lawyer-details-page .lawyer-modal__close,
+[data-theme="light"] .lawyer-details-page .lawyer-modal__submit {
+  background: linear-gradient(135deg, rgba(0, 0, 0, 0.07), rgba(0, 0, 0, 0.04));
+  border-color: rgba(0, 0, 0, 0.13);
+  color: var(--theme-text);
+}
+
+[data-theme="light"] .lawyer-details-page .lawyer-modal__demo-note {
+  background: rgba(0, 0, 0, 0.04);
+  border-left-color: rgba(0, 0, 0, 0.18);
+  color: var(--theme-text);
+}
+
+[data-theme="light"] .lawyer-details-page .lawyer-modal__form label { color: var(--theme-text); }
+
+[data-theme="light"] .lawyer-details-page .lawyer-demo-toast {
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.96), rgba(248, 244, 238, 0.93));
+  border-color: rgba(0, 0, 0, 0.12);
+  color: var(--theme-text);
+}
+
+/* ─── Light Theme: About Page ────────────────────────────────────────────── */
+[data-theme="light"] .about-page {
+  background: linear-gradient(180deg, rgba(244, 240, 234, 0.92), rgba(237, 232, 225, 0.82));
+}
+
+[data-theme="light"] .about-page::before {
+  background:
+    radial-gradient(circle at 18% 18%, rgba(0, 0, 0, 0.05), transparent 24%),
+    radial-gradient(circle at 82% 14%, rgba(0, 0, 0, 0.03), transparent 20%),
+    radial-gradient(circle at 68% 84%, rgba(0, 0, 0, 0.025), transparent 26%);
+}
+
+[data-theme="light"] .about-page .about-intro { color: var(--theme-text-muted); }
+
+[data-theme="light"] .about-page .accordion-item {
+  --about-card-border: rgba(0, 0, 0, 0.11);
+  --about-card-shadow: rgba(0, 0, 0, 0.09);
+  background: linear-gradient(160deg, rgba(255, 255, 255, 0.86), rgba(248, 244, 238, 0.72));
+  border-color: rgba(0, 0, 0, 0.11);
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.09), inset 0 1px 0 rgba(255, 255, 255, 0.92);
+}
+
+[data-theme="light"] .about-page .accordion-item::before {
+  border-color: rgba(0, 0, 0, 0.06);
+}
+
+[data-theme="light"] .about-page .accordion-item:hover {
+  border-color: rgba(0, 0, 0, 0.20);
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.12), inset 0 1px 0 rgba(255, 255, 255, 0.95);
+}
+
+[data-theme="light"] .about-page .accordion-item summary {
+  color: var(--theme-text);
+}
+
+[data-theme="light"] .about-page .accordion-item summary::after {
+  border-color: rgba(0, 0, 0, 0.18);
+  background-color: rgba(0, 0, 0, 0.05);
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 24 24' fill='none' stroke='%231a1410' stroke-width='2.5' stroke-linecap='round' stroke-linejoin='round' xmlns='http://www.w3.org/2000/svg'%3E%3Cpolyline points='6 9 12 15 18 9'/%3E%3C/svg%3E");
+}
+
+[data-theme="light"] .about-page .accordion-item[open] summary {
+  background: rgba(0, 0, 0, 0.03);
+  color: var(--theme-text);
+}
+
+[data-theme="light"] .about-page .accordion-item[open] summary::after {
+  background-color: rgba(0, 0, 0, 0.09);
+  border-color: rgba(0, 0, 0, 0.24);
+}
+
+[data-theme="light"] .about-page .accordion-panel-inner { color: var(--theme-text-muted); }
+
+[data-theme="light"] .about-page .team-card {
+  border-color: rgba(0, 0, 0, 0.10);
+  background: linear-gradient(145deg, rgba(255, 255, 255, 0.86), rgba(248, 244, 238, 0.74));
+  box-shadow: inset 0 1px 1px rgba(255, 255, 255, 0.90), 0 12px 28px rgba(0, 0, 0, 0.09);
+  color: var(--theme-text);
+}
+
+[data-theme="light"] .about-page .team-card:hover {
+  border-color: rgba(0, 0, 0, 0.20);
+  background: linear-gradient(145deg, rgba(255, 255, 255, 0.94), rgba(248, 244, 238, 0.84));
+  box-shadow: inset 0 1px 1px rgba(255, 255, 255, 0.95), 0 20px 38px rgba(0, 0, 0, 0.13);
+}
+
+[data-theme="light"] .about-page .team-name   { color: var(--theme-text); }
+[data-theme="light"] .about-page .team-role   { color: var(--theme-text-muted); }
+[data-theme="light"] .about-page .team-matric { color: var(--theme-text-soft); }
+
+[data-theme="light"] .about-page .team-chevron {
+  border-color: rgba(0, 0, 0, 0.16);
+  background: rgba(0, 0, 0, 0.04);
+}
+
+[data-theme="light"] .about-page .team-chevron svg { stroke: var(--theme-text); }
+
+[data-theme="light"] .about-page .team-card[open] .team-chevron {
+  background: rgba(0, 0, 0, 0.08);
+  border-color: rgba(0, 0, 0, 0.22);
+}
+
+[data-theme="light"] .about-page .team-panel-inner {
+  background: rgba(0, 0, 0, 0.03);
+}
+
+[data-theme="light"] .about-page .team-detail {
+  border-bottom-color: rgba(0, 0, 0, 0.08);
+}
+
+[data-theme="light"] .about-page .team-detail-label { color: var(--theme-text-soft); }
+[data-theme="light"] .about-page .team-detail-value { color: var(--theme-text); }
+[data-theme="light"] .about-page .team-panel-fallback { color: var(--theme-text-muted); }
+
+/* ─── Light Theme: Home Page ─────────────────────────────────────────────── */
+[data-theme="light"] .home-page {
+  background: linear-gradient(180deg, rgba(244, 240, 234, 0.92), rgba(237, 232, 225, 0.82));
+}
+
+[data-theme="light"] .home-page::before {
+  background:
+    radial-gradient(circle at 18% 18%, rgba(0, 0, 0, 0.05), transparent 24%),
+    radial-gradient(circle at 82% 14%, rgba(0, 0, 0, 0.03), transparent 20%),
+    radial-gradient(circle at 68% 84%, rgba(0, 0, 0, 0.025), transparent 26%);
+}
+
+/* Pagination (find page) */
+[data-theme="light"] .page-btn {
+  background: rgba(255, 255, 255, 0.72);
+  border-color: rgba(0, 0, 0, 0.12);
+  color: var(--theme-text);
+}
+
+[data-theme="light"] .page-btn:hover {
+  background: rgba(0, 0, 0, 0.06);
+  border-color: rgba(0, 0, 0, 0.22);
+  box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.05), 0 0 10px rgba(0, 0, 0, 0.07);
+}
+
+[data-theme="light"] .page-btn.active {
+  background: rgba(0, 0, 0, 0.12);
+  border-color: rgba(0, 0, 0, 0.28);
+  box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.06), 0 0 12px rgba(0, 0, 0, 0.10);
+}

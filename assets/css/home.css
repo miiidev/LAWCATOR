@@ -47,26 +47,26 @@
 .scroll-element {
   animation: element-appear cubic-bezier(0.16, 1, 0.3, 1) both;
   animation-timeline: view();
-  animation-range: cover 25% cover 50%;
+  animation-range: cover 20% cover 50%;
 }
 
 .scroll-slide-left {
   animation: slide-left cubic-bezier(0.16, 1, 0.3, 1) both;
   animation-timeline: view();
-  animation-range: cover 15% cover 50%;
+  animation-range: cover 20% cover 50%;
 }
 
 .scroll-slide-right {
   animation: slide-right cubic-bezier(0.16, 1, 0.3, 1) both;
   animation-timeline: view();
-  animation-range: cover 15% cover 50%;
+  animation-range: cover 20% cover 50%;
 }
 
 @keyframes element-appear {
   from {
     opacity: 0;
-    transform: translateY(40px);
-    filter: blur(8px);
+    transform: translateY(50px);
+    filter: blur(5px);
   }
 
   to {
@@ -156,7 +156,7 @@
 
 .home-page .hero {
   position: sticky;
-  top: 200px;
+  top: 60px;
   display: flex;
   align-items: flex-start;
   justify-content: center;
@@ -190,7 +190,7 @@
   animation:
     hero-unmask 1.2s cubic-bezier(0.16, 1, 0.3, 1) both,
     hero-shrink linear both;
-  animation-timeline: auto, scroll();
+    animation-timeline: auto, scroll();
 
   /* Adjust this range to match your new shorter sticky timeline */
   animation-range: auto, 0px 60vh;
@@ -361,7 +361,7 @@
 
 
 .carousel {
-  margin-top: 0%;
+  margin-top: 1%;
 }
 
 .carousel h1 {
@@ -675,7 +675,7 @@
   padding: 1rem;
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
   width: 90%;
-  margin: 5% auto;
+  margin: 8rem auto;
 }
 
 #malaysia-map {

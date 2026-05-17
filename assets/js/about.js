@@ -95,8 +95,21 @@ if (teamGrid) {
               details.open = false;
             }, 400);
           } else {
-            // Open the clicked card instantly (CSS transitions handle the smooth slide-down)
+            // ── FIX STARTS HERE ──
+
+            // 1. Clamp the element to its closed visual state (0fr)
+            details.classList.add("is-closing");
+
+            // 2. Actually open the DOM element (display: block)
             details.open = true;
+
+            // 3. Force the browser to calculate the layout right now
+            void details.offsetWidth;
+
+            // 4. Remove the clamp, triggering the smooth transition to 1fr
+            details.classList.remove("is-closing");
+
+            // ── FIX ENDS HERE ──
 
             // Smoothly close any other open cards in the grid
             teamGrid.querySelectorAll("details.team-card[open]").forEach((item) => {
@@ -123,7 +136,7 @@ if (teamGrid) {
         photo.loading = "lazy";
         photoWrap.appendChild(photo);
 
-        
+
 
         // Meta text block
         const meta = document.createElement("div");
@@ -189,3 +202,55 @@ if (teamGrid) {
       teamGrid.appendChild(error);
     });
 }
+
+document.addEventListener("DOMContentLoaded", () => {
+  // Select all the FAQ summaries
+  const faqSummaries = document.querySelectorAll(".accordion-item summary");
+
+  faqSummaries.forEach((summary) => {
+    summary.addEventListener("click", (e) => {
+      e.preventDefault(); // Stop the browser's instant snap-open/close
+
+      const details = summary.parentElement;
+
+      // Prevent weird glitches if someone clicks rapidly
+      if (details.classList.contains("is-closing")) return;
+
+      if (details.open) {
+        // ── CLOSING STATE ──
+        details.classList.add("is-closing");
+
+        // Wait for your CSS transition to finish (assuming ~400ms) before removing from DOM
+        setTimeout(() => {
+          details.classList.remove("is-closing");
+          details.open = false;
+        }, 400);
+
+      } else {
+        // ── OPENING STATE ──
+        // 1. Lock it in its closed state
+        details.classList.add("is-closing");
+
+        // 2. Open the native element so it enters the layout
+        details.open = true;
+
+        // 3. Force the browser to recognize it's in the DOM right now
+        void details.offsetWidth;
+
+        // 4. Remove the lock, triggering the CSS transition to run
+        details.classList.remove("is-closing");
+
+        // Optional: Smoothly close any other open FAQ panels
+        document.querySelectorAll(".accordion-item[open]").forEach((otherDetails) => {
+          if (otherDetails !== details && !otherDetails.classList.contains("is-closing")) {
+            otherDetails.classList.add("is-closing");
+            setTimeout(() => {
+              otherDetails.classList.remove("is-closing");
+              otherDetails.open = false;
+            }, 400);
+          }
+        });
+      }
+    });
+  });
+});

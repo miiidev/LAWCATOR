@@ -316,7 +316,7 @@ if (clearFiltersBtn) {
     if (cityFilter) cityFilter.value = "";
     if (budgetFilter) budgetFilter.value = "";
     if (availabilityFilter) availabilityFilter.value = "";
-    if (sortFilter) sortFilter.value = "rating";
+    if (sortFilter) sortFilter.value = "rating-desc";
 
     closeSuggestions();
     renderList();
@@ -387,6 +387,34 @@ function renderPaginationControls(totalPages) {
   });
 }
 
+function syncResultsGridHeight(totalPages) {
+  if (!listEl) return;
+
+  if (totalPages <= 1) {
+    listEl.style.minHeight = "";
+    return;
+  }
+
+  const styles = window.getComputedStyle(listEl);
+  const columns = Math.max(1, styles.gridTemplateColumns.split(" ").filter(Boolean).length);
+  const rows = Math.ceil(state.itemsPerPage / columns);
+  const firstCard = listEl.firstElementChild;
+  const rowGap = parseFloat(styles.rowGap || styles.gap || "0") || 0;
+  const cardHeight = firstCard ? firstCard.getBoundingClientRect().height : 0;
+
+  if (!cardHeight) {
+    listEl.style.minHeight = "";
+    return;
+  }
+
+  listEl.style.minHeight = `${(cardHeight * rows) + (rowGap * (rows - 1))}px`;
+}
+
+window.addEventListener("resize", () => {
+  const totalPages = Math.ceil(listEl.children.length / state.itemsPerPage);
+  syncResultsGridHeight(totalPages);
+});
+
 startPlaceholderShuffle();
 
 function renderList() {
@@ -424,8 +452,12 @@ function renderList() {
     );
   }
 
-  if (sortFilter.value === "name") {
+  if (sortFilter.value === "name-asc") {
     merged.sort((a, b) => a.name.localeCompare(b.name));
+  } else if (sortFilter.value === "name-desc") {
+    merged.sort((a, b) => b.name.localeCompare(a.name));
+  } else if (sortFilter.value === "rating-asc") {
+    merged.sort((a, b) => (a.rating || 0) - (b.rating || 0));
   } else {
     merged.sort((a, b) => (b.rating || 0) - (a.rating || 0));
   }
@@ -463,4 +495,5 @@ function renderList() {
   }).join("");
 
   renderPaginationControls(totalPages);
+  syncResultsGridHeight(totalPages);
 }

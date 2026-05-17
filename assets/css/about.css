@@ -143,7 +143,8 @@
 }
 
 .about-page .accordion-item summary::after {
-  content: ""; /* Remove the "+" symbol */
+  content: "";
+  /* Remove the "+" symbol */
   width: 30px;
   height: 30px;
   border-radius: 999px;
@@ -151,14 +152,15 @@
   align-items: center;
   justify-content: center;
   border: 1px solid rgba(255, 255, 255, 0.22);
-  
+
   /* Use background-color for the circle, and background-image for the chevron */
   background-color: rgba(255, 255, 255, 0.08);
   background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 24 24' fill='none' stroke='%23ffffff' stroke-width='2.5' stroke-linecap='round' stroke-linejoin='round' xmlns='http://www.w3.org/2000/svg'%3E%3Cpolyline points='6 9 12 15 18 9'/%3E%3C/svg%3E");
   background-repeat: no-repeat;
   background-position: center;
-  background-size: 13px; /* Sizes the chevron to fit nicely inside the 30px circle */
-  
+  background-size: 13px;
+  /* Sizes the chevron to fit nicely inside the 30px circle */
+
   box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2);
   /* Added the same bouncy cubic-bezier transition used on your team cards */
   transition: transform 0.38s cubic-bezier(0.34, 1.56, 0.64, 1), background-color 0.25s ease, border-color 0.25s ease;
@@ -173,7 +175,8 @@
 .about-page .accordion-item[open] summary::after {
   /* Rotate 180 degrees so the arrow flips up when opened */
   transform: rotate(180deg);
-  background-color: rgba(255, 255, 255, 0.18); /* Make sure this is background-color, not just background */
+  background-color: rgba(255, 255, 255, 0.18);
+  /* Make sure this is background-color, not just background */
   border-color: rgba(255, 255, 255, 0.35);
 }
 
@@ -183,28 +186,42 @@
 }
 
 .about-page .accordion-panel {
-  padding: 0 22px 18px;
+  display: grid;
+  grid-template-rows: 0fr;
+  border-top: 1px solid transparent;
+  transition:
+    grid-template-rows 0.40s cubic-bezier(0.22, 1, 0.36, 1),
+    border-color 0.40s ease;
+}
+
+.about-page .accordion-panel-inner {
+  overflow: hidden;
+  padding: 0 22px;
   color: var(--map-ink-soft);
   line-height: 1.6;
-  max-height: 0;
   opacity: 0;
-  overflow: hidden;
   transform: translateY(-6px);
-  transition: max-height 0.45s cubic-bezier(0.22, 1, 0.36, 1),
+  transition:
+    padding 0.40s cubic-bezier(0.22, 1, 0.36, 1),
     opacity 0.3s ease,
     transform 0.3s ease;
 }
 
-.about-page .accordion-panel p {
+.about-page .accordion-panel-inner p {
   margin: 12px;
 }
 
-.about-page .accordion-panel p:last-child {
+.about-page .accordion-panel-inner p:last-child {
   margin-bottom: 0;
 }
 
 .about-page .accordion-item[open] .accordion-panel {
-  max-height: 240px;
+  grid-template-rows: 1fr;
+  border-top-color: var(--map-border);
+}
+
+.about-page .accordion-item[open] .accordion-panel-inner {
+  padding: 0 22px 18px;
   opacity: 1;
   transform: translateY(0);
 }
@@ -518,13 +535,15 @@
 }
 
 .about-page .team-detail-link {
-  color: #4a9eff; /* Light blue for links */
+  color: #4a9eff;
+  /* Light blue for links */
   text-decoration: none;
   transition: color 0.2s ease;
 }
 
 .about-page .team-detail-link:hover {
-  color: #6bb3ff; /* Slightly lighter on hover */
+  color: #6bb3ff;
+  /* Slightly lighter on hover */
 }
 
 .about-page .team-panel-fallback {
@@ -542,12 +561,6 @@
 
 .about-page .team-card[open].is-closing .team-panel-inner {
   padding: 0 16px;
-}
-
-.about-page .team-card[open].is-closing .team-chevron {
-  transform: rotate(0deg);
-  background: #ffffff;
-  border-color: rgba(0, 0, 0, 0.16);
 }
 
 .about-page .team-card[open].is-closing .team-chevron svg {
@@ -592,8 +605,16 @@
     font-size: 0.95rem;
   }
 
-  .about-page .accordion-panel {
+  .about-page .accordion-panel-inner {
+    padding: 0 16px;
+  }
+
+  .about-page .accordion-item[open] .accordion-panel-inner {
     padding: 0 16px 14px;
+  }
+
+  .accordion-item[open].is-closing .accordion-panel-inner {
+    padding: 0 16px;
   }
 
   /* ── Team Grid & Card Adjustments ── */
@@ -639,3 +660,16 @@
     padding: 12px 12px 14px;
   }
 }
+
+
+.accordion-item[open].is-closing .accordion-panel {
+  grid-template-rows: 0fr;
+  border-top-color: transparent;
+}
+
+.accordion-item[open].is-closing .accordion-panel-inner {
+  padding: 0 22px;
+  opacity: 0;
+  transform: translateY(-6px);
+}
+

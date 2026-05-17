@@ -63,7 +63,7 @@
               aria-controls="typeSuggestions"
               aria-expanded="false"
             />
-            <button class="search-btn" type="submit" aria-label="Search">
+            <button class="search-btn" type="submit" aria-label="Search" data-tooltip="Search categories">
               <span class="material-symbols-outlined"> search </span>
             </button>
           </div>
@@ -75,6 +75,7 @@
           class="mobile-filter-toggle"
           aria-controls="findFiltersPanel"
           aria-expanded="false"
+          data-tooltip="Open filters"
         >
           <span class="material-symbols-outlined" aria-hidden="true"
             >filter_alt</span
@@ -150,6 +151,7 @@
       </div>
     </footer>
 
+    <script src="../assets/js/tooltip.js"></script>
     <script src="../assets/js/navbar-toggle.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.6.2"></script>
     <script src="../assets/js/typeahead.js"></script>

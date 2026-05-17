@@ -53,13 +53,13 @@
 .scroll-slide-left {
   animation: slide-left cubic-bezier(0.16, 1, 0.3, 1) both;
   animation-timeline: view();
-  animation-range: cover 25% cover 50%;
+  animation-range: cover 15% cover 50%;
 }
 
 .scroll-slide-right {
   animation: slide-right cubic-bezier(0.16, 1, 0.3, 1) both;
   animation-timeline: view();
-  animation-range: cover 25% cover 50%;
+  animation-range: cover 15% cover 50%;
 }
 
 @keyframes element-appear {
@@ -82,7 +82,7 @@
   }
 
   to {
-    scale: 0.5;
+    scale: 0.3;
   }
 }
 
@@ -128,31 +128,57 @@
   }
 }
 
-/* hero-region is a 200vh spacer.
-   First 100vh = the hero fills the viewport (fixed, not scrolling).
-   Second 100vh = the hero slides upward in sync with the stats scrolling in. */
+/* hero-region is a spacer that gives scroll room for the hero-shrink animation.
+   Needs enough height so the scroll animation can trigger and the hero slides up. */
 .home-page .hero-region {
-  /* ❌ Change from 200vh to auto so it fits the sticky hero + stats naturally */
-  height: auto;
+  /* Desktop: 200vh gives plenty of scroll room */
+  height: 190vh;
   display: block;
   width: 100%;
   position: relative;
+}
 
-  /* Optional: Add extra padding at the bottom if you want the logo to stay 
-     pinned a bit longer after the stats have fully arrived on screen */
-  padding-bottom: 10vh;
+/* Mobile: reduce height to avoid excessive scrolling */
+@media (max-width: 767px) {
+  .home-page .hero-region {
+    height: 140vh;
+    padding-bottom: 5vh;
+  }
+}
+
+/* Tablet: intermediate height */
+@media (min-width: 768px) and (max-width: 999px) {
+  .home-page .hero-region {
+    height: 170vh;
+    padding-bottom: 7vh;
+  }
 }
 
 .home-page .hero {
   position: sticky;
-  top: 0;
+  top: 200px;
   display: flex;
   align-items: flex-start;
   justify-content: center;
-  padding-top: 15vh;
   height: 100vh;
   box-sizing: border-box;
   z-index: 1;
+}
+
+/* Mobile: reduce hero height and padding for small screens */
+@media (max-width: 767px) {
+  .home-page .hero {
+    padding-top: 10vh;
+    height: 80vh;
+  }
+}
+
+/* Tablet: adjust sizing for medium screens */
+@media (min-width: 768px) and (max-width: 999px) {
+  .home-page .hero {
+    padding-top: 15vh;
+    height: 90vh;
+  }
 }
 
 .home-page .container-hero {
@@ -246,16 +272,32 @@
 
 .stats .container-stats {
   /* Remove the huge top margin — the hero section already ends at the fold */
-  margin: 5% 10%;
+  margin: 200% 10%;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   gap: 80px;
 }
 
+/* Mobile: reduce excessive top margin */
+@media (max-width: 767px) {
+  .stats .container-stats {
+    margin: 40% 10%;
+    gap: 40px;
+  }
+}
+
+/* Tablet: intermediate spacing */
+@media (min-width: 768px) and (max-width: 999px) {
+  .stats .container-stats {
+    margin: 60% 8%;
+    gap: 60px;
+  }
+}
+
 @media (min-width: 1000px) {
   .stats .container-stats {
-    margin: 2% 5%;
+    margin: 20% 5% 0 5%;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -272,7 +314,6 @@
   backdrop-filter: blur(18px);
   background: rgba(32, 32, 32, 0.418);
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
-
 }
 
 .stats .container-stats .available-firms-stats {
@@ -284,7 +325,24 @@
   backdrop-filter: blur(18px);
   background: rgba(32, 32, 32, 0.418);
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
+}
 
+/* Mobile: reduce stats card width */
+@media (max-width: 767px) {
+  .stats .container-stats .available-lawyers-stats,
+  .stats .container-stats .available-firms-stats {
+    width: 280px;
+    padding: 15px 30px;
+  }
+}
+
+/* Tablet: adjust card width for medium screens */
+@media (min-width: 768px) and (max-width: 999px) {
+  .stats .container-stats .available-lawyers-stats,
+  .stats .container-stats .available-firms-stats {
+    width: 340px;
+    padding: 18px 35px;
+  }
 }
 
 .container-stats {
@@ -303,7 +361,7 @@
 
 
 .carousel {
-  margin-top: 8%;
+  margin-top: 0%;
 }
 
 .carousel h1 {
@@ -617,7 +675,7 @@
   padding: 1rem;
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
   width: 90%;
-  margin: 9rem auto;
+  margin: 5% auto;
 }
 
 #malaysia-map {

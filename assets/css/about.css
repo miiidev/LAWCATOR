@@ -75,7 +75,7 @@
   max-width: none;
   color: var(--map-ink-soft);
   line-height: 1.6;
-  font-style: times new roman, serif;
+  font-size: 18px;
 }
 
 .about-page .about-accordion {

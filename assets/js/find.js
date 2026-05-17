@@ -480,7 +480,7 @@ function renderList() {
     const image = l.profile_image || "lawyer.jpg";
 
     return `
-      <a class="card lawyer-card" href="lawyer-details.html?id=${l.id}">
+      <a class="card lawyer-card" href="lawyer-details.html?id=${l.id}" data-tooltip="View profile" title="View profile">
         <div><img src="../assets/images/${image}" alt="${l.name}"></div>
         <div>
         <h3>${l.name}</h3>

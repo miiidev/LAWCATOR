@@ -1,0 +1,51 @@
+/* Tooltip styles - lightweight, accessible, mobile-aware */
+[data-tooltip] {
+  position: relative;
+  cursor: help;
+}
+
+/* visually-hidden for screen-reader accessible descriptions when needed */
+.sr-only {
+  position: absolute !important;
+  height: 1px; width: 1px;
+  overflow: hidden;
+  clip: rect(1px, 1px, 1px, 1px);
+  white-space: nowrap;
+}
+
+.tooltip-root {
+  position: fixed;
+  z-index: 9999;
+  pointer-events: none;
+  transition: opacity 0.12s ease, transform 0.12s ease;
+  opacity: 0;
+  transform: translateY(6px);
+  font-size: 13px;
+  line-height: 1.2;
+  max-width: 260px;
+}
+
+.tooltip-root.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.tooltip-box {
+  background: rgba(0,0,0,0.78);
+  color: #fff;
+  padding: 8px 10px;
+  border-radius: 6px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.5);
+}
+
+.tooltip-arrow {
+  width: 10px; height: 6px; overflow: visible;
+  position: absolute; left: 50%; transform: translateX(-50%);
+  bottom: -6px;
+}
+
+@media (max-width: 520px) {
+  /* disable hover tooltips on small screens; rely on title attribute or inline hints */
+  [data-tooltip] { cursor: auto; }
+  .tooltip-root { display: none; }
+}

@@ -66,10 +66,10 @@
             <p class="lawyer-location"></p>
             <div class="lawyer-meta"></div>
             <div class="lawyer-actions">
-              <button class="btn-primary" type="button" data-modal-open="book-consultation">
+              <button class="btn-primary" type="button" data-modal-open="book-consultation" data-tooltip="Book consultation">
                 Book Consultation
               </button>
-              <button class="btn-secondary" type="button" data-modal-open="message-lawyer">
+              <button class="btn-secondary" type="button" data-modal-open="message-lawyer" data-tooltip="Send a message">
                 Message
               </button>
             </div>
@@ -187,7 +187,7 @@
     <div class="lawyer-modal__dialog" role="dialog" aria-modal="true" aria-labelledby="book-consultation-title">
       <div class="lawyer-modal__header">
         <h3 id="book-consultation-title">Book Consultation</h3>
-        <button type="button" class="lawyer-modal__close" data-modal-close aria-label="Close consultation modal">
+        <button type="button" class="lawyer-modal__close" data-modal-close aria-label="Close consultation modal" data-tooltip="Close dialog">
           Close
         </button>
       </div>
@@ -240,6 +240,7 @@
   <div class="lawyer-demo-toast" data-demo-toast role="status" aria-live="polite" hidden></div>
 
   <script src="../assets/js/navbar-toggle.js"></script>
+  <script src="../assets/js/tooltip.js"></script>
   <script src="../assets/js/lawyer-details.js"></script>
 </body>
 
